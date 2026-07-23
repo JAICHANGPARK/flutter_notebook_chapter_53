@@ -11,6 +11,9 @@ class FitnessHomePage extends StatefulWidget {
 class _FitnessHomePageState extends State<FitnessHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.black,
+      
+    );
   }
 }
