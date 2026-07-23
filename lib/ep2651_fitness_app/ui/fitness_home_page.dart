@@ -28,7 +28,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                   child: Center(
                     child: Text(
                       "Workout sets",
-                      style: TextStyle(fontWeight: .bold, color: Colors.white),
+                      style: TextStyle(fontWeight: .bold, color: Colors.white,
+                      fontSize: 20),
                     ),
                   ),
                 ),
