@@ -16,28 +16,32 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
         child: Column(
           crossAxisAlignment: .start,
           children: [
-            Row(
-              children: [
-                CircleAvatar(
-                  radius: 28,
-                  backgroundColor: Colors.white12,
-                  foregroundColor: Colors.white,
-                  child: Icon(Icons.arrow_back_outlined),
-                ),
-                Expanded(
-                  child: Center(
-                    child: Text(
-                      "Workout sets",
-                      style: TextStyle(fontWeight: .bold, color: Colors.white,
-                      fontSize: 20),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 28,
+                    backgroundColor: Colors.white12,
+                    foregroundColor: Colors.white,
+                    child: Icon(Icons.arrow_back_outlined),
+                  ),
+                  Expanded(
+                    child: Center(
+                      child: Text(
+                        "Workout sets",
+                        style: TextStyle(fontWeight: .bold, color: Colors.white,
+                        fontSize: 20),
+                      ),
                     ),
                   ),
-                ),
-                CircleAvatar(
-                  radius: 28,
-                  backgroundColor: Colors.white12,
-                ),
-              ],
+                  CircleAvatar(
+                    radius: 28,
+                    backgroundColor: Colors.white12,
+                    foregroundColor: Colors.white,
+                  ),
+                ],
+              ),
             ),
           ],
         ),
