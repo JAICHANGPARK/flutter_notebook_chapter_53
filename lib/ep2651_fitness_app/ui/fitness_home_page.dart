@@ -63,6 +63,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                 ),
               ],
             ),
+            Container(
+              height: 180,
+              child: Placeholder(),
+            )
           ],
         ),
       ),
