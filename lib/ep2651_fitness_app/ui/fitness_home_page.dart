@@ -30,6 +30,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                     ),
                   ),
                 ),
+                CircleAvatar(
+                  radius: 28,
+                  backgroundColor: Colors.white12,
+                ),
               ],
             ),
           ],
