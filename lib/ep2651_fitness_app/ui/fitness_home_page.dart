@@ -21,6 +21,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                 CircleAvatar(
                   radius: 28,
                   backgroundColor: Colors.white12,
+                  foregroundColor: Colors.white,
                   child: Icon(Icons.arrow_back_outlined),
                 ),
                 Expanded(
