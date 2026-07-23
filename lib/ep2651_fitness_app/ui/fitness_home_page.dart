@@ -39,6 +39,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                     radius: 28,
                     backgroundColor: Colors.white12,
                     foregroundColor: Colors.white,
+                    child: Icon(Icons.more_vert),
                   ),
                 ],
               ),
