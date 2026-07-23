@@ -18,7 +18,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
           children: [
             Row(
               children: [
-                CircleAvatar(),
+                CircleAvatar(
+                  radius: 28,
+                  backgroundColor: Colors.white12,
+                ),
                 Expanded(
                   child: Center(
                     child: Text(
