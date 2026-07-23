@@ -83,7 +83,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
               ],
             ),
             Column(
-              children: List.generate(5, )
+              children: List.generate(5, (idx)=> Container(
+                height: 120,
+                child: Placeholder(),
+              ))
             )
           ],
         ),
