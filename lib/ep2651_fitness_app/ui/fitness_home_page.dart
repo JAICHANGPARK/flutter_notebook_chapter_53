@@ -13,7 +13,11 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      
+      body: Column(
+        children: [
+
+        ],
+      ),
     );
   }
 }
