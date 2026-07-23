@@ -49,8 +49,13 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
             ),
             Container(height: 180, child: Placeholder()),
             Row(
+              mainAxisAlignment: .spaceBetween,
               children: [
-                Text("Categories of Set"),
+                Text("Categories of Set",style: TextStyle(
+                  fontWeight: .bold,
+                  color: Colors.white,
+                  fontSize: 18
+                ),),
                 TextButton(
                   onPressed: () {},
                   child: Text("See All"),
