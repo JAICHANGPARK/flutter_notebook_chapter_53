@@ -30,8 +30,11 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                     child: Center(
                       child: Text(
                         "Workout sets",
-                        style: TextStyle(fontWeight: .bold, color: Colors.white,
-                        fontSize: 20),
+                        style: TextStyle(
+                          fontWeight: .bold,
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
                       ),
                     ),
                   ),
@@ -43,6 +46,17 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                   ),
                 ],
               ),
+            ),
+            Container(height: 180, child: Placeholder()),
+            Row(
+              children: [
+                Text("Categories of Set"),
+                TextButton(
+                  onPressed: () {},
+                  child: Text("See All"),
+                  style: TextButton.styleFrom(foregroundColor: Colors.yellow),
+                ),
+              ],
             ),
           ],
         ),
