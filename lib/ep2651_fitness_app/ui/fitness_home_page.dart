@@ -15,7 +15,13 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: .start,
           children: [
+            Row(
+              children: [
+                
+              ],
+            )
         
           ],
         ),
