@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class FitnessHomePage extends StatefulWidget {
   const FitnessHomePage({super.key});
 
@@ -19,10 +18,17 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
           children: [
             Row(
               children: [
-                
+                CircleAvatar(),
+                Expanded(
+                  child: Center(
+                    child: Text(
+                      "Workout sets",
+                      style: TextStyle(fontWeight: .bold, color: Colors.white),
+                    ),
+                  ),
+                ),
               ],
-            )
-        
+            ),
           ],
         ),
       ),
