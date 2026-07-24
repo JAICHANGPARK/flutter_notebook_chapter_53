@@ -120,7 +120,14 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                     ),
                     child: Stack(
                       children: [
-                        
+                        Positioned(
+                            bottom: 12,
+                            left: 12,
+                            right: 12,
+                            child: Row(children: [
+                          Text("Fitness"),
+                          CircleAvatar(),
+                        ],))
                       ],
                     ),
                   );
