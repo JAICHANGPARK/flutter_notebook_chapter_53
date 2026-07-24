@@ -51,30 +51,35 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
             Row(
               mainAxisAlignment: .spaceBetween,
               children: [
-                Text("Categories of Set",style: TextStyle(
-                  fontWeight: .bold,
-                  color: Colors.white,
-                  fontSize: 18
-                ),),
+                Text(
+                  "Categories of Set",
+                  style: TextStyle(
+                    fontWeight: .bold,
+                    color: Colors.white,
+                    fontSize: 18,
+                  ),
+                ),
                 TextButton(
                   onPressed: () {},
                   child: Text("See All"),
-                  style: TextButton.styleFrom(foregroundColor: Colors.yellow),
+                  style: TextButton.styleFrom(
+                    foregroundColor: Color.fromRGBO(221, 238, 94, 1),
+                  ),
                 ),
               ],
             ),
-            Container(
-              height: 180,
-              child: Placeholder(),
-            ),
+            Container(height: 180, child: Placeholder()),
             Row(
               mainAxisAlignment: .spaceBetween,
               children: [
-                Text("Workout List",style: TextStyle(
+                Text(
+                  "Workout List",
+                  style: TextStyle(
                     fontWeight: .bold,
                     color: Colors.white,
-                    fontSize: 18
-                ),),
+                    fontSize: 18,
+                  ),
+                ),
                 TextButton(
                   onPressed: () {},
                   child: Text("See All"),
@@ -83,11 +88,11 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
               ],
             ),
             Column(
-              children: List.generate(5, (idx)=> Container(
-                height: 120,
-                child: Placeholder(),
-              ))
-            )
+              children: List.generate(
+                5,
+                (idx) => Container(height: 120, child: Placeholder()),
+              ),
+            ),
           ],
         ),
       ),
