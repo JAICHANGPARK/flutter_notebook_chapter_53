@@ -99,7 +99,20 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                 ),
               ],
             ),
-            Container(height: 180, child: Placeholder()),
+            Container(
+              height: 180,
+              child: ListView.builder(
+                scrollDirection: .horizontal,
+                itemBuilder: (context, index) {
+                  return Container(
+                    decoration: ShapeDecoration(
+                      shape: RoundedRectangleBorder(),
+                      color: Colors.grey,
+                    ),
+                  );
+                },
+              ),
+            ),
             Row(
               mainAxisAlignment: .spaceBetween,
               children: [
