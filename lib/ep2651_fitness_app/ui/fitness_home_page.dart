@@ -178,7 +178,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 borderRadius: .circular(16),
                                 side: BorderSide(color: Colors.white24),
                               ),
-                              
+                              color: Color.fromRGBO(24, 24, 24, 1),
                             ),
                             margin: .only(bottom: 16),
                             height: 100,
