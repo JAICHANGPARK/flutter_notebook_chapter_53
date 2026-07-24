@@ -51,128 +51,130 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
 
             Expanded(child: SingleChildScrollView(child:
               Column(
+                spacing: 16,
+                crossAxisAlignment: .start,
                 children: [
-                  
-                ],
-              )
-              ,)),
-            Container(
-              height: 200,
-              margin: .symmetric(horizontal: 16),
-              decoration: ShapeDecoration(
-                shape: RoundedSuperellipseBorder(borderRadius: .circular(24)),
-                color: Color.fromRGBO(221, 238, 94, 1),
-              ),
-              child: Stack(
-                children: [
-                  Positioned(
-                    left: 16,
-                    top: 16,
-                    bottom: 16,
-                    right: 16,
-                    child: Column(
-                      crossAxisAlignment: .start,
+                  Container(
+                    height: 200,
+                    margin: .symmetric(horizontal: 16),
+                    decoration: ShapeDecoration(
+                      shape: RoundedSuperellipseBorder(borderRadius: .circular(24)),
+                      color: Color.fromRGBO(221, 238, 94, 1),
+                    ),
+                    child: Stack(
                       children: [
-                        Text("Progress"),
-                        Text("Lower Body"),
-                        Text("Cardio    10 mins"),
-                        Container(
+                        Positioned(
+                          left: 16,
+                          top: 16,
+                          bottom: 16,
+                          right: 16,
                           child: Column(
-                            children: [Text("539"), Text("CALORIES")],
+                            crossAxisAlignment: .start,
+                            children: [
+                              Text("Progress"),
+                              Text("Lower Body"),
+                              Text("Cardio    10 mins"),
+                              Container(
+                                child: Column(
+                                  children: [Text("539"), Text("CALORIES")],
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ],
                     ),
                   ),
-                ],
-              ),
-            ),
 
-            Padding(
-              padding: const EdgeInsets.only(left: 16, right: 16),
-              child: Row(
-                mainAxisAlignment: .spaceBetween,
-                children: [
-                  Text(
-                    "Categories of Set",
-                    style: TextStyle(
-                      fontWeight: .bold,
-                      color: Colors.white,
-                      fontSize: 18,
-                    ),
-                  ),
-                  TextButton(
-                    onPressed: () {},
-                    style: TextButton.styleFrom(
-                      foregroundColor: Color.fromRGBO(221, 238, 94, 1),
-                    ),
-                    child: Text("See All"),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              height: 180,
-              margin: .only(left: 16),
-              child: ListView.builder(
-                scrollDirection: .horizontal,
-                itemBuilder: (context, index) {
-                  return Container(
-                    width: 180,
-                    margin: .only(right: 12),
-                    decoration: ShapeDecoration(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: .circular(16),
-                      ),
-                      color: Colors.grey,
-                    ),
-                    child: Stack(
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16, right: 16),
+                    child: Row(
+                      mainAxisAlignment: .spaceBetween,
                       children: [
-                        Positioned(
-                            bottom: 12,
-                            left: 12,
-                            right: 12,
-                            child: Row(
-                              mainAxisAlignment: .spaceBetween,
-                              children: [
-                                Text("Fitness"),
-                                CircleAvatar(),
-                              ],))
+                        Text(
+                          "Categories of Set",
+                          style: TextStyle(
+                            fontWeight: .bold,
+                            color: Colors.white,
+                            fontSize: 18,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          style: TextButton.styleFrom(
+                            foregroundColor: Color.fromRGBO(221, 238, 94, 1),
+                          ),
+                          child: Text("See All"),
+                        ),
                       ],
                     ),
-                  );
-                },
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 16, right: 16),
-              child: Row(
-                mainAxisAlignment: .spaceBetween,
-                children: [
-                  Text(
-                    "Workout List",
-                    style: TextStyle(
-                      fontWeight: .bold,
-                      color: Colors.white,
-                      fontSize: 18,
+                  ),
+                  Container(
+                    height: 180,
+                    margin: .only(left: 16),
+                    child: ListView.builder(
+                      scrollDirection: .horizontal,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 180,
+                          margin: .only(right: 12),
+                          decoration: ShapeDecoration(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: .circular(16),
+                            ),
+                            color: Colors.grey,
+                          ),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                  bottom: 12,
+                                  left: 12,
+                                  right: 12,
+                                  child: Row(
+                                    mainAxisAlignment: .spaceBetween,
+                                    children: [
+                                      Text("Fitness"),
+                                      CircleAvatar(),
+                                    ],))
+                            ],
+                          ),
+                        );
+                      },
                     ),
                   ),
-                  TextButton(
-                    onPressed: () {},
-                    style: TextButton.styleFrom(
-                      foregroundColor: Color.fromRGBO(221, 238, 94, 1),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16, right: 16),
+                    child: Row(
+                      mainAxisAlignment: .spaceBetween,
+                      children: [
+                        Text(
+                          "Workout List",
+                          style: TextStyle(
+                            fontWeight: .bold,
+                            color: Colors.white,
+                            fontSize: 18,
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          style: TextButton.styleFrom(
+                            foregroundColor: Color.fromRGBO(221, 238, 94, 1),
+                          ),
+                          child: Text("See All"),
+                        ),
+                      ],
                     ),
-                    child: Text("See All"),
+                  ),
+                  Column(
+                    children: List.generate(
+                      5,
+                          (idx) => Container(height: 120, child: Placeholder()),
+                    ),
                   ),
                 ],
-              ),
-            ),
-            Column(
-              children: List.generate(
-                5,
-                    (idx) => Container(height: 120, child: Placeholder()),
-              ),
-            ),
+              )
+              ,)),
+
           ],
         ),
       ),
