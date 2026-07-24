@@ -82,10 +82,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text("See All"),
                   style: TextButton.styleFrom(
                     foregroundColor: Color.fromRGBO(221, 238, 94, 1),
                   ),
+                  child: Text("See All"),
                 ),
               ],
             ),
