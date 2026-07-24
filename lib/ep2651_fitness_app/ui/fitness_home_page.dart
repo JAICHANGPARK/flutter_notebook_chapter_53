@@ -81,7 +81,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 16),
+              padding: const EdgeInsets.only(left: 16, right: 16),
               child: Row(
                 mainAxisAlignment: .spaceBetween,
                 children: [
