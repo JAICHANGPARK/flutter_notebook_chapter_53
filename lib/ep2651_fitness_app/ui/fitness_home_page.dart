@@ -107,6 +107,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                 itemBuilder: (context, index) {
                   return Container(
                     width: 180,
+                    margin: .only(right: 12),
                     decoration: ShapeDecoration(
                       shape: RoundedRectangleBorder(),
                       color: Colors.grey,
