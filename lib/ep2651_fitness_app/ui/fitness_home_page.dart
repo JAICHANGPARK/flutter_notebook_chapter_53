@@ -101,6 +101,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
             ),
             Container(
               height: 180,
+              margin: .only(left: 16),
               child: ListView.builder(
                 scrollDirection: .horizontal,
                 itemBuilder: (context, index) {
