@@ -113,8 +113,15 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                     width: 180,
                     margin: .only(right: 12),
                     decoration: ShapeDecoration(
-                      shape: RoundedRectangleBorder(),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: .circular(16),
+                      ),
                       color: Colors.grey,
+                    ),
+                    child: Stack(
+                      children: [
+                        
+                      ],
                     ),
                   );
                 },
