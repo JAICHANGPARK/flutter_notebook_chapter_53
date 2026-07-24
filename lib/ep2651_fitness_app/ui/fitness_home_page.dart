@@ -124,7 +124,9 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                             bottom: 12,
                             left: 12,
                             right: 12,
-                            child: Row(children: [
+                            child: Row(
+                              mainAxisAlignment: .spaceBetween,
+                              children: [
                           Text("Fitness"),
                           CircleAvatar(),
                         ],))
