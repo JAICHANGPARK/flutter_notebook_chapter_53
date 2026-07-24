@@ -79,25 +79,29 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                 ],
               ),
             ),
-            Row(
-              mainAxisAlignment: .spaceBetween,
-              children: [
-                Text(
-                  "Categories of Set",
-                  style: TextStyle(
-                    fontWeight: .bold,
-                    color: Colors.white,
-                    fontSize: 18,
+
+            Padding(
+              padding: const EdgeInsets.only(left: 16),
+              child: Row(
+                mainAxisAlignment: .spaceBetween,
+                children: [
+                  Text(
+                    "Categories of Set",
+                    style: TextStyle(
+                      fontWeight: .bold,
+                      color: Colors.white,
+                      fontSize: 18,
+                    ),
                   ),
-                ),
-                TextButton(
-                  onPressed: () {},
-                  style: TextButton.styleFrom(
-                    foregroundColor: Color.fromRGBO(221, 238, 94, 1),
+                  TextButton(
+                    onPressed: () {},
+                    style: TextButton.styleFrom(
+                      foregroundColor: Color.fromRGBO(221, 238, 94, 1),
+                    ),
+                    child: Text("See All"),
                   ),
-                  child: Text("See All"),
-                ),
-              ],
+                ],
+              ),
             ),
             Container(
               height: 180,
