@@ -173,8 +173,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                         children: List.generate(
                           5,
                           (idx) => Container(
+                            decoration: ShapeDecoration(shape: RoundedSuperellipseBorder(side: BorderSide(
+                              color: Colors.white24
+                            )),),
                             margin: .only(bottom: 16),
-
                             height: 100,
                             child: Row(children: []),
                           ),
