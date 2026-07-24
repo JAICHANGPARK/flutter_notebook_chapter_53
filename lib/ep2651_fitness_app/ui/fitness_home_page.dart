@@ -52,36 +52,31 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
               height: 200,
               margin: .symmetric(horizontal: 16),
               decoration: ShapeDecoration(
-                shape: RoundedSuperellipseBorder(
-                  borderRadius: .circular(24),
-                ),
+                shape: RoundedSuperellipseBorder(borderRadius: .circular(24)),
                 color: Color.fromRGBO(221, 238, 94, 1),
               ),
               child: Stack(
                 children: [
                   Positioned(
-                      left: 16,
-                      top: 16,
-                      bottom: 16,
-                      right: 16,
-                      child: Column(
-                        crossAxisAlignment: .start,
-                        children: [
-                    Text("Progress"),
-                          Text("Lower Body"),
-                          Text("Cardio    10 mins"),
-                          Container(
-                            child: Column(
-                              children: [
-                                Text("539"),
-                                Text()
-                              ],
-                            ),
-                          )
-                  ],))
-
+                    left: 16,
+                    top: 16,
+                    bottom: 16,
+                    right: 16,
+                    child: Column(
+                      crossAxisAlignment: .start,
+                      children: [
+                        Text("Progress"),
+                        Text("Lower Body"),
+                        Text("Cardio    10 mins"),
+                        Container(
+                          child: Column(
+                            children: [Text("539"), Text("CALORIES")],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
-
               ),
             ),
             Row(
