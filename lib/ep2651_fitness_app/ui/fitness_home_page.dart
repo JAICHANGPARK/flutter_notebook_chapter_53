@@ -67,7 +67,17 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       child: Column(
                         crossAxisAlignment: .start,
                         children: [
-                    Text("Progress")
+                    Text("Progress"),
+                          Text("Lower Body"),
+                          Text("Cardio    10 mins"),
+                          Container(
+                            child: Column(
+                              children: [
+                                Text("539"),
+                                Text()
+                              ],
+                            ),
+                          )
                   ],))
 
                 ],
