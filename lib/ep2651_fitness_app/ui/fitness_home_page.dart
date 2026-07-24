@@ -62,7 +62,11 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                   Positioned(
                       left: 16,
                       top: 16,
-                      child: Column(children: [
+                      bottom: 16,
+                      right: 16,
+                      child: Column(
+                        crossAxisAlignment: .start,
+                        children: [
                     Text("Progress")
                   ],))
 
