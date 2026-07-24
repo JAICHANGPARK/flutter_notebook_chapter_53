@@ -14,6 +14,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
+          spacing: 16,
           crossAxisAlignment: .start,
           children: [
             Padding(
@@ -48,11 +49,19 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
               ),
             ),
             Container(
-              height: 180,
+              height: 200,
               margin: .symmetric(horizontal: 16),
               decoration: ShapeDecoration(
-                shape: RoundedSuperellipseBorder(),
+                shape: RoundedSuperellipseBorder(
+                  borderRadius: .circular(24),
+                ),
                 color: Color.fromRGBO(221, 238, 94, 1),
+              ),
+              child: Stack(
+                children: [
+                  
+                ],
+
               ),
             ),
             Row(
