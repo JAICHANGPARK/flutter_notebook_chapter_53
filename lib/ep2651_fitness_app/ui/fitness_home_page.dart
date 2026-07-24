@@ -47,7 +47,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                 ],
               ),
             ),
-            Container(height: 180, child: Placeholder()),
+            Container(
+              height: 180,
+              decoration: ShapeDecoration(shape: RoundedSuperellipseBorder()),
+            ),
             Row(
               mainAxisAlignment: .spaceBetween,
               children: [
