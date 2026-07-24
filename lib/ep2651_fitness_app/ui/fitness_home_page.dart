@@ -105,6 +105,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                 scrollDirection: .horizontal,
                 itemBuilder: (context, index) {
                   return Container(
+                    width: 180,
                     decoration: ShapeDecoration(
                       shape: RoundedRectangleBorder(),
                       color: Colors.grey,
