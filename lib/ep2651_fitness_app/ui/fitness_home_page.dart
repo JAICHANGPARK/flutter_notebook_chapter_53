@@ -59,7 +59,13 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
               ),
               child: Stack(
                 children: [
-                  
+                  Positioned(
+                      left: 16,
+                      top: 16,
+                      child: Column(children: [
+                    Text("Progress")
+                  ],))
+
                 ],
 
               ),
