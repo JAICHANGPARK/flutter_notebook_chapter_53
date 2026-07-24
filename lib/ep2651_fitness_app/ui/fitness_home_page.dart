@@ -165,10 +165,16 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       ],
                     ),
                   ),
-                  Column(
-                    children: List.generate(
-                      5,
-                          (idx) => Container(height: 120, child: Placeholder()),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Column(
+                      children: List.generate(
+                        5,
+                            (idx) => Container(
+                                margin: .only(bottom: 16,),
+
+                                height: 120, child: Placeholder()),
+                      ),
                     ),
                   ),
                 ],
