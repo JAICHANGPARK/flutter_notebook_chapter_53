@@ -49,7 +49,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
             ),
             Container(
               height: 180,
-              decoration: ShapeDecoration(shape: RoundedSuperellipseBorder()),
+              decoration: ShapeDecoration(
+                shape: RoundedSuperellipseBorder(),
+                color: Color.fromRGBO(221, 238, 94, 1),
+              ),
             ),
             Row(
               mainAxisAlignment: .spaceBetween,
