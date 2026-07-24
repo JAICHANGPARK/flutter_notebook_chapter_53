@@ -48,6 +48,14 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                 ],
               ),
             ),
+
+            Expanded(child: SingleChildScrollView(child:
+              Column(
+                children: [
+                  
+                ],
+              )
+              ,)),
             Container(
               height: 200,
               margin: .symmetric(horizontal: 16),
@@ -127,9 +135,9 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                             child: Row(
                               mainAxisAlignment: .spaceBetween,
                               children: [
-                          Text("Fitness"),
-                          CircleAvatar(),
-                        ],))
+                                Text("Fitness"),
+                                CircleAvatar(),
+                              ],))
                       ],
                     ),
                   );
@@ -162,7 +170,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
             Column(
               children: List.generate(
                 5,
-                (idx) => Container(height: 120, child: Placeholder()),
+                    (idx) => Container(height: 120, child: Placeholder()),
               ),
             ),
           ],
