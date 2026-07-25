@@ -56,7 +56,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                   crossAxisAlignment: .start,
                   children: [
                     Container(
-                      height: 200,
+                      height: 220,
                       margin: .symmetric(horizontal: 16),
                       decoration: ShapeDecoration(
                         shape: RoundedSuperellipseBorder(
@@ -79,17 +79,26 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                   "Progress",
                                   style: TextStyle(fontSize: 18),
                                 ),
-                                Text(
-                                  "Lower Body",
-                                  style: TextStyle(fontSize: 24),
+                                Column(
+                                  crossAxisAlignment: .start,
+                                  children: [
+                                    Text(
+                                      "Lower Body",
+                                      style: TextStyle(fontSize: 24),
+                                    ),
+                                    Text(
+                                      "Cardio    10 mins",
+                                      style: TextStyle(fontSize: 18),
+                                    ),
+                                  ],
                                 ),
-                                Text(
-                                  "Cardio    10 mins",
-                                  style: TextStyle(fontSize: 18),
-                                ),
+
                                 Row(
+                                  crossAxisAlignment: .start,
+                                  spacing: 4,
                                   children: [
                                     Container(
+                                      margin: .only(top: 8),
                                       decoration: ShapeDecoration(
                                         shape: StadiumBorder(),
                                         color: Colors.black,
@@ -119,7 +128,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(shape: .circle),
+                                      decoration: BoxDecoration(shape: .circle,
+                                      border: .all(color: Colors.black,)),
                                       child: Icon(Icons.arrow_forward_outlined),
                                     ),
                                   ],
