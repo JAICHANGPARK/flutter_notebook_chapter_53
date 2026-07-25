@@ -160,7 +160,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                               width: 120,
                               decoration: BoxDecoration(
                                 shape: .circle,
-                                border: .all(width: 16, color: Colors.orange),
+                                border: .all(width: 16, color: Colors.black12),
                               ),
                             ),
                           ),
@@ -172,7 +172,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                               width: 180,
                               decoration: BoxDecoration(
                                 shape: .circle,
-                                border: .all(width: 16, color: Colors.orange),
+                                border: .all(width: 16, color: Colors.black12),
                               ),
                             ),
                           ),
@@ -184,69 +184,73 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                               width: 240,
                               decoration: BoxDecoration(
                                 shape: .circle,
-                                border: .all(width: 16, color: Colors.orange),
+                                border: .all(width: 16, color: Colors.black12),
                               ),
                             ),
                           ),
                         ],
                       ),
+                    ),
+                    Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 16, right: 16),
+                          child: Row(
+                            mainAxisAlignment: .spaceBetween,
+                            children: [
+                              Text(
+                                "Categories of Set",
+                                style: TextStyle(
+                                  fontWeight: .bold,
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                style: TextButton.styleFrom(
+                                  foregroundColor: Color.fromRGBO(221, 238, 94, 1),
+                                ),
+                                child: Text("See All"),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          height: 180,
+                          margin: .only(left: 16),
+                          child: ListView.builder(
+                            scrollDirection: .horizontal,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                width: 180,
+                                margin: .only(right: 12),
+                                decoration: ShapeDecoration(
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: .circular(16),
+                                  ),
+                                  color: Colors.grey,
+                                ),
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      bottom: 12,
+                                      left: 12,
+                                      right: 12,
+                                      child: Row(
+                                        mainAxisAlignment: .spaceBetween,
+                                        children: [Text("Fitness"), CircleAvatar()],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                      ],
                     ),
 
-                    Padding(
-                      padding: const EdgeInsets.only(left: 16, right: 16),
-                      child: Row(
-                        mainAxisAlignment: .spaceBetween,
-                        children: [
-                          Text(
-                            "Categories of Set",
-                            style: TextStyle(
-                              fontWeight: .bold,
-                              color: Colors.white,
-                              fontSize: 18,
-                            ),
-                          ),
-                          TextButton(
-                            onPressed: () {},
-                            style: TextButton.styleFrom(
-                              foregroundColor: Color.fromRGBO(221, 238, 94, 1),
-                            ),
-                            child: Text("See All"),
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      height: 180,
-                      margin: .only(left: 16),
-                      child: ListView.builder(
-                        scrollDirection: .horizontal,
-                        itemBuilder: (context, index) {
-                          return Container(
-                            width: 180,
-                            margin: .only(right: 12),
-                            decoration: ShapeDecoration(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: .circular(16),
-                              ),
-                              color: Colors.grey,
-                            ),
-                            child: Stack(
-                              children: [
-                                Positioned(
-                                  bottom: 12,
-                                  left: 12,
-                                  right: 12,
-                                  child: Row(
-                                    mainAxisAlignment: .spaceBetween,
-                                    children: [Text("Fitness"), CircleAvatar()],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          );
-                        },
-                      ),
-                    ),
                     Padding(
                       padding: const EdgeInsets.only(left: 16, right: 16),
                       child: Row(
