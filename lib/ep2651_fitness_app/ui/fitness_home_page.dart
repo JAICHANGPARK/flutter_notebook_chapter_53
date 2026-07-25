@@ -92,13 +92,14 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                     shape: StadiumBorder(),
                                     color: Colors.black,
                                   ),
+                                  padding: .symmetric(horizontal: 16, vertical: 4),
                                   child: Column(
                                     children: [
                                       Text(
                                         "539",
                                         style: TextStyle(
                                           color: Colors.white,
-                                          fontSize: 22,
+                                          fontSize: 18,
                                           fontWeight: .bold,
                                         ),
                                       ),
@@ -106,7 +107,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                         "CALORIES",
                                         style: TextStyle(
                                           color: Colors.white,
-                                          fontSize: 20,
+                                          fontSize: 18,
                                         ),
                                       ),
                                     ],
