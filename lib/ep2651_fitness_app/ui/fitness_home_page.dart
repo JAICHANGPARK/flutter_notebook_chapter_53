@@ -164,7 +164,18 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                               ),
                             ),
                           ),
-                          
+                          Positioned(
+                            right: -52,
+                            top: -52,
+                            child: Container(
+                              height: 180,
+                              width: 180,
+                              decoration: BoxDecoration(
+                                shape: .circle,
+                                border: .all(width: 16, color: Colors.orange),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
