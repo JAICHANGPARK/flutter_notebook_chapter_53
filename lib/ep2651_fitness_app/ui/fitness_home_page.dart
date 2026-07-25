@@ -58,6 +58,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                   children: [
                     Container(
                       height: 220,
+                      clipBehavior: .antiAliasWithSaveLayer,
                       margin: .symmetric(horizontal: 16),
                       decoration: ShapeDecoration(
                         shape: RoundedSuperellipseBorder(
@@ -142,10 +143,28 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                             ),
                           ),
                           Positioned(
-                            right: 16,
-                            top: 16,
-                            child: CircularPercentIndicator(radius: 25),
+                            right: 14,
+                            top: 14,
+                            child: CircularPercentIndicator(
+                              radius: 22,
+                              progressColor: Colors.black,
+                              center: Text("72%"),
+                              percent: .72,
+                            ),
                           ),
+                          Positioned(
+                            right: -24,
+                            top: -24,
+                            child: Container(
+                              height: 120,
+                              width: 120,
+                              decoration: BoxDecoration(
+                                shape: .circle,
+                                border: .all(width: 16, color: Colors.orange),
+                              ),
+                            ),
+                          ),
+                          
                         ],
                       ),
                     ),
