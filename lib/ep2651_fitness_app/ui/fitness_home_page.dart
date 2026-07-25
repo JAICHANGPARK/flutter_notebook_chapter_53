@@ -192,6 +192,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       ),
                     ),
                     Column(
+                      crossAxisAlignment: .start,
+                      spacing: 6,
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(left: 16, right: 16),
@@ -227,7 +229,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 margin: .only(right: 12),
                                 decoration: ShapeDecoration(
                                   shape: RoundedRectangleBorder(
-                                    borderRadius: .circular(16),
+                                    borderRadius: .circular(20),
                                   ),
                                   color: Colors.grey,
                                 ),
