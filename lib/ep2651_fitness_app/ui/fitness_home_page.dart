@@ -120,6 +120,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                     ),
                                     Container(
                                       decoration: BoxDecoration(shape: .circle),
+                                      child: Icon(Icons.arrow_forward_outlined),
                                     ),
                                   ],
                                 ),
