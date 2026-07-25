@@ -98,7 +98,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                         "539",
                                         style: TextStyle(
                                           color: Colors.white,
-                                          fontSize: 24,
+                                          fontSize: 22,
+                                          fontWeight: .bold,
                                         ),
                                       ),
                                       Text(
