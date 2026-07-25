@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class FitnessHomePage extends StatefulWidget {
   const FitnessHomePage({super.key});
@@ -72,7 +73,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                             bottom: 16,
                             right: 16,
                             child: Column(
-                              spacing: 6,
+                              spacing: 12,
                               crossAxisAlignment: .start,
                               children: [
                                 Text(
@@ -128,14 +129,22 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                       ),
                                     ),
                                     Container(
-                                      decoration: BoxDecoration(shape: .circle,
-                                      border: .all(color: Colors.black,)),
+                                      padding: .all(4),
+                                      decoration: BoxDecoration(
+                                        shape: .circle,
+                                        border: .all(color: Colors.black),
+                                      ),
                                       child: Icon(Icons.arrow_forward_outlined),
                                     ),
                                   ],
                                 ),
                               ],
                             ),
+                          ),
+                          Positioned(
+                            right: 16,
+                            top: 16,
+                            child: CircularPercentIndicator(radius: 25),
                           ),
                         ],
                       ),
