@@ -93,7 +93,22 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                     color: Colors.black,
                                   ),
                                   child: Column(
-                                    children: [Text("539"), Text("CALORIES")],
+                                    children: [
+                                      Text(
+                                        "539",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 24,
+                                        ),
+                                      ),
+                                      Text(
+                                        "CALORIES",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 20,
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 ),
                               ],
