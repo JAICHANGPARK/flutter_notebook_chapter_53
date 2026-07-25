@@ -87,31 +87,41 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                   "Cardio    10 mins",
                                   style: TextStyle(fontSize: 18),
                                 ),
-                                Container(
-                                  decoration: ShapeDecoration(
-                                    shape: StadiumBorder(),
-                                    color: Colors.black,
-                                  ),
-                                  padding: .symmetric(horizontal: 16, vertical: 4),
-                                  child: Column(
-                                    children: [
-                                      Text(
-                                        "539",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 18,
-                                          fontWeight: .bold,
-                                        ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      decoration: ShapeDecoration(
+                                        shape: StadiumBorder(),
+                                        color: Colors.black,
                                       ),
-                                      Text(
-                                        "CALORIES",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 18,
-                                        ),
+                                      padding: .symmetric(
+                                        horizontal: 16,
+                                        vertical: 4,
                                       ),
-                                    ],
-                                  ),
+                                      child: Column(
+                                        children: [
+                                          Text(
+                                            "539",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 18,
+                                              fontWeight: .bold,
+                                            ),
+                                          ),
+                                          Text(
+                                            "CALORIES",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 18,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Container(
+                                      decoration: BoxDecoration(shape: .circle),
+                                    ),
+                                  ],
                                 ),
                               ],
                             ),
