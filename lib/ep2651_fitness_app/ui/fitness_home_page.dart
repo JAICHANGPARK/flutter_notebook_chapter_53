@@ -72,9 +72,13 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                             bottom: 16,
                             right: 16,
                             child: Column(
+                              spacing: 6,
                               crossAxisAlignment: .start,
                               children: [
-                                Text("Progress"),
+                                Text(
+                                  "Progress",
+                                  style: TextStyle(fontSize: 18),
+                                ),
                                 Text("Lower Body"),
                                 Text("Cardio    10 mins"),
                                 Container(
