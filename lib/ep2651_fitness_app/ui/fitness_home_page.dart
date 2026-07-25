@@ -83,8 +83,15 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                   "Lower Body",
                                   style: TextStyle(fontSize: 24),
                                 ),
-                                Text("Cardio    10 mins"),
+                                Text(
+                                  "Cardio    10 mins",
+                                  style: TextStyle(fontSize: 18),
+                                ),
                                 Container(
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(),
+                                    color: Colors.black,
+                                  ),
                                   child: Column(
                                     children: [Text("539"), Text("CALORIES")],
                                   ),
