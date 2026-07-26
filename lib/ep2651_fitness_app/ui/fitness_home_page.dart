@@ -211,7 +211,12 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                               TextButton(
                                 onPressed: () {},
                                 style: TextButton.styleFrom(
-                                  foregroundColor: Color.fromRGBO(221, 238, 94, 1),
+                                  foregroundColor: Color.fromRGBO(
+                                    221,
+                                    238,
+                                    94,
+                                    1,
+                                  ),
                                 ),
                                 child: Text("See All"),
                               ),
@@ -241,7 +246,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                       right: 12,
                                       child: Row(
                                         mainAxisAlignment: .spaceBetween,
-                                        children: [Text("Fitness"), CircleAvatar()],
+                                        children: [
+                                          Text("Fitness"),
+                                          CircleAvatar(),
+                                        ],
                                       ),
                                     ),
                                   ],
@@ -291,7 +299,17 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                             ),
                             margin: .only(bottom: 16),
                             height: 100,
-                            child: Row(children: []),
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 52,
+                                  width: 52,
+                                  decoration: BoxDecoration(color: Colors.grey),
+                                ),
+                                Expanded(child: Column(children: [])),
+                                CircleAvatar(backgroundColor: Colors.black,)
+                              ],
+                            ),
                           ),
                         ),
                       ),
