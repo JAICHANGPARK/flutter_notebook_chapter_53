@@ -298,7 +298,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                               color: Color.fromRGBO(24, 24, 24, 1),
                             ),
                             margin: .only(bottom: 16),
-                            height: 100,
+                            padding: .all(20),
                             child: Row(
                               children: [
                                 Container(
@@ -306,7 +306,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                   width: 52,
                                   decoration: BoxDecoration(color: Colors.grey),
                                 ),
-                                Expanded(child: Column(children: [])),
+                                Expanded(child: Column(children: [
+                                  Text("Lower body workout"),
+                                  Text("Week 2 * 8 Tasks")
+                                ])),
                                 CircleAvatar(backgroundColor: Colors.black,)
                               ],
                             ),
