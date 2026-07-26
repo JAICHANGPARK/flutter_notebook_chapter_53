@@ -305,8 +305,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 Container(
                                   height: 54,
                                   width: 54,
-                                  decoration: BoxDecoration(color: Colors.grey,
-                                  borderRadius: .all(8)),
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey,
+                                    borderRadius: .circular(8),
+                                  ),
                                 ),
                                 Expanded(
                                   child: Column(
@@ -320,7 +322,10 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                           color: Colors.white,
                                         ),
                                       ),
-                                      Text("Week 2 * 8 Tasks"),
+                                      Text(
+                                        "Week 2 * 8 Tasks",
+                                        style: TextStyle(color: Colors.grey),
+                                      ),
                                     ],
                                   ),
                                 ),
