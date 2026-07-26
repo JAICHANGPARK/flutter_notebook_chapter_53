@@ -306,11 +306,23 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                   width: 52,
                                   decoration: BoxDecoration(color: Colors.grey),
                                 ),
-                                Expanded(child: Column(children: [
-                                  Text("Lower body workout"),
-                                  Text("Week 2 * 8 Tasks")
-                                ])),
-                                CircleAvatar(backgroundColor: Colors.black,)
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: .start,
+                                    spacing: 6,
+                                    children: [
+                                      Text(
+                                        "Lower body workout",
+                                        style: TextStyle(
+                                          fontWeight: .bold,
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      Text("Week 2 * 8 Tasks"),
+                                    ],
+                                  ),
+                                ),
+                                CircleAvatar(backgroundColor: Colors.black),
                               ],
                             ),
                           ),
