@@ -335,6 +335,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                   child: CircularPercentIndicator(
                                     radius: 14,
                                     lineWidth: 3,
+                                    startAngle: 240,
+                                    percent: .5,
                                   ),
                                 ),
                               ],
