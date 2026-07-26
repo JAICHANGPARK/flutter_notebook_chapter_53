@@ -337,6 +337,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                     lineWidth: 3,
                                     startAngle: 240,
                                     percent: .5,
+                                    progressColor: Color.fromRGBO(221, 238, 94, 1),
                                   ),
                                 ),
                               ],
