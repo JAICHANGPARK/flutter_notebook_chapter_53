@@ -329,7 +329,14 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                     ],
                                   ),
                                 ),
-                                CircleAvatar(backgroundColor: Colors.black),
+                                CircleAvatar(
+                                  backgroundColor: Colors.black,
+                                  radius: 20,
+                                  child: CircularPercentIndicator(
+                                    radius: 14,
+                                    lineWidth: 3,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
