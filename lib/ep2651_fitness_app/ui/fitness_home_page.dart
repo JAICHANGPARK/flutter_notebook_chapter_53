@@ -300,10 +300,11 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                             margin: .only(bottom: 16),
                             padding: .all(20),
                             child: Row(
+                              spacing: 12,
                               children: [
                                 Container(
-                                  height: 52,
-                                  width: 52,
+                                  height: 54,
+                                  width: 54,
                                   decoration: BoxDecoration(color: Colors.grey),
                                 ),
                                 Expanded(
