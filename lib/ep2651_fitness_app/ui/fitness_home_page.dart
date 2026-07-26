@@ -305,7 +305,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                 Container(
                                   height: 54,
                                   width: 54,
-                                  decoration: BoxDecoration(color: Colors.grey),
+                                  decoration: BoxDecoration(color: Colors.grey,
+                                  borderRadius: .all(8)),
                                 ),
                                 Expanded(
                                   child: Column(
