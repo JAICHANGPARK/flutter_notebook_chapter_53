@@ -101,6 +101,10 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                 Container(decoration: ShapeDecoration(shape: StadiumBorder())),
               ],
             ),
+            Container(decoration: BoxDecoration(
+              borderRadius: .circular(16),
+              
+            ),)
           ],
         ),
       ),
