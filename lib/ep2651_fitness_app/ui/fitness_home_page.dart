@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_53/ep2651_fitness_app/ui/fitness_add_schedule_page.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class FitnessHomePage extends StatefulWidget {
@@ -290,8 +291,13 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                         children: List.generate(
                           5,
                           (idx) => GestureDetector(
-                            onTap: (){
-                              
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      FitnessAddSchedulePage(),
+                                ),
+                              );
                             },
                             child: Container(
                               decoration: ShapeDecoration(
@@ -341,7 +347,12 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                       lineWidth: 3,
                                       startAngle: 240,
                                       percent: .5,
-                                      progressColor: Color.fromRGBO(221, 238, 94, 1),
+                                      progressColor: Color.fromRGBO(
+                                        221,
+                                        238,
+                                        94,
+                                        1,
+                                      ),
                                     ),
                                   ),
                                 ],
