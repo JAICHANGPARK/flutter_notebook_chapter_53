@@ -14,6 +14,8 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: .start,
+          spacing: 16,
           children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
@@ -46,6 +48,11 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                 ],
               ),
             ),
+            Column(
+              children: [
+                
+              ],
+            )
             Text("Shedule Title", style: TextStyle(color: Colors.white)),
             Container(
               decoration: ShapeDecoration(shape: StadiumBorder()),
