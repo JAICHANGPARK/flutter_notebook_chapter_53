@@ -50,14 +50,14 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
             ),
             Column(
               children: [
-                
+                Text("Shedule Title", style: TextStyle(color: Colors.white)),
+                Container(
+                  decoration: ShapeDecoration(shape: StadiumBorder()),
+                  child: TextField(),
+                ),
               ],
-            )
-            Text("Shedule Title", style: TextStyle(color: Colors.white)),
-            Container(
-              decoration: ShapeDecoration(shape: StadiumBorder()),
-              child: TextField(),
             ),
+
             Text("Choose Activity", style: TextStyle(color: Colors.white)),
             Container(
               decoration: ShapeDecoration(
