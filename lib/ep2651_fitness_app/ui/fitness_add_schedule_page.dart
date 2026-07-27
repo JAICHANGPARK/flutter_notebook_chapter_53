@@ -68,7 +68,9 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                   decoration: ShapeDecoration(
                     shape: RoundedSuperellipseBorder(),
                     color: Colors.white12,
+
                   ),
+                  height: 200,
                 ),
               ],
             )
