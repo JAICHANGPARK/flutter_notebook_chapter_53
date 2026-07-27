@@ -289,58 +289,63 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       child: Column(
                         children: List.generate(
                           5,
-                          (idx) => Container(
-                            decoration: ShapeDecoration(
-                              shape: RoundedSuperellipseBorder(
-                                borderRadius: .circular(16),
-                                side: BorderSide(color: Colors.white24),
+                          (idx) => GestureDetector(
+                            onTap: (){
+                              
+                            },
+                            child: Container(
+                              decoration: ShapeDecoration(
+                                shape: RoundedSuperellipseBorder(
+                                  borderRadius: .circular(16),
+                                  side: BorderSide(color: Colors.white24),
+                                ),
+                                color: Color.fromRGBO(24, 24, 24, 1),
                               ),
-                              color: Color.fromRGBO(24, 24, 24, 1),
-                            ),
-                            margin: .only(bottom: 16),
-                            padding: .all(20),
-                            child: Row(
-                              spacing: 12,
-                              children: [
-                                Container(
-                                  height: 54,
-                                  width: 54,
-                                  decoration: BoxDecoration(
-                                    color: Colors.grey,
-                                    borderRadius: .circular(8),
+                              margin: .only(bottom: 16),
+                              padding: .all(20),
+                              child: Row(
+                                spacing: 12,
+                                children: [
+                                  Container(
+                                    height: 54,
+                                    width: 54,
+                                    decoration: BoxDecoration(
+                                      color: Colors.grey,
+                                      borderRadius: .circular(8),
+                                    ),
                                   ),
-                                ),
-                                Expanded(
-                                  child: Column(
-                                    crossAxisAlignment: .start,
-                                    spacing: 6,
-                                    children: [
-                                      Text(
-                                        "Lower body workout",
-                                        style: TextStyle(
-                                          fontWeight: .bold,
-                                          color: Colors.white,
+                                  Expanded(
+                                    child: Column(
+                                      crossAxisAlignment: .start,
+                                      spacing: 6,
+                                      children: [
+                                        Text(
+                                          "Lower body workout",
+                                          style: TextStyle(
+                                            fontWeight: .bold,
+                                            color: Colors.white,
+                                          ),
                                         ),
-                                      ),
-                                      Text(
-                                        "Week 2 * 8 Tasks",
-                                        style: TextStyle(color: Colors.grey),
-                                      ),
-                                    ],
+                                        Text(
+                                          "Week 2 * 8 Tasks",
+                                          style: TextStyle(color: Colors.grey),
+                                        ),
+                                      ],
+                                    ),
                                   ),
-                                ),
-                                CircleAvatar(
-                                  backgroundColor: Colors.black,
-                                  radius: 20,
-                                  child: CircularPercentIndicator(
-                                    radius: 14,
-                                    lineWidth: 3,
-                                    startAngle: 240,
-                                    percent: .5,
-                                    progressColor: Color.fromRGBO(221, 238, 94, 1),
+                                  CircleAvatar(
+                                    backgroundColor: Colors.black,
+                                    radius: 20,
+                                    child: CircularPercentIndicator(
+                                      radius: 14,
+                                      lineWidth: 3,
+                                      startAngle: 240,
+                                      percent: .5,
+                                      progressColor: Color.fromRGBO(221, 238, 94, 1),
+                                    ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ),
