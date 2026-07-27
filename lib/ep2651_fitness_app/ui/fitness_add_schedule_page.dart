@@ -73,6 +73,11 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                   height: 200,
                 ),
               ],
+            ),
+            Column(
+              children: [
+                
+              ],
             )
 
           ],
