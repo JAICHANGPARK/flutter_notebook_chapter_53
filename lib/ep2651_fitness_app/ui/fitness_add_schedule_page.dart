@@ -83,7 +83,17 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                   child: Placeholder(),
                 )
               ],
-            )
+            ),
+            Column(
+              crossAxisAlignment: .start,
+              children: [
+                Text("Repeat", style: TextStyle(color: Colors.white)),
+                Container(
+                  height: 62,
+                  child: Placeholder(),
+                )
+              ],
+            ),
 
           ],
         ),
