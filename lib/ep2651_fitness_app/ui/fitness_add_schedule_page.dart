@@ -75,8 +75,13 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
               ],
             ),
             Column(
+              crossAxisAlignment: .start,
               children: [
-                
+                Text("Select Days", style: TextStyle(color: Colors.white)),
+                Container(
+                  height: 120,
+                  child: Placeholder(),
+                )
               ],
             )
 
