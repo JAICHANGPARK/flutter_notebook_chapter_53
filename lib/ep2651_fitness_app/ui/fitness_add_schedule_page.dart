@@ -10,6 +10,8 @@ class FitnessAddSchedulePage extends StatefulWidget {
 class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: SafeArea(child: Column(children: [])),
+    );
   }
 }
