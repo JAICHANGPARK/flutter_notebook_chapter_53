@@ -46,6 +46,12 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                 ],
               ),
             ),
+            Text("Shedule Title", style: TextStyle(color: Colors.white)),
+            Container(
+              decoration: ShapeDecoration(shape: StadiumBorder()),
+              child: TextField(),
+            ),
+            Text("Choose Activity"),
           ],
         ),
       ),
