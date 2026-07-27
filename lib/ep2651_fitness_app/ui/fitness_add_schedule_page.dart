@@ -51,7 +51,13 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
               decoration: ShapeDecoration(shape: StadiumBorder()),
               child: TextField(),
             ),
-            Text("Choose Activity"),
+            Text("Choose Activity", style: TextStyle(color: Colors.white)),
+            Container(
+              decoration: ShapeDecoration(
+                shape: RoundedSuperellipseBorder(),
+                color: Colors.white12,
+              ),
+            ),
           ],
         ),
       ),
