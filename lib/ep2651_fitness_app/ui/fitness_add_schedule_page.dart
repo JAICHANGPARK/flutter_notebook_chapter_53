@@ -49,6 +49,8 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
               ),
             ),
             Column(
+              crossAxisAlignment: .start,
+              spacing: 6,
               children: [
                 Text("Shedule Title", style: TextStyle(color: Colors.white)),
                 Container(
@@ -57,7 +59,7 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                 ),
               ],
             ),
-
+            
             Text("Choose Activity", style: TextStyle(color: Colors.white)),
             Container(
               decoration: ShapeDecoration(
