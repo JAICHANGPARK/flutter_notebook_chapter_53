@@ -68,7 +68,6 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                   decoration: ShapeDecoration(
                     shape: RoundedSuperellipseBorder(),
                     color: Colors.white12,
-
                   ),
                   height: 200,
                 ),
@@ -79,10 +78,7 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
               crossAxisAlignment: .start,
               children: [
                 Text("Select Days", style: TextStyle(color: Colors.white)),
-                Container(
-                  height: 120,
-                  child: Placeholder(),
-                )
+                Container(height: 120, child: Placeholder()),
               ],
             ),
             Column(
@@ -90,25 +86,21 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
               crossAxisAlignment: .start,
               children: [
                 Text("Repeat", style: TextStyle(color: Colors.white)),
-                Container(
-                  height: 62,
-                  child: Placeholder(),
-                )
+                Container(height: 62, child: Placeholder()),
               ],
             ),
             Row(
               children: [
                 Text("Every Days", style: TextStyle(color: Colors.white)),
-                Switch(value: false, onChanged: (v){}),
+                Switch(value: false, onChanged: (v) {}),
               ],
             ),
             Row(
               children: [
-                Text("Every Days", style: TextStyle(color: Colors.white)),
-                Switch(value: false, onChanged: (v){}),
+                Text("Remind me", style: TextStyle(color: Colors.white)),
+                Container(decoration: ShapeDecoration(shape: StadiumBorder())),
               ],
-            )
-
+            ),
           ],
         ),
       ),
