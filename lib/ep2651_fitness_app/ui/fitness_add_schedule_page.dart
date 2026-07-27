@@ -11,7 +11,44 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(child: Column(children: [])),
+      backgroundColor: Colors.black,
+      body: SafeArea(
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 28,
+                    backgroundColor: Colors.white12,
+                    foregroundColor: Colors.white,
+                    child: Icon(Icons.arrow_back_outlined),
+                  ),
+                  Expanded(
+                    child: Center(
+                      child: Text(
+                        "Add Shedule",
+                        style: TextStyle(
+                          fontWeight: .bold,
+                          color: Colors.white,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ),
+                  ),
+                  CircleAvatar(
+                    radius: 28,
+                    backgroundColor: Colors.white12,
+                    foregroundColor: Colors.white,
+                    child: Icon(Icons.more_vert),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
