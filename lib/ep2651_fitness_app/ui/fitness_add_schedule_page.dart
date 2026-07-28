@@ -54,9 +54,12 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                   Text("Shedule Title", style: TextStyle(color: Colors.white)),
                   Container(
                     padding: .symmetric(horizontal: 16, vertical: 4),
-                    decoration: ShapeDecoration(shape: StadiumBorder(
-                      side: BorderSide(color: Colors.white24,)
-                    ), ),
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(
+                        side: BorderSide(color: Colors.white24),
+                      ),
+                      color: Colors.black12,
+                    ),
                     child: TextField(
                       decoration: InputDecoration(
                         border: .none,
