@@ -104,7 +104,7 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                 ],
               ),
               Column(
-                spacing: 6,
+                spacing: 8,
                 crossAxisAlignment: .start,
                 children: [
                   Text("Select Days", style: TextStyle(color: Colors.white)),
@@ -202,7 +202,7 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                 ],
               ),
               Column(
-                spacing: 6,
+                spacing: 8,
                 crossAxisAlignment: .start,
                 children: [
                   Text("Repeat", style: TextStyle(color: Colors.white)),
