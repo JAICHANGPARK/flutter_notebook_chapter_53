@@ -54,7 +54,12 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                   Text("Shedule Title", style: TextStyle(color: Colors.white)),
                   Container(
                     decoration: ShapeDecoration(shape: StadiumBorder()),
-                    child: TextField(),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        border: .none,
+                        hintText: "Enter shedule name",
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -62,7 +67,10 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                 crossAxisAlignment: .start,
                 spacing: 6,
                 children: [
-                  Text("Choose Activity", style: TextStyle(color: Colors.white)),
+                  Text(
+                    "Choose Activity",
+                    style: TextStyle(color: Colors.white),
+                  ),
                   Container(
                     decoration: ShapeDecoration(
                       shape: RoundedSuperellipseBorder(),
@@ -97,7 +105,9 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
               Row(
                 children: [
                   Text("Remind me", style: TextStyle(color: Colors.white)),
-                  Container(decoration: ShapeDecoration(shape: StadiumBorder())),
+                  Container(
+                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                  ),
                 ],
               ),
               Container(decoration: BoxDecoration(borderRadius: .circular(16))),
