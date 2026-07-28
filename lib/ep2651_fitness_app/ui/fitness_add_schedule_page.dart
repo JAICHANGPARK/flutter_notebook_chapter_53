@@ -89,6 +89,19 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                       color: Colors.white12,
                     ),
                     height: 200,
+                    padding: .all(16),
+                    child: GridView.builder(
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 4,
+                        crossAxisSpacing: 12,
+                        mainAxisSpacing: 12,
+                      ),
+                      itemBuilder: (context, index) {
+                        return CircleAvatar(
+                          backgroundColor: Colors.black,
+                        );
+                      },
+                    ),
                   ),
                 ],
               ),
