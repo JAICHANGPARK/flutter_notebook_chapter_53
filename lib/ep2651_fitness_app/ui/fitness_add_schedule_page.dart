@@ -13,96 +13,99 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
-        child: Column(
-          crossAxisAlignment: .start,
-          spacing: 16,
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Row(
-                children: [
-                  CircleAvatar(
-                    radius: 28,
-                    backgroundColor: Colors.white12,
-                    foregroundColor: Colors.white,
-                    child: Icon(Icons.arrow_back_outlined),
-                  ),
-                  Expanded(
-                    child: Center(
-                      child: Text(
-                        "Add Shedule",
-                        style: TextStyle(
-                          fontWeight: .bold,
-                          color: Colors.white,
-                          fontSize: 20,
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: .start,
+            spacing: 16,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Row(
+                  children: [
+                    CircleAvatar(
+                      radius: 28,
+                      backgroundColor: Colors.white12,
+                      foregroundColor: Colors.white,
+                      child: Icon(Icons.arrow_back_outlined),
+                    ),
+                    Expanded(
+                      child: Center(
+                        child: Text(
+                          "Add Shedule",
+                          style: TextStyle(
+                            fontWeight: .bold,
+                            color: Colors.white,
+                            fontSize: 20,
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                  CircleAvatar(
-                    radius: 28,
-                    backgroundColor: Colors.white12,
-                    foregroundColor: Colors.white,
-                    child: Icon(Icons.more_vert),
+                    CircleAvatar(
+                      radius: 28,
+                      backgroundColor: Colors.white12,
+                      foregroundColor: Colors.white,
+                      child: Icon(Icons.more_vert),
+                    ),
+                  ],
+                ),
+              ),
+              Column(
+                crossAxisAlignment: .start,
+                spacing: 6,
+                children: [
+                  Text("Shedule Title", style: TextStyle(color: Colors.white)),
+                  Container(
+                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                    child: TextField(),
                   ),
                 ],
               ),
-            ),
-            Column(
-              crossAxisAlignment: .start,
-              spacing: 6,
-              children: [
-                Text("Shedule Title", style: TextStyle(color: Colors.white)),
-                Container(
-                  decoration: ShapeDecoration(shape: StadiumBorder()),
-                  child: TextField(),
-                ),
-              ],
-            ),
-            Column(
-              crossAxisAlignment: .start,
-              spacing: 6,
-              children: [
-                Text("Choose Activity", style: TextStyle(color: Colors.white)),
-                Container(
-                  decoration: ShapeDecoration(
-                    shape: RoundedSuperellipseBorder(),
-                    color: Colors.white12,
+              Column(
+                crossAxisAlignment: .start,
+                spacing: 6,
+                children: [
+                  Text("Choose Activity", style: TextStyle(color: Colors.white)),
+                  Container(
+                    decoration: ShapeDecoration(
+                      shape: RoundedSuperellipseBorder(),
+                      color: Colors.white12,
+                    ),
+                    height: 200,
                   ),
-                  height: 200,
-                ),
-              ],
-            ),
-            Column(
-              spacing: 6,
-              crossAxisAlignment: .start,
-              children: [
-                Text("Select Days", style: TextStyle(color: Colors.white)),
-                Container(height: 120, child: Placeholder()),
-              ],
-            ),
-            Column(
-              spacing: 6,
-              crossAxisAlignment: .start,
-              children: [
-                Text("Repeat", style: TextStyle(color: Colors.white)),
-                Container(height: 62, child: Placeholder()),
-              ],
-            ),
-            Row(
-              children: [
-                Text("Every Days", style: TextStyle(color: Colors.white)),
-                Switch(value: false, onChanged: (v) {}),
-              ],
-            ),
-            Row(
-              children: [
-                Text("Remind me", style: TextStyle(color: Colors.white)),
-                Container(decoration: ShapeDecoration(shape: StadiumBorder())),
-              ],
-            ),
-            Container(decoration: BoxDecoration(borderRadius: .circular(16))),
-          ],
+                ],
+              ),
+              Column(
+                spacing: 6,
+                crossAxisAlignment: .start,
+                children: [
+                  Text("Select Days", style: TextStyle(color: Colors.white)),
+                  Container(height: 120, child: Placeholder()),
+                ],
+              ),
+              Column(
+                spacing: 6,
+                crossAxisAlignment: .start,
+                children: [
+                  Text("Repeat", style: TextStyle(color: Colors.white)),
+                  Container(height: 62, child: Placeholder()),
+                ],
+              ),
+              Row(
+                children: [
+                  Text("Every Days", style: TextStyle(color: Colors.white)),
+                  Switch(value: false, onChanged: (v) {}),
+                ],
+              ),
+              Row(
+                children: [
+                  Text("Remind me", style: TextStyle(color: Colors.white)),
+                  Container(decoration: ShapeDecoration(shape: StadiumBorder())),
+                ],
+              ),
+              Container(decoration: BoxDecoration(borderRadius: .circular(16))),
+            ],
+          ),
         ),
       ),
     );
