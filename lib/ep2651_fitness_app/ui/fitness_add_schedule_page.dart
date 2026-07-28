@@ -58,7 +58,7 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                       shape: StadiumBorder(
                         side: BorderSide(color: Colors.white24),
                       ),
-                      color: Colors.black12,
+                      color: Color.fromRGBO(24, 24, 24, 1),
                     ),
                     child: TextField(
                       decoration: InputDecoration(
