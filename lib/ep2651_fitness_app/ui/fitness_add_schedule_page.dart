@@ -17,7 +17,7 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             crossAxisAlignment: .start,
-            spacing: 16,
+            spacing: 24,
             children: [
               Row(
                 children: [
@@ -51,9 +51,12 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                 crossAxisAlignment: .start,
                 spacing: 8,
                 children: [
-                  Text("Shedule Title", style: TextStyle(color: Colors.white)),
+                  Text(
+                    "Shedule Title",
+                    style: TextStyle(color: Colors.white, fontSize: 16),
+                  ),
                   Container(
-                    padding: .symmetric(horizontal: 16, vertical: 4),
+                    padding: .symmetric(horizontal: 24, vertical: 4),
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(
                         side: BorderSide(color: Colors.white24),
@@ -64,6 +67,7 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                       decoration: InputDecoration(
                         border: .none,
                         hintText: "Enter shedule name",
+                        hintStyle: TextStyle(color: Colors.white),
                       ),
                     ),
                   ),
@@ -75,11 +79,13 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                 children: [
                   Text(
                     "Choose Activity",
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.white, fontSize: 16),
                   ),
                   Container(
                     decoration: ShapeDecoration(
-                      shape: RoundedSuperellipseBorder(),
+                      shape: RoundedSuperellipseBorder(
+                        borderRadius: .circular(24),
+                      ),
                       color: Colors.white12,
                     ),
                     height: 200,
