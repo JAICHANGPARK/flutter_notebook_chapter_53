@@ -49,11 +49,14 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
               ),
               Column(
                 crossAxisAlignment: .start,
-                spacing: 6,
+                spacing: 8,
                 children: [
                   Text("Shedule Title", style: TextStyle(color: Colors.white)),
                   Container(
-                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                    padding: .symmetric(horizontal: 16, vertical: 4),
+                    decoration: ShapeDecoration(shape: StadiumBorder(
+                      side: BorderSide(color: Colors.white24,)
+                    ), ),
                     child: TextField(
                       decoration: InputDecoration(
                         border: .none,
