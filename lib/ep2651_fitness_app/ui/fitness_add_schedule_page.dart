@@ -138,7 +138,11 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                         ),
                         Expanded(
                           child: Container(
-                            decoration: ShapeDecoration(shape: StadiumBorder()),
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Color.fromRGBO(221, 238, 94, 1),
+                            ),
+                            child: Center(child: Text("T")),
                           ),
                         ),
                         Expanded(
@@ -148,7 +152,11 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                         ),
                         Expanded(
                           child: Container(
-                            decoration: ShapeDecoration(shape: StadiumBorder()),
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Color.fromRGBO(221, 238, 94, 1),
+                            ),
+                            child: Center(child: Text("T")),
                           ),
                         ),
                         Expanded(
