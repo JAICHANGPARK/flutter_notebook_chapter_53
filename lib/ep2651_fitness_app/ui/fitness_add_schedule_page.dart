@@ -273,16 +273,29 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                 ],
               ),
               Row(
+                mainAxisAlignment: .spaceBetween,
                 children: [
                   Text("Every Days", style: TextStyle(color: Colors.white)),
                   Switch(value: false, onChanged: (v) {}),
                 ],
               ),
               Row(
+                mainAxisAlignment: .spaceBetween,
                 children: [
                   Text("Remind me", style: TextStyle(color: Colors.white)),
                   Container(
-                    decoration: ShapeDecoration(shape: StadiumBorder()),
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(),
+                      color: Color.fromRGBO(26, 26, 26, 1),
+                    ),
+                    padding: .symmetric(horizontal: 24, vertical: 8),
+                    child: Center(
+                      child: Text(
+                        "06:00 am",
+                        style: TextStyle(color: Colors.white24,
+                        fontSize: 18),
+                      ),
+                    ),
                   ),
                 ],
               ),
