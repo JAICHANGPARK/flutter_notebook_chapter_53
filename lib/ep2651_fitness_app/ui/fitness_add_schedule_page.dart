@@ -97,9 +97,7 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                         mainAxisSpacing: 12,
                       ),
                       itemBuilder: (context, index) {
-                        return CircleAvatar(
-                          backgroundColor: Colors.black,
-                        );
+                        return CircleAvatar(backgroundColor: Colors.black);
                       },
                     ),
                   ),
@@ -110,7 +108,53 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                 crossAxisAlignment: .start,
                 children: [
                   Text("Select Days", style: TextStyle(color: Colors.white)),
-                  Container(height: 120, child: Placeholder()),
+                  Container(
+                    height: 62,
+                    child: Row(
+                      spacing: 12,
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Color.fromRGBO(221, 238, 94, 1),
+                            ),
+                            child: Center(child: Text("S")),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: ShapeDecoration(shape: StadiumBorder()),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: ShapeDecoration(shape: StadiumBorder()),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: ShapeDecoration(shape: StadiumBorder()),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: ShapeDecoration(shape: StadiumBorder()),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: ShapeDecoration(shape: StadiumBorder()),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: ShapeDecoration(shape: StadiumBorder()),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
               Column(
