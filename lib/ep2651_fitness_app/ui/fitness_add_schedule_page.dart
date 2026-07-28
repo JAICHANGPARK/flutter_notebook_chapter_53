@@ -147,7 +147,16 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                         ),
                         Expanded(
                           child: Container(
-                            decoration: ShapeDecoration(shape: StadiumBorder()),
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Color.fromRGBO(26, 26, 26, 1),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "W",
+                                style: TextStyle(color: Colors.white24),
+                              ),
+                            ),
                           ),
                         ),
                         Expanded(
@@ -161,12 +170,30 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                         ),
                         Expanded(
                           child: Container(
-                            decoration: ShapeDecoration(shape: StadiumBorder()),
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Color.fromRGBO(26, 26, 26, 1),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "F",
+                                style: TextStyle(color: Colors.white24),
+                              ),
+                            ),
                           ),
                         ),
                         Expanded(
                           child: Container(
-                            decoration: ShapeDecoration(shape: StadiumBorder()),
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Color.fromRGBO(26, 26, 26, 1),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "S",
+                                style: TextStyle(color: Colors.white24),
+                              ),
+                            ),
                           ),
                         ),
                       ],
@@ -179,7 +206,70 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                 crossAxisAlignment: .start,
                 children: [
                   Text("Repeat", style: TextStyle(color: Colors.white)),
-                  Container(height: 62, child: Placeholder()),
+                  Container(
+                    height: 42,
+                    child: Row(
+                      spacing: 8,
+                      children: [
+                        Expanded(
+                          child: Container(
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Color.fromRGBO(221, 238, 94, 1),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Daily",
+                                style: TextStyle(fontWeight: .bold),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Color.fromRGBO(26, 26, 26, 1),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Weekly",
+                                style: TextStyle(color: Colors.white24),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Color.fromRGBO(26, 26, 26, 1),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Monthly",
+                                style: TextStyle(color: Colors.white24),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Expanded(
+                          child: Container(
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Color.fromRGBO(26, 26, 26, 1),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Yearly",
+                                style: TextStyle(color: Colors.white24),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
               Row(
