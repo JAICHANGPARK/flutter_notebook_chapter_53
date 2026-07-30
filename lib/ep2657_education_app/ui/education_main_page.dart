@@ -8,6 +8,7 @@ class EducationMainPage extends StatefulWidget {
 }
 
 class _EducationMainPageState extends State<EducationMainPage> {
+  int pageNum = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,8 +22,16 @@ class _EducationMainPageState extends State<EducationMainPage> {
           height: 110,
           decoration: BoxDecoration(),
           child: BottomNavigationBar(
+            currentIndex: pageNum,
             type: BottomNavigationBarType.fixed,
             backgroundColor: Colors.grey[100],
+            selectedItemColor: Colors.black,
+            unselectedItemColor: Colors.grey,
+            onTap: (idx){
+              setState(() {
+                pageNum = idx;
+              });
+            },
             items: [
               BottomNavigationBarItem(
                 icon: Icon(Icons.home_filled),
