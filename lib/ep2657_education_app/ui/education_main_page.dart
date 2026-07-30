@@ -13,7 +13,10 @@ class _EducationMainPageState extends State<EducationMainPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.only(topLeft: .circular(32)),
+        borderRadius: BorderRadius.only(
+          topLeft: .circular(32),
+          topRight: .circular(32),
+        ),
         child: Container(
           height: 110,
           decoration: BoxDecoration(),
