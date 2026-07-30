@@ -2,7 +2,7 @@
 
 # EP2657
 
-- Fitness Mobile App
+- Education App Dashboard UI Kit | Modern Mobile UX Design
 - Md Foysal for ZERO STUDIO
 - https://dribbble.com/shots/27581408-Fitness-Mobile-App
 
