@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class EducationMainPage extends StatefulWidget {
   const EducationMainPage({super.key});
 
@@ -11,8 +10,6 @@ class EducationMainPage extends StatefulWidget {
 class _EducationMainPageState extends State<EducationMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
-    );
+    return Scaffold(bottomNavigationBar: BottomNavigationBar(items: []));
   }
 }
