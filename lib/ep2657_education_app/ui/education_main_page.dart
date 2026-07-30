@@ -9,9 +9,18 @@ class EducationMainPage extends StatefulWidget {
 
 class _EducationMainPageState extends State<EducationMainPage> {
   int pageNum = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(children: []),
+            Expanded(child: IndexedStack(index: pageNum)),
+          ],
+        ),
+      ),
       backgroundColor: Colors.white,
       bottomNavigationBar: ClipRRect(
         borderRadius: BorderRadius.only(
@@ -27,7 +36,7 @@ class _EducationMainPageState extends State<EducationMainPage> {
             backgroundColor: Colors.grey[100],
             selectedItemColor: Colors.black,
             unselectedItemColor: Colors.grey,
-            onTap: (idx){
+            onTap: (idx) {
               setState(() {
                 pageNum = idx;
               });
