@@ -10,6 +10,12 @@ class EducationMainPage extends StatefulWidget {
 class _EducationMainPageState extends State<EducationMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(bottomNavigationBar: BottomNavigationBar(items: []));
+    return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+        ],
+      ),
+    );
   }
 }
