@@ -12,8 +12,20 @@ class _EducationMainPageState extends State<EducationMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.grey[100],
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.calendar_month),
+            label: "Calendar",
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.phone), label: "Calls"),
+          BottomNavigationBarItem(icon: Icon(Icons.chat), label: "Chat"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person_2_outlined),
+            label: "Profile",
+          ),
         ],
       ),
     );
