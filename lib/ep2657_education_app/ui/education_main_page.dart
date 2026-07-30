@@ -11,6 +11,8 @@ class EducationMainPage extends StatefulWidget {
 class _EducationMainPageState extends State<EducationMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+
+    );
   }
 }
