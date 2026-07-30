@@ -12,7 +12,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
     );
   }
 }
