@@ -17,7 +17,18 @@ class _EducationMainPageState extends State<EducationMainPage> {
         child: Column(
           children: [
             Row(children: []),
-            Expanded(child: IndexedStack(index: pageNum)),
+            Expanded(
+              child: IndexedStack(
+                index: pageNum,
+                children: [
+                  Placeholder(),
+                  Placeholder(),
+                  Placeholder(),
+                  Placeholder(),
+                  Placeholder(),
+                ],
+              ),
+            ),
           ],
         ),
       ),
