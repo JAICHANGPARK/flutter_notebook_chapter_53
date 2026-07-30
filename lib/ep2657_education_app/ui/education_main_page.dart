@@ -22,7 +22,6 @@ class _EducationMainPageState extends State<EducationMainPage> {
           decoration: BoxDecoration(),
           child: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
-
             backgroundColor: Colors.grey[100],
             items: [
               BottomNavigationBarItem(
