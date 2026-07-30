@@ -1,7 +1,5 @@
 # flutter_notebook_chapter_53
 
-
-
 # EP2651
 
 - Fitness Mobile App
