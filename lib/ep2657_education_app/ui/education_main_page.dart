@@ -52,7 +52,7 @@ class _EducationMainPageState extends State<EducationMainPage> {
                       borderRadius: .circular(5),
                     ),
                     child: Center(
-                      child:,
+
                     ),
                   ),
                 ],
