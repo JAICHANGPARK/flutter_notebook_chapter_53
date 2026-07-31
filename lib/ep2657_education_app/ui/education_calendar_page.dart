@@ -20,7 +20,10 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
             spacing: 16,
             crossAxisAlignment: .start,
             children: [
-              Text("Jun 2026"),
+              Text("Jun 2026",style: TextStyle(
+                fontWeight: .bold,
+                fontSize: 18,
+              ),),
               SizedBox(height: 100, child: Placeholder()),
             ],
           ),
