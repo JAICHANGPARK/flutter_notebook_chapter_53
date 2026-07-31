@@ -12,7 +12,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: .start,
-      spacing: 16,
+      spacing: 20,
       children: [
         Padding(
           padding: const EdgeInsets.only(left: 16),
