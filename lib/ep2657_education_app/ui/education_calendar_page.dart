@@ -26,12 +26,13 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                   style: TextStyle(fontWeight: .bold, fontSize: 22),
                 ),
                 SizedBox(
-                  height: 100,
+                  height: 82,
                   child: ListView.builder(
                     scrollDirection: .horizontal,
                     itemBuilder: (context, index) {
                       return Container(
-                        width: 64,
+
+                        padding: .all(6),
                         decoration: BoxDecoration(
                           borderRadius: .circular(6),
                           border: .all()
