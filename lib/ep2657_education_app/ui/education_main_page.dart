@@ -15,6 +15,8 @@ class _EducationMainPageState extends State<EducationMainPage> {
     return Scaffold(
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: .start,
+          spacing: 16,
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -48,6 +50,9 @@ class _EducationMainPageState extends State<EducationMainPage> {
                     decoration: BoxDecoration(
                       color: Colors.grey[100],
                       borderRadius: .circular(5),
+                    ),
+                    child: Center(
+                      child:,
                     ),
                   ),
                 ],
