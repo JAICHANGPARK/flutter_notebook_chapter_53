@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class EducationCalendarPage extends StatefulWidget {
   const EducationCalendarPage({super.key});
 
@@ -15,9 +14,12 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
       crossAxisAlignment: .start,
       spacing: 16,
       children: [
-        Text("Jun 2026"),
-        SizedBox(height: 100,
-          child: Placeholder(),)
+        Column(
+          children: [
+            Text("Jun 2026"),
+            SizedBox(height: 100, child: Placeholder()),
+          ],
+        ),
       ],
     );
   }
