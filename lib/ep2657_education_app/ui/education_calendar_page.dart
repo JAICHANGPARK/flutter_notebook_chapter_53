@@ -32,14 +32,22 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                     itemBuilder: (context, index) {
                       return Container(
                         width: 64,
+                        decoration: BoxDecoration(
+                          borderRadius: .circular(6),
+                          border: .all()
+                        ),
                         child: Column(
+                          spacing: 5,
                           children: [
                             Text("Sun"),
                             Container(
+                              height: 42,
+                              width: 42,
                               decoration: BoxDecoration(
                                 color: Colors.grey,
                                 borderRadius: BorderRadius.circular(12),
                               ),
+                              child: Center(child: Text("15")),
                             ),
                           ],
                         ),
