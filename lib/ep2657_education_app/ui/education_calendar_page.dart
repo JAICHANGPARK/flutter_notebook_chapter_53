@@ -13,7 +13,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
     return SingleChildScrollView(
       child: Column(
         crossAxisAlignment: .start,
-        spacing: 20,
+        spacing: 24,
         children: [
           Padding(
             padding: const EdgeInsets.only(left: 16),
@@ -35,9 +35,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                         margin: .only(right: 12),
                         decoration: BoxDecoration(
                           borderRadius: .circular(8),
-                          border: .all(
-                            color: Colors.grey[400]!,
-                          )
+                          border: .all(color: Colors.grey[400]!),
                         ),
                         child: Column(
                           spacing: 5,
@@ -61,14 +59,16 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
               ],
             ),
           ),
-          Container(height: 200,
-
-              margin: .symmetric(horizontal: 16),
-              child: Row(
-                children: [
-                  
-                ],
-              )),
+          Container(
+            height: 180,
+            margin: .symmetric(horizontal: 16),
+            child: Row(children: [
+              Container(
+                width: 150,
+                child: Placeholder(),
+              )
+            ]),
+          ),
           Container(height: 320, child: Placeholder()),
         ],
       ),
