@@ -21,22 +21,19 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
               spacing: 16,
               crossAxisAlignment: .start,
               children: [
-                Text("Jun 2026",style: TextStyle(
-                  fontWeight: .bold,
-                  fontSize: 18,
-                ),),
-                SizedBox(height: 100, child: Placeholder()),
+                Text(
+                  "Jun 2026",
+                  style: TextStyle(fontWeight: .bold, fontSize: 22),
+                ),
+                SizedBox(
+                  height: 100,
+                  child: ListView.builder(itemBuilder: (context, index) {}),
+                ),
               ],
             ),
           ),
-          Container(
-            height: 200,
-            child: Placeholder(),
-          ),
-          Container(
-            height: 320,
-            child: Placeholder(),
-          )
+          Container(height: 200, child: Placeholder()),
+          Container(height: 320, child: Placeholder()),
         ],
       ),
     );
