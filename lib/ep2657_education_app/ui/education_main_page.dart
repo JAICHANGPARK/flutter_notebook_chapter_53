@@ -28,6 +28,11 @@ class _EducationMainPageState extends State<EducationMainPage> {
                       borderRadius: .circular(5),
                     ),
                   ),
+                  Expanded(
+                    child: Column(
+                      children: [Text("Hello, Dream"), Text("Lavel Up")],
+                    ),
+                  ),
                 ],
               ),
             ),
