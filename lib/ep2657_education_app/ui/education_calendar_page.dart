@@ -21,6 +21,14 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
             SizedBox(height: 100, child: Placeholder()),
           ],
         ),
+        Container(
+          height: 200,
+          child: Placeholder(),
+        ),
+        Container(
+          height: 320,
+          child: Placeholder(),
+        )
       ],
     );
   }
