@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
 
 class EducationMainPage extends StatefulWidget {
   const EducationMainPage({super.key});
@@ -52,7 +53,7 @@ class _EducationMainPageState extends State<EducationMainPage> {
                       borderRadius: .circular(5),
                     ),
                     child: Center(
-
+                      child: HugeIcon(icon: HugeIcons.strokeRoundedHugeicons),
                     ),
                   ),
                 ],
