@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_53/ep2657_education_app/ui/education_home_page.dart';
 import 'package:hugeicons/hugeicons.dart';
 
 class EducationMainPage extends StatefulWidget {
@@ -64,7 +65,7 @@ class _EducationMainPageState extends State<EducationMainPage> {
                 index: pageNum,
                 children: [
                   Placeholder(),
-                  Placeholder(),
+                 EducationHomePage()
                   Placeholder(),
                   Placeholder(),
                   Placeholder(),
