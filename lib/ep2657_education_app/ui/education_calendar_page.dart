@@ -32,10 +32,11 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                     itemBuilder: (context, index) {
                       return Container(
                         padding: .all(6),
+                        margin: .only(right: 12),
                         decoration: BoxDecoration(
-                          borderRadius: .circular(6),
+                          borderRadius: .circular(8),
                           border: .all(
-                            color: Colors.grey[100]!,
+                            color: Colors.grey[400]!,
                           )
                         ),
                         child: Column(
@@ -60,7 +61,14 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
               ],
             ),
           ),
-          Container(height: 200, child: Placeholder()),
+          Container(height: 200,
+
+              margin: .symmetric(horizontal: 16),
+              child: Row(
+                children: [
+                  
+                ],
+              )),
           Container(height: 320, child: Placeholder()),
         ],
       ),
