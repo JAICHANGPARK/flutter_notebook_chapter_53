@@ -10,6 +10,15 @@ class EducationHomePage extends StatefulWidget {
 class _EducationHomePageState extends State<EducationHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Column(
+      crossAxisAlignment: .start,
+      spacing: 16,
+      children: [
+        Text("Jun 2026"),
+        SizedBox(height: 100,
+        child: Placeholder(),)
+
+      ],
+    );
   }
 }
