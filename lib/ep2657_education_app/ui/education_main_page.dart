@@ -64,8 +64,8 @@ class _EducationMainPageState extends State<EducationMainPage> {
               child: IndexedStack(
                 index: pageNum,
                 children: [
-                  Placeholder(),
-                 EducationHomePage()
+
+                 EducationHomePage(),
                   Placeholder(),
                   Placeholder(),
                   Placeholder(),
