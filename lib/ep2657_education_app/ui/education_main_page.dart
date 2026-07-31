@@ -19,6 +19,7 @@ class _EducationMainPageState extends State<EducationMainPage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
+                spacing: 6,
                 children: [
                   Container(
                     height: 52,
@@ -30,14 +31,23 @@ class _EducationMainPageState extends State<EducationMainPage> {
                   ),
                   Expanded(
                     child: Column(
+                      spacing: 4,
                       crossAxisAlignment: .start,
                       children: [
                         Text(
                           "Hello, Dream",
-                          style: TextStyle(fontWeight: .bold),
+                          style: TextStyle(fontWeight: .bold, fontSize: 20),
                         ),
                         Text("Lavel Up"),
                       ],
+                    ),
+                  ),
+                  Container(
+                    height: 52,
+                    width: 52,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: .circular(5),
                     ),
                   ),
                 ],
