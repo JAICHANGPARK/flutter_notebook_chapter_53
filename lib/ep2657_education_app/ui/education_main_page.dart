@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_53/ep2657_education_app/ui/education_calendar_page.dart';
 import 'package:flutter_notebook_chapter_53/ep2657_education_app/ui/education_home_page.dart';
 import 'package:hugeicons/hugeicons.dart';
 
@@ -64,8 +65,8 @@ class _EducationMainPageState extends State<EducationMainPage> {
               child: IndexedStack(
                 index: pageNum,
                 children: [
-
-                 EducationHomePage(),
+                  EducationHomePage(),
+                  EducationCalendarPage(),
                   Placeholder(),
                   Placeholder(),
                   Placeholder(),
