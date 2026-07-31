@@ -22,8 +22,8 @@ class _EducationMainPageState extends State<EducationMainPage> {
                 spacing: 6,
                 children: [
                   Container(
-                    height: 64,
-                    width: 64,
+                    height: 60,
+                    width: 60,
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: .circular(5),
@@ -43,8 +43,8 @@ class _EducationMainPageState extends State<EducationMainPage> {
                     ),
                   ),
                   Container(
-                    height: 64,
-                    width: 64,
+                    height: 60,
+                    width: 60,
                     decoration: BoxDecoration(
                       color: Colors.grey[100],
                       borderRadius: .circular(5),
