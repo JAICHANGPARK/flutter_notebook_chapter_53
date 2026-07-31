@@ -19,7 +19,7 @@ class _EducationMainPageState extends State<EducationMainPage> {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
-                spacing: 6,
+                spacing: 8,
                 children: [
                   Container(
                     height: 60,
@@ -31,7 +31,7 @@ class _EducationMainPageState extends State<EducationMainPage> {
                   ),
                   Expanded(
                     child: Column(
-                      spacing: 4,
+                      spacing: 2,
                       crossAxisAlignment: .start,
                       children: [
                         Text(
