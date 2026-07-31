@@ -62,12 +62,12 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
           Container(
             height: 180,
             margin: .symmetric(horizontal: 16),
-            child: Row(children: [
-              Container(
-                width: 150,
-                child: Placeholder(),
-              )
-            ]),
+            child: Row(
+              children: [
+                Container(width: 150, child: Placeholder()),
+                Expanded(child: Column(children: [])),
+              ],
+            ),
           ),
           Container(height: 320, child: Placeholder()),
         ],
