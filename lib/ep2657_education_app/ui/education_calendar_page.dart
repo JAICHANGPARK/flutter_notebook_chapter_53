@@ -28,13 +28,20 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                 SizedBox(
                   height: 100,
                   child: ListView.builder(
-                      scrollDirection: .horizontal,
-                      itemBuilder: (context, index) {
-                        return Container(
-
-                        );
-
-                      }),
+                    scrollDirection: .horizontal,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        child: Column(
+                          children: [
+                            Text("Sun"),
+                            Container(
+                              decoration: BoxDecoration(color: Colors.grey),
+                            ),
+                          ],
+                        ),
+                      );
+                    },
+                  ),
                 ),
               ],
             ),
