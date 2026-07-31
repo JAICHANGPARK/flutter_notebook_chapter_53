@@ -17,6 +17,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
         Padding(
           padding: const EdgeInsets.only(left: 16),
           child: Column(
+            spacing: 16,
             crossAxisAlignment: .start,
             children: [
               Text("Jun 2026"),
