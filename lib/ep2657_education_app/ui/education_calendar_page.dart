@@ -13,6 +13,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: .start,
+      spacing: 16,
       children: [
         Text("Jun 2026"),
         SizedBox(height: 100,
