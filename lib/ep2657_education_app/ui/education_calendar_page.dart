@@ -1,0 +1,16 @@
+import 'package:flutter/material.dart';
+
+
+class EducationCalendarPage extends StatefulWidget {
+  const EducationCalendarPage({super.key});
+
+  @override
+  State<EducationCalendarPage> createState() => _EducationCalendarPageState();
+}
+
+class _EducationCalendarPageState extends State<EducationCalendarPage> {
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
