@@ -11,6 +11,10 @@ class EducationCalendarPage extends StatefulWidget {
 class _EducationCalendarPageState extends State<EducationCalendarPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      children: [
+        
+      ],
+    );
   }
 }
