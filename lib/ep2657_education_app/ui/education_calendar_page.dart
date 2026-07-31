@@ -14,12 +14,15 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
       crossAxisAlignment: .start,
       spacing: 16,
       children: [
-        Column(
-          crossAxisAlignment: .start,
-          children: [
-            Text("Jun 2026"),
-            SizedBox(height: 100, child: Placeholder()),
-          ],
+        Padding(
+          padding: const EdgeInsets.only(left: 16),
+          child: Column(
+            crossAxisAlignment: .start,
+            children: [
+              Text("Jun 2026"),
+              SizedBox(height: 100, child: Placeholder()),
+            ],
+          ),
         ),
         Container(
           height: 200,
