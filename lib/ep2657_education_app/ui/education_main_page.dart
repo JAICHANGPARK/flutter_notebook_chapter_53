@@ -19,7 +19,7 @@ class _EducationMainPageState extends State<EducationMainPage> {
       body: SafeArea(
         child: Column(
           crossAxisAlignment: .start,
-          spacing: 16,
+          spacing: 24,
           children: [
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
