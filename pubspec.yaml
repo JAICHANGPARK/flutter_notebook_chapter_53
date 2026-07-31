@@ -11,6 +11,7 @@ dependencies:
     sdk: flutter
 
   percent_indicator: ^4.2.5
+  hugeicons: 
 
 dev_dependencies:
   flutter_test:
