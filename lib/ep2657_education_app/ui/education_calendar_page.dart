@@ -15,6 +15,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
       spacing: 16,
       children: [
         Column(
+          crossAxisAlignment: .start,
           children: [
             Text("Jun 2026"),
             SizedBox(height: 100, child: Placeholder()),
