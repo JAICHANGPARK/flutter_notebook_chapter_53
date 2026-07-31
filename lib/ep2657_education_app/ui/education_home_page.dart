@@ -14,9 +14,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
       crossAxisAlignment: .start,
       spacing: 16,
       children: [
-        Text("Jun 2026"),
-        SizedBox(height: 100,
-        child: Placeholder(),)
+
 
       ],
     );
