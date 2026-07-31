@@ -16,7 +16,16 @@ class _EducationMainPageState extends State<EducationMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Row(children: []),
+            Row(children: [
+              Container(
+                height: 52,
+                width: 52,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: .circular(5)
+                ),
+              )
+            ]),
             Expanded(
               child: IndexedStack(
                 index: pageNum,
