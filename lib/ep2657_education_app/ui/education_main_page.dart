@@ -30,7 +30,14 @@ class _EducationMainPageState extends State<EducationMainPage> {
                   ),
                   Expanded(
                     child: Column(
-                      children: [Text("Hello, Dream"), Text("Lavel Up")],
+                      crossAxisAlignment: .start,
+                      children: [
+                        Text(
+                          "Hello, Dream",
+                          style: TextStyle(fontWeight: .bold),
+                        ),
+                        Text("Lavel Up"),
+                      ],
                     ),
                   ),
                 ],
