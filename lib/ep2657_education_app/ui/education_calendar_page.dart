@@ -31,11 +31,12 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                     scrollDirection: .horizontal,
                     itemBuilder: (context, index) {
                       return Container(
-
                         padding: .all(6),
                         decoration: BoxDecoration(
                           borderRadius: .circular(6),
-                          border: .all()
+                          border: .all(
+                            color: Colors.grey[100]!,
+                          )
                         ),
                         child: Column(
                           spacing: 5,
@@ -45,7 +46,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                               height: 42,
                               width: 42,
                               decoration: BoxDecoration(
-                                color: Colors.grey,
+                                color: Colors.grey[100],
                                 borderRadius: BorderRadius.circular(12),
                               ),
                               child: Center(child: Text("15")),
