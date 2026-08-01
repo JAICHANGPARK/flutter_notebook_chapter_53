@@ -117,6 +117,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                           Text('Explanation'),
                           Spacer(),
                           Row(
+                            spacing: 2,
                             children: [
                               Icon(Icons.star, size: 18),
                               Icon(Icons.star, size: 18),
@@ -125,10 +126,23 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                               Icon(Icons.star, color: Colors.grey[300], size: 18),
                             ],
                           ),
-
                           Text("5.0"),
                         ],
                       ),
+                      Row(
+                        children: [
+                          CircleAvatar(),
+                          Container(
+                            decoration: ShapeDecoration(shape: StadiumBorder(),),
+                            child: Row(
+                              children: [
+                                
+                                Text("Copy link")
+                              ],
+                            ),
+                          )
+                        ],
+                      )
                     ],
                   ),
                 ),
