@@ -63,13 +63,14 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
             height: 180,
             margin: .symmetric(horizontal: 16),
             child: Row(
+              spacing: 16,
               children: [
                 Container(width: 150, child: Placeholder()),
                 Expanded(
                   child: Column(
                     children: [
                       Row(
-                        spacing: 12,
+
                         children: [
                           Expanded(
                             child: Column(
@@ -77,6 +78,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                               children: [
                                 Text("Trace the Route"),
                                 Row(
+                                  spacing: 6,
                                   children: [
                                     Icon(Icons.image_outlined),
                                     Text("Brief 002"),
