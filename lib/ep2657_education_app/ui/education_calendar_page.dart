@@ -65,20 +65,30 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
             child: Row(
               children: [
                 Container(width: 150, child: Placeholder()),
-                Expanded(child: Column(children: [
-                  Row(
+                Expanded(
+                  child: Column(
                     children: [
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: .start,
-                          children: [
-                            
-                          ],
-                        ),
-                      )
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: .start,
+                              children: [
+                                Text("Trace the Route"),
+                                Row(
+                                  children: [
+                                    Icon(Icons.image_outlined),
+                                    Text("Brief 002"),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
-                  )
-                ])),
+                  ),
+                ),
               ],
             ),
           ),
