@@ -69,6 +69,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                   child: Column(
                     children: [
                       Row(
+                        spacing: 12,
                         children: [
                           Expanded(
                             child: Column(
@@ -83,6 +84,12 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                 ),
                               ],
                             ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: Color.fromRGBO(193, 212, 249, 1),
+                            ),
+                            child: Icon(Icons.arrow_forward_rounded),
                           ),
                         ],
                       ),
