@@ -66,7 +66,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
             child: Row(
               spacing: 16,
               children: [
-                Container(width: 140, child: Placeholder()),
+                Container(width: 140,),
                 Expanded(
                   child: Column(
                     spacing: 12,
