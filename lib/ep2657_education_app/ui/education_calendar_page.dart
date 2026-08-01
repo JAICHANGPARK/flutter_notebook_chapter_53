@@ -66,7 +66,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
             child: Row(
               spacing: 16,
               children: [
-                Container(width: 150, child: Placeholder()),
+                Container(width: 140, child: Placeholder()),
                 Expanded(
                   child: Column(
                     spacing: 12,
@@ -115,11 +115,17 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                       Row(
                         children: [
                           Text('Explanation'),
-                          Icon(Icons.star, size: 18),
-                          Icon(Icons.star, size: 18),
-                          Icon(Icons.star, size: 18),
-                          Icon(Icons.star, size: 18),
-                          Icon(Icons.star, color: Colors.grey[300], size: 18),
+                          Spacer(),
+                          Row(
+                            children: [
+                              Icon(Icons.star, size: 18),
+                              Icon(Icons.star, size: 18),
+                              Icon(Icons.star, size: 18),
+                              Icon(Icons.star, size: 18),
+                              Icon(Icons.star, color: Colors.grey[300], size: 18),
+                            ],
+                          ),
+
                           Text("5.0"),
                         ],
                       ),
