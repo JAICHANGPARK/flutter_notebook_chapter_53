@@ -47,7 +47,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                               width: 42,
                               decoration: BoxDecoration(
                                 color: Colors.grey[100],
-                                borderRadius: BorderRadius.circular(12),
+                                borderRadius: BorderRadius.circular(6),
                               ),
                               child: Center(child: Text("15")),
                             ),
@@ -66,7 +66,13 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
             child: Row(
               spacing: 16,
               children: [
-                Container(width: 140,),
+                Container(
+                  width: 140,
+                  decoration: BoxDecoration(
+                    borderRadius: .circular(16),
+                    color: Colors.deepPurple,
+                  ),
+                ),
                 Expanded(
                   child: Column(
                     spacing: 12,
@@ -143,9 +149,10 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                               spacing: 2,
                               children: [
                                 Icon(Icons.link, size: 16),
-                                Text("Copy link",style: TextStyle(
-                                  fontSize: 13,
-                                ),),
+                                Text(
+                                  "Copy link",
+                                  style: TextStyle(fontSize: 13),
+                                ),
                               ],
                             ),
                           ),
