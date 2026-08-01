@@ -70,13 +70,18 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                   child: Column(
                     children: [
                       Row(
-
                         children: [
                           Expanded(
                             child: Column(
                               crossAxisAlignment: .start,
                               children: [
-                                Text("Trace the Route"),
+                                Text(
+                                  "Trace the Route",
+                                  style: TextStyle(
+                                    fontWeight: .bold,
+                                    fontSize: 16,
+                                  ),
+                                ),
                                 Row(
                                   spacing: 6,
                                   children: [
@@ -95,6 +100,12 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                           ),
                         ],
                       ),
+                      Row(
+                        children: [
+                          Text("Timeline"),
+                          Text('04:25/25:25'),
+                        ],
+                      )
                     ],
                   ),
                 ),
