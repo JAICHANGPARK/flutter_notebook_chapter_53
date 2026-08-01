@@ -68,10 +68,13 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                 Expanded(child: Column(children: [
                   Row(
                     children: [
-                      Column(
-                        children: [
-                          
-                        ],
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: .start,
+                          children: [
+                            
+                          ],
+                        ),
                       )
                     ],
                   )
