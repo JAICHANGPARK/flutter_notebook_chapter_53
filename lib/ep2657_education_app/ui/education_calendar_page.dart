@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/flutter_percent_indicator.dart';
 
 class EducationCalendarPage extends StatefulWidget {
   const EducationCalendarPage({super.key});
@@ -68,6 +69,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                 Container(width: 150, child: Placeholder()),
                 Expanded(
                   child: Column(
+                    spacing: 12,
                     children: [
                       Row(
                         children: [
@@ -100,12 +102,21 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                           ),
                         ],
                       ),
-                      Row(
+                      Column(
                         children: [
-                          Text("Timeline"),
-                          Text('04:25/25:25'),
+                          Row(
+                            mainAxisAlignment: .spaceBetween,
+                            children: [
+                              Text("Timeline"),
+                              Text('04:25/25:25'),
+                            ],
+                          ),
+                          LinearPercentIndicator(
+                            padding: .zero,
+                          ),
                         ],
                       )
+
                     ],
                   ),
                 ),
