@@ -103,20 +103,26 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                         ],
                       ),
                       Column(
+                        spacing: 5,
                         children: [
                           Row(
                             mainAxisAlignment: .spaceBetween,
-                            children: [
-                              Text("Timeline"),
-                              Text('04:25/25:25'),
-                            ],
+                            children: [Text("Timeline"), Text('04:25/25:25')],
                           ),
-                          LinearPercentIndicator(
-                            padding: .zero,
-                          ),
+                          LinearPercentIndicator(padding: .zero),
                         ],
-                      )
-
+                      ),
+                      Row(
+                        children: [
+                          Text('Explanation'),
+                          Icon(Icons.star, size: 18),
+                          Icon(Icons.star, size: 18),
+                          Icon(Icons.star, size: 18),
+                          Icon(Icons.star, size: 18),
+                          Icon(Icons.star, color: Colors.grey[300], size: 18),
+                          Text("5.0"),
+                        ],
+                      ),
                     ],
                   ),
                 ),
