@@ -65,7 +65,17 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
             child: Row(
               children: [
                 Container(width: 150, child: Placeholder()),
-                Expanded(child: Column(children: [])),
+                Expanded(child: Column(children: [
+                  Row(
+                    children: [
+                      Column(
+                        children: [
+                          
+                        ],
+                      )
+                    ],
+                  )
+                ])),
               ],
             ),
           ),
