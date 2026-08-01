@@ -27,7 +27,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                   style: TextStyle(fontWeight: .bold, fontSize: 22),
                 ),
                 SizedBox(
-                  height: 82,
+                  height: 90,
                   child: ListView.builder(
                     scrollDirection: .horizontal,
                     itemBuilder: (context, index) {
@@ -41,7 +41,10 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                         child: Column(
                           spacing: 5,
                           children: [
-                            Text("Sun"),
+                            Text(
+                              "Sun",
+                              style: TextStyle(fontWeight: .bold, fontSize: 16),
+                            ),
                             Container(
                               height: 42,
                               width: 42,
