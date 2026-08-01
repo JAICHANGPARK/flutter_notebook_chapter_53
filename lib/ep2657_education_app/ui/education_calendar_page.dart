@@ -123,26 +123,34 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                               Icon(Icons.star, size: 18),
                               Icon(Icons.star, size: 18),
                               Icon(Icons.star, size: 18),
-                              Icon(Icons.star, color: Colors.grey[300], size: 18),
+                              Icon(
+                                Icons.star,
+                                color: Colors.grey[300],
+                                size: 18,
+                              ),
                             ],
                           ),
                           Text("5.0"),
                         ],
                       ),
                       Row(
+                        mainAxisAlignment: .spaceBetween,
                         children: [
                           CircleAvatar(),
                           Container(
-                            decoration: ShapeDecoration(shape: StadiumBorder(),),
+                            decoration: ShapeDecoration(shape: StadiumBorder()),
                             child: Row(
+                              spacing: 2,
                               children: [
-                                
-                                Text("Copy link")
+                                Icon(Icons.link, size: 16),
+                                Text("Copy link",style: TextStyle(
+                                  fontSize: 13,
+                                ),),
                               ],
                             ),
-                          )
+                          ),
                         ],
-                      )
+                      ),
                     ],
                   ),
                 ),
