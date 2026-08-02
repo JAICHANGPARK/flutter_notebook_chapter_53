@@ -201,6 +201,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                         borderRadius: .circular(6),
                         color: Colors.grey[400],
                       ),
+                      child: Icon(Icons.more_vert),
                     ),
                   ],
                 ),
