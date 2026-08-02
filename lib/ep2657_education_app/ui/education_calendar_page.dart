@@ -197,6 +197,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                 fontSize: 20),
                               ),
                               Container(
+                                padding: .symmetric(horizontal: 6, vertical: 4),
                                 decoration: BoxDecoration(
                                   borderRadius: .circular(3),
                                   color: Colors.white,
