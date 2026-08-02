@@ -1,3 +1,4 @@
+import 'package:easy_pie_chart/easy_pie_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/flutter_percent_indicator.dart';
 
@@ -221,6 +222,10 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                       child: Icon(Icons.more_vert),
                     ),
                   ],
+                ),
+                Divider(),
+                Expanded(
+                  child: Row(children: [EasyPieChart(children: [])]),
                 ),
               ],
             ),
