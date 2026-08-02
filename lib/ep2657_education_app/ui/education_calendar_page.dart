@@ -169,7 +169,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
           ),
           Container(
             height: 320,
-            decoration: BoxDecoration(color: Colors.grey[50]),
+            decoration: BoxDecoration(color: Colors.grey[100]),
             child: Column(
               children: [
                 Row(
