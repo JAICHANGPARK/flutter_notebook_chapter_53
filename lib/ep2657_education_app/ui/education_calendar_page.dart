@@ -185,24 +185,27 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
 
                         spacing: 4,
                         children: [
-                          Text("My Activity",style: TextStyle(
-                            fontSize: 16,
-                          ),),
+                          Text("My Activity", style: TextStyle(fontSize: 16)),
                           Row(
-                            spacing: 5,
+                            spacing: 12,
                             children: [
                               Text(
                                 "36h 25m",
-                                style: TextStyle(fontWeight: .bold,
-                                fontSize: 20),
+                                style: TextStyle(
+                                  fontWeight: .bold,
+                                  fontSize: 20,
+                                ),
                               ),
                               Container(
-                                padding: .symmetric(horizontal: 6, vertical: 4),
+                                padding: .symmetric(horizontal: 6, vertical: 2),
                                 decoration: BoxDecoration(
                                   borderRadius: .circular(3),
                                   color: Colors.white,
                                 ),
-                                child: Text("84%"),
+                                child: Text(
+                                  "84%",
+                                  style: TextStyle(fontSize: 12),
+                                ),
                               ),
                             ],
                           ),
