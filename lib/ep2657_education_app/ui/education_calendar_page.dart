@@ -177,6 +177,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
               borderRadius: .circular(16),
             ),
             child: Column(
+              spacing: 12,
               children: [
                 Row(
                   children: [
