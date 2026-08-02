@@ -171,7 +171,10 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
             height: 300,
             margin: .symmetric(horizontal: 16, vertical: 8),
             padding: .all(16),
-            decoration: BoxDecoration(color: Colors.grey[100]),
+            decoration: BoxDecoration(
+              color: Colors.grey[100],
+              borderRadius: .circular(16),
+            ),
             child: Column(
               children: [
                 Row(
@@ -179,11 +182,20 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                     Expanded(
                       child: Column(
                         crossAxisAlignment: .start,
+
+                        spacing: 4,
                         children: [
-                          Text("My Activity"),
+                          Text("My Activity",style: TextStyle(
+                            fontSize: 16,
+                          ),),
                           Row(
+                            spacing: 5,
                             children: [
-                              Text("36h 25m"),
+                              Text(
+                                "36h 25m",
+                                style: TextStyle(fontWeight: .bold,
+                                fontSize: 20),
+                              ),
                               Container(
                                 decoration: BoxDecoration(
                                   borderRadius: .circular(3),
@@ -200,7 +212,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                       padding: .all(8),
                       decoration: BoxDecoration(
                         borderRadius: .circular(6),
-                        color: Colors.grey[400],
+                        color: Colors.grey[300],
                       ),
                       child: Icon(Icons.more_vert),
                     ),
