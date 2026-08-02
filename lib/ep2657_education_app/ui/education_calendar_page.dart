@@ -168,8 +168,8 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
             ),
           ),
           Container(
-            height: 320,
-            margin: .all(16),
+            height: 300,
+            margin: .symmetric(horizontal: 16,vertical: 8),
             decoration: BoxDecoration(color: Colors.grey[100]),
             child: Column(
               children: [
