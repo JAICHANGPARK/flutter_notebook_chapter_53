@@ -167,11 +167,16 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
               ],
             ),
           ),
-          Container(height: 320, child: Column(
-            children: [
-              
-            ],
-          )),
+          Container(
+            height: 320,
+            child: Column(
+              children: [
+                Row(
+                  children: [Expanded(child: Column(children: []))],
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
