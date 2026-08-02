@@ -172,7 +172,27 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
             child: Column(
               children: [
                 Row(
-                  children: [Expanded(child: Column(children: []))],
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: .start,
+                        children: [
+                          Text("My Activity"),
+                          Row(
+                            children: [
+                              Text("36h 25m"),
+                              Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: .circular(3),
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
