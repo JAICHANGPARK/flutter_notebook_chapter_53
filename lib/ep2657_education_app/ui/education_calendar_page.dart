@@ -226,25 +226,28 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                 ),
                 Divider(),
                 Expanded(
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: EasyPieChart(
-                          gap: 12,
-                          borderWidth: 26,
-                          showValue: false,
-                          children: [
-                            PieData(value: 30, color: Colors.blue),
-                            PieData(value: 50, color: Colors.black),
-                            PieData(value: 50, color: Colors.grey),
-                            PieData(value: 50, color: Colors.orange),
-                          ],
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: EasyPieChart(
+                            gap: 12,
+                            borderWidth: 26,
+                            showValue: false,
+                            children: [
+                              PieData(value: 30, color: Colors.blue),
+                              PieData(value: 50, color: Colors.black),
+                              PieData(value: 50, color: Colors.grey),
+                              PieData(value: 50, color: Colors.orange),
+                            ],
+                          ),
                         ),
-                      ),
-                      Expanded(child: Column(children: [
+                        Expanded(child: Column(children: [
 
-                      ],))
-                    ],
+                        ],))
+                      ],
+                    ),
                   ),
                 ),
               ],
