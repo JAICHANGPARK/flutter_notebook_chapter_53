@@ -347,14 +347,14 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                   Container(
                                     decoration: ShapeDecoration(
                                       shape: StadiumBorder(),
-                                      color: Colors.grey[400]!,
+                                      color: Colors.orange
                                     ),
                                     padding: .symmetric(
                                       horizontal: 16,
                                       vertical: 4,
                                     ),
                                     child: Text(
-                                      "30%",
+                                      "10%",
                                       style: TextStyle(
                                         // fontSize: 16,
                                       ),
