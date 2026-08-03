@@ -234,7 +234,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                         SizedBox(
                           width: 140,
                           child: EasyPieChart(
-                            gap: 16,
+                            gap: 12,
                             borderWidth: 20,
                             showValue: false,
                             children: [
@@ -256,10 +256,16 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                       shape: StadiumBorder(),
                                       color: Colors.black,
                                     ),
-                                    padding: .symmetric(horizontal: 16, vertical: 4),
+                                    padding: .symmetric(
+                                      horizontal: 16,
+                                      vertical: 4,
+                                    ),
                                     child: Text(
                                       "35%",
-                                      style: TextStyle(color: Colors.white),
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 16,
+                                      ),
                                     ),
                                   ),
                                   Text(
