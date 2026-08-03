@@ -232,10 +232,10 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                       spacing: 16,
                       children: [
                         SizedBox(
-                          width: 160,
+                          width: 140,
                           child: EasyPieChart(
-                            gap: 12,
-                            borderWidth: 26,
+                            gap: 16,
+                            borderWidth: 20,
                             showValue: false,
                             children: [
                               PieData(value: 30, color: Colors.blue),
