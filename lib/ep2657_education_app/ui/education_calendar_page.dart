@@ -311,6 +311,36 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                   ),
                                 ],
                               ),
+                              Row(
+                                spacing: 12,
+                                children: [
+                                  Container(
+                                    decoration: ShapeDecoration(
+                                      shape: StadiumBorder(),
+                                      color: Colors.grey[400]!,
+                                    ),
+                                    padding: .symmetric(
+                                      horizontal: 16,
+                                      vertical: 4,
+                                    ),
+                                    child: Text(
+                                      "30%",
+                                      style: TextStyle(
+                                        // fontSize: 16,
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: Text(
+                                      "Learning Time",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        // fontWeight: .bold,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                         ),
