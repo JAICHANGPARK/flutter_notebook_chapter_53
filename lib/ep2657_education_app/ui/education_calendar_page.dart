@@ -296,16 +296,17 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                     child: Text(
                                       "25%",
                                       style: TextStyle(
-                                        color: Colors.white,
                                         fontSize: 16,
                                       ),
                                     ),
                                   ),
-                                  Text(
-                                    "Completed",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      // fontWeight: .bold,
+                                  Expanded(
+                                    child: Text(
+                                      "Learning Time",
+                                      style: TextStyle(
+                                        fontSize: 16,
+                                        // fontWeight: .bold,
+                                      ),
                                     ),
                                   ),
                                 ],
