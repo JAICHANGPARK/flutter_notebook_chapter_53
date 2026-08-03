@@ -243,7 +243,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                 value: 50,
                                 color: Color.fromRGBO(157, 179, 238, 1),
                               ),
-                              PieData(value: 50, color: Colors.grey),
+                              PieData(value: 50, color: Colors.grey[400]!),
                               PieData(value: 50, color: Colors.orange),
                             ],
                           ),
