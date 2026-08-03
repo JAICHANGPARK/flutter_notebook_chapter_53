@@ -268,7 +268,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                       "35%",
                                       style: TextStyle(
                                         color: Colors.white,
-                                        fontSize: 16,
+                                        // fontSize: 16,
                                       ),
                                     ),
                                   ),
@@ -296,7 +296,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                     child: Text(
                                       "25%",
                                       style: TextStyle(
-                                        fontSize: 16,
+                                        // fontSize: 16,
                                       ),
                                     ),
                                   ),
