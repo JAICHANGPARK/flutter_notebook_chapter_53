@@ -254,6 +254,17 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                       shape: StadiumBorder(),
                                       color: Colors.black,
                                     ),
+                                    child: Text(
+                                      "35%",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ),
+                                  Text(
+                                    "Completed",
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: .bold,
+                                    ),
                                   ),
                                 ],
                               ),
