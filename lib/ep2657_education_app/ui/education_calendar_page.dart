@@ -238,8 +238,11 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                             borderWidth: 20,
                             showValue: false,
                             children: [
-                              PieData(value: 30, color: Colors.blue),
-                              PieData(value: 50, color: Colors.black),
+                              PieData(value: 30, color: Colors.black),
+                              PieData(
+                                value: 50,
+                                color: Color.fromRGBO(157, 179, 238, 1),
+                              ),
                               PieData(value: 50, color: Colors.grey),
                               PieData(value: 50, color: Colors.orange),
                             ],
@@ -262,6 +265,35 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                     ),
                                     child: Text(
                                       "35%",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 16,
+                                      ),
+                                    ),
+                                  ),
+                                  Text(
+                                    "Completed",
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      // fontWeight: .bold,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                spacing: 12,
+                                children: [
+                                  Container(
+                                    decoration: ShapeDecoration(
+                                      shape: StadiumBorder(),
+                                      color: Colors.black,
+                                    ),
+                                    padding: .symmetric(
+                                      horizontal: 16,
+                                      vertical: 4,
+                                    ),
+                                    child: Text(
+                                      "25%",
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 16,
