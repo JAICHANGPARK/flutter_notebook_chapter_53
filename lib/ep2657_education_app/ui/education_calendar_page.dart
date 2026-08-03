@@ -250,6 +250,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                         ),
                         Expanded(
                           child: Column(
+                            spacing: 12,
                             children: [
                               Row(
                                 spacing: 12,
@@ -286,7 +287,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                   Container(
                                     decoration: ShapeDecoration(
                                       shape: StadiumBorder(),
-                                      color: Colors.black,
+                                      color: Color.fromRGBO(157, 179, 238, 1),
                                     ),
                                     padding: .symmetric(
                                       horizontal: 16,
