@@ -244,9 +244,22 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                             ],
                           ),
                         ),
-                        Expanded(child: Column(children: [
-
-                        ],))
+                        Expanded(
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Container(
+                                    decoration: ShapeDecoration(
+                                      shape: StadiumBorder(),
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
