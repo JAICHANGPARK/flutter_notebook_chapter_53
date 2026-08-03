@@ -290,7 +290,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                       color: Color.fromRGBO(157, 179, 238, 1),
                                     ),
                                     padding: .symmetric(
-                                      horizontal: 16,
+                                      horizontal: 14,
                                       vertical: 4,
                                     ),
                                     child: Text(
