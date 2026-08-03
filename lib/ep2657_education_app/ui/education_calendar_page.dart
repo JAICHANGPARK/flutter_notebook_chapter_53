@@ -249,6 +249,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                           child: Column(
                             children: [
                               Row(
+                                spacing: 12,
                                 children: [
                                   Container(
                                     decoration: ShapeDecoration(
@@ -264,8 +265,8 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                   Text(
                                     "Completed",
                                     style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: .bold,
+                                      fontSize: 16,
+                                      // fontWeight: .bold,
                                     ),
                                   ),
                                 ],
