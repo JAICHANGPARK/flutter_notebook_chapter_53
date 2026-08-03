@@ -229,6 +229,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
+                      spacing: 16,
                       children: [
                         SizedBox(
                           width: 160,
@@ -254,6 +255,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                       shape: StadiumBorder(),
                                       color: Colors.black,
                                     ),
+                                    padding: .symmetric(horizontal: 16, vertical: 4),
                                     child: Text(
                                       "35%",
                                       style: TextStyle(color: Colors.white),
