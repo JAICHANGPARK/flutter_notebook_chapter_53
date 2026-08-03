@@ -261,7 +261,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                       color: Colors.black,
                                     ),
                                     padding: .symmetric(
-                                      horizontal: 16,
+                                      horizontal: 14,
                                       vertical: 4,
                                     ),
                                     child: Text(
