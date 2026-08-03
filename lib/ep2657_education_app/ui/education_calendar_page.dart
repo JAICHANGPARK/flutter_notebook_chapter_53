@@ -332,7 +332,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                   ),
                                   Expanded(
                                     child: Text(
-                                      "Learning Time",
+                                      "Tests Passed",
                                       style: TextStyle(
                                         fontSize: 16,
                                         // fontWeight: .bold,
