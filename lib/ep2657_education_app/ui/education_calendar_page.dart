@@ -230,7 +230,8 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
-                        Expanded(
+                        SizedBox(
+                          width: 160,
                           child: EasyPieChart(
                             gap: 12,
                             borderWidth: 26,
