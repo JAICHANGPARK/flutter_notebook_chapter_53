@@ -2,7 +2,7 @@
 
 # EP2662
 
-- Education App Dashboard UI Kit | Modern Mobile UX Design
+- Prayer Times, Quran Recitation & Islamic Community App
 - Habibur Rahman
 - https://dribbble.com/shots/27600702-Education-App-Dashboard-UI-Kit-Modern-Mobile-UX-Design
 
