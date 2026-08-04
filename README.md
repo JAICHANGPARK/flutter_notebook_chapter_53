@@ -6,7 +6,7 @@
 - Shahid Miah UI UX Designer for Wavespace - UI/UX Design Agency
 - https://dribbble.com/shots/27617663-Prayer-Times-Quran-Recitation-Islamic-Community-App
 
-<img src="https://cdn.dribbble.com/userupload/48537176/file/74ee5fddfe9062aea4e35861a7a0e1a3.png?resize=1905x1429&vertical=center" alt=""/>
+<img src="https://cdn.dribbble.com/userupload/48601830/file/5bc1cc2a73d18dcc2bd7b69094182adc.png?resize=1905x1429&vertical=center" alt=""/>
 
 
 
