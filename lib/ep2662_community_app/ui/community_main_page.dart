@@ -10,6 +10,6 @@ class CommunityMainPage extends StatefulWidget {
 class _CommunityMainPageState extends State<CommunityMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: IndexedStack());
+    return Scaffold(body: IndexedStack(),);
   }
 }
