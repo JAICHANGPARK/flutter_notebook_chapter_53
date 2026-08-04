@@ -11,6 +11,8 @@ class CommunityMainPage extends StatefulWidget {
 class _CommunityMainPageState extends State<CommunityMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return  Scaffold(
+      body: IndexedStack(),
+    );
   }
 }
