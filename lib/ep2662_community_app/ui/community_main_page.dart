@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class CommunityMainPage extends StatefulWidget {
   const CommunityMainPage({super.key});
 
@@ -11,8 +10,6 @@ class CommunityMainPage extends StatefulWidget {
 class _CommunityMainPageState extends State<CommunityMainPage> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      body: IndexedStack(),
-    );
+    return Scaffold(body: IndexedStack());
   }
 }
