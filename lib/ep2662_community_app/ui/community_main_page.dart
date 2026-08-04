@@ -14,7 +14,13 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
       backgroundColor: Colors.white,
       body: IndexedStack(),
       bottomNavigationBar: BottomNavigationBar(
-        items: [BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home")],
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.access_time_outlined), label: "Player"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Events"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Donate"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+        ],
       ),
     );
   }
