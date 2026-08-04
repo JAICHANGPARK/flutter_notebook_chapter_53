@@ -3,7 +3,7 @@
 # EP2662
 
 - Prayer Times, Quran Recitation & Islamic Community App
-- Habibur Rahman
+- Shahid Miah UI UX Designer for Wavespace - UI/UX Design Agency
 - https://dribbble.com/shots/27600702-Education-App-Dashboard-UI-Kit-Modern-Mobile-UX-Design
 
 <img src="https://cdn.dribbble.com/userupload/48537176/file/74ee5fddfe9062aea4e35861a7a0e1a3.png?resize=1905x1429&vertical=center" alt=""/>
