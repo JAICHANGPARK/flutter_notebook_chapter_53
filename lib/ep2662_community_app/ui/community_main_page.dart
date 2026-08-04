@@ -10,6 +10,12 @@ class CommunityMainPage extends StatefulWidget {
 class _CommunityMainPageState extends State<CommunityMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Colors.white, body: IndexedStack());
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: IndexedStack(),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home")],
+      ),
+    );
   }
 }
