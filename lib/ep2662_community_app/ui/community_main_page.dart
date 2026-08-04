@@ -14,11 +14,21 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
       backgroundColor: Colors.white,
       body: IndexedStack(),
       bottomNavigationBar: BottomNavigationBar(
+        type: .fixed,
+        backgroundColor: Colors.white,
+        selectedItemColor: Colors.blueAccent,
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.access_time_outlined), label: "Player"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.access_time_outlined),
+            label: "Player",
+          ),
           BottomNavigationBarItem(icon: Icon(Icons.event), label: "Events"),
-          BottomNavigationBarItem(icon: Icon(Icons.card_giftcard), label: "Donate"),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.card_giftcard),
+            label: "Donate",
+          ),
           BottomNavigationBarItem(icon: Icon(Icons.menu), label: "More"),
         ],
       ),
