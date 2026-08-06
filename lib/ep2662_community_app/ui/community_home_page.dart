@@ -76,7 +76,10 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                   child: Row(
                     mainAxisAlignment: .spaceBetween,
                     children: [
-                      Text("Upcoming events"),
+                      Text(
+                        "Upcoming events",
+                        style: TextStyle(fontWeight: .bold, fontSize: 16),
+                      ),
                       Container(
                         decoration: BoxDecoration(
                           border: .all(color: Colors.grey[200]!),
@@ -94,6 +97,11 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                   padding: const EdgeInsets.only(left: 16),
                   child: Container(height: 42, child: Placeholder()),
                 ),
+                Container(
+                  margin: .only(left: 16),
+                  height: 240,
+                  child: Placeholder(),
+                )
               ],
             ),
           ),
