@@ -10,17 +10,27 @@ class CommunityHomePage extends StatefulWidget {
 class _CommunityHomePageState extends State<CommunityHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Column(children: [Stack(children: [
-      Positioned(child: Column(children: [
-        Container(
-          height: 320,
-          decoration: BoxDecoration(
-            color: Color.fromRGBO(47, 92, 222, 1),
-          ),
+    return Column(
+      children: [
+        Stack(
+          children: [
+            Positioned.fill(
+              child: Column(
+                children: [
+                  Container(
+                    height: 200,
+                    decoration: BoxDecoration(
+                      color: Color.fromRGBO(47, 92, 222, 1),
+                    ),
+                    child: Placeholder(),
+                  ),
+                  Expanded(child: Placeholder()),
+                ],
+              ),
+            ),
+          ],
         ),
-        Expanded(child: Placeholder())
-      ],))
-
-    ])]);
+      ],
+    );
   }
 }
