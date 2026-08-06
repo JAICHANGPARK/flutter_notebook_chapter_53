@@ -41,7 +41,9 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                       Icon(Icons.keyboard_arrow_down, color: Colors.white,),
                       Spacer(),
                       Badge(
-                        child: Icon(Icons.notifications_active_outlined),
+                        child: Icon(Icons.notifications_active_outlined,
+                        color: Colors.white,),
+
                       ),
                       Badge(child: Icon(Icons.mail_outline)),
                     ],
