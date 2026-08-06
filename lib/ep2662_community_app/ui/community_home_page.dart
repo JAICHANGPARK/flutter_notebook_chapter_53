@@ -16,7 +16,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
           child: Column(
             children: [
               Container(
-                height: 200,
+                height: 260,
                 decoration: BoxDecoration(
                   color: Color.fromRGBO(47, 92, 222, 1),
                 ),
