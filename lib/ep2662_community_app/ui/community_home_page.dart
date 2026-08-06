@@ -28,80 +28,89 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
         Positioned.fill(
           child: SafeArea(
             child: Column(
-              spacing: 12,
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Column(
-                    spacing: 16,
-                    children: [
-                      Row(
-                        spacing: 12,
-                        children: [
-                          Icon(Icons.location_on_rounded),
-                          Text("Seoul, South Korea ... "),
-                          Icon(Icons.keyboard_arrow_down),
-                          Spacer(),
-                          Badge(
-                            child: Icon(Icons.notifications_active_outlined),
+                Row(
+                  spacing: 12,
+                  children: [
+                    Icon(Icons.location_on_rounded),
+                    Text("Seoul, South Korea ... "),
+                    Icon(Icons.keyboard_arrow_down),
+                    Spacer(),
+                    Badge(
+                      child: Icon(Icons.notifications_active_outlined),
+                    ),
+                    Badge(child: Icon(Icons.mail_outline)),
+                  ],
+                ),
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Column(
+                      spacing: 12,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Column(
+                            spacing: 16,
+                            children: [
+                           
+                              Container(
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  borderRadius: .circular(12),
+                                  color: Colors.white,
+                                ),
+                                child: Placeholder(),
+                              ),
+                              Container(
+                                height: 160,
+                                decoration: BoxDecoration(
+                                  borderRadius: .circular(12),
+                                  color: Colors.white,
+                                ),
+                                child: Placeholder(),
+                              ),
+                              SmoothPageIndicator(
+                                count: 3,
+                                controller: PageController(),
+                              ),
+                            ],
                           ),
-                          Badge(child: Icon(Icons.mail_outline)),
-                        ],
-                      ),
-                      Container(
-                        height: 200,
-                        decoration: BoxDecoration(
-                          borderRadius: .circular(12),
-                          color: Colors.white,
                         ),
-                        child: Placeholder(),
-                      ),
-                      Container(
-                        height: 160,
-                        decoration: BoxDecoration(
-                          borderRadius: .circular(12),
-                          color: Colors.white,
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: Row(
+                            mainAxisAlignment: .spaceBetween,
+                            children: [
+                              Text(
+                                "Upcoming events",
+                                style: TextStyle(fontWeight: .bold, fontSize: 16),
+                              ),
+                              Container(
+                                decoration: BoxDecoration(
+                                  border: .all(color: Colors.grey[200]!),
+                                ),
+                                padding: .symmetric(horizontal: 6, vertical: 2),
+                                child: Row(
+                                  spacing: 4,
+                                  children: [Icon(Icons.apps), Text("View all")],
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                        child: Placeholder(),
-                      ),
-                      SmoothPageIndicator(
-                        count: 3,
-                        controller: PageController(),
-                      ),
-                    ],
+                        Padding(
+                          padding: const EdgeInsets.only(left: 16),
+                          child: Container(height: 42, child: Placeholder()),
+                        ),
+                        Container(
+                          margin: .only(left: 16),
+                          height: 240,
+                          child: Placeholder(),
+                        )
+                      ],
+                    ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
-                  child: Row(
-                    mainAxisAlignment: .spaceBetween,
-                    children: [
-                      Text(
-                        "Upcoming events",
-                        style: TextStyle(fontWeight: .bold, fontSize: 16),
-                      ),
-                      Container(
-                        decoration: BoxDecoration(
-                          border: .all(color: Colors.grey[200]!),
-                        ),
-                        padding: .symmetric(horizontal: 6, vertical: 2),
-                        child: Row(
-                          spacing: 4,
-                          children: [Icon(Icons.apps), Text("View all")],
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 16),
-                  child: Container(height: 42, child: Placeholder()),
-                ),
-                Container(
-                  margin: .only(left: 16),
-                  height: 240,
-                  child: Placeholder(),
-                )
               ],
             ),
           ),
