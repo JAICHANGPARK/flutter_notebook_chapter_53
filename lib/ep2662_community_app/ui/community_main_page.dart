@@ -15,7 +15,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: IndexedStack(index: pageNum, children: [CommunityHomePage()]),
+      body: IndexedStack(index: pageNum, children: [CommunityHomePage(), ]),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: pageNum,
         onTap: (idx) {
