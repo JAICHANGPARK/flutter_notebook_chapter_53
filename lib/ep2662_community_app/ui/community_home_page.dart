@@ -20,11 +20,12 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                 decoration: BoxDecoration(
                   color: Color.fromRGBO(47, 92, 222, 1),
                 ),
-                child: Placeholder(),
               ),
-              Expanded(child: Placeholder()),
             ],
           ),
+        ),
+        Positioned.fill(
+          child: SafeArea(child: Column(children: [])),
         ),
       ],
     );
