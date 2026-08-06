@@ -25,22 +25,23 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
           ),
         ),
         Positioned.fill(
-          child: SafeArea(child: Column(children: [
-            Row(
+          child: SafeArea(
+            child: Column(
               children: [
-                Icon(Icons.location_on_rounded),
-                Text("Seoul, South Korea ... "),
-                Icon(Icons.keyboard_arrow_down),
-                Spacer(),
-                Badge(
-                  child: Icon(Icons.notifications_active_outlined),
-                ),
-                Badge(
-                  child: Icon(Icons.mail_outline),
+                Row(
+                  spacing: 12,
+                  children: [
+                    Icon(Icons.location_on_rounded),
+                    Text("Seoul, South Korea ... "),
+                    Icon(Icons.keyboard_arrow_down),
+                    Spacer(),
+                    Badge(child: Icon(Icons.notifications_active_outlined)),
+                    Badge(child: Icon(Icons.mail_outline)),
+                  ],
                 ),
               ],
-            )
-          ])),
+            ),
+          ),
         ),
       ],
     );
