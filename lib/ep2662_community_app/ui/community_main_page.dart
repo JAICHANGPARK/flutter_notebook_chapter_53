@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_53/ep2662_community_app/ui/community_home_page.dart';
 
 class CommunityMainPage extends StatefulWidget {
   const CommunityMainPage({super.key});
@@ -14,7 +15,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: IndexedStack(index: pageNum),
+      body: IndexedStack(index: pageNum, children: [CommunityHomePage()]),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: pageNum,
         onTap: (idx) {
