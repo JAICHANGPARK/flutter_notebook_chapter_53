@@ -25,7 +25,15 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
           ),
         ),
         Positioned.fill(
-          child: SafeArea(child: Column(children: [])),
+          child: SafeArea(child: Column(children: [
+            Row(
+              children: [
+                Icon(Icons.location_on_rounded),
+                Text("Seoul, South Korea ... "),
+                Icon(Icons.keyboard_arrow_down)
+              ],
+            )
+          ])),
         ),
       ],
     );
