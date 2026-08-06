@@ -8,11 +8,15 @@ class CommunityMainPage extends StatefulWidget {
 }
 
 class _CommunityMainPageState extends State<CommunityMainPage> {
+
+  int pageNum = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: IndexedStack(),
+      body: IndexedStack(
+
+      ),
       bottomNavigationBar: BottomNavigationBar(
         type: .fixed,
         backgroundColor: Colors.white,
