@@ -64,13 +64,23 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                         ),
                         child: Placeholder(),
                       ),
-                      SmoothPageIndicator(count: 3, controller: PageController(),),
-
+                      SmoothPageIndicator(
+                        count: 3,
+                        controller: PageController(),
+                      ),
                     ],
                   ),
                 ),
-                Row()
-                
+                Row(
+                  children: [
+                    Text("Upcoming events"),
+                    Container(
+                      decoration: BoxDecoration(
+                        border: .all(color: Colors.grey[200]!),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
