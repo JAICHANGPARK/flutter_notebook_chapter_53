@@ -8,21 +8,18 @@ class CommunityMainPage extends StatefulWidget {
 }
 
 class _CommunityMainPageState extends State<CommunityMainPage> {
-
   int pageNum = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: IndexedStack(
-        index: pageNum,
-
-      ),
+      body: IndexedStack(index: pageNum),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: pageNum,
-        onTap: (idx){
+        onTap: (idx) {
           setState(() {
-            
+            pageNum = idx;
           });
         },
         type: .fixed,
