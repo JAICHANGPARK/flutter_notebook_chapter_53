@@ -13,6 +13,7 @@ dependencies:
   percent_indicator: ^4.2.5
   hugeicons: ^1.1.7
   easy_pie_chart: ^1.0.2
+  smooth_page_indicator: 
 
 dev_dependencies:
   flutter_test:
