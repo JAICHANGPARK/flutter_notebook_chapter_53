@@ -14,7 +14,9 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
       Positioned(child: Column(children: [
         Container(
           height: 320,
-          child: Placeholder(),
+          decoration: BoxDecoration(
+            color: Color.fromRGBO(47, 92, 222, 1),
+          ),
         ),
         Expanded(child: Placeholder())
       ],))
