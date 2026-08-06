@@ -34,9 +34,11 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                   child: Row(
                     spacing: 12,
                     children: [
-                      Icon(Icons.location_on_rounded),
-                      Text("Seoul, South Korea ... "),
-                      Icon(Icons.keyboard_arrow_down),
+                      Icon(Icons.location_on_rounded, color: Colors.white,),
+                      Text("Seoul, South Korea ... ",style: TextStyle(
+                        color: Colors.white,
+                      ),),
+                      Icon(Icons.keyboard_arrow_down, color: Colors.white,),
                       Spacer(),
                       Badge(
                         child: Icon(Icons.notifications_active_outlined),
