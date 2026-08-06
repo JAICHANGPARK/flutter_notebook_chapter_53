@@ -34,18 +34,22 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                   child: Row(
                     spacing: 12,
                     children: [
-                      Icon(Icons.location_on_rounded, color: Colors.white,),
-                      Text("Seoul, South Korea ... ",style: TextStyle(
-                        color: Colors.white,
-                      ),),
-                      Icon(Icons.keyboard_arrow_down, color: Colors.white,),
+                      Icon(Icons.location_on_rounded, color: Colors.white),
+                      Text(
+                        "Seoul, South Korea ... ",
+                        style: TextStyle(color: Colors.white),
+                      ),
+                      Icon(Icons.keyboard_arrow_down, color: Colors.white),
                       Spacer(),
                       Badge(
-                        child: Icon(Icons.notifications_active_outlined,
-                        color: Colors.white,),
-
+                        child: Icon(
+                          Icons.notifications_active_outlined,
+                          color: Colors.white,
+                        ),
                       ),
-                      Badge(child: Icon(Icons.mail_outline)),
+                      Badge(
+                        child: Icon(Icons.mail_outline, color: Colors.white),
+                      ),
                     ],
                   ),
                 ),
@@ -59,7 +63,6 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                           child: Column(
                             spacing: 16,
                             children: [
-                           
                               Container(
                                 height: 200,
                                 decoration: BoxDecoration(
@@ -90,7 +93,10 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                             children: [
                               Text(
                                 "Upcoming events",
-                                style: TextStyle(fontWeight: .bold, fontSize: 16),
+                                style: TextStyle(
+                                  fontWeight: .bold,
+                                  fontSize: 16,
+                                ),
                               ),
                               Container(
                                 decoration: BoxDecoration(
@@ -99,7 +105,10 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                 padding: .symmetric(horizontal: 6, vertical: 2),
                                 child: Row(
                                   spacing: 4,
-                                  children: [Icon(Icons.apps), Text("View all")],
+                                  children: [
+                                    Icon(Icons.apps),
+                                    Text("View all"),
+                                  ],
                                 ),
                               ),
                             ],
@@ -113,7 +122,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                           margin: .only(left: 16),
                           height: 240,
                           child: Placeholder(),
-                        )
+                        ),
                       ],
                     ),
                   ),
