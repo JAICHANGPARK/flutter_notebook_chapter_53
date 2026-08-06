@@ -90,7 +90,10 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                     ],
                   ),
                 ),
-                Container(height: 52, child: Placeholder()),
+                Padding(
+                  padding: const EdgeInsets.only(left: 16),
+                  child: Container(height: 42, child: Placeholder()),
+                ),
               ],
             ),
           ),
