@@ -15,9 +15,16 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: IndexedStack(
+        index: pageNum,
 
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: pageNum,
+        onTap: (idx){
+          setState(() {
+            
+          });
+        },
         type: .fixed,
         backgroundColor: Colors.white,
         selectedItemColor: Colors.blueAccent,
