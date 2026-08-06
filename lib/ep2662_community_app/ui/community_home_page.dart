@@ -65,9 +65,12 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                         child: Placeholder(),
                       ),
                       SmoothPageIndicator(count: 3, controller: PageController(),),
+
                     ],
                   ),
                 ),
+                Row()
+                
               ],
             ),
           ),
