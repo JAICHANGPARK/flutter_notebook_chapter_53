@@ -71,15 +71,23 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                     ],
                   ),
                 ),
-                Row(
-                  children: [
-                    Text("Upcoming events"),
-                    Container(
-                      decoration: BoxDecoration(
-                        border: .all(color: Colors.grey[200]!),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Row(
+                    children: [
+                      Text("Upcoming events"),
+                      Container(
+                        decoration: BoxDecoration(
+                          border: .all(color: Colors.grey[200]!),
+                        ),
+                        padding: .symmetric(horizontal: 6, vertical: 2),
+                        child: Row(
+                          spacing: 4,
+                          children: [Icon(Icons.apps), Text("View all")],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ],
             ),
