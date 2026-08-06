@@ -27,18 +27,36 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
         Positioned.fill(
           child: SafeArea(
             child: Column(
+              spacing: 12,
               children: [
-                Row(
-                  spacing: 12,
-                  children: [
-                    Icon(Icons.location_on_rounded),
-                    Text("Seoul, South Korea ... "),
-                    Icon(Icons.keyboard_arrow_down),
-                    Spacer(),
-                    Badge(child: Icon(Icons.notifications_active_outlined)),
-                    Badge(child: Icon(Icons.mail_outline)),
-                  ],
-                ),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    spacing: 16,
+                    children: [
+                      Row(
+                        spacing: 12,
+                        children: [
+                          Icon(Icons.location_on_rounded),
+                          Text("Seoul, South Korea ... "),
+                          Icon(Icons.keyboard_arrow_down),
+                          Spacer(),
+                          Badge(child: Icon(Icons.notifications_active_outlined)),
+                          Badge(child: Icon(Icons.mail_outline)),
+                        ],
+                      ),
+                      Container(
+                        height: 200,
+                        decoration: BoxDecoration(
+                          borderRadius: .circular(12),
+                          color: Colors.white,
+                        ),
+                        child: Placeholder(),
+                      ),
+                    ],
+                  ),
+                )
+
               ],
             ),
           ),
