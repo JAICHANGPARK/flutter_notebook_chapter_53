@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class CommunityHomePage extends StatefulWidget {
   const CommunityHomePage({super.key});
@@ -41,7 +42,9 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                           Text("Seoul, South Korea ... "),
                           Icon(Icons.keyboard_arrow_down),
                           Spacer(),
-                          Badge(child: Icon(Icons.notifications_active_outlined)),
+                          Badge(
+                            child: Icon(Icons.notifications_active_outlined),
+                          ),
                           Badge(child: Icon(Icons.mail_outline)),
                         ],
                       ),
@@ -61,10 +64,10 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                         ),
                         child: Placeholder(),
                       ),
+                      SmoothPageIndicator(count: 3, controller: PageController(),),
                     ],
                   ),
-                )
-
+                ),
               ],
             ),
           ),
