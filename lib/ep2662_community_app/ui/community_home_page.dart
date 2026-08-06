@@ -30,7 +30,14 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
               children: [
                 Icon(Icons.location_on_rounded),
                 Text("Seoul, South Korea ... "),
-                Icon(Icons.keyboard_arrow_down)
+                Icon(Icons.keyboard_arrow_down),
+                Spacer(),
+                Badge(
+                  child: Icon(Icons.notifications_active_outlined),
+                ),
+                Badge(
+                  child: Icon(Icons.mail_outline),
+                ),
               ],
             )
           ])),
