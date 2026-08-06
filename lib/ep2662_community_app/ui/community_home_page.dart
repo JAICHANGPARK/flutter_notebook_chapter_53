@@ -53,6 +53,14 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                         ),
                         child: Placeholder(),
                       ),
+                      Container(
+                        height: 160,
+                        decoration: BoxDecoration(
+                          borderRadius: .circular(12),
+                          color: Colors.white,
+                        ),
+                        child: Placeholder(),
+                      ),
                     ],
                   ),
                 )
