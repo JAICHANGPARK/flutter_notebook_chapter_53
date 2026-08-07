@@ -323,20 +323,25 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         borderRadius: .circular(4),
                                         color: Colors.grey[100]!,
                                       ),
-                                      padding: .all(3),
+                                      padding: .symmetric(horizontal: 12),
                                       child: Row(
                                         children: [
                                           Expanded(child: Row(
+                                            spacing: 12,
                                             children: [
                                               Icon(Icons.cloud_queue),
                                               Column(
                                                 crossAxisAlignment: .start,
+                                                mainAxisAlignment: .center,
                                                 children: [
                                                   Text("Asr",style: TextStyle(
                                                     fontWeight: .bold,
-                                                    fontSize: 12,
+                                                    fontSize: 13,
                                                   ),),
-                                                  Text("5:15 PM")
+                                                  Text("5:15 PM",style: TextStyle(
+                                                    fontWeight: .bold,
+                                                    fontSize: 13,
+                                                  ),)
                                                 ],
                                               )
                                             ],
