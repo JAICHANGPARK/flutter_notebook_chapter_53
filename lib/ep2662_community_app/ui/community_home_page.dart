@@ -326,27 +326,61 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                       padding: .symmetric(horizontal: 12),
                                       child: Row(
                                         children: [
-                                          Expanded(child: Row(
-                                            spacing: 12,
-                                            children: [
-                                              Icon(Icons.cloud_queue),
-                                              Column(
-                                                crossAxisAlignment: .start,
-                                                mainAxisAlignment: .center,
-                                                children: [
-                                                  Text("Asr",style: TextStyle(
-                                                    fontWeight: .bold,
-                                                    fontSize: 13,
-                                                  ),),
-                                                  Text("5:15 PM",style: TextStyle(
-                                                    fontWeight: .bold,
-                                                    fontSize: 13,
-                                                  ),)
-                                                ],
-                                              )
-                                            ],
-                                          )),
-                                          Expanded(child: Placeholder()),
+                                          Expanded(
+                                            child: Row(
+                                              spacing: 12,
+                                              children: [
+                                                Icon(Icons.cloud_queue),
+                                                Column(
+                                                  crossAxisAlignment: .start,
+                                                  mainAxisAlignment: .center,
+                                                  children: [
+                                                    Text(
+                                                      "Asr",
+                                                      style: TextStyle(
+                                                        fontWeight: .bold,
+                                                        fontSize: 13,
+                                                      ),
+                                                    ),
+                                                    Text(
+                                                      "5:15 PM",
+                                                      style: TextStyle(
+                                                        fontWeight: .bold,
+                                                        fontSize: 13,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: Row(
+                                              spacing: 12,
+                                              children: [
+                                                Column(
+                                                  crossAxisAlignment: .start,
+                                                  mainAxisAlignment: .center,
+                                                  children: [
+                                                    Text(
+                                                      "Next prayer \"Unkonwn\"",
+                                                      style: TextStyle(
+                                                        fontWeight: .bold,
+                                                        fontSize: 13,
+                                                      ),
+                                                    ),
+                                                    Text(
+                                                      "5:15 PM",
+                                                      style: TextStyle(
+                                                        fontWeight: .bold,
+                                                        fontSize: 13,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     ),
