@@ -92,6 +92,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                             child: Container(
                                               decoration: BoxDecoration(
                                                 color: Colors.white,
+                                                borderRadius: .circular(6),
                                                 boxShadow: [
                                                   BoxShadow(
                                                     color: Colors.grey[50]!,
@@ -126,6 +127,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                           Expanded(
                                             child: Container(
                                               decoration: BoxDecoration(
+                                                borderRadius: .circular(6),
                                                 color: Colors.white,
                                                 boxShadow: [
                                                   BoxShadow(
@@ -201,6 +203,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                           Expanded(
                                             child: Container(
                                               decoration: BoxDecoration(
+                                                borderRadius: .circular(6),
                                                 color: Colors.white,
                                                 boxShadow: [
                                                   BoxShadow(
@@ -237,6 +240,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                             child: Container(
                                               decoration: BoxDecoration(
                                                 color: Colors.white,
+                                                borderRadius: .circular(6),
                                                 boxShadow: [
                                                   BoxShadow(
                                                     color: Colors.grey[50]!,
@@ -272,6 +276,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                             child: Container(
                                               decoration: BoxDecoration(
                                                 color: Colors.white,
+                                                borderRadius: .circular(6),
                                                 boxShadow: [
                                                   BoxShadow(
                                                     color: Colors.grey[50]!,
