@@ -370,7 +370,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                       ),
                                                     ),
                                                     Text(
-                                                      "5:15 PM",
+                                                      "01:40:32 min",
                                                       style: TextStyle(
                                                         fontWeight: .bold,
                                                         fontSize: 13,
