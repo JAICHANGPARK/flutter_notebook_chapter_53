@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class CommunityHomePage extends StatefulWidget {
@@ -95,7 +96,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                   BoxShadow(
                                                     color: Colors.grey[50]!,
                                                     blurRadius: 2,
-                                                    spreadRadius: 3
+                                                    spreadRadius: 3,
                                                   ),
                                                 ],
                                               ),
@@ -107,9 +108,9 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                 color: Colors.white,
                                                 boxShadow: [
                                                   BoxShadow(
-                                                      color: Colors.grey[50]!,
-                                                      blurRadius: 2,
-                                                      spreadRadius: 3
+                                                    color: Colors.grey[50]!,
+                                                    blurRadius: 2,
+                                                    spreadRadius: 3,
                                                   ),
                                                 ],
                                               ),
@@ -118,28 +119,19 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
 
                                                 children: [
                                                   Icon(Icons.wb_sunny_outlined),
-
-                                                  Text("Mon",style: TextStyle(
-                                                    fontSize: 12,
-                                                  ),),
-                                                  Text("4:45am",style: TextStyle(
-                                                    fontWeight: .bold,
-                                                    fontSize: 12,
-                                                  ),),
-
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                          Expanded(
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.white,
-                                                boxShadow: [
-                                                  BoxShadow(
-                                                      color: Colors.grey[50]!,
-                                                      blurRadius: 2,
-                                                      spreadRadius: 3
+                                                  Gap(3),
+                                                  Text(
+                                                    "Mon",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    "4:45am",
+                                                    style: TextStyle(
+                                                      fontWeight: .bold,
+                                                      fontSize: 12,
+                                                    ),
                                                   ),
                                                 ],
                                               ),
@@ -151,9 +143,9 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                 color: Colors.white,
                                                 boxShadow: [
                                                   BoxShadow(
-                                                      color: Colors.grey[50]!,
-                                                      blurRadius: 2,
-                                                      spreadRadius: 3
+                                                    color: Colors.grey[50]!,
+                                                    blurRadius: 2,
+                                                    spreadRadius: 3,
                                                   ),
                                                 ],
                                               ),
@@ -165,9 +157,9 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                 color: Colors.white,
                                                 boxShadow: [
                                                   BoxShadow(
-                                                      color: Colors.grey[50]!,
-                                                      blurRadius: 2,
-                                                      spreadRadius: 3
+                                                    color: Colors.grey[50]!,
+                                                    blurRadius: 2,
+                                                    spreadRadius: 3,
                                                   ),
                                                 ],
                                               ),
@@ -179,9 +171,23 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                 color: Colors.white,
                                                 boxShadow: [
                                                   BoxShadow(
-                                                      color: Colors.grey[50]!,
-                                                      blurRadius: 2,
-                                                      spreadRadius: 3
+                                                    color: Colors.grey[50]!,
+                                                    blurRadius: 2,
+                                                    spreadRadius: 3,
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                boxShadow: [
+                                                  BoxShadow(
+                                                    color: Colors.grey[50]!,
+                                                    blurRadius: 2,
+                                                    spreadRadius: 3,
                                                   ),
                                                 ],
                                               ),
