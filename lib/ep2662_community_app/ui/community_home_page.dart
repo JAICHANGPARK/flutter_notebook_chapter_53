@@ -69,13 +69,15 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                   borderRadius: .circular(12),
                                   color: Colors.white,
                                 ),
+                                padding: .all(16),
                                 child: Column(
                                   crossAxisAlignment: .start,
                                   children: [
                                     Text(
                                       "Today : Text Text text 1234, 12345 ABC",
                                     ),
-                                    Expanded(
+                                    Container(
+                                      height: 100,
                                       child: Row(
                                         children: [
                                           Expanded(child: Placeholder()),
@@ -87,7 +89,14 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         ],
                                       ),
                                     ),
-                                    Expanded(child: Container()),
+                                    Expanded(
+                                      child: Container(
+                                        
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey[200]!,
+                                        ),
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ),
