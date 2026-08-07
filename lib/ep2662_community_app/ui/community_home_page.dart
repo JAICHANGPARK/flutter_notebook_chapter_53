@@ -323,6 +323,13 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         borderRadius: .circular(4),
                                         color: Colors.grey[100]!,
                                       ),
+                                      padding: .all(3),
+                                      child: Row(
+                                        children: [
+                                          Expanded(child: Placeholder()),
+                                          Expanded(child: Placeholder()),
+                                        ],
+                                      ),
                                     ),
                                   ],
                                 ),
