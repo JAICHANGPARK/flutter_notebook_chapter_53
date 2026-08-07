@@ -83,26 +83,94 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                       ),
                                     ),
                                     Container(
-                                      height: 100,
+                                      height: 88,
                                       child: Row(
                                         spacing: 4,
                                         children: [
                                           Expanded(
                                             child: Container(
                                               decoration: BoxDecoration(
+                                                color: Colors.white,
                                                 boxShadow: [
                                                   BoxShadow(
-                                                    color: Colors.grey[200]!,
+                                                    color: Colors.grey[50]!,
+                                                    blurRadius: 2,
+                                                    spreadRadius: 3
                                                   ),
                                                 ],
                                               ),
                                             ),
                                           ),
-                                          Expanded(child: Placeholder()),
-                                          Expanded(child: Placeholder()),
-                                          Expanded(child: Placeholder()),
-                                          Expanded(child: Placeholder()),
-                                          Expanded(child: Placeholder()),
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                boxShadow: [
+                                                  BoxShadow(
+                                                      color: Colors.grey[50]!,
+                                                      blurRadius: 2,
+                                                      spreadRadius: 3
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                boxShadow: [
+                                                  BoxShadow(
+                                                      color: Colors.grey[50]!,
+                                                      blurRadius: 2,
+                                                      spreadRadius: 3
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                boxShadow: [
+                                                  BoxShadow(
+                                                      color: Colors.grey[50]!,
+                                                      blurRadius: 2,
+                                                      spreadRadius: 3
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                boxShadow: [
+                                                  BoxShadow(
+                                                      color: Colors.grey[50]!,
+                                                      blurRadius: 2,
+                                                      spreadRadius: 3
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                boxShadow: [
+                                                  BoxShadow(
+                                                      color: Colors.grey[50]!,
+                                                      blurRadius: 2,
+                                                      spreadRadius: 3
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     ),
