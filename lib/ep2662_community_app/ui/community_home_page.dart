@@ -64,13 +64,14 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                             spacing: 16,
                             children: [
                               Container(
-                                height: 200,
+                                // height: 200,
                                 decoration: BoxDecoration(
                                   borderRadius: .circular(12),
                                   color: Colors.white,
                                 ),
-                                padding: .all(16),
+                                padding: .all(12),
                                 child: Column(
+                                  spacing: 12,
                                   crossAxisAlignment: .start,
                                   children: [
                                     Text(
@@ -89,12 +90,10 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         ],
                                       ),
                                     ),
-                                    Expanded(
-                                      child: Container(
-                                        
-                                        decoration: BoxDecoration(
-                                          color: Colors.grey[200]!,
-                                        ),
+                                    Container(
+                                      height: 60,
+                                      decoration: BoxDecoration(
+                                        color: Colors.grey[200]!,
                                       ),
                                     ),
                                   ],
