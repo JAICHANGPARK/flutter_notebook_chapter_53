@@ -113,6 +113,11 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                   ),
                                                 ],
                                               ),
+                                              child: Column(
+                                                children: [
+                                                  
+                                                ],
+                                              ),
                                             ),
                                           ),
                                           Expanded(
@@ -177,7 +182,8 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                     Container(
                                       height: 60,
                                       decoration: BoxDecoration(
-                                        color: Colors.grey[200]!,
+                                        borderRadius: .circular(4),
+                                        color: Colors.grey[100]!,
                                       ),
                                     ),
                                   ],
