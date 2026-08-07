@@ -28,6 +28,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
         Positioned.fill(
           child: SafeArea(
             child: Column(
+              spacing: 12,
               children: [
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
@@ -86,7 +87,17 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                       child: Row(
                                         spacing: 4,
                                         children: [
-                                          Expanded(child: Placeholder()),
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                boxShadow: [
+                                                  BoxShadow(
+                                                    color: Colors.grey[200]!,
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
                                           Expanded(child: Placeholder()),
                                           Expanded(child: Placeholder()),
                                           Expanded(child: Placeholder()),
