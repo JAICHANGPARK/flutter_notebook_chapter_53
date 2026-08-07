@@ -169,6 +169,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                     spreadRadius: 3,
                                                   ),
                                                 ],
+                                                borderRadius: .circular(6),
                                               ),
                                               child: Column(
                                                 mainAxisAlignment: .center,
@@ -211,17 +212,14 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                               ),
                                               child: Column(
                                                 mainAxisAlignment: .center,
+
                                                 children: [
-                                                  Icon(
-                                                    Icons.wb_sunny_outlined,
-                                                    color: Colors.white,
-                                                  ),
+                                                  Icon(Icons.wb_sunny_outlined),
                                                   Gap(3),
                                                   Text(
                                                     "Mon",
                                                     style: TextStyle(
                                                       fontSize: 12,
-                                                      color: Colors.white,
                                                     ),
                                                   ),
                                                   Text(
@@ -229,7 +227,6 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                     style: TextStyle(
                                                       fontWeight: .bold,
                                                       fontSize: 12,
-                                                      color: Colors.white,
                                                     ),
                                                   ),
                                                 ],
@@ -250,17 +247,14 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                               ),
                                               child: Column(
                                                 mainAxisAlignment: .center,
+
                                                 children: [
-                                                  Icon(
-                                                    Icons.wb_sunny_outlined,
-                                                    color: Colors.white,
-                                                  ),
+                                                  Icon(Icons.wb_sunny_outlined),
                                                   Gap(3),
                                                   Text(
                                                     "Mon",
                                                     style: TextStyle(
                                                       fontSize: 12,
-                                                      color: Colors.white,
                                                     ),
                                                   ),
                                                   Text(
@@ -268,7 +262,6 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                     style: TextStyle(
                                                       fontWeight: .bold,
                                                       fontSize: 12,
-                                                      color: Colors.white,
                                                     ),
                                                   ),
                                                 ],
@@ -289,17 +282,14 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                               ),
                                               child: Column(
                                                 mainAxisAlignment: .center,
+
                                                 children: [
-                                                  Icon(
-                                                    Icons.wb_sunny_outlined,
-                                                    color: Colors.white,
-                                                  ),
+                                                  Icon(Icons.wb_sunny_outlined),
                                                   Gap(3),
                                                   Text(
                                                     "Mon",
                                                     style: TextStyle(
                                                       fontSize: 12,
-                                                      color: Colors.white,
                                                     ),
                                                   ),
                                                   Text(
@@ -307,7 +297,6 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                     style: TextStyle(
                                                       fontWeight: .bold,
                                                       fontSize: 12,
-                                                      color: Colors.white,
                                                     ),
                                                   ),
                                                 ],
