@@ -114,8 +114,19 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                 ],
                                               ),
                                               child: Column(
+                                                mainAxisAlignment: .center,
+
                                                 children: [
-                                                  
+                                                  Icon(Icons.wb_sunny_outlined),
+
+                                                  Text("Mon",style: TextStyle(
+                                                    fontSize: 12,
+                                                  ),),
+                                                  Text("4:45am",style: TextStyle(
+                                                    fontWeight: .bold,
+                                                    fontSize: 12,
+                                                  ),),
+
                                                 ],
                                               ),
                                             ),
