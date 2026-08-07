@@ -100,6 +100,27 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                   ),
                                                 ],
                                               ),
+                                              child: Column(
+                                                mainAxisAlignment: .center,
+
+                                                children: [
+                                                  Icon(Icons.wb_sunny_outlined),
+                                                  Gap(3),
+                                                  Text(
+                                                    "Mon",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    "4:45am",
+                                                    style: TextStyle(
+                                                      fontWeight: .bold,
+                                                      fontSize: 12,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
                                             ),
                                           ),
                                           Expanded(
@@ -140,12 +161,37 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                           Expanded(
                                             child: Container(
                                               decoration: BoxDecoration(
-                                                color: Colors.white,
+                                                color: Colors.black,
                                                 boxShadow: [
                                                   BoxShadow(
                                                     color: Colors.grey[50]!,
                                                     blurRadius: 2,
                                                     spreadRadius: 3,
+                                                  ),
+                                                ],
+                                              ),
+                                              child: Column(
+                                                mainAxisAlignment: .center,
+                                                children: [
+                                                  Icon(
+                                                    Icons.wb_sunny_outlined,
+                                                    color: Colors.white,
+                                                  ),
+                                                  Gap(3),
+                                                  Text(
+                                                    "Mon",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    "4:45am",
+                                                    style: TextStyle(
+                                                      fontWeight: .bold,
+                                                      fontSize: 12,
+                                                      color: Colors.white,
+                                                    ),
                                                   ),
                                                 ],
                                               ),
@@ -163,17 +209,28 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                   ),
                                                 ],
                                               ),
-                                            ),
-                                          ),
-                                          Expanded(
-                                            child: Container(
-                                              decoration: BoxDecoration(
-                                                color: Colors.white,
-                                                boxShadow: [
-                                                  BoxShadow(
-                                                    color: Colors.grey[50]!,
-                                                    blurRadius: 2,
-                                                    spreadRadius: 3,
+                                              child: Column(
+                                                mainAxisAlignment: .center,
+                                                children: [
+                                                  Icon(
+                                                    Icons.wb_sunny_outlined,
+                                                    color: Colors.white,
+                                                  ),
+                                                  Gap(3),
+                                                  Text(
+                                                    "Mon",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    "4:45am",
+                                                    style: TextStyle(
+                                                      fontWeight: .bold,
+                                                      fontSize: 12,
+                                                      color: Colors.white,
+                                                    ),
                                                   ),
                                                 ],
                                               ),
@@ -188,6 +245,70 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                     color: Colors.grey[50]!,
                                                     blurRadius: 2,
                                                     spreadRadius: 3,
+                                                  ),
+                                                ],
+                                              ),
+                                              child: Column(
+                                                mainAxisAlignment: .center,
+                                                children: [
+                                                  Icon(
+                                                    Icons.wb_sunny_outlined,
+                                                    color: Colors.white,
+                                                  ),
+                                                  Gap(3),
+                                                  Text(
+                                                    "Mon",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    "4:45am",
+                                                    style: TextStyle(
+                                                      fontWeight: .bold,
+                                                      fontSize: 12,
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.white,
+                                                boxShadow: [
+                                                  BoxShadow(
+                                                    color: Colors.grey[50]!,
+                                                    blurRadius: 2,
+                                                    spreadRadius: 3,
+                                                  ),
+                                                ],
+                                              ),
+                                              child: Column(
+                                                mainAxisAlignment: .center,
+                                                children: [
+                                                  Icon(
+                                                    Icons.wb_sunny_outlined,
+                                                    color: Colors.white,
+                                                  ),
+                                                  Gap(3),
+                                                  Text(
+                                                    "Mon",
+                                                    style: TextStyle(
+                                                      fontSize: 12,
+                                                      color: Colors.white,
+                                                    ),
+                                                  ),
+                                                  Text(
+                                                    "4:45am",
+                                                    style: TextStyle(
+                                                      fontWeight: .bold,
+                                                      fontSize: 12,
+                                                      color: Colors.white,
+                                                    ),
                                                   ),
                                                 ],
                                               ),
