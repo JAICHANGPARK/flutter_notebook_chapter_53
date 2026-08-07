@@ -76,10 +76,15 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                   children: [
                                     Text(
                                       "Today : Text Text text 1234, 12345 ABC",
+                                      style: TextStyle(
+                                        fontWeight: .bold,
+                                        fontSize: 12,
+                                      ),
                                     ),
                                     Container(
                                       height: 100,
                                       child: Row(
+                                        spacing: 4,
                                         children: [
                                           Expanded(child: Placeholder()),
                                           Expanded(child: Placeholder()),
