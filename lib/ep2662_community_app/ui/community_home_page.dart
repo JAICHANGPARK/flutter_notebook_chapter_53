@@ -326,7 +326,21 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                       padding: .all(3),
                                       child: Row(
                                         children: [
-                                          Expanded(child: Placeholder()),
+                                          Expanded(child: Row(
+                                            children: [
+                                              Icon(Icons.cloud_queue),
+                                              Column(
+                                                crossAxisAlignment: .start,
+                                                children: [
+                                                  Text("Asr",style: TextStyle(
+                                                    fontWeight: .bold,
+                                                    fontSize: 12,
+                                                  ),),
+                                                  Text("5:15 PM")
+                                                ],
+                                              )
+                                            ],
+                                          )),
                                           Expanded(child: Placeholder()),
                                         ],
                                       ),
