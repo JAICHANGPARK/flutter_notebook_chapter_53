@@ -38,7 +38,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
             icon: Icon(Icons.card_giftcard),
             label: "Donate",
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.menu), label: "More"),
+          BottomNavigationBarItem(icon: Icon(Icons.menu), label: "More",),
         ],
       ),
     );
