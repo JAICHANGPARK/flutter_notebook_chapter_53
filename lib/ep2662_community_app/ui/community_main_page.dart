@@ -33,7 +33,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
             icon: Icon(Icons.access_time_outlined),
             label: "Player",
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.event), label: "Events"),
+          BottomNavigationBarItem(icon: Icon(Icons.event), label: "Events",),
           BottomNavigationBarItem(
             icon: Icon(Icons.card_giftcard),
             label: "Donate",
