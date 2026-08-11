@@ -28,7 +28,7 @@ class _CommunityMainPageState extends State<CommunityMainPage> {
         selectedItemColor: Colors.blueAccent,
         unselectedItemColor: Colors.grey,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home",),
           BottomNavigationBarItem(
             icon: Icon(Icons.access_time_outlined),
             label: "Player",
