@@ -15,7 +15,6 @@ class _EducationHomePageState extends State<EducationHomePage> {
       spacing: 16,
       children: [
 
-
       ],
     );
   }
