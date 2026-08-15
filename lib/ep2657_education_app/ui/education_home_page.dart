@@ -13,9 +13,7 @@ class _EducationHomePageState extends State<EducationHomePage> {
     return Column(
       crossAxisAlignment: .start,
       spacing: 16,
-      children: [
-
-      ],
+      children: [],
     );
   }
 }
