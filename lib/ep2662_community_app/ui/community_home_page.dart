@@ -410,6 +410,13 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                       style: TextStyle(
                                         fontWeight: .bold,
                                         color: Colors.white,
+                                        fontSize: 18,
+                                      ),
+                                    ),
+                                    Container(
+                                      decoration: ShapeDecoration(
+                                        shape: StadiumBorder(),
+                                        color: Colors.white,
                                       ),
                                     ),
                                   ],
