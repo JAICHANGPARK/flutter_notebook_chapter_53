@@ -384,6 +384,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                               Container(
                                 height: 180,
                                 width: double.infinity,
+                                clipBehavior: .antiAliasWithSaveLayer,
                                 decoration: BoxDecoration(
                                   borderRadius: .circular(12),
                                   image: DecorationImage(
@@ -392,56 +393,62 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                     ),
                                     fit: .cover,
                                   ),
-                                  gradient: LinearGradient(
 
-                                    colors: [
-                                      Colors.black,
-                                      Colors.black45,
-                                      Colors.transparent,
-                                      Colors.transparent,
-                                    ],
-                                  ),
                                 ),
-                                padding: .only(left: 16),
                                 child: Stack(
                                   children: [
+                                    Positioned.fill(child: Container(
+                                      decoration: BoxDecoration(
+                                        gradient: LinearGradient(
 
-                                    Column(
-                                      crossAxisAlignment: .start,
-                                      mainAxisAlignment: .center,
-                                      spacing: 4,
-                                      children: [
-                                        Text(
-                                          "#become a Volunteer",
-                                          style: TextStyle(color: Colors.amber),
+                                          colors: [
+                                            Colors.black,
+                                            Colors.black45,
+                                            Colors.transparent,
+                                            Colors.transparent,
+                                          ],
                                         ),
-                                        Text(
-                                          "Lend a hand and serve\nyour community",
-                                          style: TextStyle(
-                                            fontWeight: .bold,
-                                            color: Colors.white,
-                                            fontSize: 18,
+                                      ),
+                                    ),),
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 16),
+                                      child: Column(
+                                        crossAxisAlignment: .start,
+                                        mainAxisAlignment: .center,
+                                        spacing: 4,
+                                        children: [
+                                          Text(
+                                            "#become a Volunteer",
+                                            style: TextStyle(color: Colors.amber),
                                           ),
-                                        ),
-                                        Gap(6),
-                                        Container(
-                                          decoration: ShapeDecoration(
-                                            shape: StadiumBorder(),
-                                            color: Colors.white,
-                                          ),
-                                          padding: .symmetric(
-                                            horizontal: 16,
-                                            vertical: 4,
-                                          ),
-                                          child: Text(
-                                            "View Details",
+                                          Text(
+                                            "Lend a hand and serve\nyour community",
                                             style: TextStyle(
                                               fontWeight: .bold,
-                                              fontSize: 15,
+                                              color: Colors.white,
+                                              fontSize: 18,
                                             ),
                                           ),
-                                        ),
-                                      ],
+                                          Gap(6),
+                                          Container(
+                                            decoration: ShapeDecoration(
+                                              shape: StadiumBorder(),
+                                              color: Colors.white,
+                                            ),
+                                            padding: .symmetric(
+                                              horizontal: 16,
+                                              vertical: 4,
+                                            ),
+                                            child: Text(
+                                              "View Details",
+                                              style: TextStyle(
+                                                fontWeight: .bold,
+                                                fontSize: 15,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   ],
                                 ),
