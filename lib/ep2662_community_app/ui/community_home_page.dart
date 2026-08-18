@@ -395,8 +395,10 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                     ],
                                   ),
                                 ),
+                                padding: .only(left: 16),
                                 child: Column(
                                   crossAxisAlignment: .start,
+                                  mainAxisAlignment: .center,
                                   children: [
                                     Text("#become a Volunteer"),
                                     Text(
