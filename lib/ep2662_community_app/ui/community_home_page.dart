@@ -387,7 +387,11 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                   borderRadius: .circular(12),
                                   color: Colors.white,
                                 ),
-                                child: Placeholder(),
+                                child: Column(
+                                  children: [
+                                    
+                                  ],
+                                ),
                               ),
                               SmoothPageIndicator(
                                 count: 3,
