@@ -389,7 +389,14 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                 ),
                                 child: Column(
                                   children: [
-                                    
+                                    Text("#become a Volunteer"),
+                                    Text(
+                                      "Lend a hand and serve\nyour community",
+                                      style: TextStyle(
+                                        fontWeight: .bold,
+                                        color: Colors.white,
+                                      ),
+                                    ),
                                   ],
                                 ),
                               ),
