@@ -382,42 +382,66 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                 ),
                               ),
                               Container(
-                                height: 160,
+                                height: 180,
                                 width: double.infinity,
                                 decoration: BoxDecoration(
                                   borderRadius: .circular(12),
-                                  color: Colors.white,
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2022/09/16/17/07/city-7459162_1280.jpg",
+                                    ),
+                                    fit: .cover,
+                                  ),
                                   gradient: LinearGradient(
+
                                     colors: [
                                       Colors.black,
-                                      Colors.black54,
+                                      Colors.black45,
+                                      Colors.transparent,
                                       Colors.transparent,
                                     ],
                                   ),
                                 ),
                                 padding: .only(left: 16),
-                                child: Column(
-                                  crossAxisAlignment: .start,
-                                  mainAxisAlignment: .center,
-                                  spacing: 4,
+                                child: Stack(
                                   children: [
-                                    Text(
-                                      "#become a Volunteer",
-                                      style: TextStyle(color: Colors.amber),
-                                    ),
-                                    Text(
-                                      "Lend a hand and serve\nyour community",
-                                      style: TextStyle(
-                                        fontWeight: .bold,
-                                        color: Colors.white,
-                                        fontSize: 18,
-                                      ),
-                                    ),
-                                    Container(
-                                      decoration: ShapeDecoration(
-                                        shape: StadiumBorder(),
-                                        color: Colors.white,
-                                      ),
+
+                                    Column(
+                                      crossAxisAlignment: .start,
+                                      mainAxisAlignment: .center,
+                                      spacing: 4,
+                                      children: [
+                                        Text(
+                                          "#become a Volunteer",
+                                          style: TextStyle(color: Colors.amber),
+                                        ),
+                                        Text(
+                                          "Lend a hand and serve\nyour community",
+                                          style: TextStyle(
+                                            fontWeight: .bold,
+                                            color: Colors.white,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                        Gap(6),
+                                        Container(
+                                          decoration: ShapeDecoration(
+                                            shape: StadiumBorder(),
+                                            color: Colors.white,
+                                          ),
+                                          padding: .symmetric(
+                                            horizontal: 16,
+                                            vertical: 4,
+                                          ),
+                                          child: Text(
+                                            "View Details",
+                                            style: TextStyle(
+                                              fontWeight: .bold,
+                                              fontSize: 15,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ],
                                 ),
