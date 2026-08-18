@@ -383,18 +383,18 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                               ),
                               Container(
                                 height: 160,
+                                width: double.infinity,
                                 decoration: BoxDecoration(
                                   borderRadius: .circular(12),
                                   color: Colors.white,
                                   gradient: LinearGradient(
                                     colors: [
                                       Colors.black,
-                                      Colors.black26,
+                                      Colors.black54,
                                       Colors.transparent,
                                     ],
                                   ),
                                 ),
-
                                 child: Column(
                                   crossAxisAlignment: .start,
                                   children: [
