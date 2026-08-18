@@ -386,8 +386,17 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                 decoration: BoxDecoration(
                                   borderRadius: .circular(12),
                                   color: Colors.white,
+                                  gradient: LinearGradient(
+                                    colors: [
+                                      Colors.black,
+                                      Colors.black26,
+                                      Colors.transparent,
+                                    ],
+                                  ),
                                 ),
+
                                 child: Column(
+                                  crossAxisAlignment: .start,
                                   children: [
                                     Text("#become a Volunteer"),
                                     Text(
