@@ -399,8 +399,12 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                 child: Column(
                                   crossAxisAlignment: .start,
                                   mainAxisAlignment: .center,
+                                  spacing: 4,
                                   children: [
-                                    Text("#become a Volunteer"),
+                                    Text(
+                                      "#become a Volunteer",
+                                      style: TextStyle(color: Colors.amber),
+                                    ),
                                     Text(
                                       "Lend a hand and serve\nyour community",
                                       style: TextStyle(
