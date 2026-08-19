@@ -500,7 +500,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                 Container(
                                   decoration: ShapeDecoration(
                                     shape: StadiumBorder(),
-                                    color: Colors.blue,
+                                    color: Color.fromRGBO(47, 92, 222, 1),
                                   ),
                                   padding: .symmetric(horizontal: 16),
                                   child: Center(
@@ -512,7 +512,47 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                 ),
                                 Container(
                                   decoration: ShapeDecoration(
-                                    shape: StadiumBorder(),
+                                    shape: StadiumBorder(
+                                      side: BorderSide(
+                                        color: Colors.grey[200]!,
+                                      ),
+                                    ),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Quran Tafsir",
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(
+                                      side: BorderSide(
+                                        color: Colors.grey[200]!,
+                                      ),
+                                    ),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Quran Study",
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(
+                                      side: BorderSide(
+                                        color: Colors.grey[200]!,
+                                      ),
+                                    ),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Quran Tafsir",
+                                      style: TextStyle(color: Colors.grey),
+                                    ),
                                   ),
                                 ),
                               ],
