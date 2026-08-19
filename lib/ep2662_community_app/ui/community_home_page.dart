@@ -550,7 +550,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                   ),
                                   child: Center(
                                     child: Text(
-                                      "Quran Tafsir",
+                                      "Women Exclusive",
                                       style: TextStyle(color: Colors.grey),
                                     ),
                                   ),
