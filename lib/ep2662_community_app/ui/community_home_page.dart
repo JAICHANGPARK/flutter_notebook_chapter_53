@@ -616,7 +616,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                   children: [
                                                     Icon(
                                                       Icons.location_on_rounded,
-                                                      size: 16,
+                                                      size: 16,color: Color.fromRGBO(47, 92, 222, 1),
                                                     ),
                                                     Text("Unknown, Earth"),
                                                   ],
@@ -628,7 +628,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                   children: [
                                                     Icon(
                                                       Icons.access_time_filled,
-                                                      size: 16,
+                                                      size: 16,color: Color.fromRGBO(47, 92, 222, 1),
                                                     ),
                                                     Text("7:25 PM"),
                                                   ],
