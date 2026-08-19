@@ -594,6 +594,27 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         decoration: BoxDecoration(
                                           color: Colors.blue,
                                         ),
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              right: 12,
+                                              top: 12,
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  shape: .circle,
+                                                  border: .all(
+                                                    color: Colors.white,
+                                                  ),
+                                                  color: Colors.black26
+                                                ),
+                                                child: Icon(
+                                                  Icons
+                                                      .bookmark_border_outlined,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                     Padding(
@@ -604,8 +625,10 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         children: [
                                           Text(
                                             "Ramadan ",
-                                            style: TextStyle(fontWeight: .bold,
-                                            fontSize: 16),
+                                            style: TextStyle(
+                                              fontWeight: .bold,
+                                              fontSize: 16,
+                                            ),
                                           ),
                                           Row(
                                             spacing: 4,
@@ -616,7 +639,13 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                   children: [
                                                     Icon(
                                                       Icons.location_on_rounded,
-                                                      size: 16,color: Color.fromRGBO(47, 92, 222, 1),
+                                                      size: 16,
+                                                      color: Color.fromRGBO(
+                                                        47,
+                                                        92,
+                                                        222,
+                                                        1,
+                                                      ),
                                                     ),
                                                     Text("Unknown, Earth"),
                                                   ],
@@ -628,7 +657,13 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                   children: [
                                                     Icon(
                                                       Icons.access_time_filled,
-                                                      size: 16,color: Color.fromRGBO(47, 92, 222, 1),
+                                                      size: 16,
+                                                      color: Color.fromRGBO(
+                                                        47,
+                                                        92,
+                                                        222,
+                                                        1,
+                                                      ),
                                                     ),
                                                     Text("7:25 PM"),
                                                   ],
