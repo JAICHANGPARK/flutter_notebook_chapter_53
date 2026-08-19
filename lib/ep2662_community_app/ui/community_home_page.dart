@@ -575,8 +575,9 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                 width: 320,
                                 margin: .only(right: 12),
                                 decoration: BoxDecoration(
-                                  color: Colors.grey,
+                                  color: Colors.white,
                                   borderRadius: .circular(12),
+                                  boxShadow: [],
                                 ),
                                 clipBehavior: .antiAliasWithSaveLayer,
                                 child: Column(
