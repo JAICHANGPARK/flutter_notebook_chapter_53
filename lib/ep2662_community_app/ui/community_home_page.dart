@@ -588,6 +588,25 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         ),
                                       ),
                                     ),
+                                    Column(
+                                      children: [
+                                        Text("Ramadan "),
+                                        Row(
+                                          children: [
+                                            Expanded(child: Row(children: [
+
+                                            ],)),
+                                             Icon(Icons.location_on_rounded),
+                                            Text("Unknown, Earth"),
+                                            Icon(Icons.access_time_filled),
+                                            Text(
+                                              "7:25 PM"
+                                            )
+                                          ],
+                                        )
+                                      ],
+                                    )
+
                                   ],
                                 ),
                               );
