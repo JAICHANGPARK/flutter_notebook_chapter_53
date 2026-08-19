@@ -580,6 +580,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                 ),
                                 clipBehavior: .antiAliasWithSaveLayer,
                                 child: Column(
+                                  crossAxisAlignment: .start,
                                   children: [
                                     Expanded(
                                       child: Container(
@@ -593,20 +594,30 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         Text("Ramadan "),
                                         Row(
                                           children: [
-                                            Expanded(child: Row(children: [
-
-                                            ],)),
-                                             Icon(Icons.location_on_rounded),
-                                            Text("Unknown, Earth"),
-                                            Icon(Icons.access_time_filled),
-                                            Text(
-                                              "7:25 PM"
-                                            )
+                                            Expanded(
+                                              child: Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.location_on_rounded,
+                                                  ),
+                                                  Text("Unknown, Earth"),
+                                                ],
+                                              ),
+                                            ),
+                                            Expanded(
+                                              child: Row(
+                                                children: [
+                                                  Icon(
+                                                    Icons.access_time_filled,
+                                                  ),
+                                                  Text("7:25 PM"),
+                                                ],
+                                              ),
+                                            ),
                                           ],
-                                        )
+                                        ),
                                       ],
-                                    )
-
+                                    ),
                                   ],
                                 ),
                               );
