@@ -577,7 +577,9 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: .circular(12),
-                                  boxShadow: [],
+                                  boxShadow: [
+                                    BoxShadow(color: Colors.grey[100]!, spreadRadius: 4, blurRadius: 3),
+                                  ],
                                 ),
                                 clipBehavior: .antiAliasWithSaveLayer,
                                 child: Column(
@@ -590,35 +592,40 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         ),
                                       ),
                                     ),
-                                    Column(
-                                      crossAxisAlignment: .start,
-                                      children: [
-                                        Text("Ramadan "),
-                                        Row(
-                                          children: [
-                                            Expanded(
-                                              child: Row(
-                                                children: [
-                                                  Icon(
-                                                    Icons.location_on_rounded,
-                                                  ),
-                                                  Text("Unknown, Earth"),
-                                                ],
+                                    Padding(
+                                      padding: const EdgeInsets.all(12.0),
+                                      child: Column(
+                                        crossAxisAlignment: .start,
+                                        children: [
+                                          Text("Ramadan "),
+                                          Row(
+                                            children: [
+                                              Expanded(
+                                                child: Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.location_on_rounded,
+                                                      size: 16,
+                                                    ),
+                                                    Text("Unknown, Earth"),
+                                                  ],
+                                                ),
                                               ),
-                                            ),
-                                            Expanded(
-                                              child: Row(
-                                                children: [
-                                                  Icon(
-                                                    Icons.access_time_filled,
-                                                  ),
-                                                  Text("7:25 PM"),
-                                                ],
+                                              Expanded(
+                                                child: Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.access_time_filled,
+                                                      size: 16,
+                                                    ),
+                                                    Text("7:25 PM"),
+                                                  ],
+                                                ),
                                               ),
-                                            ),
-                                          ],
-                                        ),
-                                      ],
+                                            ],
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   ],
                                 ),
