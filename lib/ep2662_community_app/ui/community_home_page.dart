@@ -612,6 +612,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                             children: [
                                               Expanded(
                                                 child: Row(
+                                                  spacing: 4,
                                                   children: [
                                                     Icon(
                                                       Icons.location_on_rounded,
@@ -623,6 +624,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                               ),
                                               Expanded(
                                                 child: Row(
+                                                  spacing: 4,
                                                   children: [
                                                     Icon(
                                                       Icons.access_time_filled,
