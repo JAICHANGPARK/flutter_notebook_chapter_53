@@ -605,12 +605,13 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                                   border: .all(
                                                     color: Colors.white24,
                                                   ),
-                                                  color: Colors.black26
+                                                  color: Colors.black26,
                                                 ),
                                                 padding: .all(8),
                                                 child: Icon(
                                                   Icons
                                                       .bookmark_border_outlined,
+                                                  color: Colors.white,
                                                 ),
                                               ),
                                             ),
