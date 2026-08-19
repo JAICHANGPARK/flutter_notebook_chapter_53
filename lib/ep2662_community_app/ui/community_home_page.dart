@@ -503,6 +503,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                     color: Color.fromRGBO(47, 92, 222, 1),
                                   ),
                                   padding: .symmetric(horizontal: 16),
+                                  margin: .only(right: 8),
                                   child: Center(
                                     child: Text(
                                       "All",
@@ -517,7 +518,8 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         color: Colors.grey[200]!,
                                       ),
                                     ),
-                                  ),  padding: .symmetric(horizontal: 16),
+                                  ),
+                                  padding: .symmetric(horizontal: 16),
                                   child: Center(
                                     child: Text(
                                       "Quran Tafsir",
@@ -532,7 +534,9 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         color: Colors.grey[200]!,
                                       ),
                                     ),
-                                  ),  padding: .symmetric(horizontal: 16),
+                                  ),
+                                  padding: .symmetric(horizontal: 16),
+                                  margin: .only(right: 8),
                                   child: Center(
                                     child: Text(
                                       "Quran Study",
@@ -547,7 +551,9 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         color: Colors.grey[200]!,
                                       ),
                                     ),
-                                  ),  padding: .symmetric(horizontal: 16),
+                                  ),
+                                  padding: .symmetric(horizontal: 16),
+                                  margin: .only(right: 8),
                                   child: Center(
                                     child: Text(
                                       "Women Exclusive",
