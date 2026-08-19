@@ -490,7 +490,12 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 16),
-                          child: Container(height: 42, child: Placeholder()),
+                          child: ListView(
+                            scrollDirection: .horizontal,
+                            children: [
+
+                            ],
+                          ),
                         ),
                         Container(
                           margin: .only(left: 16),
