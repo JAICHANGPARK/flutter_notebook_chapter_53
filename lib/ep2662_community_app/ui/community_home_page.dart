@@ -393,23 +393,23 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                     ),
                                     fit: .cover,
                                   ),
-
                                 ),
                                 child: Stack(
                                   children: [
-                                    Positioned.fill(child: Container(
-                                      decoration: BoxDecoration(
-                                        gradient: LinearGradient(
-
-                                          colors: [
-                                            Colors.black,
-                                            Colors.black45,
-                                            Colors.transparent,
-                                            Colors.transparent,
-                                          ],
+                                    Positioned.fill(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          gradient: LinearGradient(
+                                            colors: [
+                                              Colors.black,
+                                              Colors.black45,
+                                              Colors.transparent,
+                                              Colors.transparent,
+                                            ],
+                                          ),
                                         ),
                                       ),
-                                    ),),
+                                    ),
                                     Padding(
                                       padding: const EdgeInsets.only(left: 16),
                                       child: Column(
@@ -419,7 +419,9 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         children: [
                                           Text(
                                             "#become a Volunteer",
-                                            style: TextStyle(color: Colors.amber),
+                                            style: TextStyle(
+                                              color: Colors.amber,
+                                            ),
                                           ),
                                           Text(
                                             "Lend a hand and serve\nyour community",
@@ -493,7 +495,12 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                           child: ListView(
                             scrollDirection: .horizontal,
                             children: [
-
+                              Container(
+                                decoration: ShapeDecoration(
+                                  shape: StadiumBorder(),
+                                  color: Colors.blue,
+                                ),
+                              ),
                             ],
                           ),
                         ),
