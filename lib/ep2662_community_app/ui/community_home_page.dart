@@ -547,7 +547,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         color: Colors.grey[200]!,
                                       ),
                                     ),
-                                  ),
+                                  ),  padding: .symmetric(horizontal: 16),
                                   child: Center(
                                     child: Text(
                                       "Women Exclusive",
