@@ -590,6 +590,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                       ),
                                     ),
                                     Column(
+                                      crossAxisAlignment: .start,
                                       children: [
                                         Text("Ramadan "),
                                         Row(
