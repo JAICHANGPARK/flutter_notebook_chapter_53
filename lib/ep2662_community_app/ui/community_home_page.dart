@@ -492,20 +492,31 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 16),
-                          child: ListView(
-                            scrollDirection: .horizontal,
-                            children: [
-                              Container(
-                                decoration: ShapeDecoration(
-                                  shape: StadiumBorder(),
-                                  color: Colors.blue,
+                          child: Container(
+                            height: 34,
+                            child: ListView(
+                              scrollDirection: .horizontal,
+                              children: [
+                                Container(
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(),
+                                    color: Colors.blue,
+                                  ),
+                                  padding: .symmetric(horizontal: 16),
+                                  child: Center(
+                                    child: Text(
+                                      "All",
+                                      style: TextStyle(color: Colors.white),
+                                    ),
+                                  ),
                                 ),
-                                child: Text(
-                                  "All",
-                                  style: TextStyle(color: Colors.white),
+                                Container(
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(),
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                         Container(
