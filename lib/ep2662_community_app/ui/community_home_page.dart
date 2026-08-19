@@ -571,6 +571,16 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                           child: ListView.builder(
                             scrollDirection: .horizontal,
                             itemBuilder: (context,index){
+                              return Container(
+                                width: 320,
+                                margin: .only(
+                                  right: 12
+                                ),
+                                decoration: BoxDecoration(
+                                  color: Colors.grey,
+
+                                ),
+                              );
 
                           },),
                         ),
