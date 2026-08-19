@@ -500,6 +500,10 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                   shape: StadiumBorder(),
                                   color: Colors.blue,
                                 ),
+                                child: Text(
+                                  "All",
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                             ],
                           ),
