@@ -90,6 +90,7 @@ class _CommunityUpcomingEventsPageState
                         ),
                       ),
                     ),
+                    margin: .only(right: 8),
                     padding: .symmetric(horizontal: 16),
                     child: Center(
                       child: Text(
@@ -102,7 +103,7 @@ class _CommunityUpcomingEventsPageState
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(
                         side: BorderSide(
-                          color: Colors.grey[200]!,
+                          color: Colors.grey[400]!,
                         ),
                       ),
                     ),
@@ -119,7 +120,7 @@ class _CommunityUpcomingEventsPageState
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(
                         side: BorderSide(
-                          color: Colors.grey[200]!,
+                          color: Colors.grey[400]!,
                         ),
                       ),
                     ),
