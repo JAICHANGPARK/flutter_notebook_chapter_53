@@ -49,6 +49,7 @@ class _CommunityUpcomingEventsPageState
                     decoration: InputDecoration(
                       icon: Icon(Icons.search),
                       hintText: "Search for events",
+                      border: .none,
                     ),
                   ),
                 ),
