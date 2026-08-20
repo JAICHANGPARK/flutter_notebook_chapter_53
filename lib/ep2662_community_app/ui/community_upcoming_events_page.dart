@@ -12,6 +12,17 @@ class _CommunityUpcomingEventsPageState
     extends State<CommunityUpcomingEventsPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Color.fromRGBO(246, 248, 250, 1));
+    return Scaffold(
+      backgroundColor: Color.fromRGBO(246, 248, 250, 1),
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: Text("Upcoming events"),
+        actions: [
+          Badge(child: Icon(Icons.notifications_none_outlined),
+            label: Text("2"),
+          )
+        ],
+      ),
+    );
   }
 }
