@@ -42,20 +42,23 @@ class _CommunityUpcomingEventsPageState
                 ),
               ],
             ),
-            child: Row(
-              children: [
-                Expanded(
-                  child: TextField(
-                    decoration: InputDecoration(
-                      icon: Icon(Icons.search),
-                      hintText: "Search for events",
-                      border: .none,
+            padding: .only(left: 16),
+            child: IntrinsicHeight(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: TextField(
+                      decoration: InputDecoration(
+                        icon: Icon(Icons.search),
+                        hintText: "Search for events",
+                        border: .none,
+                      ),
                     ),
                   ),
-                ),
-                VerticalDivider(),
-                IconButton(onPressed: () {}, icon: Icon(Icons.tune)),
-              ],
+                  VerticalDivider(),
+                  IconButton(onPressed: () {}, icon: Icon(Icons.tune)),
+                ],
+              ),
             ),
           ),
         ],
