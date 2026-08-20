@@ -17,6 +17,7 @@ class _CommunityUpcomingEventsPageState
       appBar: AppBar(
         backgroundColor: Colors.white,
         title: Text("Upcoming events"),
+        actionsPadding: .only(right: 16),
         actions: [
           Badge(child: Icon(Icons.notifications_none_outlined),
             label: Text("2"),
