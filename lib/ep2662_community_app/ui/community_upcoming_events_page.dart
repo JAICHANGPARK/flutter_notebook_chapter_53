@@ -26,81 +26,7 @@ class _CommunityUpcomingEventsPageState
         ],
       ),
       body: Column(
-        spacing: 16,Padding(
-        padding: const EdgeInsets.only(left: 16),
-        child: Container(
-          height: 34,
-          child: ListView(
-            scrollDirection: .horizontal,
-            children: [
-              Container(
-                decoration: ShapeDecoration(
-                  shape: StadiumBorder(),
-                  color: Color.fromRGBO(47, 92, 222, 1),
-                ),
-                padding: .symmetric(horizontal: 16),
-                margin: .only(right: 8),
-                child: Center(
-                  child: Text(
-                    "All",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              ),
-              Container(
-                decoration: ShapeDecoration(
-                  shape: StadiumBorder(
-                    side: BorderSide(
-                      color: Colors.grey[200]!,
-                    ),
-                  ),
-                ),
-                padding: .symmetric(horizontal: 16),
-                child: Center(
-                  child: Text(
-                    "Quran Tafsir",
-                    style: TextStyle(color: Colors.grey),
-                  ),
-                ),
-              ),
-              Container(
-                decoration: ShapeDecoration(
-                  shape: StadiumBorder(
-                    side: BorderSide(
-                      color: Colors.grey[200]!,
-                    ),
-                  ),
-                ),
-                padding: .symmetric(horizontal: 16),
-                margin: .only(right: 8),
-                child: Center(
-                  child: Text(
-                    "Quran Study",
-                    style: TextStyle(color: Colors.grey),
-                  ),
-                ),
-              ),
-              Container(
-                decoration: ShapeDecoration(
-                  shape: StadiumBorder(
-                    side: BorderSide(
-                      color: Colors.grey[200]!,
-                    ),
-                  ),
-                ),
-                padding: .symmetric(horizontal: 16),
-                margin: .only(right: 8),
-                child: Center(
-                  child: Text(
-                    "Women Exclusive",
-                    style: TextStyle(color: Colors.grey),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
+
         children: [
           Container(
             margin: .symmetric(horizontal: 16, vertical: 16),
@@ -160,7 +86,7 @@ class _CommunityUpcomingEventsPageState
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(
                         side: BorderSide(
-                          color: Colors.grey[200]!,
+                          color: Colors.grey[400]!,
                         ),
                       ),
                     ),
