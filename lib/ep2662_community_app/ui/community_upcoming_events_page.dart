@@ -26,7 +26,6 @@ class _CommunityUpcomingEventsPageState
         ],
       ),
       body: Column(
-
         children: [
           Container(
             margin: .symmetric(horizontal: 16, vertical: 16),
@@ -76,18 +75,13 @@ class _CommunityUpcomingEventsPageState
                     padding: .symmetric(horizontal: 16),
                     margin: .only(right: 8),
                     child: Center(
-                      child: Text(
-                        "All",
-                        style: TextStyle(color: Colors.white),
-                      ),
+                      child: Text("All", style: TextStyle(color: Colors.white)),
                     ),
                   ),
                   Container(
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(
-                        side: BorderSide(
-                          color: Colors.grey[400]!,
-                        ),
+                        side: BorderSide(color: Colors.grey[400]!),
                       ),
                     ),
                     margin: .only(right: 8),
@@ -102,9 +96,7 @@ class _CommunityUpcomingEventsPageState
                   Container(
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(
-                        side: BorderSide(
-                          color: Colors.grey[400]!,
-                        ),
+                        side: BorderSide(color: Colors.grey[400]!),
                       ),
                     ),
                     padding: .symmetric(horizontal: 16),
@@ -119,9 +111,7 @@ class _CommunityUpcomingEventsPageState
                   Container(
                     decoration: ShapeDecoration(
                       shape: StadiumBorder(
-                        side: BorderSide(
-                          color: Colors.grey[400]!,
-                        ),
+                        side: BorderSide(color: Colors.grey[400]!),
                       ),
                     ),
                     padding: .symmetric(horizontal: 16),
@@ -137,6 +127,7 @@ class _CommunityUpcomingEventsPageState
               ),
             ),
           ),
+          Expanded(child: ListView.builder(itemBuilder: (context, index) {})),
         ],
       ),
     );
