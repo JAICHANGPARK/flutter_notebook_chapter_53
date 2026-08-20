@@ -474,17 +474,22 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                   fontSize: 16,
                                 ),
                               ),
-                              Container(
-                                decoration: BoxDecoration(
-                                  border: .all(color: Colors.grey[200]!),
-                                ),
-                                padding: .symmetric(horizontal: 6, vertical: 2),
-                                child: Row(
-                                  spacing: 4,
-                                  children: [
-                                    Icon(Icons.apps),
-                                    Text("View all"),
-                                  ],
+                              GestureDetector(
+                                onTap: (){
+                                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CommunityUpcomingEventsPage()));
+                                },
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    border: .all(color: Colors.grey[200]!),
+                                  ),
+                                  padding: .symmetric(horizontal: 6, vertical: 2),
+                                  child: Row(
+                                    spacing: 4,
+                                    children: [
+                                      Icon(Icons.apps),
+                                      Text("View all"),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ],
