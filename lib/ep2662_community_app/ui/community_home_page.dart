@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
+import 'community_upcoming_events_page.dart';
+
 class CommunityHomePage extends StatefulWidget {
   const CommunityHomePage({super.key});
 
@@ -475,14 +477,22 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                 ),
                               ),
                               GestureDetector(
-                                onTap: (){
-                                  Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CommunityUpcomingEventsPage()));
+                                onTap: () {
+                                  Navigator.of(context).push(
+                                    MaterialPageRoute(
+                                      builder: (context) =>
+                                          CommunityUpcomingEventsPage(),
+                                    ),
+                                  );
                                 },
                                 child: Container(
                                   decoration: BoxDecoration(
                                     border: .all(color: Colors.grey[200]!),
                                   ),
-                                  padding: .symmetric(horizontal: 6, vertical: 2),
+                                  padding: .symmetric(
+                                    horizontal: 6,
+                                    vertical: 2,
+                                  ),
                                   child: Row(
                                     spacing: 4,
                                     children: [
