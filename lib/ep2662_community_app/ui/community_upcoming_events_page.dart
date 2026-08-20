@@ -29,8 +29,10 @@ class _CommunityUpcomingEventsPageState
         spacing: 16,
         children: [
           Container(
+            margin: .symmetric(horizontal: 16, vertical: 16),
             decoration: ShapeDecoration(
               shape: StadiumBorder(),
+              
               color: Colors.white,
               shadows: [
                 BoxShadow(
