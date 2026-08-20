@@ -19,9 +19,35 @@ class _CommunityUpcomingEventsPageState
         title: Text("Upcoming events"),
         actionsPadding: .only(right: 16),
         actions: [
-          Badge(child: Icon(Icons.notifications_none_outlined),
+          Badge(
+            child: Icon(Icons.notifications_none_outlined),
             label: Text("2"),
-          )
+          ),
+        ],
+      ),
+      body: Column(
+        spacing: 16,
+        children: [
+          Container(
+            decoration: ShapeDecoration(
+              shape: StadiumBorder(),
+              color: Colors.white,
+              shadows: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: .1),
+                  blurRadius: 3,
+                  spreadRadius: 4,
+                ),
+              ],
+            ),
+            child: Row(
+              children: [
+                Expanded(child: TextField()),
+                VerticalDivider(),
+                IconButton(onPressed: () {}, icon: Icon(Icons.tune)),
+              ],
+            ),
+          ),
         ],
       ),
     );
