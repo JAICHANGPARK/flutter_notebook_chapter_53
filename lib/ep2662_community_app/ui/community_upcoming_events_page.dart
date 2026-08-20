@@ -32,19 +32,26 @@ class _CommunityUpcomingEventsPageState
             margin: .symmetric(horizontal: 16, vertical: 16),
             decoration: ShapeDecoration(
               shape: StadiumBorder(),
-              
+
               color: Colors.white,
               shadows: [
                 BoxShadow(
                   color: Colors.black.withValues(alpha: .1),
                   blurRadius: 3,
-                  spreadRadius: 4,
+                  spreadRadius: 1,
                 ),
               ],
             ),
             child: Row(
               children: [
-                Expanded(child: TextField()),
+                Expanded(
+                  child: TextField(
+                    decoration: InputDecoration(
+                      icon: Icon(Icons.search),
+                      hintText: "Search for events",
+                    ),
+                  ),
+                ),
                 VerticalDivider(),
                 IconButton(onPressed: () {}, icon: Icon(Icons.tune)),
               ],
