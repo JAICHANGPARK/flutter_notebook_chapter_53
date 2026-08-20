@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class CommunityUpcomingEventsPage extends StatefulWidget {
   const CommunityUpcomingEventsPage({super.key});
@@ -127,7 +128,119 @@ class _CommunityUpcomingEventsPageState
               ),
             ),
           ),
-          Expanded(child: ListView.builder(itemBuilder: (context, index) {})),
+          Gap(12),
+          Expanded(child: ListView.builder(
+            itemBuilder: (context, index) {
+              return Container(
+                height: 320,
+                margin: .all(12),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: .circular(12),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey[100]!,
+                      spreadRadius: 4,
+                      blurRadius: 3,
+                    ),
+                  ],
+                ),
+                clipBehavior: .antiAliasWithSaveLayer,
+                child: Column(
+                  crossAxisAlignment: .start,
+                  children: [
+                    Expanded(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                        ),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              right: 12,
+                              top: 12,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  shape: .circle,
+                                  border: .all(
+                                    color: Colors.white24,
+                                  ),
+                                  color: Colors.black26,
+                                ),
+                                padding: .all(8),
+                                child: Icon(
+                                  Icons
+                                      .bookmark_border_outlined,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Column(
+                        crossAxisAlignment: .start,
+                        spacing: 4,
+                        children: [
+                          Text(
+                            "Ramadan ",
+                            style: TextStyle(
+                              fontWeight: .bold,
+                              fontSize: 16,
+                            ),
+                          ),
+                          Row(
+                            spacing: 4,
+                            children: [
+                              Expanded(
+                                child: Row(
+                                  spacing: 4,
+                                  children: [
+                                    Icon(
+                                      Icons.location_on_rounded,
+                                      size: 16,
+                                      color: Color.fromRGBO(
+                                        47,
+                                        92,
+                                        222,
+                                        1,
+                                      ),
+                                    ),
+                                    Text("Unknown, Earth"),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Row(
+                                  spacing: 4,
+                                  children: [
+                                    Icon(
+                                      Icons.access_time_filled,
+                                      size: 16,
+                                      color: Color.fromRGBO(
+                                        47,
+                                        92,
+                                        222,
+                                        1,
+                                      ),
+                                    ),
+                                    Text("7:25 PM"),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),),
         ],
       ),
     );
