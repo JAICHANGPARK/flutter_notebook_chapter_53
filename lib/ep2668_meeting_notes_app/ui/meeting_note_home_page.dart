@@ -38,9 +38,9 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       width: 52,
                       decoration: ShapeDecoration(
                         shape: RoundedSuperellipseBorder(),
-                        color: Colors.black,
+                        color: Colors.grey[400],
                       ),
-                      child: Icon(Icons.home_filled, color: Colors.white),
+                      child: Icon(Icons.calendar_month, color: Colors.grey),
                     ),
                   ],
                 ),
