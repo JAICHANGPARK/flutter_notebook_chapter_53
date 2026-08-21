@@ -12,30 +12,42 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Stack(
-        children: [
-          Column(children: []),
-          Positioned(
-            left: 0,
-            right: 0,
-            bottom: 0,
-            child: Container(
-              height: 80,
-              child: Row(
-                children: [
-                  Container(
-                    height: 52,
-                    width: 52,
-                    decoration: ShapeDecoration(
-                      shape: RoundedSuperellipseBorder(),
-                      color: Colors.black,
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Positioned.fill(child: Column(children: [])),
+            Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: Container(
+                height: 80,
+                child: Row(
+                  children: [
+                    Container(
+                      height: 52,
+                      width: 52,
+                      decoration: ShapeDecoration(
+                        shape: RoundedSuperellipseBorder(),
+                        color: Colors.black,
+                      ),
+                      child: Icon(Icons.home_filled, color: Colors.white),
                     ),
-                  ),
-                ],
+                    Container(
+                      height: 52,
+                      width: 52,
+                      decoration: ShapeDecoration(
+                        shape: RoundedSuperellipseBorder(),
+                        color: Colors.black,
+                      ),
+                      child: Icon(Icons.home_filled, color: Colors.white),
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
