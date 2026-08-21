@@ -21,9 +21,12 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
               right: 0,
               bottom: 0,
               child: Container(
-                height: 80,
+                height: 100,
                 padding: .symmetric(horizontal: 16, vertical: 16),
-                
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  boxShadow: [BoxShadow(color: Colors.black.withValues(alpha: .1))],
+                ),
                 child: Row(
                   mainAxisAlignment: .spaceBetween,
                   children: [
