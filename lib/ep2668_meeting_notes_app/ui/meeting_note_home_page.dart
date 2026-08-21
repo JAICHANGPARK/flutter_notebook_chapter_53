@@ -51,6 +51,33 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       ),
                       child: Icon(Icons.calendar_month, color: Colors.grey),
                     ),
+                    Container(
+                      height: 64,
+                      width: 64,
+                      decoration: ShapeDecoration(
+                        shape: RoundedSuperellipseBorder(),
+                        color: Colors.grey[200],
+                      ),
+                      child: Icon(Icons.calendar_month, color: Colors.grey),
+                    ),
+                    Container(
+                      height: 64,
+                      width: 64,
+                      decoration: ShapeDecoration(
+                        shape: RoundedSuperellipseBorder(),
+                        color: Colors.grey[200],
+                      ),
+                      child: Icon(Icons.calendar_month, color: Colors.grey),
+                    ),
+                    Container(
+                      height: 64,
+                      width: 64,
+                      decoration: ShapeDecoration(
+                        shape: RoundedSuperellipseBorder(),
+                        color: Colors.grey[200],
+                      ),
+                      child: Icon(Icons.calendar_month, color: Colors.grey),
+                    ),
                   ],
                 ),
               ),
