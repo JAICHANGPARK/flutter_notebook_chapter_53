@@ -1,6 +1,3 @@
-
-
-
 import 'package:material_ui/material_ui.dart';
 
 class MeetingNotesApp extends StatelessWidget {
