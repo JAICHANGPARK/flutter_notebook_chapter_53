@@ -22,11 +22,15 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
               bottom: 0,
               child: Container(
                 height: 80,
+                padding: .symmetric(horizontal: 16, vertical: 16),
+                
                 child: Row(
+                  mainAxisAlignment: .spaceBetween,
                   children: [
                     Container(
-                      height: 52,
-                      width: 52,
+                      height: 64,
+                      width: 64,
+
                       decoration: ShapeDecoration(
                         shape: RoundedSuperellipseBorder(),
                         color: Colors.black,
@@ -34,11 +38,11 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       child: Icon(Icons.home_filled, color: Colors.white),
                     ),
                     Container(
-                      height: 52,
-                      width: 52,
+                      height: 64,
+                      width: 64,
                       decoration: ShapeDecoration(
                         shape: RoundedSuperellipseBorder(),
-                        color: Colors.grey[400],
+                        color: Colors.grey[200],
                       ),
                       child: Icon(Icons.calendar_month, color: Colors.grey),
                     ),
