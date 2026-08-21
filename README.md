@@ -8,6 +8,14 @@
 
 <img src="https://cdn.dribbble.com/userupload/48601830/file/5bc1cc2a73d18dcc2bd7b69094182adc.png?resize=1905x1429&vertical=center" alt=""/>
 
+# EP2662-2667
+
+- Prayer Times, Quran Recitation & Islamic Community App
+- Shahid Miah UI UX Designer for Wavespace - UI/UX Design Agency
+- https://dribbble.com/shots/27617663-Prayer-Times-Quran-Recitation-Islamic-Community-App
+
+<img src="https://cdn.dribbble.com/userupload/48601830/file/5bc1cc2a73d18dcc2bd7b69094182adc.png?resize=1905x1429&vertical=center" alt=""/>
+
 # EP2657-2661
 
 - Education App Dashboard UI Kit | Modern Mobile UX Design
