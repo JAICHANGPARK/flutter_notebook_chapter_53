@@ -10,8 +10,6 @@ class MeetingNoteHomePage extends StatefulWidget {
 class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
-    );
+    return Scaffold(backgroundColor: Colors.white);
   }
 }
