@@ -15,6 +15,7 @@ dependencies:
   easy_pie_chart: ^1.0.2
   smooth_page_indicator:
   gap:
+  material_ui: ^1.0.1
 
 dev_dependencies:
   flutter_test:
