@@ -15,7 +15,22 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
       body: Stack(
         children: [
           Column(children: []),
-          Positioned(child: Container(height: 80)),
+          Positioned(
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: Container(height: 80,
+              child: Row(
+                children: [
+                  Container(
+                    height: 52,
+                    width: 52,
+                    decoration: ShapeDecoration(shape: RoundedSuperellipseBorder()),
+                  )
+                ],
+              ),),
+
+          ),
         ],
       ),
     );
