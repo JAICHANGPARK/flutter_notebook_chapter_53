@@ -11,7 +11,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+
     );
   }
 }
