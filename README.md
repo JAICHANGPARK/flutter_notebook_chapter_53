@@ -4,9 +4,9 @@
 
 - AI Meeting Notes & Transcription App UI/UX
 - Asib Iquebal
-- https://dribbble.com/shots/27617663-Prayer-Times-Quran-Recitation-Islamic-Community-App
+- https://dribbble.com/shots/27661473-AI-Meeting-Notes-Transcription-App-UI-UX
 
-<img src="https://cdn.dribbble.com/userupload/48601830/file/5bc1cc2a73d18dcc2bd7b69094182adc.png?resize=1905x1429&vertical=center" alt=""/>
+<img src="https://cdn.dribbble.com/userupload/48764255/file/d76f58b133be55f57ca345b720aa8143.png?resize=1905x1429&vertical=center" alt=""/>
 
 # EP2662-2667
 
