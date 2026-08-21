@@ -10,6 +10,8 @@ class MeetingNoteHomePage extends StatefulWidget {
 class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      
+    );
   }
 }
