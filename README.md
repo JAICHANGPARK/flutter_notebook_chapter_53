@@ -3,7 +3,7 @@
 # EP2668
 
 - AI Meeting Notes & Transcription App UI/UX
-- Shahid Miah UI UX Designer for Wavespace - UI/UX Design Agency
+- Asib Iquebal
 - https://dribbble.com/shots/27617663-Prayer-Times-Quran-Recitation-Islamic-Community-App
 
 <img src="https://cdn.dribbble.com/userupload/48601830/file/5bc1cc2a73d18dcc2bd7b69094182adc.png?resize=1905x1429&vertical=center" alt=""/>
