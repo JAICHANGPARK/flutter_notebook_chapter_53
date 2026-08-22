@@ -36,7 +36,9 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       height: 64,
                       width: 64,
                       decoration: ShapeDecoration(
-                        shape: RoundedSuperellipseBorder(),
+                        shape: RoundedSuperellipseBorder(
+                          borderRadius: .circular(16),
+                        ),
                         color: Colors.black,
                       ),
                       child: Icon(Icons.home_filled, color: Colors.white),
@@ -45,7 +47,9 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       height: 64,
                       width: 64,
                       decoration: ShapeDecoration(
-                        shape: RoundedSuperellipseBorder(),
+                        shape: RoundedSuperellipseBorder(
+                          borderRadius: .circular(16),
+                        ),
                         color: Colors.grey[200],
                       ),
                       child: Icon(Icons.calendar_month, color: Colors.grey),
@@ -54,7 +58,9 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       height: 64,
                       width: 64,
                       decoration: ShapeDecoration(
-                        shape: RoundedSuperellipseBorder(),
+                        shape: RoundedSuperellipseBorder(
+                          borderRadius: .circular(16),
+                        ),
                         color: Colors.grey[200],
                       ),
                       child: Icon(Icons.calendar_month, color: Colors.grey),
@@ -63,7 +69,9 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       height: 64,
                       width: 64,
                       decoration: ShapeDecoration(
-                        shape: RoundedSuperellipseBorder(),
+                        shape: RoundedSuperellipseBorder(
+                          borderRadius: .circular(16),
+                        ),
                         color: Colors.grey[200],
                       ),
                       child: Icon(Icons.calendar_month, color: Colors.grey),
@@ -72,7 +80,9 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       height: 64,
                       width: 64,
                       decoration: ShapeDecoration(
-                        shape: RoundedSuperellipseBorder(),
+                        shape: RoundedSuperellipseBorder(
+                          borderRadius: .circular(16),
+                        ),
                         color: Colors.grey[200],
                       ),
                       child: Icon(Icons.calendar_month, color: Colors.grey),
