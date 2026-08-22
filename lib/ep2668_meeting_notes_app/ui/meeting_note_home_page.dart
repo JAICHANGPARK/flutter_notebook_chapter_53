@@ -1,3 +1,4 @@
+import 'package:hugeicons/hugeicons.dart';
 import 'package:material_ui/material_ui.dart';
 
 class MeetingNoteHomePage extends StatefulWidget {
@@ -85,7 +86,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                         ),
                         color: Colors.grey[200],
                       ),
-                      child: Icon(Icons.calendar_month, color: Colors.grey),
+                      child: Icon(Icons.star_border, color: Colors.grey),
                     ),
                   ],
                 ),
