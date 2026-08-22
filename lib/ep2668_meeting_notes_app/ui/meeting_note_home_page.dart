@@ -28,12 +28,15 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                         decoration: BoxDecoration(
                           shape: .circle,
                           border: .all(color: Colors.grey[400]!),
-                          
                         ),
                         child: Icon(Icons.search),
                       ),
                       Container(
-                        decoration: BoxDecoration(shape: .circle),
+                        padding: .all(12),
+                        decoration: BoxDecoration(
+                          shape: .circle,
+                          border: .all(color: Colors.grey[400]!),
+                        ),
                         child: Icon(Icons.notifications_none_outlined),
                       ),
                     ],
