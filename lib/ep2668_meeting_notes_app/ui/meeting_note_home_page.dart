@@ -64,7 +64,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                         ),
                         color: Colors.grey[200],
                       ),
-                      child: Icon(Icons.calendar_month, color: Colors.grey),
+                      child: Icon(Icons.mic, color: Colors.grey),
                     ),
                     Container(
                       height: 64,
@@ -75,7 +75,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                         ),
                         color: Colors.grey[200],
                       ),
-                      child: Icon(Icons.calendar_month, color: Colors.grey),
+                      child: Icon(Icons.inbox_outlined, color: Colors.grey),
                     ),
                     Container(
                       height: 64,
