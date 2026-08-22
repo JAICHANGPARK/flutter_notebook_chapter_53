@@ -19,37 +19,51 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
             Positioned.fill(
               child: Column(
                 children: [
-                  Row(
-                    children: [
-                      CircleAvatar(),
-                      Expanded(child: Text("Hi Dream Walker")),
-                      Container(
-                        padding: .all(12),
-                        decoration: BoxDecoration(
-                          shape: .circle,
-                          border: .all(color: Colors.grey[400]!),
+                  Padding(
+                    padding: .symmetric(horizontal: 16),
+                    child: Row(
+                      spacing: 8,
+                      children: [
+                        CircleAvatar(),
+                        Expanded(child: Text("Hi Dream Walker")),
+                        Container(
+                          padding: .all(12),
+                          decoration: BoxDecoration(
+                            shape: .circle,
+                            border: .all(color: Colors.grey[400]!),
+                          ),
+                          child: Icon(Icons.search),
                         ),
-                        child: Icon(Icons.search),
-                      ),
-                      Container(
-                        padding: .all(12),
-                        decoration: BoxDecoration(
-                          shape: .circle,
-                          border: .all(color: Colors.grey[400]!),
+                        Container(
+                          padding: .all(12),
+                          decoration: BoxDecoration(
+                            shape: .circle,
+                            border: .all(color: Colors.grey[400]!),
+                          ),
+                          child: Icon(Icons.notifications_none_outlined),
                         ),
-                        child: Icon(Icons.notifications_none_outlined),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   Container(
                     decoration: ShapeDecoration(
                       shape: RoundedSuperellipseBorder(),
                       color: Colors.grey[200]!,
                     ),
+                    margin: .symmetric(horizontal: 16),
+                    padding: .all(12),
                     child: Row(
                       children: [
                         CircleAvatar(),
-                        Expanded(child: Column(children: [])),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: .start,
+                            children: [
+                              Text('What do you want to know?'),
+                              Text("Ask anything about your meethings"),
+                            ],
+                          ),
+                        ),
                         CircleAvatar(
                           backgroundColor: Colors.white,
                           child: Icon(Icons.arrow_forward_outlined),
