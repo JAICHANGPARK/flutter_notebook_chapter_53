@@ -89,9 +89,12 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                           children: [Text("Upcoming"), Text("View all")],
                         ),
                         Column(
-                          children: [
-
-                          ],
+                          children: List.generate(6, (index){
+                            return Container(
+                              height: 200,
+                              child: Placeholder(),
+                            );
+                          })
                         )
                       ],
                     ),
