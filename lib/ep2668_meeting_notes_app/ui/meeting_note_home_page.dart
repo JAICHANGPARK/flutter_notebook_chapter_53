@@ -16,7 +16,19 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
       body: SafeArea(
         child: Stack(
           children: [
-            Positioned.fill(child: Column(children: [])),
+            Positioned.fill(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      CircleAvatar(),
+                      Expanded(child: Text("Hi Dream Walker")),
+                      Container(decoration: BoxDecoration(shape: .circle)),
+                    ],
+                  ),
+                ],
+              ),
+            ),
             Positioned(
               left: 0,
               right: 0,
