@@ -74,16 +74,29 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       ],
                     ),
                   ),
-                  Row(
-                    mainAxisAlignment: .spaceBetween,
-                    children: [Text("Upcoming"), Text("View all")],
-                  ),
-                  Container(height: 120, child: Placeholder()),
+                  Expanded(child: SingleChildScrollView(
+                    child: Column(
+                      crossAxisAlignment: .start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: .spaceBetween,
+                          children: [Text("Upcoming"), Text("View all")],
+                        ),
+                        Container(height: 120, child: Placeholder()),
 
-                  Row(
-                    mainAxisAlignment: .spaceBetween,
-                    children: [Text("Upcoming"), Text("View all")],
-                  ),
+                        Row(
+                          mainAxisAlignment: .spaceBetween,
+                          children: [Text("Upcoming"), Text("View all")],
+                        ),
+                        Column(
+                          children: [
+
+                          ],
+                        )
+                      ],
+                    ),
+                  )),
+
                 ],
               ),
             ),
