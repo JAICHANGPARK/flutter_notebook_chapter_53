@@ -18,6 +18,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
           children: [
             Positioned.fill(
               child: Column(
+                spacing: 16,
                 children: [
                   Padding(
                     padding: .symmetric(horizontal: 16),
@@ -47,8 +48,11 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                   ),
                   Container(
                     decoration: ShapeDecoration(
-                      shape: RoundedSuperellipseBorder(),
+                      shape: RoundedSuperellipseBorder(
+                        borderRadius: .circular(16),
+                      ),
                       color: Colors.grey[200]!,
+
                     ),
                     margin: .symmetric(horizontal: 16),
                     padding: .all(12),
