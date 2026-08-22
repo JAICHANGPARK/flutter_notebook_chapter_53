@@ -41,6 +41,22 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       ),
                     ],
                   ),
+                  Container(
+                    decoration: ShapeDecoration(
+                      shape: RoundedSuperellipseBorder(),
+                      color: Colors.grey[200]!,
+                    ),
+                    child: Row(
+                      children: [
+                        CircleAvatar(),
+                        Expanded(child: Column(children: [])),
+                        CircleAvatar(
+                          backgroundColor: Colors.white,
+                          child: Icon(Icons.arrow_forward_outlined),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
