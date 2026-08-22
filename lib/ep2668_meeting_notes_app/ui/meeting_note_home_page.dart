@@ -23,7 +23,17 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                     children: [
                       CircleAvatar(),
                       Expanded(child: Text("Hi Dream Walker")),
-                      Container(decoration: BoxDecoration(shape: .circle)),
+                      Container(
+                        decoration: BoxDecoration(
+                          shape: .circle,
+                          border: .all(color: Colors.grey[400]!),
+                        ),
+                        child: Icon(Icons.search),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(shape: .circle),
+                        child: Icon(Icons.notifications_none_outlined),
+                      ),
                     ],
                   ),
                 ],
