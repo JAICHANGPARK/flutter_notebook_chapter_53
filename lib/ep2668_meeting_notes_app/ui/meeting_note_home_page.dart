@@ -52,7 +52,6 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                         borderRadius: .circular(16),
                       ),
                       color: Colors.grey[200]!,
-
                     ),
                     margin: .symmetric(horizontal: 16),
                     padding: .all(12),
@@ -75,6 +74,15 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       ],
                     ),
                   ),
+                  Row(children: [Text("Upcoming"), Text("View all"),]),
+                  Container(
+                    height: 120,
+                    child: Placeholder(),
+                  ),
+
+                  Row(children: [Text("Upcoming"), Text("View all"),]),
+                  
+
                 ],
               ),
             ),
