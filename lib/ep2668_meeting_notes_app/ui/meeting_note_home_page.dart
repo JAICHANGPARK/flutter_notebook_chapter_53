@@ -35,7 +35,6 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                     Container(
                       height: 64,
                       width: 64,
-
                       decoration: ShapeDecoration(
                         shape: RoundedSuperellipseBorder(),
                         color: Colors.black,
