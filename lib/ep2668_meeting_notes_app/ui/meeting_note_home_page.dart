@@ -81,9 +81,12 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                         Column(
                           crossAxisAlignment: .start,
                           children: [
-                            Row(
-                              mainAxisAlignment: .spaceBetween,
-                              children: [Text("Upcoming"), Text("View all")],
+                            Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 16),
+                              child: Row(
+                                mainAxisAlignment: .spaceBetween,
+                                children: [Text("Upcoming"), Text("View all")],
+                              ),
                             ),
                             Container(height: 120, child: Placeholder()),
 
