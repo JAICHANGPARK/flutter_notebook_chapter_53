@@ -56,6 +56,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                     margin: .symmetric(horizontal: 16),
                     padding: .all(12),
                     child: Row(
+                      spacing: 12,
                       children: [
                         CircleAvatar(),
                         Expanded(
