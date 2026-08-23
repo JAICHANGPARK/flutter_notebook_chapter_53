@@ -126,8 +126,9 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                           ),
                                           Positioned(
                                             left: 16,
-                                            bottom: 16,
+                                            bottom: 8,
                                             child: Column(
+                                              crossAxisAlignment: .start,
                                               children: [
                                                 Text("5"),
                                                 Text("Today's Meetings"),
