@@ -157,7 +157,10 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                 padding: const EdgeInsets.symmetric(horizontal: 16),
                                 child: Row(
                                   mainAxisAlignment: .spaceBetween,
-                                  children: [Text("Upcoming"), Text("View all")],
+                                  children: [Text("Upcoming",style: TextStyle(
+                                    fontWeight: .bold,
+                                    fontSize: 24
+                                  ),), Text("View all")],
                                 ),
                               ),
                               Column(
