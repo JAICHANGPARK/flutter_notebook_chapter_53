@@ -18,7 +18,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
           children: [
             Positioned.fill(
               child: Column(
-                spacing: 16,
+                spacing: 24,
                 children: [
                   Padding(
                     padding: .symmetric(horizontal: 16),
