@@ -104,8 +104,15 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                               ),
                               Container(
                                 height: 120,
+                                margin: .only(left: 16),
                                 child: ListView.builder(
-                                  itemBuilder: (context, index) {},
+                                  scrollDirection: .horizontal,
+                                  itemBuilder: (context, index) {
+                                    return Container(
+                                      width: 130,
+                                      child: Placeholder(),
+                                    );
+                                  },
                                 ),
                               ),
                             ],
