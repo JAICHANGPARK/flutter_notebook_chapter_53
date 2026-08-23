@@ -130,7 +130,13 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                             child: Column(
                                               crossAxisAlignment: .start,
                                               children: [
-                                                Text("5"),
+                                                Text(
+                                                  "5",
+                                                  style: TextStyle(
+                                                    fontWeight: .bold,
+                                                    fontSize: 24,
+                                                  ),
+                                                ),
                                                 Text("Today's Meetings"),
                                               ],
                                             ),
