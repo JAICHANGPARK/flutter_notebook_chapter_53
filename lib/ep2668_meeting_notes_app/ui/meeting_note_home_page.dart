@@ -111,7 +111,11 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                     return Container(
                                       width: 170,
                                       margin: .only(right: 12),
-                                      child: Placeholder(),
+                                      child: Stack(
+                                        children: [
+                                          Positioned(child: CircleAvatar()),
+                                        ],
+                                      ),
                                     );
                                   },
                                 ),
