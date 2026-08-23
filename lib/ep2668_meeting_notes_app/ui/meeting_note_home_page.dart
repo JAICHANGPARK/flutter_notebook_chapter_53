@@ -79,6 +79,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       crossAxisAlignment: .start,
                       children: [
                         Column(
+                          spacing: 16,
                           crossAxisAlignment: .start,
                           children: [
                             Padding(
