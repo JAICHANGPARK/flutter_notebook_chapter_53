@@ -112,7 +112,10 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                       width: 170,
                                       margin: .only(right: 12),
                                       decoration: ShapeDecoration(
-                                        shape: RoundedSuperellipseBorder(),
+                                        color: Colors.grey[100],
+                                        shape: RoundedSuperellipseBorder(
+                                          borderRadius: .circular(16)
+                                        ),
                                       ),
                                       child: Stack(
                                         children: [
