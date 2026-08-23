@@ -58,9 +58,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                     child: Row(
                       spacing: 12,
                       children: [
-                        CircleAvatar(
-                          radius: 24,
-                        ),
+                        CircleAvatar(radius: 24),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: .start,
@@ -95,14 +93,21 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                   children: [
                                     Text(
                                       "Upcoming",
-                                      style: TextStyle(fontWeight: .bold,
-                                      fontSize: 16,),
+                                      style: TextStyle(
+                                        fontWeight: .bold,
+                                        fontSize: 16,
+                                      ),
                                     ),
                                     Text("View all"),
                                   ],
                                 ),
                               ),
-                              Container(height: 120, child: Placeholder()),
+                              Container(
+                                height: 120,
+                                child: ListView.builder(
+                                  itemBuilder: (context, index) {},
+                                ),
+                              ),
                             ],
                           ),
 
