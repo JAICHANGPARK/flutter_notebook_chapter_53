@@ -124,6 +124,9 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                             right: 6,
                                             child: CircleAvatar(),
                                           ),
+                                          Positioned(child: Column(children: [
+                                            
+                                          ],))
                                         ],
                                       ),
                                     );
