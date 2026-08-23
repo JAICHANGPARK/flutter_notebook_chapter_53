@@ -83,7 +83,6 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                           children: [Text("Upcoming"), Text("View all")],
                         ),
                         Container(height: 120, child: Placeholder()),
-
                         Row(
                           mainAxisAlignment: .spaceBetween,
                           children: [Text("Upcoming"), Text("View all")],
