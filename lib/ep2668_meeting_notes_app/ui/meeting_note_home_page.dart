@@ -74,42 +74,51 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       ],
                     ),
                   ),
-                  Expanded(child: SingleChildScrollView(
-                    child: Column(
-                      crossAxisAlignment: .start,
-                      children: [
-                        Column(
-                          spacing: 16,
-                          crossAxisAlignment: .start,
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 16),
-                              child: Row(
-                                mainAxisAlignment: .spaceBetween,
-                                children: [Text("Upcoming"), Text("View all")],
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        crossAxisAlignment: .start,
+                        children: [
+                          Column(
+                            spacing: 16,
+                            crossAxisAlignment: .start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                ),
+                                child: Row(
+                                  mainAxisAlignment: .spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Upcoming",
+                                      style: TextStyle(fontWeight: .bold,
+                                      fontSize: 16,),
+                                    ),
+                                    Text("View all"),
+                                  ],
+                                ),
                               ),
-                            ),
-                            Container(height: 120, child: Placeholder()),
+                              Container(height: 120, child: Placeholder()),
+                            ],
+                          ),
 
-                          ],
-                        ),
-
-                        Row(
-                          mainAxisAlignment: .spaceBetween,
-                          children: [Text("Upcoming"), Text("View all")],
-                        ),
-                        Column(
-                          children: List.generate(6, (index){
-                            return Container(
-                              height: 200,
-                              child: Placeholder(),
-                            );
-                          })
-                        )
-                      ],
+                          Row(
+                            mainAxisAlignment: .spaceBetween,
+                            children: [Text("Upcoming"), Text("View all")],
+                          ),
+                          Column(
+                            children: List.generate(6, (index) {
+                              return Container(
+                                height: 200,
+                                child: Placeholder(),
+                              );
+                            }),
+                          ),
+                        ],
+                      ),
                     ),
-                  )),
-
+                  ),
                 ],
               ),
             ),
