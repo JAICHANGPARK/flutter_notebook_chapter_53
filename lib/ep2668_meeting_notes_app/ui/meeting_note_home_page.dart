@@ -51,14 +51,16 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       shape: RoundedSuperellipseBorder(
                         borderRadius: .circular(16),
                       ),
-                      color: Colors.grey[200]!,
+                      color: Colors.grey[50]!,
                     ),
                     margin: .symmetric(horizontal: 16),
                     padding: .all(12),
                     child: Row(
                       spacing: 12,
                       children: [
-                        CircleAvatar(),
+                        CircleAvatar(
+                          radius: 24,
+                        ),
                         Expanded(
                           child: Column(
                             crossAxisAlignment: .start,
