@@ -96,7 +96,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                       "Upcoming",
                                       style: TextStyle(
                                         fontWeight: .bold,
-                                        fontSize: 16,
+                                        fontSize: 18,
                                       ),
                                     ),
                                     Text("View all"),
@@ -159,7 +159,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                   mainAxisAlignment: .spaceBetween,
                                   children: [Text("Upcoming",style: TextStyle(
                                     fontWeight: .bold,
-                                    fontSize: 24
+                                    fontSize: 18
                                   ),), Text("View all")],
                                 ),
                               ),
