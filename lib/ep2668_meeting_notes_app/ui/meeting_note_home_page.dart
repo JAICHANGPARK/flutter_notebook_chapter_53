@@ -110,6 +110,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                   itemBuilder: (context, index) {
                                     return Container(
                                       width: 130,
+                                      margin: .only(right: 12),
                                       child: Placeholder(),
                                     );
                                   },
