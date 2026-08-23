@@ -149,18 +149,21 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                               ),
                             ],
                           ),
-
-                          Row(
-                            mainAxisAlignment: .spaceBetween,
-                            children: [Text("Upcoming"), Text("View all")],
-                          ),
                           Column(
-                            children: List.generate(6, (index) {
-                              return Container(
-                                height: 200,
-                                child: Placeholder(),
-                              );
-                            }),
+                            children: [
+                              Row(
+                                mainAxisAlignment: .spaceBetween,
+                                children: [Text("Upcoming"), Text("View all")],
+                              ),
+                              Column(
+                                children: List.generate(6, (index) {
+                                  return Container(
+                                    height: 200,
+                                    child: Placeholder(),
+                                  );
+                                }),
+                              ),
+                            ],
                           ),
                         ],
                       ),
