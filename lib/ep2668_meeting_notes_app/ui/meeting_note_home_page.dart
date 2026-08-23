@@ -114,7 +114,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                       decoration: ShapeDecoration(
                                         color: Colors.grey[100],
                                         shape: RoundedSuperellipseBorder(
-                                          borderRadius: .circular(16)
+                                          borderRadius: .circular(16),
                                         ),
                                       ),
                                       child: Stack(
@@ -124,9 +124,14 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                             right: 6,
                                             child: CircleAvatar(),
                                           ),
-                                          Positioned(child: Column(children: [
-                                            
-                                          ],))
+                                          Positioned(
+                                            left: 16,
+                                            bottom: 16,
+                                            child: Column(children: [
+                                              Text("5"),
+                                              Text("Today's Meetings")
+                                            ]),
+                                          ),
                                         ],
                                       ),
                                     );
