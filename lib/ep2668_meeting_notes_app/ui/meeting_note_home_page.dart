@@ -151,10 +151,14 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                             ],
                           ),
                           Column(
+                            spacing: 16,
                             children: [
-                              Row(
-                                mainAxisAlignment: .spaceBetween,
-                                children: [Text("Upcoming"), Text("View all")],
+                              Padding(
+                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                child: Row(
+                                  mainAxisAlignment: .spaceBetween,
+                                  children: [Text("Upcoming"), Text("View all")],
+                                ),
                               ),
                               Column(
                                 children: List.generate(6, (index) {
