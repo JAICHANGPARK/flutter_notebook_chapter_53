@@ -127,10 +127,12 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                           Positioned(
                                             left: 16,
                                             bottom: 16,
-                                            child: Column(children: [
-                                              Text("5"),
-                                              Text("Today's Meetings")
-                                            ]),
+                                            child: Column(
+                                              children: [
+                                                Text("5"),
+                                                Text("Today's Meetings"),
+                                              ],
+                                            ),
                                           ),
                                         ],
                                       ),
