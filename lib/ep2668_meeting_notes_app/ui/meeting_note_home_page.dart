@@ -80,9 +80,9 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       children: [
                         Column(
                           children: [
-                            
+
                           ],
-                        )
+                        ),
                         Row(
                           mainAxisAlignment: .spaceBetween,
                           children: [Text("Upcoming"), Text("View all")],
