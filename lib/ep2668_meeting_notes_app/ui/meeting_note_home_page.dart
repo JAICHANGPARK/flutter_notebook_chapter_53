@@ -78,6 +78,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
+                        spacing: 24,
                         crossAxisAlignment: .start,
                         children: [
                           Column(
