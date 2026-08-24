@@ -169,7 +169,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                     height: 200,
                                     child: Placeholder(),
                                   );
-                                }),
+                                },),
                               ),
                             ],
                           ),
