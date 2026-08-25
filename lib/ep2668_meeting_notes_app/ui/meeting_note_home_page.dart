@@ -154,22 +154,40 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                             spacing: 16,
                             children: [
                               Padding(
-                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 16,
+                                ),
                                 child: Row(
                                   mainAxisAlignment: .spaceBetween,
-                                  children: [Text("Upcoming",style: TextStyle(
-                                    fontWeight: .bold,
-                                    fontSize: 18
-                                  ),), Text("View all")],
+                                  children: [
+                                    Text(
+                                      "Upcoming",
+                                      style: TextStyle(
+                                        fontWeight: .bold,
+                                        fontSize: 18,
+                                      ),
+                                    ),
+                                    Text("View all"),
+                                  ],
                                 ),
                               ),
                               Column(
                                 children: List.generate(6, (index) {
                                   return Container(
                                     height: 200,
-                                    child: Placeholder(),
+                                    decoration: ShapeDecoration(
+                                      shape: RoundedSuperellipseBorder(),
+                                    ),
+                                    child: Container(
+                                      decoration: ShapeDecoration(
+                                        shape: RoundedSuperellipseBorder(
+                                          borderRadius: .circular(16),
+                                        ),
+                                      ),
+                                      child: Column(children: []),
+                                    ),
                                   );
-                                },),
+                                }),
                               ),
                             ],
                           ),
