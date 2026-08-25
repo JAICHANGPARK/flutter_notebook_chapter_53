@@ -184,7 +184,11 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                           borderRadius: .circular(16),
                                         ),
                                       ),
-                                      child: Column(children: []),
+                                      child: Column(children: [
+                                        Text('Product Strategy'),
+                                        Text("Discussed onboarding redesign, enterprise pricing. and the September launch."),
+
+                                      ]),
                                     ),
                                   );
                                 }),
