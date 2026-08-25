@@ -207,11 +207,23 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                       // ),
                                       child: Column(
                                         crossAxisAlignment: .start,
+                                        spacing: 12,
                                         children: [
-                                          Text('Product Strategy'),
+                                          Text(
+                                            'Product Strategy',
+                                            style: TextStyle(
+                                              fontWeight: .bold,
+                                              fontSize: 16,
+                                            ),
+                                          ),
                                           Text(
                                             "Discussed onboarding redesign, enterprise pricing. and the September launch.",
                                           ),
+                                          Row(
+                                            children: [
+                                              
+                                            ],
+                                          )
                                         ],
                                       ),
                                     ),
