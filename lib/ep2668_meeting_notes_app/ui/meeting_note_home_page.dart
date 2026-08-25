@@ -1,3 +1,4 @@
+import 'package:avatar_stack/avatar_stack.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:hugeicons/hugeicons.dart';
 import 'package:material_ui/material_ui.dart';
@@ -221,9 +222,22 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                           ),
                                           Row(
                                             children: [
-                                              
+                                              SizedBox()
+                                              AvatarStack(
+                                                avatars: [
+                                                  NetworkImage(
+                                                    "https://thispersondoesnotexist.com/random-person.jpeg",
+                                                  ),
+                                                  NetworkImage(
+                                                    "https://thispersondoesnotexist.com/random-person.jpeg",
+                                                  ),
+                                                  NetworkImage(
+                                                    "https://thispersondoesnotexist.com/random-person.jpeg",
+                                                  ),
+                                                ],
+                                              ),
                                             ],
-                                          )
+                                          ),
                                         ],
                                       ),
                                     ),
