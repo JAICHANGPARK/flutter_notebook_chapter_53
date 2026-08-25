@@ -179,6 +179,11 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                       shape: RoundedSuperellipseBorder(),
                                       color: Colors.grey[100]!,
                                     ),
+                                    margin: .only(
+                                      left: 16,
+                                      right: 16,
+                                      bottom: 16,
+                                    ),
                                     child: Container(
                                       decoration: ShapeDecoration(
                                         shape: RoundedSuperellipseBorder(
