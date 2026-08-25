@@ -176,7 +176,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                               Column(
                                 children: List.generate(6, (index) {
                                   return Container(
-                                    height: 200,
+                                    // height: 200,
                                     decoration: ShapeDecoration(
                                       shape: RoundedSuperellipseBorder(
                                         borderRadius: .circular(16),
@@ -221,24 +221,37 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                             "Discussed onboarding redesign, enterprise pricing. and the September launch.",
                                           ),
                                           Row(
+                                            spacing: 12,
                                             children: [
-                                              AvatarStack(
-                                                width: 100,
-                                                height: 62,
+                                              Expanded(
+                                                child: AvatarStack(
+                                                  width: 1,
+                                                  height: 62,
 
-                                                avatars: [
-                                                  NetworkImage(
-                                                    "https://thispersondoesnotexist.com/random-person.jpeg",
-                                                  ),
-                                                  NetworkImage(
-                                                    "https://thispersondoesnotexist.com/random-person.jpeg",
-                                                  ),
-                                                  NetworkImage(
-                                                    "https://thispersondoesnotexist.com/random-person.jpeg",
-                                                  ),
-                                                ],
-                                              )
+                                                  avatars: [
+                                                    NetworkImage(
+                                                      "https://thispersondoesnotexist.com/random-person.jpeg",
+                                                    ),
+                                                    NetworkImage(
+                                                      "https://thispersondoesnotexist.com/random-person.jpeg",
+                                                    ),
+                                                    NetworkImage(
+                                                      "https://thispersondoesnotexist.com/random-person.jpeg",
+                                                    ),
+                                                    NetworkImage(
+                                                      "https://thispersondoesnotexist.com/random-person.jpeg",
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  color: Colors.grey[200]!,
 
+                                                ),
+                                                padding: .symmetric(horizontal: 16, vertical: 12),
+                                                child: Text("See Details"),
+                                              ),
                                             ],
                                           ),
                                         ],
