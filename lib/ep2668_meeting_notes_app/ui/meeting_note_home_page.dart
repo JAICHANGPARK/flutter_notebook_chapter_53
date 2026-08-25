@@ -176,7 +176,9 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                   return Container(
                                     height: 200,
                                     decoration: ShapeDecoration(
-                                      shape: RoundedSuperellipseBorder(),
+                                      shape: RoundedSuperellipseBorder(
+                                        borderRadius: .circular(16),
+                                      ),
                                       color: Colors.grey[100]!,
                                     ),
                                     margin: .only(
@@ -184,7 +186,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                       right: 16,
                                       bottom: 16,
                                     ),
-                                    padding: .all(16),
+                                    padding: .all(12),
                                     child: Container(
                                       decoration: ShapeDecoration(
                                         shape: RoundedSuperellipseBorder(
