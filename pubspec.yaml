@@ -17,6 +17,7 @@ dependencies:
   gap:
   material_ui: ^1.1.0
   dotted_border: ^3.1.0
+  avatar_stack: ^3.0.0
 
 dev_dependencies:
   flutter_test:
