@@ -1,3 +1,4 @@
+import 'package:dotted_border/dotted_border.dart';
 import 'package:hugeicons/hugeicons.dart';
 import 'package:material_ui/material_ui.dart';
 
@@ -187,16 +188,22 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                       bottom: 16,
                                     ),
                                     padding: .all(12),
-                                    child: Container(
-                                      padding: .all(16),
-                                      decoration: ShapeDecoration(
-                                        shape: RoundedSuperellipseBorder(
-                                          borderRadius: .circular(16),
-                                          side: BorderSide(
-                                            color: Colors.grey[400]!,
-                                          ),
-                                        ),
+                                    child: DottedBorder(
+                                      options: RoundedRectDottedBorderOptions(
+                                        dashPattern: [10, 5],
+                                        strokeWidth: 2,
+                                        padding: EdgeInsets.all(16),
+                                        radius: .circular(12),
                                       ),
+                                      //
+                                      // decoration: ShapeDecoration(
+                                      //   shape: RoundedSuperellipseBorder(
+                                      //     borderRadius: .circular(16),
+                                      //     side: BorderSide(
+                                      //       color: Colors.grey[400]!,
+                                      //     ),
+                                      //   ),
+                                      // ),
                                       child: Column(
                                         crossAxisAlignment: .start,
                                         children: [
