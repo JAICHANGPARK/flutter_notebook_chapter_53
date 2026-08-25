@@ -222,8 +222,10 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                           ),
                                           Row(
                                             children: [
-                                              SizedBox()
                                               AvatarStack(
+                                                width: 100,
+                                                height: 62,
+
                                                 avatars: [
                                                   NetworkImage(
                                                     "https://thispersondoesnotexist.com/random-person.jpeg",
@@ -235,7 +237,8 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                                     "https://thispersondoesnotexist.com/random-person.jpeg",
                                                   ),
                                                 ],
-                                              ),
+                                              )
+
                                             ],
                                           ),
                                         ],
