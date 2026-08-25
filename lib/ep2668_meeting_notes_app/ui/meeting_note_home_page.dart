@@ -190,9 +190,9 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                     padding: .all(12),
                                     child: DottedBorder(
                                       options: RoundedRectDottedBorderOptions(
-                                        dashPattern: [10, 5],
-                                        strokeWidth: 1,
-                                        color: Colors.grey[200]!,
+                                        dashPattern: [5, 5],
+                                        strokeWidth: 1.5,
+                                        color: Colors.grey[300]!,
                                         padding: EdgeInsets.all(16),
                                         radius: .circular(12),
                                       ),
