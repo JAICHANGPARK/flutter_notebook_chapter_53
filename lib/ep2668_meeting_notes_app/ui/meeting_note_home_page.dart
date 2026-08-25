@@ -188,6 +188,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                     ),
                                     padding: .all(12),
                                     child: Container(
+                                      padding: .all(16),
                                       decoration: ShapeDecoration(
                                         shape: RoundedSuperellipseBorder(
                                           borderRadius: .circular(16),
@@ -197,6 +198,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                         ),
                                       ),
                                       child: Column(
+                                        crossAxisAlignment: .start,
                                         children: [
                                           Text('Product Strategy'),
                                           Text(
