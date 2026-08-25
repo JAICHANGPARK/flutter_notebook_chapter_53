@@ -177,6 +177,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                     height: 200,
                                     decoration: ShapeDecoration(
                                       shape: RoundedSuperellipseBorder(),
+                                      color: Colors.grey[100]!,
                                     ),
                                     child: Container(
                                       decoration: ShapeDecoration(
@@ -184,11 +185,14 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                           borderRadius: .circular(16),
                                         ),
                                       ),
-                                      child: Column(children: [
-                                        Text('Product Strategy'),
-                                        Text("Discussed onboarding redesign, enterprise pricing. and the September launch."),
-
-                                      ]),
+                                      child: Column(
+                                        children: [
+                                          Text('Product Strategy'),
+                                          Text(
+                                            "Discussed onboarding redesign, enterprise pricing. and the September launch.",
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   );
                                 }),
