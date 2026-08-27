@@ -12,24 +12,40 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(
-          children: [
-            Container(
-              height: 54,
-              width: 54,
-              decoration: BoxDecoration(
-                shape: .circle,
-                border: .all(color: Colors.grey[300]!),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            children: [
+              Container(
+                height: 54,
+                width: 54,
+                decoration: BoxDecoration(
+                  shape: .circle,
+                  border: .all(color: Colors.grey[300]!),
+                ),
+                child: Center(child: Icon(Icons.keyboard_arrow_left)),
               ),
-              child: Center(child: Icon(Icons.keyboard_arrow_left)),
-            ),
-            Expanded(
-              child: Center(
-                child: Text("Meetings", style: TextStyle(fontSize: 17)),
+              Expanded(
+                child: Center(
+                  child: Text("Meetings", style: TextStyle(fontSize: 17)),
+                ),
               ),
-            ),
-          ],
+              Container(
+                height: 54,
+                width: 54,
+                decoration: BoxDecoration(
+                  shape: .circle,
+                  border: .all(color: Colors.grey[300]!),
+                ),
+                child: Center(child: Icon(Icons.search)),
+              ),
+            ],
+          ),
         ),
+        Container(
+          height: 52,
+          child: Placeholder(),
+        )
       ],
     );
   }
