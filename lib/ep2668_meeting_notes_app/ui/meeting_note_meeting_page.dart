@@ -14,7 +14,7 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
       spacing: 24,
       children: [
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.symmetric(horizontal: 16),
           child: Row(
             children: [
               Container(
