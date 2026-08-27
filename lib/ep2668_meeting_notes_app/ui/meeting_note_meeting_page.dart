@@ -46,13 +46,16 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
           height: 52,
           child: Placeholder(),
         ),
-        Expanded(child: ListView.builder(itemBuilder: (context,index){
-          return Container(
-            height: 260,
-            margin: .only(bottom: 12),
-            child: Placeholder(),
-          );
-        }))
+        Expanded(child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: ListView.builder(itemBuilder: (context,index){
+            return Container(
+              height: 260,
+              margin: .only(bottom: 12),
+              child: Placeholder(),
+            );
+          }),
+        ))
       ],
     );
   }
