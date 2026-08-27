@@ -11,6 +11,7 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      spacing: 24,
       children: [
         Padding(
           padding: const EdgeInsets.all(8.0),
