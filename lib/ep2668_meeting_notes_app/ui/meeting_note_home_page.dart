@@ -297,16 +297,23 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                 child: Row(
                   mainAxisAlignment: .spaceBetween,
                   children: [
-                    Container(
-                      height: 64,
-                      width: 64,
-                      decoration: ShapeDecoration(
-                        shape: RoundedSuperellipseBorder(
-                          borderRadius: .circular(16),
+                    GestureDetector(
+                      onTap: (){
+                        setState(() {
+                          pageNum = 0;
+                        });
+                      },
+                      child: Container(
+                        height: 64,
+                        width: 64,
+                        decoration: ShapeDecoration(
+                          shape: RoundedSuperellipseBorder(
+                            borderRadius: .circular(16),
+                          ),
+                          color: pageNum == 0 ? Colors.black : Colors.grey[200],
                         ),
-                        color: pageNum == 0 ? Colors.black : Colors.grey[200],
+                        child: Icon(Icons.home_filled, color: pageNum == 0 ? Colors.white : Colors.grey,),
                       ),
-                      child: Icon(Icons.home_filled, color: pageNum == 0 ? Colors.white : Colors.grey,),
                     ),
                     GestureDetector(
                       onTap: () {
