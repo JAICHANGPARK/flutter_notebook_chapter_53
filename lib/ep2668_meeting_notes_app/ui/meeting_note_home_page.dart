@@ -3,6 +3,8 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:hugeicons/hugeicons.dart';
 import 'package:material_ui/material_ui.dart';
 
+import 'meeting_note_meeting_page.dart';
+
 class MeetingNoteHomePage extends StatefulWidget {
   const MeetingNoteHomePage({super.key});
 
@@ -227,7 +229,6 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                                 width: 140,
                                                 height: 42,
 
-
                                                 avatars: [
                                                   NetworkImage(
                                                     "https://thispersondoesnotexist.com/random-person.jpeg",
@@ -247,9 +248,11 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                               Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.grey[200]!,
-
                                                 ),
-                                                padding: .symmetric(horizontal: 16, vertical: 12),
+                                                padding: .symmetric(
+                                                  horizontal: 16,
+                                                  vertical: 12,
+                                                ),
                                                 child: Text("See Details"),
                                               ),
                                             ],
@@ -296,16 +299,25 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       ),
                       child: Icon(Icons.home_filled, color: Colors.white),
                     ),
-                    Container(
-                      height: 64,
-                      width: 64,
-                      decoration: ShapeDecoration(
-                        shape: RoundedSuperellipseBorder(
-                          borderRadius: .circular(16),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => MeetingNoteMeetingPage(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        height: 64,
+                        width: 64,
+                        decoration: ShapeDecoration(
+                          shape: RoundedSuperellipseBorder(
+                            borderRadius: .circular(16),
+                          ),
+                          color: Colors.grey[200],
                         ),
-                        color: Colors.grey[200],
+                        child: Icon(Icons.calendar_month, color: Colors.grey),
                       ),
-                      child: Icon(Icons.calendar_month, color: Colors.grey),
                     ),
                     Container(
                       height: 64,
