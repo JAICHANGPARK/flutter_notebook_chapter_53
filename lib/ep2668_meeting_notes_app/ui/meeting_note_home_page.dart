@@ -304,9 +304,9 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                         shape: RoundedSuperellipseBorder(
                           borderRadius: .circular(16),
                         ),
-                        color: Colors.black,
+                        color: pageNum == 0 ? Colors.black : Colors.grey[200],
                       ),
-                      child: Icon(Icons.home_filled, color: Colors.white),
+                      child: Icon(Icons.home_filled, color: pageNum == 0 ? Colors.white : Colors.grey,),
                     ),
                     GestureDetector(
                       onTap: () {
