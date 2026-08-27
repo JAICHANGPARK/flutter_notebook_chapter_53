@@ -12,7 +12,18 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-
+        Row(
+          children: [
+            Container(
+              height: 54,
+              width: 54,
+              decoration: BoxDecoration(
+                shape: .circle,
+                border: .all(color: Colors.grey[300]!),
+              ),
+            ),
+          ],
+        ),
       ],
     );
   }
