@@ -21,6 +21,12 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                 shape: .circle,
                 border: .all(color: Colors.grey[300]!),
               ),
+              child: Center(child: Icon(Icons.keyboard_arrow_left)),
+            ),
+            Expanded(
+              child: Center(
+                child: Text("Meetings", style: TextStyle(fontSize: 17)),
+              ),
             ),
           ],
         ),
