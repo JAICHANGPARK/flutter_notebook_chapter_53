@@ -321,7 +321,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                           shape: RoundedSuperellipseBorder(
                             borderRadius: .circular(16),
                           ),
-                          color: Colors.grey[200],
+                          color: pageNum == 1 ? Colors.black : Colors.grey[200],
                         ),
                         child: Icon(Icons.calendar_month, color: Colors.grey),
                       ),
