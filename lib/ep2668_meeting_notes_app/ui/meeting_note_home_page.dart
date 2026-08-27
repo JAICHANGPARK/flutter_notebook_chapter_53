@@ -310,9 +310,9 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                     ),
                     GestureDetector(
                       onTap: () {
-                      setState(() {
-                        pageNum = 1;
-                      });
+                        setState(() {
+                          pageNum = 1;
+                        });
                       },
                       child: Container(
                         height: 64,
@@ -323,7 +323,10 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                           ),
                           color: pageNum == 1 ? Colors.black : Colors.grey[200],
                         ),
-                        child: Icon(Icons.calendar_month, color: Colors.grey),
+                        child: Icon(
+                          Icons.calendar_month,
+                          color: pageNum == 1 ? Colors.white : Colors.grey,
+                        ),
                       ),
                     ),
                     Container(
