@@ -223,26 +223,25 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                           Row(
                                             spacing: 12,
                                             children: [
-                                              Expanded(
-                                                child: AvatarStack(
-                                                  width: 1,
-                                                  height: 62,
+                                              AvatarStack(
+                                                width: 140,
+                                                height: 42,
 
-                                                  avatars: [
-                                                    NetworkImage(
-                                                      "https://thispersondoesnotexist.com/random-person.jpeg",
-                                                    ),
-                                                    NetworkImage(
-                                                      "https://thispersondoesnotexist.com/random-person.jpeg",
-                                                    ),
-                                                    NetworkImage(
-                                                      "https://thispersondoesnotexist.com/random-person.jpeg",
-                                                    ),
-                                                    NetworkImage(
-                                                      "https://thispersondoesnotexist.com/random-person.jpeg",
-                                                    ),
-                                                  ],
-                                                ),
+
+                                                avatars: [
+                                                  NetworkImage(
+                                                    "https://thispersondoesnotexist.com/random-person.jpeg",
+                                                  ),
+                                                  NetworkImage(
+                                                    "https://thispersondoesnotexist.com/random-person.jpeg",
+                                                  ),
+                                                  NetworkImage(
+                                                    "https://thispersondoesnotexist.com/random-person.jpeg",
+                                                  ),
+                                                  NetworkImage(
+                                                    "https://thispersondoesnotexist.com/random-person.jpeg",
+                                                  ),
+                                                ],
                                               ),
                                               Container(
                                                 decoration: BoxDecoration(
