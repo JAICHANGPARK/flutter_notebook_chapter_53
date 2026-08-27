@@ -14,6 +14,7 @@ class MeetingNoteHomePage extends StatefulWidget {
 
 class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
   int pageNum = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +24,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
           children: [
             Positioned.fill(
               child: IndexedStack(
-                index: ,
+                index: pageNum,
                 children: [
                   Column(
                     spacing: 24,
@@ -196,13 +197,14 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                         ),
                                         padding: .all(12),
                                         child: DottedBorder(
-                                          options: RoundedRectDottedBorderOptions(
-                                            dashPattern: [5, 5],
-                                            strokeWidth: 1.5,
-                                            color: Colors.grey[300]!,
-                                            padding: EdgeInsets.all(16),
-                                            radius: .circular(12),
-                                          ),
+                                          options:
+                                              RoundedRectDottedBorderOptions(
+                                                dashPattern: [5, 5],
+                                                strokeWidth: 1.5,
+                                                color: Colors.grey[300]!,
+                                                padding: EdgeInsets.all(16),
+                                                radius: .circular(12),
+                                              ),
                                           //
                                           // decoration: ShapeDecoration(
                                           //   shape: RoundedSuperellipseBorder(
@@ -275,6 +277,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                       ),
                     ],
                   ),
+                  MeetingNoteMeetingPage(),
                 ],
               ),
             ),
