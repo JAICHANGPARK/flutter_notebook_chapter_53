@@ -243,6 +243,7 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                                                   ),
                                                 ],
                                               ),
+                                              Spacer(),
                                               Container(
                                                 decoration: BoxDecoration(
                                                   color: Colors.grey[200]!,
