@@ -310,11 +310,9 @@ class _MeetingNoteHomePageState extends State<MeetingNoteHomePage> {
                     ),
                     GestureDetector(
                       onTap: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                            builder: (context) => MeetingNoteMeetingPage(),
-                          ),
-                        );
+                      setState(() {
+                        pageNum = 1;
+                      });
                       },
                       child: Container(
                         height: 64,
