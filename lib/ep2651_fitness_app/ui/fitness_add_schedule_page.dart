@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// 운동 일정 추가 화면
 class FitnessAddSchedulePage extends StatefulWidget {
   const FitnessAddSchedulePage({super.key});
 
@@ -19,18 +20,22 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
             crossAxisAlignment: .start,
             spacing: 24,
             children: [
+              // 상단 앱바 (뒤로가기, 타이틀, 더보기 메뉴)
               Row(
                 children: [
-                  CircleAvatar(
-                    radius: 28,
-                    backgroundColor: Colors.white12,
-                    foregroundColor: Colors.white,
-                    child: Icon(Icons.arrow_back_outlined),
+                  GestureDetector(
+                    onTap: () => Navigator.of(context).pop(),
+                    child: CircleAvatar(
+                      radius: 28,
+                      backgroundColor: Colors.white12,
+                      foregroundColor: Colors.white,
+                      child: Icon(Icons.arrow_back_outlined),
+                    ),
                   ),
                   Expanded(
                     child: Center(
                       child: Text(
-                        "Add Shedule",
+                        "Add Schedule",
                         style: TextStyle(
                           fontWeight: .bold,
                           color: Colors.white,
@@ -47,12 +52,14 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                   ),
                 ],
               ),
+
+              // 일정 제목 입력 섹션
               Column(
                 crossAxisAlignment: .start,
                 spacing: 8,
                 children: [
                   Text(
-                    "Shedule Title",
+                    "Schedule Title",
                     style: TextStyle(color: Colors.white, fontSize: 16),
                   ),
                   Container(
@@ -66,13 +73,15 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                     child: TextField(
                       decoration: InputDecoration(
                         border: .none,
-                        hintText: "Enter shedule name",
+                        hintText: "Enter schedule name",
                         hintStyle: TextStyle(color: Colors.white),
                       ),
                     ),
                   ),
                 ],
               ),
+
+              // 운동 종목/활동 선택 그리드
               Column(
                 crossAxisAlignment: .start,
                 spacing: 6,
@@ -103,12 +112,14 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                   ),
                 ],
               ),
+
+              // 요일 선택 섹션 (일 ~ 토)
               Column(
                 spacing: 8,
                 crossAxisAlignment: .start,
                 children: [
                   Text("Select Days", style: TextStyle(color: Colors.white)),
-                  Container(
+                  SizedBox(
                     height: 62,
                     child: Row(
                       spacing: 12,
@@ -201,12 +212,14 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                   ),
                 ],
               ),
+
+              // 반복 주기 설정 섹션 (매일/매주/매월/매년)
               Column(
                 spacing: 8,
                 crossAxisAlignment: .start,
                 children: [
                   Text("Repeat", style: TextStyle(color: Colors.white)),
-                  Container(
+                  SizedBox(
                     height: 42,
                     child: Row(
                       spacing: 8,
@@ -272,6 +285,8 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                   ),
                 ],
               ),
+
+              // 매일 반복 여부 스위치
               Row(
                 mainAxisAlignment: .spaceBetween,
                 children: [
@@ -279,6 +294,8 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                   Switch(value: false, onChanged: (v) {}),
                 ],
               ),
+
+              // 알림 시간 설정
               Row(
                 mainAxisAlignment: .spaceBetween,
                 children: [
@@ -292,14 +309,20 @@ class _FitnessAddSchedulePageState extends State<FitnessAddSchedulePage> {
                     child: Center(
                       child: Text(
                         "06:00 am",
-                        style: TextStyle(color: Colors.white24,
-                        fontSize: 18),
+                        style: TextStyle(
+                          color: Colors.white24,
+                          fontSize: 18,
+                        ),
                       ),
                     ),
                   ),
                 ],
               ),
-              Container(decoration: BoxDecoration(borderRadius: .circular(16),),),
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: .circular(16),
+                ),
+              ),
             ],
           ),
         ),

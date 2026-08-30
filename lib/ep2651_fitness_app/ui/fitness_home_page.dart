@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_53/ep2651_fitness_app/ui/fitness_add_schedule_page.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
+/// 피트니스 앱 메인 홈 화면
 class FitnessHomePage extends StatefulWidget {
   const FitnessHomePage({super.key});
 
@@ -19,6 +20,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
           spacing: 16,
           crossAxisAlignment: .start,
           children: [
+            // 상단 앱바 영역 (뒤로가기, 타이틀, 더보기 메뉴)
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Row(
@@ -51,12 +53,14 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
               ),
             ),
 
+            // 스크롤 가능한 본문 영역
             Expanded(
               child: SingleChildScrollView(
                 child: Column(
                   spacing: 16,
                   crossAxisAlignment: .start,
                   children: [
+                    // 진행 상황 요약 카드 (배경 장식원, 진행률, 칼로리 소모량 표시)
                     Container(
                       height: 220,
                       clipBehavior: .antiAliasWithSaveLayer,
@@ -96,6 +100,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                   ],
                                 ),
 
+                                // 칼로리 소모량 뱃지 및 액션 버튼
                                 Row(
                                   crossAxisAlignment: .start,
                                   spacing: 4,
@@ -143,6 +148,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                               ],
                             ),
                           ),
+                          // 우측 상단 진행률 원형 인디케이터 (72%)
                           Positioned(
                             right: 14,
                             top: 14,
@@ -153,6 +159,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                               percent: .72,
                             ),
                           ),
+                          // 카드 우측 배경 동심원 장식 레이어들
                           Positioned(
                             right: -24,
                             top: -24,
@@ -192,6 +199,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                         ],
                       ),
                     ),
+
+                    // 운동 세트 카테고리 섹션 (가로 스크롤 리스트)
                     Column(
                       crossAxisAlignment: .start,
                       spacing: 6,
@@ -224,11 +233,12 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                             ],
                           ),
                         ),
-                        Container(
+                        // 가로 스크롤 카드 리스트
+                        SizedBox(
                           height: 180,
-                          margin: .only(left: 16),
                           child: ListView.builder(
-                            scrollDirection: .horizontal,
+                            padding: const EdgeInsets.only(left: 16),
+                            scrollDirection: Axis.horizontal,
                             itemBuilder: (context, index) {
                               return Container(
                                 width: 180,
@@ -262,6 +272,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                       ],
                     ),
 
+                    // 운동 목록 섹션 (세로 리스트)
                     Padding(
                       padding: const EdgeInsets.only(left: 16, right: 16),
                       child: Row(
@@ -285,6 +296,8 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                         ],
                       ),
                     ),
+
+                    // 개별 운동 카드 목록 (탭 시 일정 추가 페이지로 이동)
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       child: Column(
@@ -339,6 +352,7 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
                                       ],
                                     ),
                                   ),
+                                  // 운동 진행률 미니 원형 인디케이터
                                   CircleAvatar(
                                     backgroundColor: Colors.black,
                                     radius: 20,
