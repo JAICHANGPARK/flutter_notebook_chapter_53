@@ -4,6 +4,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import 'community_upcoming_events_page.dart';
 
+/// 커뮤니티 앱 홈 화면 (지역 정보, 일간 일정, 자원봉사 배너, 다가오는 이벤트)
 class CommunityHomePage extends StatefulWidget {
   const CommunityHomePage({super.key});
 
@@ -16,6 +17,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
+        // 상단 헤더 영역 푸른색 배경 컨테이너
         Positioned.fill(
           child: Column(
             children: [
@@ -33,6 +35,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
             child: Column(
               spacing: 12,
               children: [
+                // 상단 위치 정보 및 알림/메일 뱃지 헤더
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 16),
                   child: Row(
@@ -67,6 +70,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                           child: Column(
                             spacing: 16,
                             children: [
+                              // 오늘 일정 및 요일별 시간표 카드
                               Container(
                                 // height: 200,
                                 decoration: BoxDecoration(
@@ -85,7 +89,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                         fontSize: 12,
                                       ),
                                     ),
-                                    Container(
+                                    SizedBox(
                                       height: 88,
                                       child: Row(
                                         spacing: 4,
@@ -382,6 +386,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                   ],
                                 ),
                               ),
+                              // 자원봉사자 모집 배너 슬라이더
                               Container(
                                 height: 180,
                                 width: double.infinity,
@@ -456,6 +461,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                   ],
                                 ),
                               ),
+                              // 배너 페이지 인디케이터
                               SmoothPageIndicator(
                                 count: 3,
                                 controller: PageController(),
@@ -463,6 +469,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                             ],
                           ),
                         ),
+                        // 예정된 이벤트 섹션 헤더 ("Upcoming events" 및 "View all" 버튼)
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: Row(
@@ -504,9 +511,10 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                             ],
                           ),
                         ),
+                        // 이벤트 카테고리 필터 칩 가로 스크롤 리스트
                         Padding(
                           padding: const EdgeInsets.only(left: 16),
-                          child: Container(
+                          child: SizedBox(
                             height: 34,
                             child: ListView(
                               scrollDirection: .horizontal,
@@ -579,6 +587,7 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                             ),
                           ),
                         ),
+                        // 예정된 이벤트 카드 가로 스크롤 리스트
                         Container(
                           margin: .only(left: 16),
                           height: 240,
