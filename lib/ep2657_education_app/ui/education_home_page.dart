@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/// 교육 앱 홈 탭 화면
 class EducationHomePage extends StatefulWidget {
   const EducationHomePage({super.key});
 

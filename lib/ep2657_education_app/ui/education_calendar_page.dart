@@ -2,6 +2,7 @@ import 'package:easy_pie_chart/easy_pie_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:percent_indicator/flutter_percent_indicator.dart';
 
+/// 교육 앱 캘린더 및 학습 현황 화면
 class EducationCalendarPage extends StatefulWidget {
   const EducationCalendarPage({super.key});
 
@@ -17,6 +18,7 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
         crossAxisAlignment: .start,
         spacing: 24,
         children: [
+          // 월별 날짜 선택 가로 캘린더 영역
           Padding(
             padding: const EdgeInsets.only(left: 16),
             child: Column(
@@ -30,21 +32,24 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                 SizedBox(
                   height: 90,
                   child: ListView.builder(
-                    scrollDirection: .horizontal,
+                    scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       return Container(
-                        padding: .all(6),
-                        margin: .only(right: 12),
+                        padding: const EdgeInsets.all(6),
+                        margin: const EdgeInsets.only(right: 12),
                         decoration: BoxDecoration(
-                          borderRadius: .circular(8),
-                          border: .all(color: Colors.grey[400]!),
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(color: Colors.grey[400]!),
                         ),
                         child: Column(
                           spacing: 5,
                           children: [
                             Text(
                               "Sun",
-                              style: TextStyle(fontWeight: .bold, fontSize: 16),
+                              style: TextStyle(
+                                fontWeight: .bold,
+                                fontSize: 16,
+                              ),
                             ),
                             Container(
                               height: 42,
@@ -64,19 +69,23 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
               ],
             ),
           ),
+
+          // 현재 진행 중인 학습 코스 요약 카드
           Container(
             height: 180,
-            margin: .symmetric(horizontal: 16),
+            margin: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               spacing: 16,
               children: [
+                // 썸네일 영역
                 Container(
                   width: 140,
                   decoration: BoxDecoration(
-                    borderRadius: .circular(16),
+                    borderRadius: BorderRadius.circular(16),
                     color: Colors.deepPurple,
                   ),
                 ),
+                // 코스 정보 및 진행 현황
                 Expanded(
                   child: Column(
                     spacing: 12,
@@ -85,12 +94,12 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                         children: [
                           Expanded(
                             child: Column(
-                              crossAxisAlignment: .start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
                                   "Trace the Route",
                                   style: TextStyle(
-                                    fontWeight: .bold,
+                                    fontWeight: FontWeight.bold,
                                     fontSize: 16,
                                   ),
                                 ),
@@ -112,16 +121,21 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                           ),
                         ],
                       ),
+                      // 강의 재생 타임라인 및 프로그레스 바
                       Column(
                         spacing: 5,
                         children: [
                           Row(
-                            mainAxisAlignment: .spaceBetween,
-                            children: [Text("Timeline"), Text('04:25/25:25')],
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Timeline"),
+                              Text('04:25/25:25'),
+                            ],
                           ),
-                          LinearPercentIndicator(padding: .zero),
+                          LinearPercentIndicator(padding: EdgeInsets.zero),
                         ],
                       ),
+                      // 평점 및 별점
                       Row(
                         children: [
                           Text('Explanation'),
@@ -143,12 +157,15 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                           Text("5.0"),
                         ],
                       ),
+                      // 수강생 아바타 및 링크 복사 버튼
                       Row(
-                        mainAxisAlignment: .spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           CircleAvatar(),
                           Container(
-                            decoration: ShapeDecoration(shape: StadiumBorder()),
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                            ),
                             child: Row(
                               spacing: 2,
                               children: [
@@ -168,23 +185,25 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
               ],
             ),
           ),
+
+          // 나의 활동 통계 카드 (파이 차트 및 범례)
           Container(
             height: 300,
-            margin: .symmetric(horizontal: 16, vertical: 8),
-            padding: .all(16),
+            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
               color: Colors.grey[100],
-              borderRadius: .circular(16),
+              borderRadius: BorderRadius.circular(16),
             ),
             child: Column(
               spacing: 12,
               children: [
+                // 활동 요약 헤더 (총 학습시간, 달성률 84%)
                 Row(
                   children: [
                     Expanded(
                       child: Column(
-                        crossAxisAlignment: .start,
-
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         spacing: 4,
                         children: [
                           Text("My Activity", style: TextStyle(fontSize: 16)),
@@ -194,14 +213,17 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                               Text(
                                 "36h 25m",
                                 style: TextStyle(
-                                  fontWeight: .bold,
+                                  fontWeight: FontWeight.bold,
                                   fontSize: 20,
                                 ),
                               ),
                               Container(
-                                padding: .symmetric(horizontal: 6, vertical: 2),
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 6,
+                                  vertical: 2,
+                                ),
                                 decoration: BoxDecoration(
-                                  borderRadius: .circular(3),
+                                  borderRadius: BorderRadius.circular(3),
                                   color: Colors.white,
                                 ),
                                 child: Text(
@@ -215,9 +237,9 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                       ),
                     ),
                     Container(
-                      padding: .all(8),
+                      padding: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        borderRadius: .circular(6),
+                        borderRadius: BorderRadius.circular(6),
                         color: Colors.grey[300],
                       ),
                       child: Icon(Icons.more_vert),
@@ -225,12 +247,14 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                   ],
                 ),
                 Divider(),
+                // 파이 차트 및 카테고리별 달성률 범례
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
                       spacing: 20,
                       children: [
+                        // 파이 차트
                         SizedBox(
                           width: 140,
                           child: EasyPieChart(
@@ -248,10 +272,12 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                             ],
                           ),
                         ),
+                        // 범례 항목들
                         Expanded(
                           child: Column(
                             spacing: 12,
                             children: [
+                              // Completed (35%)
                               Row(
                                 spacing: 12,
                                 children: [
@@ -260,27 +286,22 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                       shape: StadiumBorder(),
                                       color: Colors.black,
                                     ),
-                                    padding: .symmetric(
+                                    padding: const EdgeInsets.symmetric(
                                       horizontal: 14,
                                       vertical: 4,
                                     ),
                                     child: Text(
                                       "35%",
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        // fontSize: 16,
-                                      ),
+                                      style: TextStyle(color: Colors.white),
                                     ),
                                   ),
                                   Text(
                                     "Completed",
-                                    style: TextStyle(
-                                      fontSize: 16,
-                                      // fontWeight: .bold,
-                                    ),
+                                    style: TextStyle(fontSize: 16),
                                   ),
                                 ],
                               ),
+                              // Learning Time (25%)
                               Row(
                                 spacing: 12,
                                 children: [
@@ -289,28 +310,21 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                       shape: StadiumBorder(),
                                       color: Color.fromRGBO(157, 179, 238, 1),
                                     ),
-                                    padding: .symmetric(
+                                    padding: const EdgeInsets.symmetric(
                                       horizontal: 14,
                                       vertical: 4,
                                     ),
-                                    child: Text(
-                                      "25%",
-                                      style: TextStyle(
-                                        // fontSize: 16,
-                                      ),
-                                    ),
+                                    child: Text("25%"),
                                   ),
                                   Expanded(
                                     child: Text(
                                       "Learning Time",
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                        // fontWeight: .bold,
-                                      ),
+                                      style: TextStyle(fontSize: 16),
                                     ),
                                   ),
                                 ],
                               ),
+                              // Tests Passed (30%)
                               Row(
                                 spacing: 12,
                                 children: [
@@ -319,54 +333,39 @@ class _EducationCalendarPageState extends State<EducationCalendarPage> {
                                       shape: StadiumBorder(),
                                       color: Colors.grey[400]!,
                                     ),
-                                    padding: .symmetric(
+                                    padding: const EdgeInsets.symmetric(
                                       horizontal: 14,
                                       vertical: 4,
                                     ),
-                                    child: Text(
-                                      "30%",
-                                      style: TextStyle(
-                                        // fontSize: 16,
-                                      ),
-                                    ),
+                                    child: Text("30%"),
                                   ),
                                   Expanded(
                                     child: Text(
                                       "Tests Passed",
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                        // fontWeight: .bold,
-                                      ),
+                                      style: TextStyle(fontSize: 16),
                                     ),
                                   ),
                                 ],
                               ),
+                              // Achievements (10%)
                               Row(
                                 spacing: 12,
                                 children: [
                                   Container(
                                     decoration: ShapeDecoration(
                                       shape: StadiumBorder(),
-                                      color: Colors.orange
+                                      color: Colors.orange,
                                     ),
-                                    padding: .symmetric(
+                                    padding: const EdgeInsets.symmetric(
                                       horizontal: 14,
                                       vertical: 4,
                                     ),
-                                    child: Text(
-                                      "10%",
-                                      style: TextStyle(
-                                        // fontSize: 16,
-                                      ),
-                                    ),
+                                    child: Text("10%"),
                                   ),
                                   Expanded(
                                     child: Text(
-                                      "Archievments",
-                                      style: TextStyle(
-                                        fontSize: 16,
-                                        // fontWeight: .bold,
-                                      ),
+                                      "Achievements",
+                                      style: TextStyle(fontSize: 16),
                                     ),
                                   ),
                                 ],
