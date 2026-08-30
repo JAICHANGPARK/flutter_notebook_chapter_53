@@ -105,7 +105,6 @@ class _CommunityHomePageState extends State<CommunityHomePage> {
                                               ),
                                               child: Column(
                                                 mainAxisAlignment: .center,
-
                                                 children: [
                                                   Icon(Icons.wb_sunny_outlined),
                                                   Gap(3),
