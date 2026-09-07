@@ -94,7 +94,10 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                   spacing: 12,
                   children: [
                     Icon(Icons.data_object, color: Colors.grey),
-                    Text("Recorded", style: TextStyle(color: Colors.grey)),
+                    Text(
+                      "Recorded",
+                      style: TextStyle(color: Colors.grey, fontWeight: .bold),
+                    ),
                   ],
                 ),
               ),
