@@ -79,7 +79,7 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                   spacing: 12,
                   children: [
                     Icon(Icons.timelapse, color: Colors.grey),
-                    Text("All", style: TextStyle(color: Colors.white)),
+                    Text("Upcoming", style: TextStyle(color: Colors.grey)),
                   ],
                 ),
               ),
