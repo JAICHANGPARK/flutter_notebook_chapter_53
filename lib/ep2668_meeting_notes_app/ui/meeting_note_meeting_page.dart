@@ -1,3 +1,4 @@
+import 'package:avatar_stack/avatar_stack.dart';
 import 'package:flutter/material.dart';
 
 /// 회의록 앱 회의 상세 목록 화면
@@ -133,7 +134,6 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
-                  height: 260,
                   margin: const EdgeInsets.only(bottom: 12),
                   decoration: ShapeDecoration(
                     shape: RoundedSuperellipseBorder(
@@ -143,6 +143,7 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                   ),
                   padding: .all(16),
                   child: Column(
+                    spacing: 12,
                     children: [
                       Row(
                         children: [
@@ -178,6 +179,17 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                       Text(
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
                         maxLines: 2,
+                      ),
+                      Row(
+                        spacing: -12,
+                        children: [
+                          Text("3 actions, 2 minutes"),
+                          Spacer(),
+                          CircleAvatar(radius: 20),
+                          CircleAvatar(radius: 20),
+                          CircleAvatar(radius: 20),
+                          CircleAvatar(radius: 20),
+                        ],
                       ),
                     ],
                   ),
