@@ -156,6 +156,7 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                             ),
                           ),
                           Container(
+                            padding: .symmetric(horizontal: 16, vertical: 12),
                             decoration: BoxDecoration(
                               borderRadius: .circular(6),
                               color: Colors.green[50],
