@@ -161,7 +161,10 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                               borderRadius: .circular(6),
                               color: Colors.green[50],
                             ),
-                            child: Text("Upcoming"),
+                            child: Text(
+                              "Upcoming",
+                              style: TextStyle(fontSize: 12),
+                            ),
                           ),
                         ],
                       ),
