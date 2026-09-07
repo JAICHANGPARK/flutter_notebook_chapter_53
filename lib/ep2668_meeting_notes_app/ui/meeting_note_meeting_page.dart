@@ -73,7 +73,7 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                 margin: .only(right: 12),
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
-                  color: Colors.grey[300]!,
+                  color: Colors.grey[200]!,
                 ),
                 child: Row(
                   spacing: 12,
