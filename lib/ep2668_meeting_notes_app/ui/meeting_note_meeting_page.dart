@@ -47,8 +47,9 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
         ),
 
         // 필터 및 탭 바 영역
-        SizedBox(
-          height: 52,
+        Container(
+          margin: .only(left: 16),
+          height: 42,
           child: ListView(
             scrollDirection: .horizontal,
             children: [
@@ -59,7 +60,7 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                   color: Colors.black,
                 ),
                 child: Row(
-                  spacing: 16,
+                  spacing: 12,
                   children: [
                     Icon(Icons.apps, color: Colors.white),
                     Text("All", style: TextStyle(color: Colors.white)),
