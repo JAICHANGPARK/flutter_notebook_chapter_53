@@ -83,6 +83,21 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                   ],
                 ),
               ),
+              Container(
+                padding: .symmetric(horizontal: 16, vertical: 8),
+                margin: .only(right: 8),
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: Colors.grey[200]!,
+                ),
+                child: Row(
+                  spacing: 12,
+                  children: [
+                    Icon(Icons.data_object, color: Colors.grey),
+                    Text("Recorded", style: TextStyle(color: Colors.grey)),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
