@@ -146,16 +146,26 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                     children: [
                       Row(
                         children: [
-                          Expanded(child: Column(
-                            crossAxisAlignment: .start,
-                            children: [
-                            Text("Product Strategy"),
-                            Text("11 participants 48 minutes"),
-                          ],))
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: .start,
+                              children: [
+                                Text("Product Strategy"),
+                                Text("11 participants 48 minutes"),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              borderRadius: .circular(6),
+                              color: Colors.green[50],
+                            ),
+                            child: Text("Upcoming"),
+                          ),
                         ],
-                      )
+                      ),
                     ],
-                  )
+                  ),
                 );
               },
             ),
