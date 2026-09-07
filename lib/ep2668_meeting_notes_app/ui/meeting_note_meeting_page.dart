@@ -149,8 +149,13 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                           Expanded(
                             child: Column(
                               crossAxisAlignment: .start,
+                              spacing: 12,
                               children: [
-                                Text("Product Strategy"),
+                                Text(
+                                  "Product Strategy",
+                                  style: TextStyle(fontWeight: .bold,
+                                  fontSize: 16,),
+                                ),
                                 Text("11 participants 48 minutes"),
                               ],
                             ),
