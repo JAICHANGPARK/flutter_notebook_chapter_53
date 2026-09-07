@@ -135,7 +135,14 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                 return Container(
                   height: 260,
                   margin: const EdgeInsets.only(bottom: 12),
-                  child: const Placeholder(),
+                  decoration: ShapeDecoration(
+                    shape: RoundedSuperellipseBorder(
+                      borderRadius: .circular(16),
+                      side: BorderSide(color: Colors.grey[300]!),
+                    ),
+                  ),
+                  padding: .all(16),
+                  child: Column()
                 );
               },
             ),
