@@ -55,7 +55,7 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
             children: [
               Container(
                 padding: .symmetric(horizontal: 16, vertical: 8),
-                margin: .only(right: 12),
+                margin: .only(right: 8),
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
                   color: Colors.black,
@@ -70,7 +70,7 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
               ),
               Container(
                 padding: .symmetric(horizontal: 16, vertical: 8),
-                margin: .only(right: 12),
+                margin: .only(right: 8),
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
                   color: Colors.grey[200]!,
