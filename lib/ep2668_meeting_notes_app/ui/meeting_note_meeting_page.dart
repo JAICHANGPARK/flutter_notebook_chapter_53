@@ -47,7 +47,7 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
         ),
 
         // 필터 및 탭 바 영역
-         SizedBox(
+        SizedBox(
           height: 52,
           child: ListView(scrollDirection: .horizontal, children: []),
         ),
