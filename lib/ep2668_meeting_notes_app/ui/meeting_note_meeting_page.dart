@@ -52,7 +52,10 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
           child: ListView(
             scrollDirection: .horizontal,
             children: [
-              Container(decoration: ShapeDecoration(shape: StadiumBorder()),
+              Container(
+                padding: .symmetric(horizontal: 16, vertical: 8),
+                decoration: ShapeDecoration(shape: StadiumBorder(),
+                color: Colors.black),
               child: Row(
                 spacing: 16,
                 children: [
