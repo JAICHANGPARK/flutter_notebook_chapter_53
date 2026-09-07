@@ -150,7 +150,7 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                           Expanded(
                             child: Column(
                               crossAxisAlignment: .start,
-                              spacing: 8,
+                              spacing: 4,
                               children: [
                                 Text(
                                   "Product Strategy",
