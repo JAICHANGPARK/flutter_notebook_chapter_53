@@ -30,10 +30,7 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
               ),
               const Expanded(
                 child: Center(
-                  child: Text(
-                    "Meetings",
-                    style: TextStyle(fontSize: 17),
-                  ),
+                  child: Text("Meetings", style: TextStyle(fontSize: 17)),
                 ),
               ),
               Container(
@@ -50,10 +47,7 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
         ),
 
         // 필터 및 탭 바 영역
-        const SizedBox(
-          height: 52,
-          child: Placeholder(),
-        ),
+        const SizedBox(height: 52, child: Placeholder()),
 
         // 회의 목록 리스트뷰
         Expanded(
