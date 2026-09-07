@@ -142,7 +142,20 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                     ),
                   ),
                   padding: .all(16),
-                  child: Column()
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Expanded(child: Column(
+                            crossAxisAlignment: .start,
+                            children: [
+                            Text("Product Strategy"),
+                            Text("11 participants 48 minutes"),
+                          ],))
+                        ],
+                      )
+                    ],
+                  )
                 );
               },
             ),
