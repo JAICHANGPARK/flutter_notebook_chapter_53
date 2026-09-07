@@ -143,7 +143,7 @@ class _MeetingNoteMeetingPageState extends State<MeetingNoteMeetingPage> {
                   ),
                   padding: .all(16),
                   child: Column(
-                    spacing: 12,
+                    spacing: 20,
                     children: [
                       Row(
                         children: [
