@@ -1,6 +1,5 @@
 import 'package:material_ui/material_ui.dart';
 
-
 class MentalHealthMainPage extends StatefulWidget {
   const MentalHealthMainPage({super.key});
 
@@ -12,12 +11,10 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          
-
-        ],
-      ),
+      body: Stack(children: [Positioned(left: 16, top: 16, right: 16,
+      child: IndexedStack(
+        children: [],
+      ),),]),
     );
   }
 }
