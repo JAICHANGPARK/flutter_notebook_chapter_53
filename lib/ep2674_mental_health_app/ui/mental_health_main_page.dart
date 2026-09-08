@@ -11,6 +11,11 @@ class MentalHealthMainPage extends StatefulWidget {
 class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        children: [
+        ],
+      ),
+    );
   }
 }
