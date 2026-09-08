@@ -40,13 +40,16 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                         color: Colors.white,
                       ),
                       child: Row(
-                        spacing: 8,
+                        spacing: 4,
                         children: [
                           Icon(Icons.home_filled),
                           Text("Home")
                         ],
                       ),
                     ),
+                    Icon(Icons.bar_chart),
+                    Icon(Icons.energy_savings_leaf_outlined),
+                    Icon(Icons.person_2_outlined)
                   ],
                 ),
               ),
