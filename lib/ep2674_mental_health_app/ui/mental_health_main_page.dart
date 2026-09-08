@@ -29,16 +29,17 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                   shape: StadiumBorder(),
                   color: Colors.black,
                 ),
-                padding: .all(4),
+                padding: .all(5),
                 child: Row(
                   mainAxisSize: .min,
-
+                  spacing: 16,
                   children: [
                     Container(
                       decoration: ShapeDecoration(
                         shape: StadiumBorder(),
                         color: Colors.white,
                       ),
+                      padding: .symmetric(horizontal: 12,vertical: 6),
                       child: Row(
                         spacing: 4,
                         children: [Icon(Icons.home_filled), Text("Home")],
