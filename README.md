@@ -4,9 +4,9 @@
 
 - AI Mental Health Mobile App
 - Product SAAS for Cansaas
-- https://dribbble.com/shots/27661473-AI-Meeting-Notes-Transcription-App-UI-UX
+- https://dribbble.com/shots/27708405-AI-Mental-Health-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/48764255/file/d76f58b133be55f57ca345b720aa8143.png?resize=1905x1429&vertical=center" alt=""/>
+<img src="https://cdn.dribbble.com/userupload/48938002/file/f8e061f8e827ce49c3036107e4429e9f.png?resize=1905x1429&vertical=center" alt=""/>
 
 
 # EP2668-2673
