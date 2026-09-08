@@ -36,6 +36,13 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                         shape: StadiumBorder(),
                         color: Colors.white,
                       ),
+                      child: Row(
+                        spacing: 8,
+                        children: [
+                          Icon(Icons.home_filled),
+                          Text("Home")
+                        ],
+                      ),
                     ),
                   ],
                 ),
