@@ -25,9 +25,20 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
             child: Align(
               alignment: .center,
               child: Container(
-                decoration: ShapeDecoration(shape: StadiumBorder(),
-                color: Colors.black),
-
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: Colors.black,
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
