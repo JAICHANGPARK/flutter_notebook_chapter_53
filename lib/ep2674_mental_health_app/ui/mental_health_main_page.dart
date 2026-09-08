@@ -32,7 +32,7 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                 padding: .all(4),
                 child: Row(
                   mainAxisSize: .min,
-                  
+
                   children: [
                     Container(
                       decoration: ShapeDecoration(
@@ -41,15 +41,15 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                       ),
                       child: Row(
                         spacing: 4,
-                        children: [
-                          Icon(Icons.home_filled),
-                          Text("Home")
-                        ],
+                        children: [Icon(Icons.home_filled), Text("Home")],
                       ),
                     ),
-                    Icon(Icons.bar_chart),
-                    Icon(Icons.energy_savings_leaf_outlined),
-                    Icon(Icons.person_2_outlined)
+                    Icon(Icons.bar_chart, color: Colors.grey),
+                    Icon(
+                      Icons.energy_savings_leaf_outlined,
+                      color: Colors.grey,
+                    ),
+                    Icon(Icons.person_2_outlined, color: Colors.grey),
                   ],
                 ),
               ),
