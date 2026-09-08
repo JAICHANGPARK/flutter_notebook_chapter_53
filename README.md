@@ -8,7 +8,6 @@
 
 <img src="https://cdn.dribbble.com/userupload/48764255/file/d76f58b133be55f57ca345b720aa8143.png?resize=1905x1429&vertical=center" alt=""/>
 
-
 # EP2662-2667
 
 - Prayer Times, Quran Recitation & Islamic Community App
