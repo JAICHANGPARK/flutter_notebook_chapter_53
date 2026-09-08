@@ -9,10 +9,12 @@ class MentalHealthHomePage extends StatelessWidget {
       child: Column(
         children: [
           Row(
+            spacing: 12,
             children: [
               CircleAvatar(radius: 26),
               Expanded(
                 child: Column(
+                  spacing: 6,
                   crossAxisAlignment: .start,
                   children: [
                     Text("Today, 26 August"),
