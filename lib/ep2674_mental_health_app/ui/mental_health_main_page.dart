@@ -11,6 +11,7 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           Positioned(
