@@ -5,27 +5,29 @@ class MentalHealthHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          children: [
-            CircleAvatar(radius: 26),
-            Expanded(child: Column(children: [])),
-            Container(
-              height: 48,
-              width: 48,
-              child: Icon(Icons.notifications_none),
-              decoration: BoxDecoration(shape: .circle, color: Colors.white, boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withValues(alpha: .05),
-                  spreadRadius: 4,
-                  blurRadius: 3
-                )
-              ],),
-            ),
-          ],
-        ),
-      ],
+    return SafeArea(
+      child: Column(
+        children: [
+          Row(
+            children: [
+              CircleAvatar(radius: 26),
+              Expanded(child: Column(children: [])),
+              Container(
+                height: 48,
+                width: 48,
+                child: Icon(Icons.notifications_none),
+                decoration: BoxDecoration(shape: .circle, color: Colors.white, boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: .05),
+                    spreadRadius: 4,
+                    blurRadius: 3
+                  )
+                ],),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
