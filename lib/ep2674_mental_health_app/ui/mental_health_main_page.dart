@@ -11,10 +11,28 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(children: [Positioned(left: 16, top: 16, right: 16,
-      child: IndexedStack(
-        children: [],
-      ),),]),
+      body: Stack(
+        children: [
+          Positioned(
+            left: 16,
+            top: 16,
+            right: 16,
+            child: IndexedStack(children: []),
+          ),
+          Positioned(
+            bottom: 32,
+
+            child: Align(
+              alignment: .center,
+              child: Container(
+                decoration: ShapeDecoration(shape: StadiumBorder(),
+                color: Colors.black),
+
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
