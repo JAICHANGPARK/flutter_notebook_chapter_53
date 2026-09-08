@@ -14,7 +14,7 @@ class MentalHealthHomePage extends StatelessWidget {
               CircleAvatar(radius: 26),
               Expanded(
                 child: Column(
-                  spacing: 6,
+                  spacing: 4,
                   crossAxisAlignment: .start,
                   children: [
                     Text("Today, 26 August"),
@@ -41,6 +41,22 @@ class MentalHealthHomePage extends StatelessWidget {
               ),
             ],
           ),
+          Container(
+            height: 120,
+            child: Placeholder(),
+          ),
+          Container(
+            height: 180,
+            child: Placeholder(),
+          ),
+          Container(
+            height: 180,
+            child: Placeholder(),
+          ),
+          Container(
+            height: 180,
+            child: Placeholder(),
+          )
         ],
       ),
     );
