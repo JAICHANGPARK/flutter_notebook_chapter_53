@@ -11,18 +11,31 @@ class MentalHealthHomePage extends StatelessWidget {
           Row(
             children: [
               CircleAvatar(radius: 26),
-              Expanded(child: Column(children: [])),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: .start,
+                  children: [
+                    Text("Today, 26 August"),
+                    Text("Hi, Dream", style: TextStyle(fontWeight: .bold,
+                    fontSize: 16,)),
+                  ],
+                ),
+              ),
               Container(
                 height: 48,
                 width: 48,
                 child: Icon(Icons.notifications_none),
-                decoration: BoxDecoration(shape: .circle, color: Colors.white, boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withValues(alpha: .05),
-                    spreadRadius: 4,
-                    blurRadius: 3
-                  )
-                ],),
+                decoration: BoxDecoration(
+                  shape: .circle,
+                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: .05),
+                      spreadRadius: 4,
+                      blurRadius: 3,
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
