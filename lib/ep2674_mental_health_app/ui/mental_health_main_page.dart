@@ -29,7 +29,10 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                   shape: StadiumBorder(),
                   color: Colors.black,
                 ),
+                padding: .all(4),
                 child: Row(
+                  mainAxisSize: .min,
+                  
                   children: [
                     Container(
                       decoration: ShapeDecoration(
