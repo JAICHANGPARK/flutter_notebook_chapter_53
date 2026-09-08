@@ -19,40 +19,37 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
             right: 16,
             child: IndexedStack(children: []),
           ),
-          Positioned(
-            bottom: 32,
-
-            child: Align(
-              alignment: .center,
-              child: Container(
-                decoration: ShapeDecoration(
-                  shape: StadiumBorder(),
-                  color: Colors.black,
-                ),
-                padding: .all(5),
-                child: Row(
-                  mainAxisSize: .min,
-                  spacing: 16,
-                  children: [
-                    Container(
-                      decoration: ShapeDecoration(
-                        shape: StadiumBorder(),
-                        color: Colors.white,
-                      ),
-                      padding: .symmetric(horizontal: 12,vertical: 6),
-                      child: Row(
-                        spacing: 4,
-                        children: [Icon(Icons.home_filled), Text("Home")],
-                      ),
+          Align(
+            alignment: .bottomCenter,
+            child: Container(
+              margin: .only(bottom: 32),
+              decoration: ShapeDecoration(
+                shape: StadiumBorder(),
+                color: Colors.black,
+              ),
+              padding: .all(5),
+              child: Row(
+                mainAxisSize: .min,
+                spacing: 16,
+                children: [
+                  Container(
+                    decoration: ShapeDecoration(
+                      shape: StadiumBorder(),
+                      color: Colors.white,
                     ),
-                    Icon(Icons.bar_chart, color: Colors.grey),
-                    Icon(
-                      Icons.energy_savings_leaf_outlined,
-                      color: Colors.grey,
+                    padding: .symmetric(horizontal: 8, vertical: 6),
+                    child: Row(
+                      spacing: 4,
+                      children: [Icon(Icons.home_filled), Text("Home")],
                     ),
-                    Icon(Icons.person_2_outlined, color: Colors.grey),
-                  ],
-                ),
+                  ),
+                  Icon(Icons.bar_chart, color: Colors.grey),
+                  Icon(
+                    Icons.energy_savings_leaf_outlined,
+                    color: Colors.grey,
+                  ),
+                  Icon(Icons.person_2_outlined, color: Colors.grey),
+                ],
               ),
             ),
           ),
