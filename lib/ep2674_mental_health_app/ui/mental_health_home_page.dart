@@ -7,6 +7,7 @@ class MentalHealthHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Column(
+        spacing: 16,
         children: [
           Row(
             spacing: 12,
