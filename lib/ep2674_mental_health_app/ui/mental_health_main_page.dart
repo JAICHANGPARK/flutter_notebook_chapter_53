@@ -41,14 +41,15 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                     padding: .symmetric(horizontal: 8, vertical: 6),
                     child: Row(
                       spacing: 4,
-                      children: [Icon(Icons.home_filled), Text("Home")],
+                      children: [
+                        Icon(Icons.home_filled),
+                        Text("Home", style: TextStyle(fontWeight: .bold,
+                        fontSize: 15,)),
+                      ],
                     ),
                   ),
                   Icon(Icons.bar_chart, color: Colors.grey),
-                  Icon(
-                    Icons.energy_savings_leaf_outlined,
-                    color: Colors.grey,
-                  ),
+                  Icon(Icons.energy_savings_leaf_outlined, color: Colors.grey),
                   Icon(Icons.person_2_outlined, color: Colors.grey),
                 ],
               ),
