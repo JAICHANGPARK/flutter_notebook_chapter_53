@@ -141,7 +141,16 @@ class MentalHealthHomePage extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        
+                        Row(
+                          mainAxisAlignment: .spaceBetween,
+                          children: [
+                            Text(
+                              "Mindful Minutes",
+                              style: TextStyle(fontSize: 16, fontWeight: .bold),
+                            ),
+                            Icon(Icons.watch),
+                          ],
+                        ),
                       ],
                     ),
                   ),
@@ -157,6 +166,20 @@ class MentalHealthHomePage extends StatelessWidget {
                           color: Colors.black.withValues(alpha: .06),
                           spreadRadius: 1,
                           blurRadius: 2,
+                        ),
+                      ],
+                    ),
+                    child: Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: .spaceBetween,
+                          children: [
+                            Text(
+                              "Health Journal",
+                              style: TextStyle(fontSize: 16, fontWeight: .bold),
+                            ),
+                            Icon(Icons.health_and_safety_outlined),
+                          ],
                         ),
                       ],
                     ),
