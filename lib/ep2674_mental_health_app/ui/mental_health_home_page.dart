@@ -120,39 +120,46 @@ class MentalHealthHomePage extends StatelessWidget {
               ],
             ),
           ),
-          Container(height: 180, child: Row(
-            spacing: 16,
-            children: [
-              Expanded(child: Container(
-                padding: .all(14),
-                decoration: BoxDecoration(
-                  borderRadius: .circular(12),
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withValues(alpha: .06),
-                      spreadRadius: 1,
-                      blurRadius: 2,
+          Container(
+            height: 180,
+            child: Row(
+              spacing: 16,
+              children: [
+                Expanded(
+                  child: Container(
+                    padding: .all(14),
+                    decoration: BoxDecoration(
+                      borderRadius: .circular(12),
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withValues(alpha: .06),
+                          spreadRadius: 1,
+                          blurRadius: 2,
+                        ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
-              )),
-              Expanded(child: Container(
-                padding: .all(14),
-                decoration: BoxDecoration(
-                  borderRadius: .circular(12),
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withValues(alpha: .06),
-                      spreadRadius: 1,
-                      blurRadius: 2,
+                Expanded(
+                  child: Container(
+                    padding: .all(14),
+                    decoration: BoxDecoration(
+                      borderRadius: .circular(12),
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withValues(alpha: .06),
+                          spreadRadius: 1,
+                          blurRadius: 2,
+                        ),
+                      ],
                     ),
-                  ],
+                  ),
                 ),
-              )),
-            ],
-          )),
+              ],
+            ),
+          ),
           Container(
             padding: .all(14),
             decoration: BoxDecoration(
@@ -183,8 +190,10 @@ class MentalHealthHomePage extends StatelessWidget {
                   children: [
                     Icon(Icons.sunny),
                     Text('Morning Check-in'),
+                    Text("3min"),
+                    Checkbox(value: false, onChanged: (v) {}),
                   ],
-                )
+                ),
               ],
             ),
           ),
