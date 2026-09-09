@@ -194,10 +194,7 @@ class MentalHealthHomePage extends StatelessWidget {
                     Checkbox(value: false, onChanged: (v) {}),
                   ],
                 ),
-                Divider(
-                  color: Colors.grey[300],
-                  height: 0,
-                ),
+                Divider(color: Colors.grey[300], height: 0),
                 Row(
                   spacing: 4,
                   children: [
@@ -207,10 +204,7 @@ class MentalHealthHomePage extends StatelessWidget {
                     Checkbox(value: false, onChanged: (v) {}),
                   ],
                 ),
-                Divider(
-                  color: Colors.grey[300],
-                  height: 0,
-                ),
+                Divider(color: Colors.grey[300], height: 0),
                 Row(
                   spacing: 4,
                   children: [
@@ -220,11 +214,24 @@ class MentalHealthHomePage extends StatelessWidget {
                     Checkbox(value: false, onChanged: (v) {}),
                   ],
                 ),
-
               ],
             ),
           ),
-          Container(height: 180, child: Placeholder()),
+          Container(
+            height: 180,
+            padding: .all(14),
+            decoration: BoxDecoration(
+              borderRadius: .circular(12),
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: .06),
+                  spreadRadius: 4,
+                  blurRadius: 16,
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
