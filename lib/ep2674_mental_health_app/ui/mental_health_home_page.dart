@@ -174,7 +174,6 @@ class MentalHealthHomePage extends StatelessWidget {
               ],
             ),
             child: Column(
-              spacing: 16,
               children: [
                 Row(
                   mainAxisAlignment: .spaceBetween,
@@ -195,7 +194,10 @@ class MentalHealthHomePage extends StatelessWidget {
                     Checkbox(value: false, onChanged: (v) {}),
                   ],
                 ),
-                Divider(),
+                Divider(
+                  color: Colors.grey[300],
+                  height: 0,
+                ),
                 Row(
                   spacing: 4,
                   children: [
@@ -205,7 +207,10 @@ class MentalHealthHomePage extends StatelessWidget {
                     Checkbox(value: false, onChanged: (v) {}),
                   ],
                 ),
-                Divider(),
+                Divider(
+                  color: Colors.grey[300],
+                  height: 0,
+                ),
                 Row(
                   spacing: 4,
                   children: [
@@ -215,17 +220,7 @@ class MentalHealthHomePage extends StatelessWidget {
                     Checkbox(value: false, onChanged: (v) {}),
                   ],
                 ),
-                Divider(),
-                Row(
-                  spacing: 4,
-                  children: [
-                    Icon(Icons.sunny),
-                    Expanded(child: Text('Morning Check-in')),
-                    Text("3min"),
-                    Checkbox(value: false, onChanged: (v) {}),
-                  ],
-                ),
-                Divider(),
+                
               ],
             ),
           ),
