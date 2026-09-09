@@ -45,7 +45,7 @@ class MentalHealthHomePage extends StatelessWidget {
             ],
           ),
           Container(
-            padding: .all(16),
+            padding: .all(14),
             decoration: BoxDecoration(
               borderRadius: .circular(12),
               color: Colors.white,
@@ -76,6 +76,12 @@ class MentalHealthHomePage extends StatelessWidget {
                       child: Column(
                         spacing: 12,
                         children: [CircleAvatar(radius: 18), Text("Sun")],
+                      ),
+                    ),
+                    Expanded(
+                      child: Column(
+                        spacing: 12,
+                        children: [CircleAvatar(radius: 18), Text("Mon")],
                       ),
                     ),
                   ],
