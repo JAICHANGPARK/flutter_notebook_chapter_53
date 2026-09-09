@@ -153,7 +153,35 @@ class MentalHealthHomePage extends StatelessWidget {
               )),
             ],
           )),
-          Container(height: 180, child: Placeholder()),
+          Container(
+            padding: .all(14),
+            decoration: BoxDecoration(
+              borderRadius: .circular(12),
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: .06),
+                  spreadRadius: 4,
+                  blurRadius: 16,
+                ),
+              ],
+            ),
+            child: Column(
+              spacing: 16,
+              children: [
+                Row(
+                  mainAxisAlignment: .spaceBetween,
+                  children: [
+                    Text(
+                      "Today's Care",
+                      style: TextStyle(fontSize: 16, fontWeight: .bold),
+                    ),
+                    Icon(Icons.arrow_forward_outlined),
+                  ],
+                ),
+              ],
+            ),
+          ),
           Container(height: 180, child: Placeholder()),
         ],
       ),
