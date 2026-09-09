@@ -187,6 +187,7 @@ class MentalHealthHomePage extends StatelessWidget {
                   ],
                 ),
                 Row(
+                  spacing: 4,
                   children: [
                     Icon(Icons.sunny),
                     Expanded(child: Text('Morning Check-in')),
@@ -194,6 +195,37 @@ class MentalHealthHomePage extends StatelessWidget {
                     Checkbox(value: false, onChanged: (v) {}),
                   ],
                 ),
+                Divider(),
+                Row(
+                  spacing: 4,
+                  children: [
+                    Icon(Icons.sunny),
+                    Expanded(child: Text('Morning Check-in')),
+                    Text("3min"),
+                    Checkbox(value: false, onChanged: (v) {}),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  spacing: 4,
+                  children: [
+                    Icon(Icons.sunny),
+                    Expanded(child: Text('Morning Check-in')),
+                    Text("3min"),
+                    Checkbox(value: false, onChanged: (v) {}),
+                  ],
+                ),
+                Divider(),
+                Row(
+                  spacing: 4,
+                  children: [
+                    Icon(Icons.sunny),
+                    Expanded(child: Text('Morning Check-in')),
+                    Text("3min"),
+                    Checkbox(value: false, onChanged: (v) {}),
+                  ],
+                ),
+                Divider(),
               ],
             ),
           ),
