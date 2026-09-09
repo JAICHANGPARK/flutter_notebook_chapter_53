@@ -52,7 +52,7 @@ class MentalHealthHomePage extends StatelessWidget {
               boxShadow: [
                 BoxShadow(
                   color: Colors.black.withValues(alpha: .06),
-                  spreadRadius: 2,
+                  spreadRadius: 4,
                   blurRadius: 16,
                 ),
               ],
