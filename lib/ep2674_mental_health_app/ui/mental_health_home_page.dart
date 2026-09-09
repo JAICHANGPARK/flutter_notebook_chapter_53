@@ -139,6 +139,11 @@ class MentalHealthHomePage extends StatelessWidget {
                         ),
                       ],
                     ),
+                    child: Column(
+                      children: [
+                        
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
