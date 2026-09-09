@@ -46,7 +46,21 @@ class MentalHealthHomePage extends StatelessWidget {
             height: 120,
             child: Column(
               children: [
-                
+                Row(
+                  children: [
+                    Text("Your Daily Mood"),
+                    Icon(Icons.arrow_forward_outlined),
+                  ],
+                ),
+                Row(
+                  children: [
+                    Expanded(child: Column(children: [
+                      CircleAvatar(),
+                      Text("Sun")
+                    ],))
+                  ],
+                )
+
               ],
             ),
           ),
