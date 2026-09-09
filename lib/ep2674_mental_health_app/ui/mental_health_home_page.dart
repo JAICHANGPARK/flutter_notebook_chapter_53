@@ -179,6 +179,12 @@ class MentalHealthHomePage extends StatelessWidget {
                     Icon(Icons.arrow_forward_outlined),
                   ],
                 ),
+                Row(
+                  children: [
+                    Icon(Icons.sunny),
+                    Text('Morning Check-in'),
+                  ],
+                )
               ],
             ),
           ),
