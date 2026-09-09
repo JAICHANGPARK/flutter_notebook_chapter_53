@@ -121,6 +121,7 @@ class MentalHealthHomePage extends StatelessWidget {
             ),
           ),
           Container(height: 180, child: Row(
+            spacing: 16,
             children: [
               Expanded(child: Container(
                 padding: .all(14),
