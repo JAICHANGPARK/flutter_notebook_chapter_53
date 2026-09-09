@@ -44,6 +44,9 @@ class MentalHealthHomePage extends StatelessWidget {
           ),
           Container(
             height: 120,
+            decoration: BoxDecoration(
+              borderRadius: .circular(12),
+            ),
             child: Column(
               children: [
                 Row(
