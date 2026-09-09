@@ -19,8 +19,10 @@ class MentalHealthHomePage extends StatelessWidget {
                   crossAxisAlignment: .start,
                   children: [
                     Text("Today, 26 August"),
-                    Text("Hi, Dream", style: TextStyle(fontWeight: .bold,
-                    fontSize: 16,)),
+                    Text(
+                      "Hi, Dream",
+                      style: TextStyle(fontWeight: .bold, fontSize: 16),
+                    ),
                   ],
                 ),
               ),
@@ -43,7 +45,6 @@ class MentalHealthHomePage extends StatelessWidget {
             ],
           ),
           Container(
-
             padding: .all(16),
             decoration: BoxDecoration(
               borderRadius: .circular(12),
@@ -53,46 +54,38 @@ class MentalHealthHomePage extends StatelessWidget {
                   color: Colors.black.withValues(alpha: .06),
                   spreadRadius: 2,
                   blurRadius: 16,
-                )
+                ),
               ],
             ),
             child: Column(
               spacing: 16,
               children: [
                 Row(
+                  mainAxisAlignment: .spaceBetween,
                   children: [
-                    Text("Your Daily Mood"),
+                    Text(
+                      "Your Daily Mood",
+                      style: TextStyle(fontSize: 16, fontWeight: .bold),
+                    ),
                     Icon(Icons.arrow_forward_outlined),
                   ],
                 ),
                 Row(
                   children: [
-                    Expanded(child: Column(
-                      spacing: 12,
-                      children: [
-                      CircleAvatar(
-                        radius: 18,
+                    Expanded(
+                      child: Column(
+                        spacing: 12,
+                        children: [CircleAvatar(radius: 18), Text("Sun")],
                       ),
-                      Text("Sun")
-                    ],))
+                    ),
                   ],
-                )
-
+                ),
               ],
             ),
           ),
-          Container(
-            height: 180,
-            child: Placeholder(),
-          ),
-          Container(
-            height: 180,
-            child: Placeholder(),
-          ),
-          Container(
-            height: 180,
-            child: Placeholder(),
-          )
+          Container(height: 180, child: Placeholder()),
+          Container(height: 180, child: Placeholder()),
+          Container(height: 180, child: Placeholder()),
         ],
       ),
     );
