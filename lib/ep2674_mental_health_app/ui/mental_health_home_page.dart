@@ -132,7 +132,7 @@ class MentalHealthHomePage extends StatelessWidget {
                     BoxShadow(
                       color: Colors.black.withValues(alpha: .06),
                       spreadRadius: 1,
-                      blurRadius: 4,
+                      blurRadius: 2,
                     ),
                   ],
                 ),
@@ -145,8 +145,8 @@ class MentalHealthHomePage extends StatelessWidget {
                   boxShadow: [
                     BoxShadow(
                       color: Colors.black.withValues(alpha: .06),
-                      spreadRadius: 2,
-                      blurRadius: 16,
+                      spreadRadius: 1,
+                      blurRadius: 2,
                     ),
                   ],
                 ),
