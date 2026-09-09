@@ -71,11 +71,12 @@ class MentalHealthHomePage extends StatelessWidget {
                   ],
                 ),
                 Row(
+                  mainAxisAlignment: .spaceBetween,
                   children: [
                     Expanded(
                       child: Column(
                         spacing: 12,
-                        
+
                         children: [CircleAvatar(radius: 18), Text("Sun")],
                       ),
                     ),
