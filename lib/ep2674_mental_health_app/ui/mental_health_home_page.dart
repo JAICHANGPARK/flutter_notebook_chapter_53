@@ -189,7 +189,7 @@ class MentalHealthHomePage extends StatelessWidget {
                 Row(
                   children: [
                     Icon(Icons.sunny),
-                    Text('Morning Check-in'),
+                    Expanded(child: Text('Morning Check-in')),
                     Text("3min"),
                     Checkbox(value: false, onChanged: (v) {}),
                   ],
