@@ -19,7 +19,8 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
             left: 16,
             top: 8,
             right: 16,
-            child: IndexedStack(children: [MentalHealthHomePage()]),
+            child: IndexedStack(
+children: [MentalHealthHomePage()]),
           ),
           Align(
             alignment: .bottomCenter,
