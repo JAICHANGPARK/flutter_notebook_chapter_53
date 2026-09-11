@@ -198,6 +198,20 @@ class MentalHealthHomePage extends StatelessWidget {
                             Icon(Icons.health_and_safety_outlined, size: 14,),
                           ],
                         ),
+                        Text.rich(
+                          TextSpan(
+                            children: [
+                              TextSpan(
+                                text: "46 ",
+                                style: TextStyle(
+                                  fontWeight: .bold,
+                                  fontSize: 20,
+                                ),
+                              ),
+                              TextSpan(text: " /365 days"),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
