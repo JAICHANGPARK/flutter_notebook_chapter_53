@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MentalBarchartPainter extends CustomPainter{
+class MentalBarchartPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     // TODO: implement paint
@@ -8,8 +8,6 @@ class MentalBarchartPainter extends CustomPainter{
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    // TODO: implement shouldRepaint
-    throw UnimplementedError();
+    return false;
   }
-
 }
