@@ -152,13 +152,20 @@ class MentalHealthHomePage extends StatelessWidget {
                           ],
                         ),
                         Expanded(child: Placeholder()),
-                        Text.rich(TextSpan(children: [
+                        Text.rich(
                           TextSpan(
-                            text: "33 ",
-                            style: TextStyle()
+                            children: [
+                              TextSpan(
+                                text: "33 ",
+                                style: TextStyle(
+                                  fontWeight: .bold,
+                                  fontSize: 20,
+                                ),
+                              ),
+                              TextSpan(text: "minutes"),
+                            ],
                           ),
-                          TextSpan(text: "minutes")
-                        ])),
+                        ),
                       ],
                     ),
                   ),
