@@ -148,7 +148,7 @@ class MentalHealthHomePage extends StatelessWidget {
                               "Mindful Minutes",
                               style: TextStyle(fontSize: 16, fontWeight: .bold),
                             ),
-                            Icon(Icons.watch),
+                            Icon(Icons.watch, size: 14,),
                           ],
                         ),
                         Expanded(child: Placeholder()),
