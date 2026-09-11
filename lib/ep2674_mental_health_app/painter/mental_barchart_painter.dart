@@ -16,6 +16,8 @@ class MentalBarchartPainter extends CustomPainter {
         Rect.fromLTWH(x, size.height, barWidth, h),
         Radius.circular(2),
       );
+
+      final colorOpacity = (barHeight[i] * .7 + .3).clamp(.1, 1);
     }
   }
 
