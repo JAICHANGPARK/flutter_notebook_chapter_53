@@ -9,7 +9,14 @@ class MentalBarchartPainter extends CustomPainter {
     final barWidth = (size.width - (spacing * (barCount - 1))) / barCount;
 
     final paint = Paint()..style = .fill;
-    
+    for (int i = 0; i < barCount; i++) {
+      final x = i * (barWidth + spacing);
+      final h = size.height * barHeight[i];
+      final rect = RRect.fromRectAndRadius(
+        Rect.fromLTWH(x, size.height, barWidth, h),
+        Radius.circular(2),
+      );
+    }
   }
 
   @override
