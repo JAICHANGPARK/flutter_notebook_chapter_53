@@ -122,7 +122,7 @@ class MentalHealthHomePage extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 200,
+            height: 190,
             child: Row(
               crossAxisAlignment: .start,
               spacing: 16,
