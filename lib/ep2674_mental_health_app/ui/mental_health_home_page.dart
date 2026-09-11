@@ -1,3 +1,4 @@
+import 'package:flutter_notebook_chapter_53/ep2674_mental_health_app/painter/mental_barchart_painter.dart';
 import 'package:material_ui/material_ui.dart';
 
 class MentalHealthHomePage extends StatelessWidget {
@@ -150,10 +151,12 @@ class MentalHealthHomePage extends StatelessWidget {
                               "Mindful Minutes",
                               style: TextStyle(fontSize: 16, fontWeight: .bold),
                             ),
-                            Icon(Icons.watch, size: 14,),
+                            Icon(Icons.watch, size: 14),
                           ],
                         ),
-                        Expanded(child: Placeholder()),
+                        Expanded(
+                          child: CustomPaint(painter: MentalBarchartPainter()),
+                        ),
                         Text.rich(
                           TextSpan(
                             children: [
@@ -195,7 +198,7 @@ class MentalHealthHomePage extends StatelessWidget {
                               "Health Journal",
                               style: TextStyle(fontSize: 16, fontWeight: .bold),
                             ),
-                            Icon(Icons.health_and_safety_outlined, size: 14,),
+                            Icon(Icons.health_and_safety_outlined, size: 14),
                           ],
                         ),
                         Text.rich(
