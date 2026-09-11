@@ -195,7 +195,7 @@ class MentalHealthHomePage extends StatelessWidget {
                               "Health Journal",
                               style: TextStyle(fontSize: 16, fontWeight: .bold),
                             ),
-                            Icon(Icons.health_and_safety_outlined),
+                            Icon(Icons.health_and_safety_outlined, size: 14,),
                           ],
                         ),
                       ],
