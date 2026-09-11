@@ -154,7 +154,9 @@ class MentalHealthHomePage extends StatelessWidget {
                             Icon(Icons.watch, size: 14),
                           ],
                         ),
-                        Expanded(
+                        SizedBox(
+                          height: 80,
+                          width: double.infinity,
                           child: CustomPaint(painter: MentalBarchartPainter()),
                         ),
                         Text.rich(
