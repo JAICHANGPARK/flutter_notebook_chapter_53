@@ -151,6 +151,8 @@ class MentalHealthHomePage extends StatelessWidget {
                             Icon(Icons.watch),
                           ],
                         ),
+                        Expanded(child: Placeholder()),
+                        Text.rich(TextSpan(children: [])),
                       ],
                     ),
                   ),
