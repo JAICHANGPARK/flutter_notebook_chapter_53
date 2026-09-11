@@ -17,7 +17,10 @@ class MentalBarchartPainter extends CustomPainter {
         Radius.circular(2),
       );
 
-      final colorOpacity = (barHeight[i] * .7 + .3).clamp(.1, 1);
+      final colorOpacity = (barHeight[i] * .7 + .3).clamp(.1, 1).toDouble();
+      paint.color = Colors.orangeAccent.withValues(alpha: colorOpacity);
+
+      canvas.drawRRect(rect, paint);
     }
   }
 
