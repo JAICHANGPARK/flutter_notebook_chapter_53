@@ -140,6 +140,8 @@ class MentalHealthHomePage extends StatelessWidget {
                       ],
                     ),
                     child: Column(
+                      crossAxisAlignment: .start,
+                      spacing: 12,
                       children: [
                         Row(
                           mainAxisAlignment: .spaceBetween,
