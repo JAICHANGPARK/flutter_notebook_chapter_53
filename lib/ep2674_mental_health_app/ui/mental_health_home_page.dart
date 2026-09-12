@@ -206,6 +206,7 @@ class MentalHealthHomePage extends StatelessWidget {
                             Icon(Icons.health_and_safety_outlined, size: 14),
                           ],
                         ),
+                        Spacer(),
                         Text.rich(
                           TextSpan(
                             children: [
@@ -213,7 +214,7 @@ class MentalHealthHomePage extends StatelessWidget {
                                 text: "46 ",
                                 style: TextStyle(
                                   fontWeight: .bold,
-                                  fontSize: 20,
+                                  fontSize: 25,
                                 ),
                               ),
                               TextSpan(text: " /365 days"),
@@ -222,7 +223,7 @@ class MentalHealthHomePage extends StatelessWidget {
                         ),
                         SizedBox(
                           width: 120,
-                          height: 80,
+                          height: 62,
                           child: CustomPaint(
                             painter: MentalJournalGridPainter(),
                           ),
