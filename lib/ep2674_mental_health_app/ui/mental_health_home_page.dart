@@ -194,6 +194,7 @@ class MentalHealthHomePage extends StatelessWidget {
                       ],
                     ),
                     child: Column(
+                      crossAxisAlignment: .start,
                       children: [
                         Row(
                           mainAxisAlignment: .spaceBetween,
@@ -220,7 +221,7 @@ class MentalHealthHomePage extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          width: double.infinity,
+                          width: 120,
                           height: 80,
                           child: CustomPaint(
                             painter: MentalJournalGridPainter(),
