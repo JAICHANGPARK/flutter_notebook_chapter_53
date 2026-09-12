@@ -20,6 +20,11 @@ class MentalJournalGridPainter extends CustomPainter {
         final y =
             (size.height - (rows * (cellSize + spacing) - spacing)) +
             r * (cellSize + spacing);
+
+        final rect = RRect.fromRectAndRadius(
+          .fromLTWH(x, y, cellSize, cellSize),
+          const .circular(3),
+        );
       }
     }
   }
