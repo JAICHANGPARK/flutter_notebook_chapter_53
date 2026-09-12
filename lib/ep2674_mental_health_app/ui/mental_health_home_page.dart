@@ -1,4 +1,5 @@
 import 'package:flutter_notebook_chapter_53/ep2674_mental_health_app/painter/mental_barchart_painter.dart';
+import 'package:flutter_notebook_chapter_53/ep2674_mental_health_app/painter/mental_journal_grid_painter.dart';
 import 'package:material_ui/material_ui.dart';
 
 class MentalHealthHomePage extends StatelessWidget {
@@ -218,6 +219,12 @@ class MentalHealthHomePage extends StatelessWidget {
                             ],
                           ),
                         ),
+                        SizedBox(
+                          height: 80,
+                          child: CustomPaint(
+                            painter: MentalJournalGridPainter(),
+                          ),
+                        )
                       ],
                     ),
                   ),
