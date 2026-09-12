@@ -25,6 +25,9 @@ class MentalJournalGridPainter extends CustomPainter {
           .fromLTWH(x, y, cellSize, cellSize),
           const .circular(3),
         );
+
+        paint.color = Color(0xffff8a50).withValues(alpha: opacity);
+        canvas.drawRRect(rect, paint);
       }
     }
   }
