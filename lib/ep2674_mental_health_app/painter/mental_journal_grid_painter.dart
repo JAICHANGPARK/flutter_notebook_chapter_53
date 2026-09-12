@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 class MentalJournalGridPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    const gridData = [];
+    const gridData = [
+      [0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      [0.4, 0.2, 0.65, 0.0, 0.35, 0.0, 0.0, 0.0],
+      [0.35, 0.2, 0.35, 0.15, 0.1, 0.0, 0.45, 0.35],
+      [0.35, 0.2, 0.5, 0.6, 0.6, 0.55, 0.6, 0.55],
+    ];
 
     const rows = 4;
     const cols = 8;
