@@ -220,6 +220,7 @@ class MentalHealthHomePage extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
+                          width: double.infinity,
                           height: 80,
                           child: CustomPaint(
                             painter: MentalJournalGridPainter(),
