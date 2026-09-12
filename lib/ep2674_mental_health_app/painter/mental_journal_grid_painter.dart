@@ -13,7 +13,14 @@ class MentalJournalGridPainter extends CustomPainter {
     final paint = Paint()..style = .fill;
 
     for (int r = 0; r < rows; r++) {
-      for (int c = 0; c < cols; c++) {}
+      for (int c = 0; c < cols; c++) {
+        final opacity = gridData[r][c];
+        if (opacity == 0.0) continue;
+        final x = c * (cellSize + spacing);
+        final y =
+            (size.height - (rows * (cellSize + spacing) - spacing)) +
+            r * (cellSize + spacing);
+      }
     }
   }
 
