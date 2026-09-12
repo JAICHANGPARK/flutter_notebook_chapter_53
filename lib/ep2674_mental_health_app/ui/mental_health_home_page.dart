@@ -214,10 +214,10 @@ class MentalHealthHomePage extends StatelessWidget {
                                 text: "46 ",
                                 style: TextStyle(
                                   fontWeight: .bold,
-                                  fontSize: 25,
+                                  fontSize: 28,
                                 ),
                               ),
-                              TextSpan(text: " /365 days"),
+                              TextSpan(text: "/365 days"),
                             ],
                           ),
                         ),
