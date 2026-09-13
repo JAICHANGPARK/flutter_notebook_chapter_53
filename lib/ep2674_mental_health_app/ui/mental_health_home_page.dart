@@ -296,7 +296,6 @@ class MentalHealthHomePage extends StatelessWidget {
             ),
           ),
           Container(
-
             padding: .all(14),
             decoration: BoxDecoration(
               borderRadius: .circular(12),
@@ -328,20 +327,15 @@ class MentalHealthHomePage extends StatelessWidget {
                         style: TextStyle(fontSize: 26, fontWeight: .bold),
                       ),
                       TextSpan(text: " hr"),
-                      TextSpan(text: " 59",
-                        style: TextStyle(fontSize: 26, fontWeight: .bold),),
+                      TextSpan(
+                        text: " 59",
+                        style: TextStyle(fontSize: 26, fontWeight: .bold),
+                      ),
                       TextSpan(text: " min"),
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 52,
-                  child: Row(
-                    children: [
-                      Container()
-                    ],
-                  ),
-                )
+                SizedBox(height: 52, child: Row(children: [Container()])),
               ],
             ),
           ),
@@ -363,18 +357,49 @@ class _SleepOverviewCard extends StatelessWidget {
     const Color textColor = Colors.black87;
     const Color subtitleColor = Colors.grey;
     final List<SleepSegment> segments = [
-      SleepSegment(name: 'Awake', durationString: '39min', minutes: 39, color: awakeColor),
-      SleepSegment(name: 'REM', durationString: '1h 42m', minutes: 102, color: remColor),
-      SleepSegment(name: 'Core', durationString: '5h 28m', minutes: 328, color: coreColor),
-      SleepSegment(name: 'Deep', durationString: '1h', minutes: 60, color: deepColor),
+      SleepSegment(
+        name: 'Awake',
+        durationString: '39min',
+        minutes: 39,
+        color: awakeColor,
+      ),
+      SleepSegment(
+        name: 'REM',
+        durationString: '1h 42m',
+        minutes: 102,
+        color: remColor,
+      ),
+      SleepSegment(
+        name: 'Core',
+        durationString: '5h 28m',
+        minutes: 328,
+        color: coreColor,
+      ),
+      SleepSegment(
+        name: 'Deep',
+        durationString: '1h',
+        minutes: 60,
+        color: deepColor,
+      ),
     ];
     return const Placeholder();
   }
 
-  Widget _buildProgressBar(List<SleepSegment> segments){
+  Widget _buildProgressBar(List<SleepSegment> segments) {
     return SizedBox(
-      
+      height: 20,
+      child: Row(
+        children: segments.map((segment) {
+          return Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                color: segment.color,
+                borderRadius: .circular(10),
+              ),
+            ),
+          );
+        }).toList(),
+      ),
     );
   }
 }
-
