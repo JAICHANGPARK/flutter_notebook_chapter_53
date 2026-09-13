@@ -402,4 +402,8 @@ class _SleepOverviewCard extends StatelessWidget {
       ),
     );
   }
+
+  Widget _buildLegend(List<SleepSegment> segments, Color textColor) {
+    
+  }
 }
