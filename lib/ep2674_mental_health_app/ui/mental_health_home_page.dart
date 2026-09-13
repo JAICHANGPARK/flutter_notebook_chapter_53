@@ -309,6 +309,7 @@ class MentalHealthHomePage extends StatelessWidget {
             child: Column(
               children: [
                 Row(
+                  mainAxisAlignment: .spaceBetween,
                   children: [
                     Text("Sleep Overview"),
                     Icon(Icons.nightlight_outlined),
