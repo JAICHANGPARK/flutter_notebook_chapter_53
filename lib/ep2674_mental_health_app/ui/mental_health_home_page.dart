@@ -404,6 +404,8 @@ class _SleepOverviewCard extends StatelessWidget {
   }
 
   Widget _buildLegend(List<SleepSegment> segments, Color textColor) {
-    
+    return Row(
+      children: segments.map((segment)).toList()
+    );
   }
 }
