@@ -3,6 +3,8 @@ import 'package:flutter_notebook_chapter_53/ep2674_mental_health_app/painter/men
 import 'package:gap/gap.dart';
 import 'package:material_ui/material_ui.dart';
 
+import '../model/mental_sleap_segment.dart';
+
 class MentalHealthHomePage extends StatelessWidget {
   const MentalHealthHomePage({super.key});
 
@@ -360,6 +362,12 @@ class _SleepOverviewCard extends StatelessWidget {
     const Color deepColor = Color(0xFF4F2A0E); // 짙은 갈색
     const Color textColor = Colors.black87;
     const Color subtitleColor = Colors.grey;
+    final List<SleepSegment> segments = [
+      SleepSegment(name: 'Awake', durationString: '39min', minutes: 39, color: awakeColor),
+      SleepSegment(name: 'REM', durationString: '1h 42m', minutes: 102, color: remColor),
+      SleepSegment(name: 'Core', durationString: '5h 28m', minutes: 328, color: coreColor),
+      SleepSegment(name: 'Deep', durationString: '1h', minutes: 60, color: deepColor),
+    ];
     return const Placeholder();
   }
 }
