@@ -323,7 +323,7 @@ class MentalHealthHomePage extends StatelessWidget {
                         style: TextStyle(fontSize: 32, fontWeight: .bold),
                       ),
                       TextSpan(text: " hr"),
-                      TextSpan(text: "59",
+                      TextSpan(text: " 59",
                         style: TextStyle(fontSize: 32, fontWeight: .bold),),
                       TextSpan(text: " min"),
                     ],
