@@ -411,6 +411,7 @@ class _SleepOverviewCard extends StatelessWidget {
             crossAxisAlignment: .start,
             children: [
               Row(
+                spacing: 10,
                 children: [
                   Container(
                     width: 10,
@@ -420,8 +421,17 @@ class _SleepOverviewCard extends StatelessWidget {
                       shape: .circle,
                     ),
                   ),
+                  Text(
+                    segment.name,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: .w500,
+                      color: textColor.withValues(alpha: .8),
+                    ),
+                  ),
                 ],
               ),
+              Text(segment.durationString),
             ],
           ),
         );
