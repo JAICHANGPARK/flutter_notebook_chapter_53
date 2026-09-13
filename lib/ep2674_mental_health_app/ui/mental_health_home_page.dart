@@ -440,7 +440,7 @@ class SleepOverviewCard extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 16),
+                padding: const EdgeInsets.only(left: 20),
                 child: Text(
                   segment.durationString,
                   style: TextStyle(
