@@ -370,5 +370,11 @@ class _SleepOverviewCard extends StatelessWidget {
     ];
     return const Placeholder();
   }
+
+  Widget _buildProgressBar(List<SleepSegment> segments){
+    return SizedBox(
+      
+    );
+  }
 }
 
