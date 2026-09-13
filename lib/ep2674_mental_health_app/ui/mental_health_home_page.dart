@@ -31,7 +31,6 @@ class MentalHealthHomePage extends StatelessWidget {
               Container(
                 height: 48,
                 width: 48,
-                child: Icon(Icons.notifications_none),
                 decoration: BoxDecoration(
                   shape: .circle,
                   color: Colors.white,
@@ -43,6 +42,7 @@ class MentalHealthHomePage extends StatelessWidget {
                     ),
                   ],
                 ),
+                child: Icon(Icons.notifications_none),
               ),
             ],
           ),
