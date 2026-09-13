@@ -348,3 +348,13 @@ class MentalHealthHomePage extends StatelessWidget {
     );
   }
 }
+
+class _SleepOverviewCard extends StatelessWidget {
+  const _SleepOverviewCard({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
+
