@@ -318,10 +318,14 @@ class MentalHealthHomePage extends StatelessWidget {
                 Text.rich(
                   TextSpan(
                     children: [
-                      TextSpan(text: "7"),
-                      TextSpan(text: "hr"),
-                      TextSpan(text: "59"),
-                      TextSpan(text: "min"),
+                      TextSpan(
+                        text: "7",
+                        style: TextStyle(fontSize: 32, fontWeight: .bold),
+                      ),
+                      TextSpan(text: " hr"),
+                      TextSpan(text: "59",
+                        style: TextStyle(fontSize: 32, fontWeight: .bold),),
+                      TextSpan(text: " min"),
                     ],
                   ),
                 ),
