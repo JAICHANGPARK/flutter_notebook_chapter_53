@@ -96,13 +96,13 @@ class MentalHealthHomePage extends StatelessWidget {
                     Expanded(
                       child: Column(
                         spacing: 12,
-                        children: [CircleAvatar(radius: 18), Text("Wed")],
+                        children: [CircleAvatar(radius: 16), Text("Wed")],
                       ),
                     ),
                     Expanded(
                       child: Column(
                         spacing: 12,
-                        children: [CircleAvatar(radius: 18), Text("Thu")],
+                        children: [CircleAvatar(radius: 16), Text("Thu")],
                       ),
                     ),
                     Expanded(
