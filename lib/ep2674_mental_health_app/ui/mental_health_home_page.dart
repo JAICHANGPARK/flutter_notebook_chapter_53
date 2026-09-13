@@ -405,7 +405,27 @@ class _SleepOverviewCard extends StatelessWidget {
 
   Widget _buildLegend(List<SleepSegment> segments, Color textColor) {
     return Row(
-      children: segments.map((segment)).toList()
+      children: segments.map((segment) {
+        return Expanded(
+          child: Column(
+            crossAxisAlignment: .start,
+            children: [
+              Row(
+                children: [
+                  Container(
+                    width: 10,
+                    height: 10,
+                    decoration: BoxDecoration(
+                      color: segment.color,
+                      shape: .circle,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        );
+      }).toList(),
     );
   }
 }
