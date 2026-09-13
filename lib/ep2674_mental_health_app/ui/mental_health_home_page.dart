@@ -283,7 +283,7 @@ class MentalHealthHomePage extends StatelessWidget {
                 Row(
                   spacing: 4,
                   children: [
-                    Icon(Icons.nightlight_outlined),
+                    Icon(Icons.nightlight_outlined, size: 16,),
                     Expanded(child: Text('Evening reflection')),
                     Text("15min"),
                     Checkbox(value: false, onChanged: (v) {}),
