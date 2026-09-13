@@ -78,19 +78,19 @@ class MentalHealthHomePage extends StatelessWidget {
                     Expanded(
                       child: Column(
                         spacing: 12,
-                        children: [CircleAvatar(radius: 18), Text("Sun")],
+                        children: [CircleAvatar(radius: 16), Text("Sun")],
                       ),
                     ),
                     Expanded(
                       child: Column(
                         spacing: 12,
-                        children: [CircleAvatar(radius: 18), Text("Mon")],
+                        children: [CircleAvatar(radius: 16), Text("Mon")],
                       ),
                     ),
                     Expanded(
                       child: Column(
                         spacing: 12,
-                        children: [CircleAvatar(radius: 18), Text("Tue")],
+                        children: [CircleAvatar(radius: 16), Text("Tue")],
                       ),
                     ),
                     Expanded(
