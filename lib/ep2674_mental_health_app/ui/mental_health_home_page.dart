@@ -335,7 +335,8 @@ class MentalHealthHomePage extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(height: 52, child: Row(children: [Container()])),
+                Gap(4),
+                SleepOverviewCard(),
               ],
             ),
           ),
@@ -345,8 +346,8 @@ class MentalHealthHomePage extends StatelessWidget {
   }
 }
 
-class _SleepOverviewCard extends StatelessWidget {
-  const _SleepOverviewCard({super.key});
+class SleepOverviewCard extends StatelessWidget {
+  const SleepOverviewCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -382,19 +383,26 @@ class _SleepOverviewCard extends StatelessWidget {
         color: deepColor,
       ),
     ];
-    return const Placeholder();
+    return Column(
+      spacing: 4,
+      children: [
+        _buildProgressBar(segments),
+        _buildLegend(segments, textColor),
+      ],
+    );
   }
 
   Widget _buildProgressBar(List<SleepSegment> segments) {
     return SizedBox(
       height: 20,
       child: Row(
+        spacing: 4,
         children: segments.map((segment) {
           return Expanded(
             child: Container(
               decoration: BoxDecoration(
                 color: segment.color,
-                borderRadius: .circular(10),
+                borderRadius: .circular(4),
               ),
             ),
           );
@@ -424,14 +432,21 @@ class _SleepOverviewCard extends StatelessWidget {
                   Text(
                     segment.name,
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 12,
                       fontWeight: .w500,
                       color: textColor.withValues(alpha: .8),
                     ),
                   ),
                 ],
               ),
-              Text(segment.durationString),
+              Text(
+                segment.durationString,
+                style: TextStyle(
+                  fontSize: 12,
+                  fontWeight: .bold,
+                  color: textColor,
+                ),
+              ),
             ],
           ),
         );
