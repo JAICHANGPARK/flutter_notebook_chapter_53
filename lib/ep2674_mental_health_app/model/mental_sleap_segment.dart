@@ -6,5 +6,10 @@ class SleepSegment {
   final int minutes;
   final Color color;
 
-  SleepSegment({this.name, this.durationString, this.minutes, this.color});
+  SleepSegment({
+
+    required this.name,
+    required this.durationString,
+    required this.minutes,
+    required this.color});
 }
