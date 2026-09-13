@@ -227,7 +227,7 @@ class MentalHealthHomePage extends StatelessWidget {
                           child: CustomPaint(
                             painter: MentalJournalGridPainter(),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -263,7 +263,7 @@ class MentalHealthHomePage extends StatelessWidget {
                 Row(
                   spacing: 4,
                   children: [
-                    Icon(Icons.sunny, size: 16,),
+                    Icon(Icons.sunny, size: 16),
                     Expanded(child: Text('Morning Check-in')),
                     Text("3min"),
                     Checkbox(value: false, onChanged: (v) {}),
@@ -273,7 +273,7 @@ class MentalHealthHomePage extends StatelessWidget {
                 Row(
                   spacing: 4,
                   children: [
-                    Icon(Icons.nightlife, size: 16,),
+                    Icon(Icons.nightlife, size: 16),
                     Expanded(child: Text('Take a mindful break')),
                     Text("15min"),
                     Checkbox(value: false, onChanged: (v) {}),
@@ -283,7 +283,7 @@ class MentalHealthHomePage extends StatelessWidget {
                 Row(
                   spacing: 4,
                   children: [
-                    Icon(Icons.nightlight_outlined, size: 16,),
+                    Icon(Icons.nightlight_outlined, size: 16),
                     Expanded(child: Text('Evening reflection')),
                     Text("15min"),
                     Checkbox(value: false, onChanged: (v) {}),
@@ -303,6 +303,16 @@ class MentalHealthHomePage extends StatelessWidget {
                   color: Colors.black.withValues(alpha: .06),
                   spreadRadius: 4,
                   blurRadius: 16,
+                ),
+              ],
+            ),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Text("Sleep Overview"),
+                    Icon(Icons.nightlight_outlined),
+                  ],
                 ),
               ],
             ),
