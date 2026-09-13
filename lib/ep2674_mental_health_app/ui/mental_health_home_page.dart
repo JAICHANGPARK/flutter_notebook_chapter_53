@@ -1,5 +1,6 @@
 import 'package:flutter_notebook_chapter_53/ep2674_mental_health_app/painter/mental_barchart_painter.dart';
 import 'package:flutter_notebook_chapter_53/ep2674_mental_health_app/painter/mental_journal_grid_painter.dart';
+import 'package:gap/gap.dart';
 import 'package:material_ui/material_ui.dart';
 
 class MentalHealthHomePage extends StatelessWidget {
@@ -316,6 +317,7 @@ class MentalHealthHomePage extends StatelessWidget {
                     Icon(Icons.nightlight_outlined),
                   ],
                 ),
+                Gap(16),
                 Text.rich(
                   TextSpan(
                     children: [
@@ -330,6 +332,14 @@ class MentalHealthHomePage extends StatelessWidget {
                     ],
                   ),
                 ),
+                SizedBox(
+                  height: 52,
+                  child: Row(
+                    children: [
+                      Container()
+                    ],
+                  ),
+                )
               ],
             ),
           ),
