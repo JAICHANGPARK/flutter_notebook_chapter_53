@@ -354,6 +354,12 @@ class _SleepOverviewCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const Color awakeColor = Color(0xFFFFEBD9); // 매우 연한 복숭아색
+    const Color remColor = Color(0xFFFFDAB9); // 연한 복숭아색
+    const Color coreColor = Color(0xFFFF8A38); // 주황색
+    const Color deepColor = Color(0xFF4F2A0E); // 짙은 갈색
+    const Color textColor = Colors.black87;
+    const Color subtitleColor = Colors.grey;
     return const Placeholder();
   }
 }
