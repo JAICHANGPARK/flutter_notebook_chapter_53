@@ -318,7 +318,7 @@ class MentalHealthHomePage extends StatelessWidget {
                     Icon(Icons.nightlight_outlined),
                   ],
                 ),
-                Gap(16),
+                Gap(14),
                 Text.rich(
                   TextSpan(
                     children: [
