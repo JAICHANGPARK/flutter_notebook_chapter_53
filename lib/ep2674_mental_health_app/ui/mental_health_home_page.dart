@@ -293,7 +293,7 @@ class MentalHealthHomePage extends StatelessWidget {
             ),
           ),
           Container(
-            height: 180,
+
             padding: .all(14),
             decoration: BoxDecoration(
               borderRadius: .circular(12),
@@ -307,6 +307,7 @@ class MentalHealthHomePage extends StatelessWidget {
               ],
             ),
             child: Column(
+              crossAxisAlignment: .start,
               children: [
                 Row(
                   mainAxisAlignment: .spaceBetween,
@@ -320,11 +321,11 @@ class MentalHealthHomePage extends StatelessWidget {
                     children: [
                       TextSpan(
                         text: "7",
-                        style: TextStyle(fontSize: 32, fontWeight: .bold),
+                        style: TextStyle(fontSize: 26, fontWeight: .bold),
                       ),
                       TextSpan(text: " hr"),
                       TextSpan(text: " 59",
-                        style: TextStyle(fontSize: 32, fontWeight: .bold),),
+                        style: TextStyle(fontSize: 26, fontWeight: .bold),),
                       TextSpan(text: " min"),
                     ],
                   ),
