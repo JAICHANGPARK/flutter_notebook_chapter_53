@@ -1,6 +1,8 @@
 import 'package:flutter_notebook_chapter_53/ep2674_mental_health_app/ui/mental_health_home_page.dart';
 import 'package:material_ui/material_ui.dart';
 
+import 'mental_health_journal_page.dart';
+
 class MentalHealthMainPage extends StatefulWidget {
   const MentalHealthMainPage({super.key});
 
@@ -19,8 +21,10 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
             left: 16,
             top: 8,
             right: 16,
-            child: IndexedStack(
-children: [MentalHealthHomePage()]),
+            child: IndexedStack(children: [MentalHealthHomePage(),
+            Container(),
+              MentalHealthJournalPage(),
+            ]),
           ),
           Align(
             alignment: .bottomCenter,
