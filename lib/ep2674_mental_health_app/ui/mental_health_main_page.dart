@@ -11,6 +11,8 @@ class MentalHealthMainPage extends StatefulWidget {
 }
 
 class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
+
+  int pageNum = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
