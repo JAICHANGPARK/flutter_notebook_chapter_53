@@ -40,7 +40,7 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                 shape: StadiumBorder(),
                 color: Colors.black,
               ),
-              padding: .all(5),
+              padding: .symmetric(horizontal: 12, vertical: 4),
               child: Row(
                 mainAxisSize: .min,
                 spacing: 16,
