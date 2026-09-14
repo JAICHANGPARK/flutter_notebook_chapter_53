@@ -13,6 +13,7 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Column(
+        spacing: 16,
         children: [
           Row(
             children: [
@@ -34,8 +35,13 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
             child: Placeholder(),
           ),
           Row(
+            spacing: 12,
             children: [
-              Text("Recent")
+              Text("Recent"),
+              Spacer(),
+              Icon(Icons.search),
+              Icon(Icons.tune)
+
             ],
           )
         ],
