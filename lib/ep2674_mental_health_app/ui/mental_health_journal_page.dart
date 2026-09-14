@@ -11,19 +11,22 @@ class MentalHealthJournalPage extends StatefulWidget {
 class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          children: [
-            Expanded(
-              child: Column(
-                crossAxisAlignment: .start,
-                children: [Text("Journal"), Text("August 26, 2026")],
+    return SafeArea(
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: .start,
+                  children: [Text("Journal"), Text("August 26, 2026")],
+                ),
               ),
-            ),
-          ],
-        ),
-      ],
+              CircleAvatar()
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
