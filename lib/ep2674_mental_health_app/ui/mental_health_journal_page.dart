@@ -19,12 +19,25 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
               Expanded(
                 child: Column(
                   crossAxisAlignment: .start,
-                  children: [Text("Journal"), Text("August 26, 2026")],
+                  children: [
+                    Text("Journal", style: TextStyle(fontWeight: .bold,
+                    fontSize: 18,)),
+                    Text("August 26, 2026"),
+                  ],
                 ),
               ),
-              CircleAvatar()
+              CircleAvatar(),
             ],
           ),
+          Container(
+            height: 140,
+            child: Placeholder(),
+          ),
+          Row(
+            children: [
+              Text("Recent")
+            ],
+          )
         ],
       ),
     );
