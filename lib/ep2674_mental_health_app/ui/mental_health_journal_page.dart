@@ -21,8 +21,10 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                 child: Column(
                   crossAxisAlignment: .start,
                   children: [
-                    Text("Journal", style: TextStyle(fontWeight: .bold,
-                    fontSize: 18,)),
+                    Text(
+                      "Journal",
+                      style: TextStyle(fontWeight: .bold, fontSize: 18),
+                    ),
                     Text("August 26, 2026"),
                   ],
                 ),
@@ -30,20 +32,23 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
               CircleAvatar(),
             ],
           ),
-          Container(
-            height: 140,
-            child: Placeholder(),
-          ),
+          Container(height: 140, child: Placeholder()),
           Row(
             spacing: 12,
             children: [
               Text("Recent"),
               Spacer(),
               Icon(Icons.search),
-              Icon(Icons.tune)
-
+              Icon(Icons.tune),
             ],
-          )
+          ),
+          Expanded(
+            child: ListView.builder(
+              itemBuilder: (context, index) {
+                return Container(height: 120, child: Placeholder());
+              },
+            ),
+          ),
         ],
       ),
     );
