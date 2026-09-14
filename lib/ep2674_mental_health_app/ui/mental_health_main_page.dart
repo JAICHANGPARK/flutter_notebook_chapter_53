@@ -23,6 +23,7 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
             left: 16,
             top: 8,
             right: 16,
+            bottom: 0,
             child: IndexedStack(
               index: pageNum,
               children: [
