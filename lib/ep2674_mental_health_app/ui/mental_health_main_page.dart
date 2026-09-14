@@ -93,7 +93,6 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                               children: [
                                 Icon(
                                   Icons.energy_savings_leaf_outlined,
-                                  color: Colors.grey,
                                 ),
                                 Text(
                                   "Journal",
@@ -105,7 +104,7 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                               ],
                             ),
                           )
-                        : Icon(Icons.energy_savings_leaf_outlined),
+                        : Icon(Icons.energy_savings_leaf_outlined, color: Colors.grey,),
                   ),
 
                   Icon(Icons.person_2_outlined, color: Colors.grey),
