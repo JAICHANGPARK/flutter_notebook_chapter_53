@@ -49,7 +49,6 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                 return Container(
                   height: 120,
                   margin: .only(bottom: 16),
-
                   child: Placeholder(),
                 );
               },
