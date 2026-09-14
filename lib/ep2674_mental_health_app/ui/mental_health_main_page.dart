@@ -11,8 +11,8 @@ class MentalHealthMainPage extends StatefulWidget {
 }
 
 class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
-
   int pageNum = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,10 +23,14 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
             left: 16,
             top: 8,
             right: 16,
-            child: IndexedStack(children: [MentalHealthHomePage(),
-            Container(),
-              MentalHealthJournalPage(),
-            ]),
+            child: IndexedStack(
+              index: pageNum,
+              children: [
+                MentalHealthHomePage(),
+                Container(),
+                MentalHealthJournalPage(),
+              ],
+            ),
           ),
           Align(
             alignment: .bottomCenter,
@@ -41,21 +45,28 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                 mainAxisSize: .min,
                 spacing: 16,
                 children: [
-                  Container(
-                    decoration: ShapeDecoration(
-                      shape: StadiumBorder(),
-                      color: Colors.white,
-                    ),
-                    padding: .symmetric(horizontal: 8, vertical: 6),
-                    child: Row(
-                      spacing: 4,
-                      children: [
-                        Icon(Icons.home_filled),
-                        Text(
-                          "Home",
-                          style: TextStyle(fontWeight: .bold, fontSize: 15),
-                        ),
-                      ],
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        pageNum = 0;
+                      });
+                    },
+                    child: Container(
+                      decoration: ShapeDecoration(
+                        shape: StadiumBorder(),
+                        color: Colors.white,
+                      ),
+                      padding: .symmetric(horizontal: 8, vertical: 6),
+                      child: Row(
+                        spacing: 4,
+                        children: [
+                          Icon(Icons.home_filled),
+                          Text(
+                            "Home",
+                            style: TextStyle(fontWeight: .bold, fontSize: 15),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Icon(Icons.bar_chart, color: Colors.grey),
