@@ -51,7 +51,7 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                         pageNum = 0;
                       });
                     },
-                    child: Container(
+                    child: pageNum == 0 ?  Container(
                       decoration: ShapeDecoration(
                         shape: StadiumBorder(),
                         color: Colors.white,
@@ -67,13 +67,13 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                           ),
                         ],
                       ),
-                    ),
+                    ) : Icon(Icons.home_filled, color: Colors.grey,),
                   ),
                   Icon(Icons.bar_chart, color: Colors.grey),
                   GestureDetector(
                     onTap: () {
                       setState(() {
-                        pageNum = 0;
+                        pageNum = 2;
                       });
                     },
                     child: Container(
