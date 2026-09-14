@@ -12,6 +12,7 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
+      bottom: false,
       child: Column(
         spacing: 16,
         children: [
@@ -45,7 +46,9 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
           Expanded(
             child: ListView.builder(
               itemBuilder: (context, index) {
-                return Container(height: 120, child: Placeholder());
+                return Container(height: 120,
+
+                    child: Placeholder());
               },
             ),
           ),
