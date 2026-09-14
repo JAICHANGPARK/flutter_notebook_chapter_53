@@ -37,7 +37,7 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
           Row(
             spacing: 12,
             children: [
-              Text("Recent"),
+              Text("Recent", style: TextStyle(fontWeight: .bold)),
               Spacer(),
               Icon(Icons.search),
               Icon(Icons.tune),
@@ -46,9 +46,12 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
           Expanded(
             child: ListView.builder(
               itemBuilder: (context, index) {
-                return Container(height: 120,
+                return Container(
+                  height: 120,
+                  margin: .only(bottom: 16),
 
-                    child: Placeholder());
+                  child: Placeholder(),
+                );
               },
             ),
           ),
