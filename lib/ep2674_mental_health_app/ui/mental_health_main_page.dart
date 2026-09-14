@@ -51,23 +51,28 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                         pageNum = 0;
                       });
                     },
-                    child: pageNum == 0 ?  Container(
-                      decoration: ShapeDecoration(
-                        shape: StadiumBorder(),
-                        color: Colors.white,
-                      ),
-                      padding: .symmetric(horizontal: 8, vertical: 6),
-                      child: Row(
-                        spacing: 4,
-                        children: [
-                          Icon(Icons.home_filled),
-                          Text(
-                            "Home",
-                            style: TextStyle(fontWeight: .bold, fontSize: 15),
-                          ),
-                        ],
-                      ),
-                    ) : Icon(Icons.home_filled, color: Colors.grey,),
+                    child: pageNum == 0
+                        ? Container(
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Colors.white,
+                            ),
+                            padding: .symmetric(horizontal: 8, vertical: 6),
+                            child: Row(
+                              spacing: 4,
+                              children: [
+                                Icon(Icons.home_filled),
+                                Text(
+                                  "Home",
+                                  style: TextStyle(
+                                    fontWeight: .bold,
+                                    fontSize: 15,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          )
+                        : Icon(Icons.home_filled, color: Colors.grey),
                   ),
                   Icon(Icons.bar_chart, color: Colors.grey),
                   GestureDetector(
@@ -76,26 +81,31 @@ class _MentalHealthMainPageState extends State<MentalHealthMainPage> {
                         pageNum = 2;
                       });
                     },
-                    child: Container(
-                      decoration: ShapeDecoration(
-                        shape: StadiumBorder(),
-                        color: Colors.white,
-                      ),
-                      padding: .symmetric(horizontal: 8, vertical: 6),
-                      child: Row(
-                        spacing: 4,
-                        children: [
-                          Icon(
-                            Icons.energy_savings_leaf_outlined,
-                            color: Colors.grey,
-                          ),
-                          Text(
-                            "Journal",
-                            style: TextStyle(fontWeight: .bold, fontSize: 15),
-                          ),
-                        ],
-                      ),
-                    ),
+                    child: pageNum == 2
+                        ? Container(
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Colors.white,
+                            ),
+                            padding: .symmetric(horizontal: 8, vertical: 6),
+                            child: Row(
+                              spacing: 4,
+                              children: [
+                                Icon(
+                                  Icons.energy_savings_leaf_outlined,
+                                  color: Colors.grey,
+                                ),
+                                Text(
+                                  "Journal",
+                                  style: TextStyle(
+                                    fontWeight: .bold,
+                                    fontSize: 15,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          )
+                        : Icon(Icons.energy_savings_leaf_outlined),
                   ),
 
                   Icon(Icons.person_2_outlined, color: Colors.grey),
