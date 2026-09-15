@@ -6,6 +6,7 @@ class MentalBarchartPainter extends CustomPainter {
     final barHeights = [
       0.35, 0.48, 0.40, 0.65, 0.85, 1.0, 0.80, 0.55, 0.28, 0.42, 0.40, 0.28, 0.22, 0.18, 0.12
     ];
+
     final barCount = barHeights.length;
     final spacing = 4.0;
     final barWidth = (size.width - (spacing * (barCount - 1))) / barCount;
