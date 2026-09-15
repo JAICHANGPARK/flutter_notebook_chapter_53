@@ -12,6 +12,7 @@ class MentalBarchartPainter extends CustomPainter {
     final barWidth = (size.width - (spacing * (barCount - 1))) / barCount;
 
     final paint = Paint()..style = .fill;
+
     for (int i = 0; i < barCount; i++) {
       final x = i * (barWidth + spacing);
       final h = size.height * barHeights[i];
