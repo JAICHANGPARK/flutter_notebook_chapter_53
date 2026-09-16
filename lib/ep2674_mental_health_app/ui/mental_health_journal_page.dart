@@ -159,6 +159,7 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                             child: Text("Self"),
                           ),
                           Container(
+                            padding: .symmetric(horizontal: 12, vertical: 4),
                             decoration: ShapeDecoration(
                               shape: StadiumBorder(),
                               color: Colors.grey[100],
