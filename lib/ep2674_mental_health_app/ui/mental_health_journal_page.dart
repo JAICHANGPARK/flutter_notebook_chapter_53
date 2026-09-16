@@ -39,28 +39,36 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
               borderRadius: .circular(16),
               color: Colors.orangeAccent,
             ),
+
             child: Column(
+
               children: [
-                Row(
-                  children: [
-                    Text("Reminder"),
-                    Container(
-                      decoration: ShapeDecoration(
-                        shape: StadiumBorder(),
-                        color: Colors.white,
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  child: Row(
+                    mainAxisAlignment: .spaceBetween,
+                    children: [
+                      Text("Reminder"),
+                      Container(
+                        decoration: ShapeDecoration(
+                          shape: StadiumBorder(),
+                          color: Colors.white,
+                        ),
+                        child: Text("Done"),
                       ),
-                      child: Text("Done"),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-                Container(
-                  decoration: BoxDecoration(borderRadius: .circular(16), color: Colors.white),
-                  child: Text.rich(
-                    TextSpan(
-                      children: [
-                        TextSpan(text: "It's time to see your gynecologist."),
-                        TextSpan(text: "Though work pressure brought a few anxious moments this after 3m ago"),
-                      ],
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(borderRadius: .circular(16), color: Colors.white),
+                    child: Text.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(text: "It's time to see your gynecologist."),
+                          TextSpan(text: "Though work pressure brought a few anxious moments this after 3m ago"),
+                        ],
+                      ),
                     ),
                   ),
                 ),
