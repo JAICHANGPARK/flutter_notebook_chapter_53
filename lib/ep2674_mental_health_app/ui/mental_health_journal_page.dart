@@ -109,11 +109,14 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                   child: Column(
                     children: [
                       Row(
+                        mainAxisAlignment: .spaceBetween,
                         children: [
                           Text("26 Aug, 07:12 AM"),
                           Icon(Icons.more_horiz)
                         ],
-                      )
+                      ),
+                      Text("A moment I needed to slow down"),
+                      Text("Today felt a litte heavier than i expected. I had a lot on my mind and ...")
                     ],
                   ),
                 );
