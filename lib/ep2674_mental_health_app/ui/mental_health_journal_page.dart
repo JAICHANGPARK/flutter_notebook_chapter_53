@@ -41,10 +41,12 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
             ),
 
             child: Column(
-
               children: [
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                    vertical: 12,
+                  ),
                   child: Row(
                     mainAxisAlignment: .spaceBetween,
                     children: [
@@ -61,13 +63,22 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                 ),
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(borderRadius: .circular(16),
-                        color: Colors.white),
+                    decoration: BoxDecoration(
+                      borderRadius: .circular(16),
+                      color: Colors.orange[50],
+                    ),
+                    padding: .all(16),
                     child: Text.rich(
                       TextSpan(
                         children: [
-                          TextSpan(text: "It's time to see your gynecologist."),
-                          TextSpan(text: "Though work pressure brought a few anxious moments this after 3m ago"),
+                          TextSpan(
+                            text: "It's time to see your gynecologist.",
+                            style: TextStyle(fontWeight: .bold),
+                          ),
+                          TextSpan(
+                            text:
+                                "Though work pressure brought a few anxious moments this after 3m ago",
+                          ),
                         ],
                       ),
                     ),
