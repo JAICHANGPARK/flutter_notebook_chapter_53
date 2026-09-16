@@ -107,6 +107,7 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                   height: 120,
                   margin: .only(bottom: 16),
                   child: Column(
+                    crossAxisAlignment: .start,
                     children: [
                       Row(
                         mainAxisAlignment: .spaceBetween,
