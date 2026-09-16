@@ -140,6 +140,23 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                           fontSize: 12,
                         ),
                       ),
+                      Row(
+                        spacing: 12,
+                        children: [
+                          Container(
+                            decoration: ShapeDecoration(shape: StadiumBorder(),),
+                            child: Text("Stressed"),
+                          ),
+                          Container(
+                            decoration: ShapeDecoration(shape: StadiumBorder(),),
+                            child: Text("Self"),
+                          ),
+                          Container(
+                            decoration: ShapeDecoration(shape: StadiumBorder(),),
+                            child: Text("Reflection"),
+                          )
+                        ],
+                      )
                     ],
                   ),
                 );
