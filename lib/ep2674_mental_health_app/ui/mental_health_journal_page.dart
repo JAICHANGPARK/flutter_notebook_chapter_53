@@ -136,27 +136,30 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                       Gap(4),
                       Text(
                         "Today felt a litte heavier than i expected. I had a lot on my mind and ...",
-                        style: TextStyle(
-                          fontSize: 12,
-                        ),
+                        style: TextStyle(fontSize: 12),
                       ),
+                      Gap(12),
                       Row(
                         spacing: 12,
                         children: [
-                          Container(
-                            decoration: ShapeDecoration(shape: StadiumBorder(),),
+                          Container(  padding: .symmetric(horizontal: 12, vertical: 4),
+                            decoration: ShapeDecoration(shape: StadiumBorder()),
                             child: Text("Stressed"),
                           ),
                           Container(
-                            decoration: ShapeDecoration(shape: StadiumBorder(),),
+                            padding: .symmetric(horizontal: 12, vertical: 4),
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Colors.grey[100],
+                            ),
                             child: Text("Self"),
                           ),
                           Container(
-                            decoration: ShapeDecoration(shape: StadiumBorder(),),
+                            decoration: ShapeDecoration(shape: StadiumBorder()),
                             child: Text("Reflection"),
-                          )
+                          ),
                         ],
-                      )
+                      ),
                     ],
                   ),
                 );
