@@ -105,17 +105,18 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
-                  
-                  margin: .only(left: 4,bottom: 16, right: 4),
+                  margin: .only(left: 4, bottom: 16, right: 4),
                   padding: .all(12),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: .circular(12),
-                    boxShadow: [BoxShadow(
-                      color: Colors.black.withValues(alpha: .1),
-                      spreadRadius: 5,
-                      blurRadius: 4
-                    )]
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: .1),
+                        spreadRadius: 5,
+                        blurRadius: 12,
+                      ),
+                    ],
                   ),
                   child: Column(
                     crossAxisAlignment: .start,
@@ -124,12 +125,21 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                         mainAxisAlignment: .spaceBetween,
                         children: [
                           Text("26 Aug, 07:12 AM"),
-                          Icon(Icons.more_horiz)
+                          Icon(Icons.more_horiz),
                         ],
                       ),
                       Gap(16),
-                      Text("A moment I needed to slow down"),
-                      Text("Today felt a litte heavier than i expected. I had a lot on my mind and ...")
+                      Text(
+                        "A moment I needed to slow down",
+                        style: TextStyle(fontWeight: .bold),
+                      ),
+                      Gap(4),
+                      Text(
+                        "Today felt a litte heavier than i expected. I had a lot on my mind and ...",
+                        style: TextStyle(
+                          fontSize: 12,
+                        ),
+                      ),
                     ],
                   ),
                 );
