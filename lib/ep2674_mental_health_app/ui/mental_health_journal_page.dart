@@ -33,7 +33,25 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
               CircleAvatar(),
             ],
           ),
-          Container(height: 140, child: Column()),
+          Container(height: 140,
+              decoration: BoxDecoration(
+                borderRadius: .circular(16),
+                color: Colors.orangeAccent
+              ),
+              child: Column(
+            children: [
+              Row(
+                children: [
+                  Text("Reminder"),
+                  Container(
+                    decoration: ShapeDecoration(shape: StadiumBorder(),color: Colors.white),
+                    child: Text("Done"),
+                  )
+                ],
+              )
+
+            ],
+          )),
           Row(
             spacing: 12,
             children: [
