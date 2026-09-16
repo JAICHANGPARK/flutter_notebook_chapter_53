@@ -110,6 +110,7 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                   padding: .all(12),
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    borderRadius: .circular(12),
                     boxShadow: [BoxShadow(
                       color: Colors.black.withValues(alpha: .1),
                       spreadRadius: 5,
