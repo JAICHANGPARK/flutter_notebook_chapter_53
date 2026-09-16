@@ -106,8 +106,9 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
               itemBuilder: (context, index) {
                 return Container(
                   height: 120,
-                  margin: .only(bottom: 16),
+                  margin: .only(left: 4,bottom: 16, right: 4),
                   decoration: BoxDecoration(
+                    color: Colors.white,
                     boxShadow: [BoxShadow(
                       color: Colors.black.withValues(alpha: .1),
                       spreadRadius: 5,
