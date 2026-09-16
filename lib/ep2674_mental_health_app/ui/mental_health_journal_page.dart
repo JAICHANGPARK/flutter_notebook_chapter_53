@@ -56,6 +56,7 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                           shape: StadiumBorder(),
                           color: Colors.white,
                         ),
+                        padding: .symmetric(horizontal: 12, vertical: 5, ),
                         child: Text("Done"),
                       ),
                     ],
