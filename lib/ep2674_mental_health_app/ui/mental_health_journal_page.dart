@@ -1,3 +1,4 @@
+import 'package:gap/gap.dart';
 import 'package:material_ui/material_ui.dart';
 
 class MentalHealthJournalPage extends StatefulWidget {
@@ -106,6 +107,13 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                 return Container(
                   height: 120,
                   margin: .only(bottom: 16),
+                  decoration: BoxDecoration(
+                    boxShadow: [BoxShadow(
+                      color: Colors.black.withValues(alpha: .1),
+                      spreadRadius: 5,
+                      blurRadius: 4
+                    )]
+                  ),
                   child: Column(
                     crossAxisAlignment: .start,
                     children: [
@@ -116,6 +124,7 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                           Icon(Icons.more_horiz)
                         ],
                       ),
+                      Gap(16),
                       Text("A moment I needed to slow down"),
                       Text("Today felt a litte heavier than i expected. I had a lot on my mind and ...")
                     ],
