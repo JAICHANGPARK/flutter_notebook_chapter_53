@@ -50,14 +50,17 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                   child: Row(
                     mainAxisAlignment: .spaceBetween,
                     children: [
-                      Text("Reminder"),
+                      Text("Reminder", style: TextStyle(fontWeight: .bold)),
                       Container(
                         decoration: ShapeDecoration(
                           shape: StadiumBorder(),
                           color: Colors.white,
                         ),
-                        padding: .symmetric(horizontal: 12, vertical: 5, ),
-                        child: Text("Done"),
+                        padding: .symmetric(horizontal: 12, vertical: 5),
+                        child: Text(
+                          "Done",
+                          style: TextStyle(fontWeight: .bold),
+                        ),
                       ),
                     ],
                   ),
