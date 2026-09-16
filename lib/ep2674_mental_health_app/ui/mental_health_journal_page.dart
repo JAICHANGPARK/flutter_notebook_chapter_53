@@ -142,8 +142,12 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                       Row(
                         spacing: 12,
                         children: [
-                          Container(  padding: .symmetric(horizontal: 12, vertical: 4),
-                            decoration: ShapeDecoration(shape: StadiumBorder()),
+                          Container(
+                            padding: .symmetric(horizontal: 12, vertical: 4),
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Colors.grey[100],
+                            ),
                             child: Text("Stressed"),
                           ),
                           Container(
@@ -155,7 +159,10 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                             child: Text("Self"),
                           ),
                           Container(
-                            decoration: ShapeDecoration(shape: StadiumBorder()),
+                            decoration: ShapeDecoration(
+                              shape: StadiumBorder(),
+                              color: Colors.grey[100],
+                            ),
                             child: Text("Reflection"),
                           ),
                         ],
