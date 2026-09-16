@@ -110,7 +110,8 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                     children: [
                       Row(
                         children: [
-                          
+                          Text("26 Aug, 07:12 AM"),
+                          Icon(Icons.more_horiz)
                         ],
                       )
                     ],
