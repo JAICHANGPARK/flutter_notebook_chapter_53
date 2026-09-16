@@ -105,8 +105,9 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return Container(
-                  height: 120,
+                  
                   margin: .only(left: 4,bottom: 16, right: 4),
+                  padding: .all(12),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     boxShadow: [BoxShadow(
