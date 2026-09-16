@@ -55,6 +55,13 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                 ),
                 Container(
                   decoration: BoxDecoration(borderRadius: .circular(16)),
+                  child: Text.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(text: "It's time to see your gynecologist."),
+                      ],
+                    ),
+                  ),
                 ),
               ],
             ),
