@@ -33,7 +33,7 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
               CircleAvatar(),
             ],
           ),
-          Container(height: 140, child: Placeholder()),
+          Container(height: 140, child: Column()),
           Row(
             spacing: 12,
             children: [
