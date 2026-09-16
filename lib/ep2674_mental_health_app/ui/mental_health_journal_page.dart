@@ -61,7 +61,8 @@ class _MentalHealthJournalPageState extends State<MentalHealthJournalPage> {
                 ),
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(borderRadius: .circular(16), color: Colors.white),
+                    decoration: BoxDecoration(borderRadius: .circular(16),
+                        color: Colors.white),
                     child: Text.rich(
                       TextSpan(
                         children: [
