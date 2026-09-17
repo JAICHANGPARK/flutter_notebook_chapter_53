@@ -6,7 +6,7 @@
 - Md Uzzal Hossain
 - https://dribbble.com/shots/27732834-AI-Legal-Assistant-Lawyer-Finder-Mobile-App-UI-UX-Design
 
-<img src="https://cdn.dribbble.com/userupload/48938002/file/f8e061f8e827ce49c3036107e4429e9f.png?resize=1905x1429&vertical=center" alt=""/>
+<img src="https://cdn.dribbble.com/userupload/49027990/file/6302df7943403be65a3d7db7a28d312d.png?resize=1905x1429&vertical=center" alt=""/>
 
 
 # EP2674-2680
