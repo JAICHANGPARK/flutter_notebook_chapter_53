@@ -45,7 +45,7 @@ class _LegalMainPageState extends State<LegalMainPage> {
                     Colors.black,
 
                   ],
-                  // stops: [0.0, 0.45, ],
+                  stops: [0.0, 0.8, ],
                 ),
               ),
             ),
