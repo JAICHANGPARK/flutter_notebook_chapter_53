@@ -11,6 +11,12 @@ class LegalMainPage extends StatefulWidget {
 class _LegalMainPageState extends State<LegalMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Stack(
+        children: [
+          
+        ],
+      ),
+    );
   }
 }
