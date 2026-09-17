@@ -1,4 +1,4 @@
-
+import 'package:material_ui/material_ui.dart';
 class LegalAssistantApp extends StatelessWidget {
   const LegalAssistantApp({super.key});
 
