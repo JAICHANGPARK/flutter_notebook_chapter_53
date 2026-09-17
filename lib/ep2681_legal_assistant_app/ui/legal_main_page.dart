@@ -17,6 +17,8 @@ class _LegalMainPageState extends State<LegalMainPage> {
             child: Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
+                  begin: .topLeft,
+                  end: .bottomLeft,
                   colors: [
                     Color.fromRGBO(35, 33, 56, 1),
                     Colors.black,
