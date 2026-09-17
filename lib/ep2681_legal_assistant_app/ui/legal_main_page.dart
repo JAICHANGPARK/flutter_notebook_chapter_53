@@ -17,7 +17,11 @@ class _LegalMainPageState extends State<LegalMainPage> {
             child: Container(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  colors: [Color.fromRGBO(35, 33, 56, 1)],
+                  colors: [
+                    Color.fromRGBO(35, 33, 56, 1),
+                    Colors.black,
+                    Color.fromRGBO(66, 63, 64, 1),
+                  ],
                 ),
               ),
             ),
