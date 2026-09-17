@@ -43,8 +43,8 @@ class _LegalMainPageState extends State<LegalMainPage> {
             bottom: 0,
             left: 0,
             right: 0,
-            top: 64,
             child: Container(
+              height: 240,
               decoration: BoxDecoration(
                 // gradient: RadialGradient(
                 //   center: Alignment(-1.0, -0.8), // 좌측 상단 모서리에 광원 배치
@@ -57,12 +57,13 @@ class _LegalMainPageState extends State<LegalMainPage> {
                 //   stops: [0.0, 0.5, 1.0],
                 // ),
                 gradient: LinearGradient(
-                  begin: .topLeft,
-                  end: .bottomLeft,
+                  begin: .bottomLeft,
+                  end: .topCenter,
                   colors: [
                     // Color.fromRGBO(35, 33, 56, 1),
-                    Colors.black,
                     Color.fromRGBO(66, 63, 64, 1),
+                    Colors.black,
+
                   ],
                   // stops: [0.0, 0.45, ],
                 ),
