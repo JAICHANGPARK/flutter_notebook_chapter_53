@@ -53,7 +53,7 @@ class _LegalMainPageState extends State<LegalMainPage> {
           Positioned.fill(child: Column(children: [
             Expanded(child: Placeholder()),
             Container(
-              margin: .symmetric(horizontal: 24, vertical: 24),
+              margin: .symmetric(horizontal: 16, vertical: 32),
               height: 80,
               child: Placeholder(),
             )
