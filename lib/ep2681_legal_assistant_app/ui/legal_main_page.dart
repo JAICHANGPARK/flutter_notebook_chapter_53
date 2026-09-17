@@ -34,7 +34,7 @@ class _LegalMainPageState extends State<LegalMainPage> {
             left: 0,
             right: 0,
             child: Container(
-              height: 240,
+              height: 280,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: .bottomLeft,
