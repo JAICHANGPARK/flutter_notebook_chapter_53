@@ -1,6 +1,5 @@
 import 'package:material_ui/material_ui.dart';
 
-
 class LegalMainPage extends StatefulWidget {
   const LegalMainPage({super.key});
 
@@ -14,7 +13,15 @@ class _LegalMainPageState extends State<LegalMainPage> {
     return Scaffold(
       body: Stack(
         children: [
-          
+          Positioned.fill(
+            child: Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Color.fromRGBO(35, 33, 56, 1)],
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
