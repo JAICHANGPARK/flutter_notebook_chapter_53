@@ -50,6 +50,9 @@ class _LegalMainPageState extends State<LegalMainPage> {
               ),
             ),
           ),
+          Positioned.fill(child: Column(children: [
+            
+          ],))
         ],
       ),
     );
