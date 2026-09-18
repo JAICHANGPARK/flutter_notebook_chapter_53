@@ -78,22 +78,22 @@ class _LegalMainPageState extends State<LegalMainPage> {
                         backgroundColor: Colors.white,
                         foregroundColor: Colors.black,
 
-                        child: Icon(Icons.balance, size: 28,),
+                        child: Icon(Icons.balance, size: 28),
                       ),
                       CircleAvatar(
                         radius: 32,
                         backgroundColor: Color.fromRGBO(58, 58, 58, 1),
-                        child: Icon(Icons.chat_outlined),
+                        child: Icon(Icons.chat_outlined, size: 28),
                       ),
                       CircleAvatar(
                         radius: 32,
                         backgroundColor: Color.fromRGBO(58, 58, 58, 1),
-                        child: Icon(Icons.notifications_none),
+                        child: Icon(Icons.notifications_none, size: 28),
                       ),
                       CircleAvatar(
                         radius: 32,
                         backgroundColor: Color.fromRGBO(58, 58, 58, 1),
-                        child: Icon(Icons.person_2_outlined),
+                        child: Icon(Icons.person_2_outlined, size: 28),
                       ),
                     ],
                   ),
