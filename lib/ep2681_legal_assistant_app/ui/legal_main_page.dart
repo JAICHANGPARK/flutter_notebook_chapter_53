@@ -73,7 +73,8 @@ class _LegalMainPageState extends State<LegalMainPage> {
                   child: Row(
                     mainAxisAlignment: .spaceBetween,
                     children: [
-                      CircleAvatar(radius: 32, backgroundColor: Colors.white),
+                      CircleAvatar(radius: 32, backgroundColor: Colors.white,
+                      child: Icon(Icons.balance),),
                       CircleAvatar(
                         radius: 32,
                         backgroundColor: Color.fromRGBO(58, 58, 58, 1),
