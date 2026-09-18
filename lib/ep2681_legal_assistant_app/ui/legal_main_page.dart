@@ -76,7 +76,9 @@ class _LegalMainPageState extends State<LegalMainPage> {
                       CircleAvatar(
                         radius: 32,
                         backgroundColor: Colors.white,
-                        child: Icon(Icons.balance),
+                        foregroundColor: Colors.black,
+
+                        child: Icon(Icons.balance, size: 28,),
                       ),
                       CircleAvatar(
                         radius: 32,
