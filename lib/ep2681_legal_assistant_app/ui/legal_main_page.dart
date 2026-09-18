@@ -83,16 +83,19 @@ class _LegalMainPageState extends State<LegalMainPage> {
                       CircleAvatar(
                         radius: 32,
                         backgroundColor: Color.fromRGBO(58, 58, 58, 1),
+                        foregroundColor: Colors.grey,
                         child: Icon(Icons.chat_outlined, size: 28),
                       ),
                       CircleAvatar(
                         radius: 32,
                         backgroundColor: Color.fromRGBO(58, 58, 58, 1),
+                        foregroundColor: Colors.grey,
                         child: Icon(Icons.notifications_none, size: 28),
                       ),
                       CircleAvatar(
                         radius: 32,
                         backgroundColor: Color.fromRGBO(58, 58, 58, 1),
+                        foregroundColor: Colors.grey,
                         child: Icon(Icons.person_2_outlined, size: 28),
                       ),
                     ],
