@@ -1,5 +1,7 @@
 import 'package:material_ui/material_ui.dart';
 
+import 'legal_home_page.dart';
+
 class LegalMainPage extends StatefulWidget {
   const LegalMainPage({super.key});
 
@@ -52,7 +54,11 @@ class _LegalMainPageState extends State<LegalMainPage> {
           Positioned.fill(
             child: Column(
               children: [
-                Expanded(child: Placeholder()),
+                Expanded(child: IndexedStack(
+                  children: [
+                    LegalHomePage(),
+                  ],
+                )),
                 Container(
                   margin: .symmetric(horizontal: 16, vertical: 32),
                   decoration: ShapeDecoration(
