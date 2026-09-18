@@ -16,7 +16,7 @@ class _LegalHomePageState extends State<LegalHomePage> {
         crossAxisAlignment: .start,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
+            padding: const EdgeInsets.only(left: 16, right: 16, top: 16),
             child: Row(
               spacing: 14,
               children: [
@@ -62,30 +62,39 @@ class _LegalHomePageState extends State<LegalHomePage> {
               crossAxisAlignment: .start,
               spacing: 16,
               children: [
-                Text("Legal Help, Your Way",style: TextStyle(
-                  color: Colors.white,
-                ),),
+                Text(
+                  "Legal Help, Your Way",
+                  style: TextStyle(color: Colors.white),
+                ),
                 Column(
                   crossAxisAlignment: .start,
                   children: [
-                    Text("SMART LEGAL",style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: .bold,
-                      fontSize: 32,
-                    ),),
-                    Text("SOLUTIONS, ANYTIME",style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: .bold,
-                      fontSize: 32,
-                    ),),
+                    Text(
+                      "SMART LEGAL",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: .bold,
+                        fontSize: 32,
+                      ),
+                    ),
+                    Text(
+                      "SOLUTIONS, ANYTIME",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: .bold,
+                        fontSize: 32,
+                      ),
+                    ),
                   ],
-                )
+                ),
               ],
             ),
-          )
-
-
-
+          ),
+          SizedBox(
+            height: 62,
+            child: Placeholder(),
+          ),
+          Expanded(child: Placeholder())
         ],
       ),
     );
