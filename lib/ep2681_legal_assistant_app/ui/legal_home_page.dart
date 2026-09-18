@@ -10,22 +10,24 @@ class LegalHomePage extends StatefulWidget {
 class _LegalHomePageState extends State<LegalHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          children: [
-            Container(decoration: ShapeDecoration(shape: StadiumBorder(),
-            ),
-            child: Row(
-              children: [
-                CircleAvatar(),
-                Text("Dream"),
-
-              ],
-            ),),
-          ],
-        ),
-      ],
+    return SafeArea(
+      child: Column(
+        children: [
+          Row(
+            children: [
+              Container(decoration: ShapeDecoration(shape: StadiumBorder(),
+              ),
+              child: Row(
+                children: [
+                  CircleAvatar(),
+                  Text("Dream"),
+      
+                ],
+              ),),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
