@@ -54,6 +54,7 @@ class _LegalHomePageState extends State<LegalHomePage> {
               ],
             ),
           ),
+          Text("Legal Help, Your Way"),
         ],
       ),
     );
