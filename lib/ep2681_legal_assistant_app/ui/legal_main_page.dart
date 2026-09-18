@@ -62,13 +62,21 @@ class _LegalMainPageState extends State<LegalMainPage> {
                       end: .centerRight,
                       colors: [
                         Color.fromRGBO(42, 42, 42, 1),
+                        Color.fromRGBO(42, 42, 42, 1),
                         Color.fromRGBO(43, 43, 43, 1),
                         Color.fromRGBO(45, 45, 45, 1),
                       ],
                     ),
                   ),
                   height: 80,
-                  child: Row(children: []),
+                  child: Row(children: [
+                    CircleAvatar(
+                      radius: 32,
+                    ),
+                    CircleAvatar(),
+                    CircleAvatar(),
+                    CircleAvatar(),
+                  ]),
                 ),
               ],
             ),
