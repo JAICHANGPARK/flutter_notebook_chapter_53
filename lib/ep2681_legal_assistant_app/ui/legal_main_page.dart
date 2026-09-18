@@ -60,7 +60,11 @@ class _LegalMainPageState extends State<LegalMainPage> {
                     gradient: LinearGradient(
                       begin: .centerLeft,
                       end: .centerRight,
-                      colors: [Color.fromRGBO(45, 45, 45, 1), Colors.black26],
+                      colors: [
+                        Color.fromRGBO(42, 42, 42, 1),
+                        Color.fromRGBO(43, 43, 43, 1),
+                        Color.fromRGBO(45, 45, 45, 1),
+                      ],
                     ),
                   ),
                   height: 80,
