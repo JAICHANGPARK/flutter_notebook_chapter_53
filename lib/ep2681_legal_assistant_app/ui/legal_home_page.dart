@@ -71,10 +71,12 @@ class _LegalHomePageState extends State<LegalHomePage> {
                     Text("SMART LEGAL",style: TextStyle(
                       color: Colors.white,
                       fontWeight: .bold,
+                      fontSize: 32,
                     ),),
                     Text("SOLUTIONS, ANYTIME",style: TextStyle(
                       color: Colors.white,
                       fontWeight: .bold,
+                      fontSize: 32,
                     ),),
                   ],
                 )
