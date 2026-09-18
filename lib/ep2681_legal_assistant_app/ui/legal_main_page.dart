@@ -78,8 +78,14 @@ class _LegalMainPageState extends State<LegalMainPage> {
                         radius: 32,
                         backgroundColor: Color.fromRGBO(58, 58, 58, 1),
                       ),
-                      CircleAvatar(radius: 32),
-                      CircleAvatar(radius: 32),
+                      CircleAvatar(
+                        radius: 32,
+                        backgroundColor: Color.fromRGBO(58, 58, 58, 1),
+                      ),
+                      CircleAvatar(
+                        radius: 32,
+                        backgroundColor: Color.fromRGBO(58, 58, 58, 1),
+                      ),
                     ],
                   ),
                 ),
