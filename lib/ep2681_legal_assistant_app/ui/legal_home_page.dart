@@ -14,7 +14,15 @@ class _LegalHomePageState extends State<LegalHomePage> {
       children: [
         Row(
           children: [
-            Container(decoration: ShapeDecoration(shape: StadiumBorder())),
+            Container(decoration: ShapeDecoration(shape: StadiumBorder(),
+            ),
+            child: Row(
+              children: [
+                CircleAvatar(),
+                Text("Dream"),
+
+              ],
+            ),),
           ],
         ),
       ],
