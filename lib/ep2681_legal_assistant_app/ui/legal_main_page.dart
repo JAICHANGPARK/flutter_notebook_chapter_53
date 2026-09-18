@@ -76,7 +76,9 @@ class _LegalMainPageState extends State<LegalMainPage> {
                     CircleAvatar(
                       radius: 32,
                     ),
-                    CircleAvatar(),
+                    CircleAvatar(
+                      radius: 32,
+                    ),
                     CircleAvatar(),
                   ]),
                 ),
