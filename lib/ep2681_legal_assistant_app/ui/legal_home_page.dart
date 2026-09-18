@@ -15,15 +15,17 @@ class _LegalHomePageState extends State<LegalHomePage> {
         children: [
           Row(
             children: [
-              Container(decoration: ShapeDecoration(shape: StadiumBorder(),
+              Container(
+                decoration: ShapeDecoration(
+                  shape: StadiumBorder(),
+                  color: Colors.purple[50]!,
+                ),
+                child: Row(children: [CircleAvatar(), Text("Dream")]),
               ),
-              child: Row(
-                children: [
-                  CircleAvatar(),
-                  Text("Dream"),
-      
-                ],
-              ),),
+              Container(
+                decoration: BoxDecoration(shape: .circle),
+                child: Icon(Icons.star_border),
+              ),
             ],
           ),
         ],
