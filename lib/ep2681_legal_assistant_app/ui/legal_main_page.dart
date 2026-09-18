@@ -71,22 +71,17 @@ class _LegalMainPageState extends State<LegalMainPage> {
                   height: 80,
                   padding: .symmetric(horizontal: 12),
                   child: Row(
-                      mainAxisAlignment: .spaceBetween,
-                      children: [
-                    CircleAvatar(
-                      radius: 32,
-                      backgroundColor: Colors.white,
-                    ),
-                    CircleAvatar(
-                      radius: 32,
-                    ),
-                    CircleAvatar(
-                      radius: 32,
-                    ),
-                    CircleAvatar(
-                      radius: 32,
-                    ),
-                  ]),
+                    mainAxisAlignment: .spaceBetween,
+                    children: [
+                      CircleAvatar(radius: 32, backgroundColor: Colors.white),
+                      CircleAvatar(
+                        radius: 32,
+                        backgroundColor: Color.fromRGBO(58, 58, 58, 1),
+                      ),
+                      CircleAvatar(radius: 32),
+                      CircleAvatar(radius: 32),
+                    ],
+                  ),
                 ),
               ],
             ),
