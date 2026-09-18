@@ -56,22 +56,33 @@ class _LegalHomePageState extends State<LegalHomePage> {
               ],
             ),
           ),
-
-          Text("Legal Help, Your Way",style: TextStyle(
-            color: Colors.white,
-          ),),
-          Column(
-            children: [
-              Text("SMART LEGAL",style: TextStyle(
-                color: Colors.white,
-                fontWeight: .bold,
-              ),),
-              Text("SOLUTIONS, ANYTIME",style: TextStyle(
-                color: Colors.white,
-                fontWeight: .bold,
-              ),),
-            ],
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Column(
+              crossAxisAlignment: .start,
+              spacing: 16,
+              children: [
+                Text("Legal Help, Your Way",style: TextStyle(
+                  color: Colors.white,
+                ),),
+                Column(
+                  crossAxisAlignment: .start,
+                  children: [
+                    Text("SMART LEGAL",style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: .bold,
+                    ),),
+                    Text("SOLUTIONS, ANYTIME",style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: .bold,
+                    ),),
+                  ],
+                )
+              ],
+            ),
           )
+
+
 
         ],
       ),
