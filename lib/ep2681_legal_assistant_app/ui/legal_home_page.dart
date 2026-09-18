@@ -1,6 +1,5 @@
 import 'package:material_ui/material_ui.dart';
 
-
 class LegalHomePage extends StatefulWidget {
   const LegalHomePage({super.key});
 
@@ -13,7 +12,11 @@ class _LegalHomePageState extends State<LegalHomePage> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        
+        Row(
+          children: [
+            Container(decoration: ShapeDecoration(shape: StadiumBorder())),
+          ],
+        ),
       ],
     );
   }
