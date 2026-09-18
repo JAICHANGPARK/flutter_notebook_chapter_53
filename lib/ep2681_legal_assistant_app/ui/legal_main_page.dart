@@ -69,7 +69,9 @@ class _LegalMainPageState extends State<LegalMainPage> {
                     ),
                   ),
                   height: 80,
-                  child: Row(children: [
+                  child: Row(
+                      mainAxisAlignment: .spaceBetween,
+                      children: [
                     CircleAvatar(
                       radius: 32,
                     ),
@@ -79,7 +81,9 @@ class _LegalMainPageState extends State<LegalMainPage> {
                     CircleAvatar(
                       radius: 32,
                     ),
-                    CircleAvatar(),
+                    CircleAvatar(
+                      radius: 32,
+                    ),
                   ]),
                 ),
               ],
