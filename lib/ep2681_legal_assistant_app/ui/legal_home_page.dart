@@ -16,6 +16,7 @@ class _LegalHomePageState extends State<LegalHomePage> {
           Row(
             children: [
               Container(
+                padding: .only(left: 4, right: 16, bottom: 4, top: 4),
                 decoration: ShapeDecoration(
                   shape: StadiumBorder(),
                   color: Colors.purple[50]!,
@@ -32,7 +33,7 @@ class _LegalHomePageState extends State<LegalHomePage> {
                     BoxShadow(color: Colors.green, offset: Offset(0, 1)),
                   ],
                 ),
-                child: Icon(Icons.star_border, color: Colors.white,),
+                child: Icon(Icons.star_border, color: Colors.white),
               ),
             ],
           ),
