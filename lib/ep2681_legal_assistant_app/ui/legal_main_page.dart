@@ -24,7 +24,7 @@ class _LegalMainPageState extends State<LegalMainPage> {
                     Colors.black,
                     // Color.fromRGBO(66, 63, 64, 1),
                   ],
-                  stops: [0.0, 0.45, ],
+                  stops: [0.0, 0.45],
                 ),
               ),
             ),
@@ -43,21 +43,32 @@ class _LegalMainPageState extends State<LegalMainPage> {
                     // Color.fromRGBO(35, 33, 56, 1),
                     Color.fromRGBO(66, 63, 64, 1),
                     Colors.black,
-
                   ],
-                  stops: [0.0, 0.8, ],
+                  stops: [0.0, 0.8],
                 ),
               ),
             ),
           ),
-          Positioned.fill(child: Column(children: [
-            Expanded(child: Placeholder()),
-            Container(
-              margin: .symmetric(horizontal: 16, vertical: 32),
-              height: 80,
-              child: Placeholder(),
-            )
-          ],))
+          Positioned.fill(
+            child: Column(
+              children: [
+                Expanded(child: Placeholder()),
+                Container(
+                  margin: .symmetric(horizontal: 16, vertical: 32),
+                  decoration: ShapeDecoration(
+                    shape: StadiumBorder(),
+                    gradient: LinearGradient(
+                      begin: .centerLeft,
+                      end: .centerRight,
+                      colors: [Color.fromRGBO(45, 45, 45, 1), Colors.black26],
+                    ),
+                  ),
+                  height: 80,
+                  child: Row(children: []),
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );
