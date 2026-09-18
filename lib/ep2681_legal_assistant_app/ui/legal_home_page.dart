@@ -11,6 +11,10 @@ class LegalHomePage extends StatefulWidget {
 class _LegalHomePageState extends State<LegalHomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Column(
+      children: [
+        
+      ],
+    );
   }
 }
