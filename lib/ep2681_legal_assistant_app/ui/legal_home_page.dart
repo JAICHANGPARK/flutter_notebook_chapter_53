@@ -12,6 +12,7 @@ class _LegalHomePageState extends State<LegalHomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Column(
+        spacing: 16,
         crossAxisAlignment: .start,
         children: [
           Padding(
@@ -55,9 +56,23 @@ class _LegalHomePageState extends State<LegalHomePage> {
               ],
             ),
           ),
-          Text("Legal Help, Your Way"),
-          Text("SMART LEGAL"),
-          Text("SOLUTIONS, ANYTIME"),
+
+          Text("Legal Help, Your Way",style: TextStyle(
+            color: Colors.white,
+          ),),
+          Column(
+            children: [
+              Text("SMART LEGAL",style: TextStyle(
+                color: Colors.white,
+                fontWeight: .bold,
+              ),),
+              Text("SOLUTIONS, ANYTIME",style: TextStyle(
+                color: Colors.white,
+                fontWeight: .bold,
+              ),),
+            ],
+          )
+
         ],
       ),
     );
