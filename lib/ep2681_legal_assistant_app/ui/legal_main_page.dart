@@ -53,12 +53,9 @@ class _LegalMainPageState extends State<LegalMainPage> {
           ),
           Positioned.fill(
             child: Column(
+              crossAxisAlignment: .start,
               children: [
-                Expanded(child: IndexedStack(
-                  children: [
-                    LegalHomePage(),
-                  ],
-                )),
+                Expanded(child: IndexedStack(children: [LegalHomePage()],),),
                 Container(
                   margin: .symmetric(horizontal: 16, vertical: 32),
                   decoration: ShapeDecoration(
