@@ -23,6 +23,8 @@ class _LegalHomePageState extends State<LegalHomePage> {
                 child: Row(children: [CircleAvatar(), Text("Dream")]),
               ),
               Container(
+                height: 48,
+                width: 48,
                 decoration: BoxDecoration(
                   shape: .circle,
                   color: Colors.black,
