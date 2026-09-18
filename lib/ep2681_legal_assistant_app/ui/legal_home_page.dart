@@ -12,11 +12,11 @@ class _LegalHomePageState extends State<LegalHomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Column(
-        spacing: 16,
+        spacing: 24,
         crossAxisAlignment: .start,
         children: [
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.symmetric(horizontal: 16),
             child: Row(
               spacing: 14,
               children: [
