@@ -28,9 +28,7 @@ class _LegalHomePageState extends State<LegalHomePage> {
     // TODO: implement dispose
     _pageController.dispose();
     super.dispose();
-
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -164,7 +162,17 @@ class _LegalHomePageState extends State<LegalHomePage> {
               ],
             ),
           ),
-          Expanded(child: Placeholder()),
+          Expanded(
+            child: PageView.builder(
+              itemBuilder: (context, index) {
+                return Container(
+                  
+                );
+              },
+              controller: _pageController,
+              itemCount: 5,
+            ),
+          ),
         ],
       ),
     );
