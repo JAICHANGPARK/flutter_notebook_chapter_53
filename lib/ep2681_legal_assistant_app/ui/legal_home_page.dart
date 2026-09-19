@@ -8,6 +8,21 @@ class LegalHomePage extends StatefulWidget {
 }
 
 class _LegalHomePageState extends State<LegalHomePage> {
+  late final PageController _pageController;
+  double _currentPage = 0;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _pageController = PageController(viewportFraction: .78)
+      ..addListener(() {
+        setState(() {
+          _currentPage = _pageController.page ?? 0;
+        });
+      });
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
