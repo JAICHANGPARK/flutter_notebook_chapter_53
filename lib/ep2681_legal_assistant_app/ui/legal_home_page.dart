@@ -96,6 +96,7 @@ class _LegalHomePageState extends State<LegalHomePage> {
               scrollDirection: .horizontal,
               children: [
                 Container(
+                  margin: .only(left: 16),
                   padding: .symmetric(horizontal: 16, vertical: 12),
                   decoration: ShapeDecoration(
                     shape: StadiumBorder(),
