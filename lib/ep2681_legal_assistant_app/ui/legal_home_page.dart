@@ -24,6 +24,15 @@ class _LegalHomePageState extends State<LegalHomePage> {
   }
 
   @override
+  void dispose() {
+    // TODO: implement dispose
+    _pageController.dispose();
+    super.dispose();
+
+  }
+
+
+  @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Column(
