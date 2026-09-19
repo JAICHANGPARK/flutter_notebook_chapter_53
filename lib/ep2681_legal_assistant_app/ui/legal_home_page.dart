@@ -109,6 +109,34 @@ class _LegalHomePageState extends State<LegalHomePage> {
                     ),
                   ),
                 ),
+                Container(
+                  margin: .only(left: 16),
+                  padding: .symmetric(horizontal: 16, vertical: 12),
+                  decoration: ShapeDecoration(
+                    shape: StadiumBorder(),
+                    color: Colors.white10,
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Real Estate Lawyer",
+                      style: TextStyle(fontSize: 16, color: Colors.grey),
+                    ),
+                  ),
+                ),
+                Container(
+                  margin: .only(left: 16),
+                  padding: .symmetric(horizontal: 16, vertical: 12),
+                  decoration: ShapeDecoration(
+                    shape: StadiumBorder(),
+                    color: Colors.white10,
+                  ),
+                  child: Center(
+                    child: Text(
+                      "Real Estate Lawyer",
+                      style: TextStyle(fontSize: 16, color: Colors.grey),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
