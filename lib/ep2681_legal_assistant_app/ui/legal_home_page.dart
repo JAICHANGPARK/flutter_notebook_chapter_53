@@ -165,8 +165,11 @@ class _LegalHomePageState extends State<LegalHomePage> {
           Expanded(
             child: PageView.builder(
               itemBuilder: (context, index) {
-                return Container(
-                  
+                return Transform(
+                  alignment: .center,
+                  child: Container(
+                    child: Placeholder(),
+                  ),
                 );
               },
               controller: _pageController,
