@@ -165,11 +165,16 @@ class _LegalHomePageState extends State<LegalHomePage> {
           Expanded(
             child: PageView.builder(
               itemBuilder: (context, index) {
+                final double offset = index - _currentPage;
+
+                final matrix = Matrix4.identity()
+                  ..setEntry(3, 2, .001)
+                  ..rotateY(offset * -.28)
+                  ..scale(1.0 - (offset.abs() * .08).clamp(0, .2));
+
                 return Transform(
                   alignment: .center,
-                  child: Container(
-                    child: Placeholder(),
-                  ),
+                  child: Container(child: Placeholder()),
                 );
               },
               controller: _pageController,
