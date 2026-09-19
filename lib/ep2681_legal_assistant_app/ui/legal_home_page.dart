@@ -101,7 +101,12 @@ class _LegalHomePageState extends State<LegalHomePage> {
                     shape: StadiumBorder(),
                     color: Colors.white,
                   ),
-                  child: Center(child: Text("Family Lawyer")),
+                  child: Center(
+                    child: Text(
+                      "Family Lawyer",
+                      style: TextStyle(fontSize: 16),
+                    ),
+                  ),
                 ),
               ],
             ),
