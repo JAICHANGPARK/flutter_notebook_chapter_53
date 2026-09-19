@@ -91,10 +91,22 @@ class _LegalHomePageState extends State<LegalHomePage> {
             ),
           ),
           SizedBox(
-            height: 62,
-            child: Placeholder(),
+            height: 48,
+            child: ListView(
+              scrollDirection: .horizontal,
+              children: [
+                Container(
+                  padding: .symmetric(horizontal: 16, vertical: 12),
+                  decoration: ShapeDecoration(
+                    shape: StadiumBorder(),
+                    color: Colors.white,
+                  ),
+                  child: Center(child: Text("Family Lawyer")),
+                ),
+              ],
+            ),
           ),
-          Expanded(child: Placeholder())
+          Expanded(child: Placeholder()),
         ],
       ),
     );
