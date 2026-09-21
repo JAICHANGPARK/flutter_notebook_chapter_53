@@ -198,6 +198,7 @@ class _LegalHomePageState extends State<LegalHomePage> {
                           top: 16,
                           bottom: 16,
                           child: Column(
+                            spacing: 24,
                             crossAxisAlignment: .start,
                             children: [
                               Container(
