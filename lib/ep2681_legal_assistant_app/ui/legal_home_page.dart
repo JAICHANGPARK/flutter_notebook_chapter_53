@@ -1,3 +1,4 @@
+import 'package:gap/gap.dart';
 import 'package:material_ui/material_ui.dart';
 
 class LegalHomePage extends StatefulWidget {
@@ -162,6 +163,7 @@ class _LegalHomePageState extends State<LegalHomePage> {
               ],
             ),
           ),
+          Gap(2),
           Expanded(
             child: PageView.builder(
               itemBuilder: (context, index) {
