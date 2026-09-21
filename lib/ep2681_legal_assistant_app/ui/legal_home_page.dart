@@ -183,7 +183,10 @@ class _LegalHomePageState extends State<LegalHomePage> {
                         borderRadius: .circular(24),
                       ),
                       gradient: LinearGradient(
-                        colors: [Color.fromRGBO(175, 235, 229, 1)],
+                        colors: [
+                          Color.fromRGBO(175, 235, 229, 1),
+                          Color.fromRGBO(29, 171, 198, 1),
+                        ],
                       ),
                     ),
                     child: Stack(
