@@ -16,7 +16,7 @@ class _LegalHomePageState extends State<LegalHomePage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    _pageController = PageController(viewportFraction: .78)
+    _pageController = PageController(viewportFraction: .78, initialPage: 1)
       ..addListener(() {
         setState(() {
           _currentPage = _pageController.page ?? 0;
