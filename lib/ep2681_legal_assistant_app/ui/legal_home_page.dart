@@ -192,13 +192,18 @@ class _LegalHomePageState extends State<LegalHomePage> {
                     child: Stack(
                       children: [
                         Positioned(
+                          left: 16,
+                          top: 16,
+                          bottom: 16,
                           child: Column(
+                            crossAxisAlignment: .start,
                             children: [
                               Container(
                                 decoration: ShapeDecoration(
                                   shape: StadiumBorder(),
                                   color: Colors.black,
                                 ),
+                                padding: .symmetric(horizontal: 16, vertical: 12),
                                 child: Text(
                                   "Cases Won 99+",
                                   style: TextStyle(color: Colors.white),
