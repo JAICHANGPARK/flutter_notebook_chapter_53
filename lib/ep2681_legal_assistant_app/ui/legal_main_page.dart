@@ -57,7 +57,7 @@ class _LegalMainPageState extends State<LegalMainPage> {
               children: [
                 Expanded(child: IndexedStack(children: [LegalHomePage()],),),
                 Container(
-                  margin: .symmetric(horizontal: 16, vertical: 32),
+                  margin: .only()
                   decoration: ShapeDecoration(
                     shape: StadiumBorder(),
                     gradient: LinearGradient(
