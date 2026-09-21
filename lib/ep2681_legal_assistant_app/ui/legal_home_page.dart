@@ -182,7 +182,9 @@ class _LegalHomePageState extends State<LegalHomePage> {
                       shape: RoundedSuperellipseBorder(
                         borderRadius: .circular(24),
                       ),
-                      gradient: LinearGradient(colors: []),
+                      gradient: LinearGradient(
+                        colors: [Color.fromRGBO(175, 235, 229, 1)],
+                      ),
                     ),
                     child: Stack(
                       children: [Positioned(child: Column(children: []))],
