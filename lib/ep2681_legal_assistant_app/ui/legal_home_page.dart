@@ -178,12 +178,16 @@ class _LegalHomePageState extends State<LegalHomePage> {
                   transform: matrix,
                   alignment: .bottomCenter,
                   child: Container(
-                      decoration: ShapeDecoration(shape: RoundedSuperellipseBorder()),
-                      child: Stack(
-                    children: [
-                      
-                    ],
-                  )),
+                    decoration: ShapeDecoration(
+                      shape: RoundedSuperellipseBorder(
+                        borderRadius: .circular(24),
+                      ),
+                      gradient: LinearGradient(colors: []),
+                    ),
+                    child: Stack(
+                      children: [Positioned(child: Column(children: []))],
+                    ),
+                  ),
                 );
               },
               controller: _pageController,
