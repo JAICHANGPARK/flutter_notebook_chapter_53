@@ -235,7 +235,9 @@ class _LegalHomePageState extends State<LegalHomePage> {
                                 children: [
                                   CircleAvatar(
                                     backgroundColor: Colors.white,
+                                    foregroundColor: Colors.black,
                                     radius: 26,
+                                    child: Icon(Icons.chat_outlined),
                                   ),
                                   CircleAvatar(
                                     backgroundColor: Colors.white,
