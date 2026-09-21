@@ -227,6 +227,18 @@ class _LegalHomePageState extends State<LegalHomePage> {
                                   Text("Unknown Places, Earth"),
                                 ],
                               ),
+                              Row(
+                                children: [
+                                  CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    radius: 26,
+                                  ),
+                                  CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    radius: 26,
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                         ),
