@@ -204,6 +204,13 @@ class _LegalHomePageState extends State<LegalHomePage> {
                                   style: TextStyle(color: Colors.white),
                                 ),
                               ),
+                              Text("Unknown\nPerson"),
+                              Row(
+                                children: [
+
+                                ],
+                              )
+
                             ],
                           ),
                         ),
