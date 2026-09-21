@@ -203,19 +203,22 @@ class _LegalHomePageState extends State<LegalHomePage> {
                                   shape: StadiumBorder(),
                                   color: Colors.black,
                                 ),
-                                padding: .symmetric(horizontal: 16, vertical: 12),
+                                padding: .symmetric(
+                                  horizontal: 16,
+                                  vertical: 12,
+                                ),
                                 child: Text(
                                   "Cases Won 99+",
-                                  style: TextStyle(color: Colors.white),
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                  ),
                                 ),
                               ),
-                              Text("Unknown\nPerson"),
-                              Row(
-                                children: [
-
-                                ],
-                              )
-
+                              Text("Unknown\nPerson",style: TextStyle(
+                                fontSize: 32
+                              ),),
+                              Row(children: []),
                             ],
                           ),
                         ),
