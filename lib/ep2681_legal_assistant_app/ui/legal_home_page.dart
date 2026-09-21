@@ -190,7 +190,15 @@ class _LegalHomePageState extends State<LegalHomePage> {
                       ),
                     ),
                     child: Stack(
-                      children: [Positioned(child: Column(children: []))],
+                      children: [Positioned(child: Column(children: [
+                        Container(
+                          decoration: ShapeDecoration(shape: StadiumBorder(),)
+                          ,
+                          child: Text("Cases Won 99+", style: TextStyle(
+                            color: Colors.white
+                          ),),
+                        )
+                      ]))],
                     ),
                   ),
                 );
