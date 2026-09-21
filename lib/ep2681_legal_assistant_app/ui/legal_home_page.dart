@@ -35,7 +35,7 @@ class _LegalHomePageState extends State<LegalHomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Column(
-        spacing: 24,
+        spacing: 26,
         crossAxisAlignment: .start,
         children: [
           Padding(
@@ -163,7 +163,7 @@ class _LegalHomePageState extends State<LegalHomePage> {
               ],
             ),
           ),
-          Gap(2),
+
           Expanded(
             child: PageView.builder(
               itemBuilder: (context, index) {
@@ -217,13 +217,16 @@ class _LegalHomePageState extends State<LegalHomePage> {
                                   ),
                                 ),
                               ),
-                              Text("Unknown\nPerson",style: TextStyle(
-                                fontSize: 32
-                              ),),
-                              Row(children: [
-                                Icon(Icons.location_on_outlined),
-                                Text("Unknown Places, Earth")
-                              ]),
+                              Text(
+                                "Unknown\nPerson",
+                                style: TextStyle(fontSize: 32),
+                              ),
+                              Row(
+                                children: [
+                                  Icon(Icons.location_on_outlined),
+                                  Text("Unknown Places, Earth"),
+                                ],
+                              ),
                             ],
                           ),
                         ),
