@@ -177,7 +177,13 @@ class _LegalHomePageState extends State<LegalHomePage> {
                 return Transform(
                   transform: matrix,
                   alignment: .bottomCenter,
-                  child: Container(child: Placeholder()),
+                  child: Container(
+                      decoration: ShapeDecoration(shape: RoundedSuperellipseBorder()),
+                      child: Stack(
+                    children: [
+                      
+                    ],
+                  )),
                 );
               },
               controller: _pageController,
