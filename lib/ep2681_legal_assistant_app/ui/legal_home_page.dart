@@ -218,7 +218,10 @@ class _LegalHomePageState extends State<LegalHomePage> {
                               Text("Unknown\nPerson",style: TextStyle(
                                 fontSize: 32
                               ),),
-                              Row(children: []),
+                              Row(children: [
+                                Icon(Icons.location_on_outlined),
+                                Text("Unknown Places, Earth")
+                              ]),
                             ],
                           ),
                         ),
