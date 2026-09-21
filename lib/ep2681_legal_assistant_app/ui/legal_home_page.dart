@@ -223,9 +223,12 @@ class _LegalHomePageState extends State<LegalHomePage> {
                                 style: TextStyle(fontSize: 32),
                               ),
                               Row(
+                                spacing: 12,
                                 children: [
                                   Icon(Icons.location_on_outlined),
-                                  Text("Unknown Places, Earth"),
+                                  Text("Unknown Places, Earth",style: TextStyle(
+                                    fontSize: 16,
+                                  ),),
                                 ],
                               ),
                               Row(
