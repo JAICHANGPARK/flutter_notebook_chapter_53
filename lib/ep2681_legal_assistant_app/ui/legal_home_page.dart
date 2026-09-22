@@ -173,7 +173,7 @@ class _LegalHomePageState extends State<LegalHomePage> {
                   ..setEntry(3, 2, .001)
                   ..rotateY(offset * -.12)
                   ..rotateZ(offset * .02)
-                  // ..rotateX(offset * .08)
+                
                   ..scale(1.0 - (offset.abs() * .08).clamp(0, .2));
 
                 return Transform(
