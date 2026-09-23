@@ -2,7 +2,7 @@
 
 # EP2686
 
-- AI Legal Assistant & Lawyer Finder Mobile App UI/UX Design
+- PawMate — Pet Adoption App | Find Your Perfect Furry Friend 🐾
 - Md Uzzal Hossain
 - https://dribbble.com/shots/27732834-AI-Legal-Assistant-Lawyer-Finder-Mobile-App-UI-UX-Design
 
