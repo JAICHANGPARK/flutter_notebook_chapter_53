@@ -4,7 +4,7 @@
 
 - PawMate — Pet Adoption App | Find Your Perfect Furry Friend 🐾
 - NICKELFOX
-- https://dribbble.com/shots/27732834-AI-Legal-Assistant-Lawyer-Finder-Mobile-App-UI-UX-Design
+- https://dribbble.com/shots/27750230-PawMate-Pet-Adoption-App-Find-Your-Perfect-Furry-Friend
 
 <img src="https://cdn.dribbble.com/userupload/49027990/file/6302df7943403be65a3d7db7a28d312d.png?resize=1905x1429&vertical=center" alt=""/>
 
