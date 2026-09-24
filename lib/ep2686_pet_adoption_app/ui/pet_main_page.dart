@@ -20,7 +20,10 @@ class _PetMainPageState extends State<PetMainPage> {
               height: 80,
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: .only(topLeft: .circular(32)),
+                borderRadius: .only(
+                  topLeft: .circular(32),
+                  topRight: .circular(32),
+                ),
               ),
             ),
           ],
