@@ -26,8 +26,8 @@ class _PetMainPageState extends State<PetMainPage> {
                   BoxShadow(
                     color: Colors.black12,
                     spreadRadius: 3,
-                    blurRadius: 4
-                  )
+                    blurRadius: 4,
+                  ),
                 ],
                 borderRadius: .only(
                   topLeft: .circular(32),
@@ -40,35 +40,28 @@ class _PetMainPageState extends State<PetMainPage> {
                   Column(
                     spacing: 4,
                     mainAxisAlignment: .center,
-                    children: [
-                      CircleAvatar(),
-                      Text("Home"),
-                    ],
+                    children: [CircleAvatar(), Text("Home")],
                   ),
                   Column(
-                    children: [
-                      CircleAvatar(),
-                      Text("Home"),
-                    ],
+                    spacing: 4,
+                    mainAxisAlignment: .center,
+                    children: [CircleAvatar(), Text("Home")],
                   ),
                   Column(
-                    children: [
-                      CircleAvatar(),
-                      Text("Home"),
-                    ],
+                    spacing: 4,
+                    mainAxisAlignment: .center,
+                    children: [CircleAvatar(), Text("Home")],
                   ),
                   Column(
-                    children: [
-                      CircleAvatar(),
-                      Text("Home"),
-                    ],
+                    spacing: 4,
+                    mainAxisAlignment: .center,
+                    children: [CircleAvatar(), Text("Home")],
                   ),
                   Column(
-                    children: [
-                      CircleAvatar(),
-                      Text("Home"),
-                    ],
-                  )
+                    spacing: 4,
+                    mainAxisAlignment: .center,
+                    children: [CircleAvatar(), Text("Home")],
+                  ),
                 ],
               ),
             ),
