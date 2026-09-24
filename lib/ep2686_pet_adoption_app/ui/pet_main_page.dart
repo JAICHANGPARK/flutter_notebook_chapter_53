@@ -35,8 +35,11 @@ class _PetMainPageState extends State<PetMainPage> {
                 ),
               ),
               child: Row(
+                mainAxisAlignment: .spaceEvenly,
                 children: [
                   Column(
+                    spacing: 4,
+                    mainAxisAlignment: .center,
                     children: [
                       CircleAvatar(),
                       Text("Home"),
