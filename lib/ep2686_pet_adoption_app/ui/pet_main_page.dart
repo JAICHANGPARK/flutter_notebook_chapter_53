@@ -45,7 +45,9 @@ class _PetMainPageState extends State<PetMainPage> {
                   Column(
                     spacing: 4,
                     mainAxisAlignment: .center,
-                    children: [CircleAvatar(), Text("Home")],
+                    children: [CircleAvatar(   backgroundColor: Colors.transparent,
+                      foregroundColor: Colors.black,
+                      child: Icon(Icons.explore_outlined),), Text("Explore")],
                   ),
                   Column(
                     spacing: 4,
