@@ -64,7 +64,7 @@ class _PetMainPageState extends State<PetMainPage> {
                       backgroundColor: Colors.transparent,
                       foregroundColor: Colors.black,
                       child: Icon(Icons.person_2_outlined),
-                    ), Text("Home")],
+                    ), Text("Profile")],
                   ),
                 ],
               ),
