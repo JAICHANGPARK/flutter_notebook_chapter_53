@@ -12,12 +12,20 @@ class _PetMainPageState extends State<PetMainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SafeArea(child: Column(children: [
-        Expanded(child: Placeholder()),
-        Container(
-          height: 80,
-        )
-      ])),
+      body: SafeArea(
+        child: Column(
+          children: [
+            Expanded(child: Placeholder()),
+            Container(
+              height: 80,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: .only(topLeft: .circular(32)),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
