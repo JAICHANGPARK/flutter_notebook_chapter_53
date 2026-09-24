@@ -18,11 +18,14 @@ class _PetMainPageState extends State<PetMainPage> {
             Expanded(child: Placeholder()),
             Container(
               height: 80,
+              margin: .only(top: 24),
               decoration: BoxDecoration(
                 color: Colors.white,
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black12,
+                    spreadRadius: 3,
+                    blurRadius: 4
                   )
                 ],
                 borderRadius: .only(
