@@ -11,8 +11,12 @@ class _PetMainPageState extends State<PetMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(child: Column(children: [
         Expanded(child: Placeholder()),
+        Container(
+          height: 80,
+        )
       ])),
     );
   }
