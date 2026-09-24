@@ -13,11 +13,12 @@ class _PetMainPageState extends State<PetMainPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
+        bottom: false,
         child: Column(
           children: [
             Expanded(child: Placeholder()),
             Container(
-              height: 80,
+              height: 100,
               margin: .only(top: 24),
               decoration: BoxDecoration(
                 color: Colors.white,
