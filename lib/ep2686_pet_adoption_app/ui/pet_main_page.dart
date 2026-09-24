@@ -34,6 +34,40 @@ class _PetMainPageState extends State<PetMainPage> {
                   topRight: .circular(32),
                 ),
               ),
+              child: Row(
+                children: [
+                  Column(
+                    children: [
+                      CircleAvatar(),
+                      Text("Home"),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      CircleAvatar(),
+                      Text("Home"),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      CircleAvatar(),
+                      Text("Home"),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      CircleAvatar(),
+                      Text("Home"),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      CircleAvatar(),
+                      Text("Home"),
+                    ],
+                  )
+                ],
+              ),
             ),
           ],
         ),
