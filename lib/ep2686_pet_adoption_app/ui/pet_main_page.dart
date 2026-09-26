@@ -1,3 +1,4 @@
+import 'package:flutter_notebook_chapter_53/ep2686_pet_adoption_app/ui/pet_home_page.dart';
 import 'package:material_ui/material_ui.dart';
 
 class PetMainPage extends StatefulWidget {
@@ -21,7 +22,7 @@ class _PetMainPageState extends State<PetMainPage> {
             Expanded(child: IndexedStack(
               index: pageNum,
               children: [
-                
+                PetHomePage(),
               ],
             )),
             Container(
