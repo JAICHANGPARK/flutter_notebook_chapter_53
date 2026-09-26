@@ -24,22 +24,26 @@ class _PetHomePageState extends State<PetHomePage> {
                 ],
               ),
             ),
+            Container(
+              padding: .all(6),
+              decoration: BoxDecoration(
+                  shape: .circle,
+                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: .1),
+
+                    )
+                  ]
+              ),
+              child: Badge(
+                child: Icon(Icons.notifications_none),
+              ),
+            ),
+            CircleAvatar()
           ],
         ),
-        Container(
-          decoration: BoxDecoration(
-            shape: .circle,
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withValues(alpha: .1),
 
-              )
-            ]
-          ),
-          child: Badge(
-            child: Icon(Icons.notifications_none),
-          ),
-        )
       ],
     );
   }
