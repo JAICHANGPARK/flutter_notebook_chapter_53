@@ -15,16 +15,17 @@ class _PetHomePageState extends State<PetHomePage> {
       children: [
         Row(
           children: [
-            Expanded(child: Column(
-              crossAxisAlignment: .start,
-              children: [
-                Text("Hello, Dream"),
-                Text("Good pets make a great life!"),
-              ],
-            ))
+            Expanded(
+              child: Column(
+                crossAxisAlignment: .start,
+                children: [
+                  Text("Hello, Dream"),
+                  Text("Good pets make a great life!"),
+                ],
+              ),
+            ),
           ],
-        )
-
+        ),
       ],
     );
   }
