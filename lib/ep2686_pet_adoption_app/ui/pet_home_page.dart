@@ -63,6 +63,11 @@ class _PetHomePageState extends State<PetHomePage> {
           height: 180,
           child: Placeholder(),
         ),
+        Text("Recommended for You"),
+        Container(
+          height: 260,
+          child: Placeholder(),
+        ),
 
       ],
     );
