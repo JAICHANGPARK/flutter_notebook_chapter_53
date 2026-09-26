@@ -12,8 +12,10 @@ class _PetHomePageState extends State<PetHomePage> {
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: .start,
+
       children: [
         Row(
+          spacing: 16,
           children: [
             Expanded(
               child: Column(
@@ -25,14 +27,15 @@ class _PetHomePageState extends State<PetHomePage> {
               ),
             ),
             Container(
-              padding: .all(6),
+              padding: .all(8),
               decoration: BoxDecoration(
                   shape: .circle,
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
                       color: Colors.black.withValues(alpha: .1),
-
+                      spreadRadius: 1,
+                      blurRadius: 3
                     )
                   ]
               ),
