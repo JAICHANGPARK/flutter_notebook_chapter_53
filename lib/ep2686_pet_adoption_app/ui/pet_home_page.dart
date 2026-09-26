@@ -37,8 +37,7 @@ class _PetHomePageState extends State<PetHomePage> {
             ]
           ),
           child: Badge(
-            child:
-            ,
+            child: Icon(Icons.notifications_none),
           ),
         )
       ],
