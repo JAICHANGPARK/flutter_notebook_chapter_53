@@ -26,6 +26,21 @@ class _PetHomePageState extends State<PetHomePage> {
             ),
           ],
         ),
+        Container(
+          decoration: BoxDecoration(
+            shape: .circle,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: .1),
+
+              )
+            ]
+          ),
+          child: Badge(
+            child:
+            ,
+          ),
+        )
       ],
     );
   }
