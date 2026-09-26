@@ -10,66 +10,57 @@ class PetHomePage extends StatefulWidget {
 class _PetHomePageState extends State<PetHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: .start,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: Column(
+        crossAxisAlignment: .start,
+        spacing: 16,
 
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
-          child: Row(
-            spacing: 12,
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: .start,
-                  children: [
-                    Text(
-                      "Hello, Dream",
-                      style: TextStyle(fontWeight: .bold, fontSize: 20),
-                    ),
-                    Text("Good pets make a great life!"),
-                  ],
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Row(
+              spacing: 12,
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: .start,
+                    children: [
+                      Text(
+                        "Hello, Dream",
+                        style: TextStyle(fontWeight: .bold, fontSize: 20),
+                      ),
+                      Text("Good pets make a great life!"),
+                    ],
+                  ),
                 ),
-              ),
-              Container(
-                padding: .all(8),
-                decoration: BoxDecoration(
-                  shape: .circle,
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withValues(alpha: .1),
-                      spreadRadius: 1,
-                      blurRadius: 3,
-                    ),
-                  ],
+                Container(
+                  padding: .all(8),
+                  decoration: BoxDecoration(
+                    shape: .circle,
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: .1),
+                        spreadRadius: 1,
+                        blurRadius: 3,
+                      ),
+                    ],
+                  ),
+                  child: Badge(child: Icon(Icons.notifications_none)),
                 ),
-                child: Badge(child: Icon(Icons.notifications_none)),
-              ),
-              CircleAvatar(radius: 24),
-            ],
+                CircleAvatar(radius: 24),
+              ],
+            ),
           ),
-        ),
-        Container(
-          height: 52,
-          child: Placeholder(),
-        ),
+          Container(height: 52, child: Placeholder()),
 
-        Container(
-          height: 120,
-          child: Placeholder(),
-        ),
-        Container(
-          height: 180,
-          child: Placeholder(),
-        ),
-        Text("Recommended for You"),
-        Container(
-          height: 260,
-          child: Placeholder(),
-        ),
-
-      ],
+          Container(height: 120, child: Placeholder()),
+          Container(height: 180, child: Placeholder()),
+          Text("Recommended for You", style: TextStyle(fontWeight: .bold)),
+          Container(height: 260, child: Placeholder()),
+        ],
+      ),
     );
   }
 }
