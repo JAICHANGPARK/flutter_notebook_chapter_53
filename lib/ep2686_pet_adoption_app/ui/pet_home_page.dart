@@ -56,7 +56,11 @@ class _PetHomePageState extends State<PetHomePage> {
         ),
 
         Container(
-          height: 100,
+          height: 120,
+          child: Placeholder(),
+        ),
+        Container(
+          height: 180,
           child: Placeholder(),
         ),
 
