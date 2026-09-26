@@ -43,7 +43,9 @@ class _PetHomePageState extends State<PetHomePage> {
                 child: Icon(Icons.notifications_none),
               ),
             ),
-            CircleAvatar()
+            CircleAvatar(
+              radius: 24,
+            )
           ],
         ),
 
