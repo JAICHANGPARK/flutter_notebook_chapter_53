@@ -13,6 +13,16 @@ class _PetHomePageState extends State<PetHomePage> {
     return Column(
       crossAxisAlignment: .start,
       children: [
+        Row(
+          children: [
+            Expanded(child: Column(
+              crossAxisAlignment: .start,
+              children: [
+
+              ],
+            ))
+          ],
+        )
 
       ],
     );
