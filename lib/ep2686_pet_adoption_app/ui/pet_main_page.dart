@@ -8,6 +8,8 @@ class PetMainPage extends StatefulWidget {
 }
 
 class _PetMainPageState extends State<PetMainPage> {
+  int pageNum = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +18,12 @@ class _PetMainPageState extends State<PetMainPage> {
         bottom: false,
         child: Column(
           children: [
-            Expanded(child: Placeholder()),
+            Expanded(child: IndexedStack(
+              index: pageNum,
+              children: [
+                
+              ],
+            )),
             Container(
               height: 100,
               margin: .only(top: 24),
