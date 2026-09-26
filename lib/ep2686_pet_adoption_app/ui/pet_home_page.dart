@@ -15,50 +15,55 @@ class _PetHomePageState extends State<PetHomePage> {
       child: Column(
         crossAxisAlignment: .start,
         spacing: 16,
-
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
-            child: Row(
-              spacing: 12,
-              children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: .start,
-                    children: [
-                      Text(
-                        "Hello, Dream",
-                        style: TextStyle(fontWeight: .bold, fontSize: 20),
-                      ),
-                      Text("Good pets make a great life!"),
-                    ],
-                  ),
+          Row(
+            spacing: 12,
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: .start,
+                  children: [
+                    Text(
+                      "Hello, Dream",
+                      style: TextStyle(fontWeight: .bold, fontSize: 20),
+                    ),
+                    Text("Good pets make a great life!"),
+                  ],
                 ),
-                Container(
-                  padding: .all(8),
-                  decoration: BoxDecoration(
-                    shape: .circle,
-                    color: Colors.white,
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withValues(alpha: .1),
-                        spreadRadius: 1,
-                        blurRadius: 3,
-                      ),
-                    ],
-                  ),
-                  child: Badge(child: Icon(Icons.notifications_none)),
+              ),
+              Container(
+                padding: .all(8),
+                decoration: BoxDecoration(
+                  shape: .circle,
+                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: .1),
+                      spreadRadius: 1,
+                      blurRadius: 3,
+                    ),
+                  ],
                 ),
-                CircleAvatar(radius: 24),
-              ],
-            ),
+                child: Badge(child: Icon(Icons.notifications_none)),
+              ),
+              CircleAvatar(radius: 24),
+            ],
           ),
           Container(height: 52, child: Placeholder()),
 
           Container(height: 120, child: Placeholder()),
-          Container(height: 180, child: Placeholder()),
-          Text("Recommended for You", style: TextStyle(fontWeight: .bold)),
-          Container(height: 260, child: Placeholder()),
+          Expanded(child: SingleChildScrollView(
+            child: Column(
+              spacing: 16,
+              crossAxisAlignment: .start,
+              children: [
+                Container(height: 180, child: Placeholder()),
+                Text("Recommended for You", style: TextStyle(fontWeight: .bold)),
+                Container(height: 260, child: Placeholder()),
+              ],
+            ),
+          )),
+
         ],
       ),
     );
