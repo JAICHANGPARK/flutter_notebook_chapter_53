@@ -11,7 +11,10 @@ class _PetHomePageState extends State<PetHomePage> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [],
+      crossAxisAlignment: .start,
+      children: [
+
+      ],
     );
   }
 }
