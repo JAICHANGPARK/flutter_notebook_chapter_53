@@ -23,7 +23,10 @@ class _PetHomePageState extends State<PetHomePage> {
                 child: Column(
                   crossAxisAlignment: .start,
                   children: [
-                    Text("Hello, Dream"),
+                    Text(
+                      "Hello, Dream",
+                      style: TextStyle(fontWeight: .bold, fontSize: 20),
+                    ),
                     Text("Good pets make a great life!"),
                   ],
                 ),
@@ -31,25 +34,30 @@ class _PetHomePageState extends State<PetHomePage> {
               Container(
                 padding: .all(8),
                 decoration: BoxDecoration(
-                    shape: .circle,
-                    color: Colors.white,
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withValues(alpha: .1),
-                        spreadRadius: 1,
-                        blurRadius: 3
-                      )
-                    ]
+                  shape: .circle,
+                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: .1),
+                      spreadRadius: 1,
+                      blurRadius: 3,
+                    ),
+                  ],
                 ),
-                child: Badge(
-                  child: Icon(Icons.notifications_none),
-                ),
+                child: Badge(child: Icon(Icons.notifications_none)),
               ),
-              CircleAvatar(
-                radius: 24,
-              )
+              CircleAvatar(radius: 24),
             ],
           ),
+        ),
+        Container(
+          height: 52,
+          child: Placeholder(),
+        ),
+
+        Container(
+          height: 100,
+          child: Placeholder(),
         ),
 
       ],
