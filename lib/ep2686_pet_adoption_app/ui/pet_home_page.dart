@@ -56,8 +56,13 @@ class _PetHomePageState extends State<PetHomePage> {
               children: [
                 Expanded(
                   child: Container(
-                    decoration: BoxDecoration(color: Colors.grey[100]),
+                    
+                    decoration: BoxDecoration(color: Colors.grey[100],
+                    borderRadius: .circular(12)),
                   ),
+                ),
+                Container(
+                  decoration: BoxDecoration(borderRadius: .circular(12)),
                 ),
               ],
             ),
