@@ -156,15 +156,20 @@ class _PetHomePageState extends State<PetHomePage> {
                   ),
                   Text(
                     "Recommended for You",
-                    style: TextStyle(fontWeight: .bold,
-                    fontSize: 19),
+                    style: TextStyle(fontWeight: .bold, fontSize: 19),
                   ),
-                  Container(height: 260, child: Row(
-                    children: [
-
-                      
-                    ],
-                  )),
+                  Container(
+                    height: 260,
+                    child: Row(
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: .circular(16),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
