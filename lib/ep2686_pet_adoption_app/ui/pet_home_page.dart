@@ -49,7 +49,11 @@ class _PetHomePageState extends State<PetHomePage> {
               CircleAvatar(radius: 24),
             ],
           ),
-          Container(height: 52, child: Placeholder()),
+          Container(height: 52, child: Row(
+            children: [
+
+            ]
+          )),
 
           Container(height: 120, child: Placeholder()),
           Expanded(child: SingleChildScrollView(
