@@ -77,13 +77,37 @@ class _PetHomePageState extends State<PetHomePage> {
                   ),
                   padding: .all(12),
                   child: RotatedBox(
-                      quarterTurns: 1,
-                      child: Icon(Icons.tune, color: Colors.white)),
+                    quarterTurns: 1,
+                    child: Icon(Icons.tune, color: Colors.white),
+                  ),
                 ),
               ],
             ),
           ),
-          Container(height: 120, child: Placeholder()),
+          Container(
+            height: 120,
+            child: Row(
+              spacing: 12,
+              children: [
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: .circular(12),
+                      color: Colors.orange,
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: .circular(12),
+                      color: Colors.green,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
