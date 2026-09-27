@@ -71,11 +71,13 @@ class _PetHomePageState extends State<PetHomePage> {
                   ),
                 ),
                 Container(
-                  decoration: BoxDecoration(borderRadius: .circular(12),
-                    color: Colors.orange
+                  decoration: BoxDecoration(
+                    borderRadius: .circular(12),
+                    color: Colors.orange,
                   ),
                   padding: .all(12),
-                  child: Icon(Icons.tune),
+                  
+                  child: Icon(Icons.tune, color: Colors.white),
                 ),
               ],
             ),
