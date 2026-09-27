@@ -138,7 +138,21 @@ class _PetHomePageState extends State<PetHomePage> {
                 spacing: 16,
                 crossAxisAlignment: .start,
                 children: [
-                  Container(height: 180, child: Placeholder()),
+                  Container(
+                    height: 180,
+                    child: Stack(
+                      children: [
+                        Positioned.fill(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: .circular(12),
+                              color: Colors.green[50],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                   Text(
                     "Recommended for You",
                     style: TextStyle(fontWeight: .bold),
