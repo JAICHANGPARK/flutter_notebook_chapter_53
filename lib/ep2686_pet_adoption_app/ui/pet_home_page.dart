@@ -64,14 +64,16 @@ class _PetHomePageState extends State<PetHomePage> {
                       decoration: InputDecoration(
                         icon: Icon(Icons.search),
                         border: .none,
-
                         hintText: "Search pets, breeds, or location...",
                       ),
                     ),
                   ),
                 ),
                 Container(
-                  decoration: BoxDecoration(borderRadius: .circular(12)),
+                  decoration: BoxDecoration(borderRadius: .circular(12),
+                    color: Colors.orange
+                  ),
+                  child: Icon(Icons.tune),
                 ),
               ],
             ),
