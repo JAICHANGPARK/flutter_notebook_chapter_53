@@ -61,8 +61,12 @@ class _PetHomePageState extends State<PetHomePage> {
                       borderRadius: .circular(12),
                     ),
                     child: TextField(
-                      decoration: InputDecoration(icon: Icon(Icons.search),
-                      hintText: "Search pets, breeds, or location..."),
+                      decoration: InputDecoration(
+                        icon: Icon(Icons.search),
+                        border: .none,
+
+                        hintText: "Search pets, breeds, or location...",
+                      ),
                     ),
                   ),
                 ),
