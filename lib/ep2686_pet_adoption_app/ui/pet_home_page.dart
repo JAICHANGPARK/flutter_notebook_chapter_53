@@ -143,6 +143,7 @@ class _PetHomePageState extends State<PetHomePage> {
                     child: Stack(
                       children: [
                         Positioned.fill(
+                          top: 16,
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: .circular(12),
@@ -155,7 +156,8 @@ class _PetHomePageState extends State<PetHomePage> {
                   ),
                   Text(
                     "Recommended for You",
-                    style: TextStyle(fontWeight: .bold),
+                    style: TextStyle(fontWeight: .bold,
+                    fontSize: 20),
                   ),
                   Container(height: 260, child: Placeholder()),
                 ],
