@@ -163,10 +163,12 @@ class _PetHomePageState extends State<PetHomePage> {
                     child: Row(
                       spacing: 12,
                       children: [
-                        Container(
-                          decoration: BoxDecoration(
-                            borderRadius: .circular(16),
-                            color: Colors.pink,
+                        Expanded(
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: .circular(16),
+                              color: Colors.pink,
+                            ),
                           ),
                         ),
                         Container(
