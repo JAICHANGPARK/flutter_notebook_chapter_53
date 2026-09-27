@@ -49,25 +49,36 @@ class _PetHomePageState extends State<PetHomePage> {
               CircleAvatar(radius: 24),
             ],
           ),
-          Container(height: 52, child: Row(
-            children: [
-
-            ]
-          )),
-
-          Container(height: 120, child: Placeholder()),
-          Expanded(child: SingleChildScrollView(
-            child: Column(
-              spacing: 16,
-              crossAxisAlignment: .start,
+          Container(
+            height: 52,
+            child: Row(
               children: [
-                Container(height: 180, child: Placeholder()),
-                Text("Recommended for You", style: TextStyle(fontWeight: .bold)),
-                Container(height: 260, child: Placeholder()),
+                Expanded(
+                  child: Container(
+                    decoration: BoxDecoration(color: Colors.grey[100]),
+                  ),
+                ),
               ],
             ),
-          )),
+          ),
 
+          Container(height: 120, child: Placeholder()),
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                spacing: 16,
+                crossAxisAlignment: .start,
+                children: [
+                  Container(height: 180, child: Placeholder()),
+                  Text(
+                    "Recommended for You",
+                    style: TextStyle(fontWeight: .bold),
+                  ),
+                  Container(height: 260, child: Placeholder()),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
