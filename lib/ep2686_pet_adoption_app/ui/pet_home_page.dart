@@ -76,13 +76,13 @@ class _PetHomePageState extends State<PetHomePage> {
                     color: Colors.orange,
                   ),
                   padding: .all(12),
-                  
-                  child: Icon(Icons.tune, color: Colors.white),
+                  child: RotatedBox(
+                      quarterTurns: 1,
+                      child: Icon(Icons.tune, color: Colors.white)),
                 ),
               ],
             ),
           ),
-
           Container(height: 120, child: Placeholder()),
           Expanded(
             child: SingleChildScrollView(
