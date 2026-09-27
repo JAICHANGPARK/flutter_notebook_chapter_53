@@ -85,7 +85,7 @@ class _PetHomePageState extends State<PetHomePage> {
             ),
           ),
           Container(
-            height: 120,
+            height: 90,
             child: Row(
               spacing: 12,
               children: [
