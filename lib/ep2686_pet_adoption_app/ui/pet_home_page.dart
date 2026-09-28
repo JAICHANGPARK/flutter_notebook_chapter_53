@@ -85,7 +85,7 @@ class _PetHomePageState extends State<PetHomePage> {
             ),
           ),
           Container(
-            height: 90,
+            height: 88,
             child: Row(
               spacing: 12,
               children: [
@@ -96,7 +96,7 @@ class _PetHomePageState extends State<PetHomePage> {
                       color: Colors.orange,
                     ),
                     child: Column(
-                      spacing: 4,
+                      spacing: 8,
                       mainAxisAlignment: .center,
                       children: [
                         Icon(Icons.pets, color: Colors.white,),
