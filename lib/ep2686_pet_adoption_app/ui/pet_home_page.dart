@@ -263,7 +263,6 @@ class _PetHomePageState extends State<PetHomePage> {
                                 ),
                               ],
                             ),
-
                             child: Stack(
                               children: [
                                 Positioned(
@@ -273,8 +272,7 @@ class _PetHomePageState extends State<PetHomePage> {
                                     radius: 16,
                                     backgroundColor: Colors.white,
                                     foregroundColor: Colors.red,
-                                    child: Icon(Icons.favorite,
-                                    size: 16,),
+                                    child: Icon(Icons.favorite, size: 16),
                                   ),
                                 ),
                                 Positioned(
