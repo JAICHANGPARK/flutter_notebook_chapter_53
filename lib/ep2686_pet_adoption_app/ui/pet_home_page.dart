@@ -267,11 +267,13 @@ class _PetHomePageState extends State<PetHomePage> {
                             child: Stack(
                               children: [
                                 Positioned(
-                                  right: 16,
-                                  top: 16,
+                                  right: 12,
+                                  top: 12,
                                   child: CircleAvatar(
                                     radius: 16,
                                     backgroundColor: Colors.white,
+                                    
+                                    child: Icon(Icons.favorite, ),
                                   ),
                                 ),
                                 Positioned(
