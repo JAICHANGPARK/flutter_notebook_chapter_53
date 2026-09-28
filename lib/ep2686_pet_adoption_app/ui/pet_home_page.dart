@@ -101,8 +101,6 @@ class _PetHomePageState extends State<PetHomePage> {
                       children: [
                         Icon(Icons.pets, color: Colors.white,),
                         Text("Cats")
-
-
                       ],
                     ),
                   ),
