@@ -132,7 +132,7 @@ class _PetHomePageState extends State<PetHomePage> {
                       mainAxisAlignment: .center,
                       children: [
                         Icon(Icons.pets, color: Colors.red,),
-                        Text("Rabits")
+                        Text("Rabbits")
                       ],
                     ),
                   ),
@@ -188,6 +188,17 @@ class _PetHomePageState extends State<PetHomePage> {
                             decoration: BoxDecoration(
                               borderRadius: .circular(12),
                               color: Colors.green[50],
+                            ),
+                            padding: .all(16),
+                            child: Column(
+                              crossAxisAlignment: .start,
+                              children: [
+                                Text("Give Love\nGet Happiness",style: TextStyle(
+                                  fontWeight: .bold,
+                                  fontSize: 18
+                                ),),
+                                Text("Adopt a pet and fill a heart forever")
+                              ],
                             ),
                           ),
                         ),
