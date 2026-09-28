@@ -157,7 +157,15 @@ class _PetHomePageState extends State<PetHomePage> {
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: .circular(12),
-                      color: Colors.purple,
+                      color: Colors.purple[50],
+                    ),
+                    child: Column(
+                      spacing: 8,
+                      mainAxisAlignment: .center,
+                      children: [
+                        Icon(Icons.apps_outlined, color: Colors.green,),
+                        Text("More")
+                      ],
                     ),
                   ),
                 ),
