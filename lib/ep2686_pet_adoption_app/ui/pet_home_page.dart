@@ -191,6 +191,7 @@ class _PetHomePageState extends State<PetHomePage> {
                             ),
                             padding: .all(16),
                             child: Column(
+                              spacing: 6,
                               crossAxisAlignment: .start,
                               children: [
                                 Text(
@@ -209,8 +210,8 @@ class _PetHomePageState extends State<PetHomePage> {
                                   padding: .only(
                                     left: 16,
                                     right: 6,
-                                    bottom: 4,
-                                    top: 4,
+                                    bottom: 6,
+                                    top: 6,
                                   ),
 
                                   child: Row(
