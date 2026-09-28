@@ -285,9 +285,14 @@ class _PetHomePageState extends State<PetHomePage> {
                                       children: [
                                         Text(
                                           "Luna",
-                                          style: TextStyle(fontWeight: .bold,),
+                                          style: TextStyle(fontWeight: .bold),
                                         ),
-                                        Text("Ragdoll * 8 Months",),
+                                        Text(
+                                          "Ragdoll * 8 Months",
+                                          style: TextStyle(
+                                            color: Colors.black54,
+                                          ),
+                                        ),
                                         Row(
                                           children: [
                                             Icon(
