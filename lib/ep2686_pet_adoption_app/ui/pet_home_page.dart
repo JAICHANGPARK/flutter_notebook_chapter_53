@@ -266,7 +266,14 @@ class _PetHomePageState extends State<PetHomePage> {
 
                             child: Stack(
                               children: [
-                                Positioned(child: CircleAvatar()),
+                                Positioned(
+                                  right: 16,
+                                  top: 16,
+                                  child: CircleAvatar(
+                                    radius: 16,
+                                    backgroundColor: Colors.white,
+                                  ),
+                                ),
                                 Positioned(
                                   bottom: 0,
                                   left: 0,
