@@ -299,7 +299,12 @@ class _PetHomePageState extends State<PetHomePage> {
                                               Icons.location_on_outlined,
                                               size: 16,
                                             ),
-                                            Text("Seattle, WA"),
+                                            Text(
+                                              "Seattle, WA",
+                                              style: TextStyle(
+                                                color: Colors.black54,
+                                              ),
+                                            ),
                                           ],
                                         ),
                                       ],
