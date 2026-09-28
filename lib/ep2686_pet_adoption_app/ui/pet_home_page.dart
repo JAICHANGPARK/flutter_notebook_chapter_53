@@ -206,7 +206,13 @@ class _PetHomePageState extends State<PetHomePage> {
                                     shape: StadiumBorder(),
                                     color: Colors.black,
                                   ),
-                                  
+                                  padding: .only(
+                                    left: 16,
+                                    right: 6,
+                                    bottom: 4,
+                                    top: 4,
+                                  ),
+
                                   child: Row(
                                     mainAxisSize: .min,
                                     spacing: 12,
