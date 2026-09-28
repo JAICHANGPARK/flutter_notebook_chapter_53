@@ -266,6 +266,7 @@ class _PetHomePageState extends State<PetHomePage> {
 
                             child: Stack(
                               children: [
+                                Positioned(child: CircleAvatar()),
                                 Positioned(
                                   bottom: 0,
                                   left: 0,
@@ -294,6 +295,7 @@ class _PetHomePageState extends State<PetHomePage> {
                                           ),
                                         ),
                                         Row(
+                                          spacing: 4,
                                           children: [
                                             Icon(
                                               Icons.location_on_outlined,
