@@ -95,6 +95,11 @@ class _PetHomePageState extends State<PetHomePage> {
                       borderRadius: .circular(12),
                       color: Colors.orange,
                     ),
+                    child: Column(
+                      children: [
+                        
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
