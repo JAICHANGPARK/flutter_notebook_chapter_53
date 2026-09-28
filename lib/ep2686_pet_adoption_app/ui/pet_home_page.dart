@@ -206,6 +206,25 @@ class _PetHomePageState extends State<PetHomePage> {
                                     shape: StadiumBorder(),
                                     color: Colors.black,
                                   ),
+                                  
+                                  child: Row(
+                                    mainAxisSize: .min,
+                                    spacing: 12,
+                                    children: [
+                                      Text(
+                                        "Adopt Now",
+                                        style: TextStyle(
+                                          fontWeight: .bold,
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      CircleAvatar(
+                                        backgroundColor: Colors.white,
+                                        foregroundColor: Colors.black,
+                                        child: Icon(Icons.chevron_right),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ],
                             ),
