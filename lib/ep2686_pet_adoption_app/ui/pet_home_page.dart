@@ -268,6 +268,8 @@ class _PetHomePageState extends State<PetHomePage> {
                               children: [
                                 Positioned(
                                   bottom: 0,
+                                  left: 0,
+                                  right: 0,
                                   child: Container(
                                     decoration: BoxDecoration(
                                       borderRadius: .circular(16),
