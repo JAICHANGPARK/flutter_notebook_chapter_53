@@ -97,7 +97,9 @@ class _PetHomePageState extends State<PetHomePage> {
                     ),
                     child: Column(
                       children: [
-                        
+                        Icon(Icons.pets, color: Colors.white,),
+
+
                       ],
                     ),
                   ),
