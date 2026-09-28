@@ -127,6 +127,14 @@ class _PetHomePageState extends State<PetHomePage> {
                       borderRadius: .circular(12),
                       color: Colors.red,
                     ),
+                    child: Column(
+                      spacing: 8,
+                      mainAxisAlignment: .center,
+                      children: [
+                        Icon(Icons.pets, color: Colors.green,),
+                        Text("Dogs")
+                      ],
+                    ),
                   ),
                 ),
                 Expanded(
