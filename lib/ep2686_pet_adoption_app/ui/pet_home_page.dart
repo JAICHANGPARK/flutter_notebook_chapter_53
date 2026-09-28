@@ -255,10 +255,19 @@ class _PetHomePageState extends State<PetHomePage> {
                             decoration: BoxDecoration(
                               borderRadius: .circular(16),
                               color: Colors.pink,
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withValues(alpha: .1),
+                                  spreadRadius: 3,
+                                  blurRadius: 10
+                                )
+                              ],
                             ),
+
                             child: Stack(
                               children: [
                                 Positioned(
+                                  bottom: 0,
                                   child: Container(
                                     decoration: BoxDecoration(
                                       borderRadius: .circular(16),
