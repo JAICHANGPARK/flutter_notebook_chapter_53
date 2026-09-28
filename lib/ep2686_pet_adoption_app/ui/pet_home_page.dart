@@ -99,8 +99,8 @@ class _PetHomePageState extends State<PetHomePage> {
                       spacing: 8,
                       mainAxisAlignment: .center,
                       children: [
-                        Icon(Icons.pets, color: Colors.white,),
-                        Text("Cats")
+                        Icon(Icons.pets, color: Colors.white),
+                        Text("Cats"),
                       ],
                     ),
                   ),
@@ -115,8 +115,8 @@ class _PetHomePageState extends State<PetHomePage> {
                       spacing: 8,
                       mainAxisAlignment: .center,
                       children: [
-                        Icon(Icons.pets, color: Colors.green,),
-                        Text("Dogs")
+                        Icon(Icons.pets, color: Colors.green),
+                        Text("Dogs"),
                       ],
                     ),
                   ),
@@ -131,8 +131,8 @@ class _PetHomePageState extends State<PetHomePage> {
                       spacing: 8,
                       mainAxisAlignment: .center,
                       children: [
-                        Icon(Icons.pets, color: Colors.red,),
-                        Text("Rabbits")
+                        Icon(Icons.pets, color: Colors.red),
+                        Text("Rabbits"),
                       ],
                     ),
                   ),
@@ -147,8 +147,8 @@ class _PetHomePageState extends State<PetHomePage> {
                       spacing: 8,
                       mainAxisAlignment: .center,
                       children: [
-                        Icon(Icons.pets, color: Colors.blue,),
-                        Text("Birds")
+                        Icon(Icons.pets, color: Colors.blue),
+                        Text("Birds"),
                       ],
                     ),
                   ),
@@ -163,8 +163,8 @@ class _PetHomePageState extends State<PetHomePage> {
                       spacing: 8,
                       mainAxisAlignment: .center,
                       children: [
-                        Icon(Icons.apps_outlined, color: Colors.purple,),
-                        Text("More")
+                        Icon(Icons.apps_outlined, color: Colors.purple),
+                        Text("More"),
                       ],
                     ),
                   ),
@@ -193,11 +193,20 @@ class _PetHomePageState extends State<PetHomePage> {
                             child: Column(
                               crossAxisAlignment: .start,
                               children: [
-                                Text("Give Love\nGet Happiness",style: TextStyle(
-                                  fontWeight: .bold,
-                                  fontSize: 18
-                                ),),
-                                Text("Adopt a pet and fill a heart forever")
+                                Text(
+                                  "Give Love\nGet Happiness",
+                                  style: TextStyle(
+                                    fontWeight: .bold,
+                                    fontSize: 18,
+                                  ),
+                                ),
+                                Text("Adopt a pet and fill a heart forever"),
+                                Container(
+                                  decoration: ShapeDecoration(
+                                    shape: StadiumBorder(),
+                                    color: Colors.black,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
