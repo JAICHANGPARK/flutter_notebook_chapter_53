@@ -275,6 +275,7 @@ class _PetHomePageState extends State<PetHomePage> {
                                       borderRadius: .circular(16),
                                       color: Colors.white,
                                     ),
+                                    padding: .symmetric(horizontal: 16, vertical: 12),
                                     child: Column(
                                       crossAxisAlignment: .start,
                                       children: [
