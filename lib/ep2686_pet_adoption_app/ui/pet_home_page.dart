@@ -329,7 +329,74 @@ class _PetHomePageState extends State<PetHomePage> {
                           child: Container(
                             decoration: BoxDecoration(
                               borderRadius: .circular(16),
-                              color: Colors.orange,
+                              color: Colors.pink[100],
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withValues(alpha: .1),
+                                  spreadRadius: 3,
+                                  blurRadius: 10,
+                                ),
+                              ],
+                            ),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  right: 12,
+                                  top: 12,
+                                  child: CircleAvatar(
+                                    radius: 16,
+                                    backgroundColor: Colors.white,
+                                    foregroundColor: Colors.red,
+                                    child: Icon(Icons.favorite, size: 16),
+                                  ),
+                                ),
+                                Positioned(
+                                  bottom: 0,
+                                  left: 0,
+                                  right: 0,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      borderRadius: .circular(16),
+                                      color: Colors.white,
+                                    ),
+                                    padding: .symmetric(
+                                      horizontal: 16,
+                                      vertical: 12,
+                                    ),
+                                    child: Column(
+                                      crossAxisAlignment: .start,
+                                      spacing: 4,
+                                      children: [
+                                        Text(
+                                          "Luna",
+                                          style: TextStyle(fontWeight: .bold),
+                                        ),
+                                        Text(
+                                          "Ragdoll * 8 Months",
+                                          style: TextStyle(
+                                            color: Colors.black54,
+                                          ),
+                                        ),
+                                        Row(
+                                          spacing: 4,
+                                          children: [
+                                            Icon(
+                                              Icons.location_on_outlined,
+                                              size: 16,
+                                            ),
+                                            Text(
+                                              "Seattle, WA",
+                                              style: TextStyle(
+                                                color: Colors.black54,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
