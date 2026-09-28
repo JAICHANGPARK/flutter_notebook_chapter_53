@@ -259,8 +259,8 @@ class _PetHomePageState extends State<PetHomePage> {
                                 BoxShadow(
                                   color: Colors.black.withValues(alpha: .1),
                                   spreadRadius: 3,
-                                  blurRadius: 10
-                                )
+                                  blurRadius: 10,
+                                ),
                               ],
                             ),
 
@@ -275,18 +275,28 @@ class _PetHomePageState extends State<PetHomePage> {
                                       borderRadius: .circular(16),
                                       color: Colors.white,
                                     ),
-                                    padding: .symmetric(horizontal: 16, vertical: 12),
+                                    padding: .symmetric(
+                                      horizontal: 16,
+                                      vertical: 12,
+                                    ),
                                     child: Column(
                                       crossAxisAlignment: .start,
+                                      spacing: 4,
                                       children: [
-                                        Text("Luna"),
-                                        Text("Ragdoll * 8 Months"),
+                                        Text(
+                                          "Luna",
+                                          style: TextStyle(fontWeight: .bold,),
+                                        ),
+                                        Text("Ragdoll * 8 Months",),
                                         Row(
                                           children: [
-                                            Icon(Icons.location_on_outlined),
-                                            Text("Seattle, WA")
+                                            Icon(
+                                              Icons.location_on_outlined,
+                                              size: 16,
+                                            ),
+                                            Text("Seattle, WA"),
                                           ],
-                                        )
+                                        ),
                                       ],
                                     ),
                                   ),
