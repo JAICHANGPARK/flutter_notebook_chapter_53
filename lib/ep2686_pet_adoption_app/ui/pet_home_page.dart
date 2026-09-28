@@ -96,8 +96,11 @@ class _PetHomePageState extends State<PetHomePage> {
                       color: Colors.orange,
                     ),
                     child: Column(
+                      spacing: 4,
+                      mainAxisAlignment: .center,
                       children: [
                         Icon(Icons.pets, color: Colors.white,),
+                        Text("Cats")
 
 
                       ],
