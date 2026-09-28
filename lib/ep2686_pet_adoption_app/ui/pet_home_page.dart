@@ -271,6 +271,19 @@ class _PetHomePageState extends State<PetHomePage> {
                                   child: Container(
                                     decoration: BoxDecoration(
                                       borderRadius: .circular(16),
+                                      color: Colors.white,
+                                    ),
+                                    child: Column(
+                                      children: [
+                                        Text("Luna"),
+                                        Text("Ragdoll * 8 Months"),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.location_on_outlined),
+                                            Text("Seattle, WA")
+                                          ],
+                                        )
+                                      ],
                                     ),
                                   ),
                                 ),
