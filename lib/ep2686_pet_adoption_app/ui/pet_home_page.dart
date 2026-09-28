@@ -276,6 +276,7 @@ class _PetHomePageState extends State<PetHomePage> {
                                       color: Colors.white,
                                     ),
                                     child: Column(
+                                      crossAxisAlignment: .start,
                                       children: [
                                         Text("Luna"),
                                         Text("Ragdoll * 8 Months"),
