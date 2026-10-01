@@ -10,7 +10,6 @@ class ShoppingApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         home: ShoppingMainPage(),
-
     );
   }
 }
