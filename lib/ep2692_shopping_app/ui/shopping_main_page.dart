@@ -19,12 +19,14 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
         child: Row(
           children: [
             Column(
+              mainAxisAlignment: .center,
               children: [
                 HugeIcon(icon: HugeIcons.strokeRoundedHome01),
                 Text("Today"),
               ],
             ),
             Column(
+              mainAxisAlignment: .center,
               children: [
                 HugeIcon(icon: HugeIcons.strokeRoundedDiscoverCircle),
                 Text("Discover"),
