@@ -16,7 +16,9 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
         child: IndexedStack(children: [Placeholder(), Placeholder()]),
       ),
       bottomNavigationBar: BottomAppBar(
+        padding: .symmetric(horizontal: 16),
         child: Row(
+          mainAxisAlignment: .spaceBetween,
           children: [
             Column(
               mainAxisAlignment: .center,
