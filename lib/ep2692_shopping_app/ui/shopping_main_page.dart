@@ -12,7 +12,10 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
+      body: SafeArea(child: IndexedStack(children: [
+
+      ],)),
+
     );
   }
 }
