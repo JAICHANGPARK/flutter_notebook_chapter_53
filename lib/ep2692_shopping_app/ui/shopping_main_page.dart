@@ -36,6 +36,7 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
             ),
             CircleAvatar(
               backgroundColor: Colors.blueAccent,
+              foregroundColor: Colors.white,
               child: Icon(Icons.search),
             ),
             Column(
