@@ -29,7 +29,8 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
               ],
             ),
             Column(
-              mainAxisAlignment: .center,   spacing: 4,
+              mainAxisAlignment: .center,
+              spacing: 4,
               children: [
                 HugeIcon(icon: HugeIcons.strokeRoundedDiscoverCircle),
                 Text("Discover"),
@@ -42,6 +43,7 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
             ),
             Column(
               mainAxisAlignment: .center,
+              spacing: 4,
               children: [
                 HugeIcon(icon: HugeIcons.strokeRoundedFavourite),
                 Text("Saved"),
@@ -49,6 +51,7 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
             ),
             Column(
               mainAxisAlignment: .center,
+              spacing: 4,
               children: [
                 HugeIcon(icon: HugeIcons.strokeRoundedBox),
                 Text("Orders"),
