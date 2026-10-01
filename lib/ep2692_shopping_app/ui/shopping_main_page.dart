@@ -12,12 +12,22 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(child: IndexedStack(children: [])),
-      bottomNavigationBar: BottomNavigationBar(
+      body: SafeArea(child: IndexedStack(children: [
+        Placeholder(),
+        Placeholder(),
+      ])),
+      bottomNavigationBar: BottomAppBar()
+        
+
+        BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
             icon: HugeIcon(icon: HugeIcons.strokeRoundedHome01),
             label: "Today",
+          ),
+          BottomNavigationBarItem(
+            icon: HugeIcon(icon: HugeIcons.strokeRoundedDiscoverCircle),
+            label: "Discover",
           ),
         ],
       ),
