@@ -48,8 +48,8 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
             Column(
               mainAxisAlignment: .center,
               children: [
-                HugeIcon(icon: HugeIcons.strokeRoundedDiscoverCircle),
-                Text("Discover"),
+                HugeIcon(icon: HugeIcons.strokeRoundedBox),
+                Text("Orders"),
               ],
             ),
           ],
