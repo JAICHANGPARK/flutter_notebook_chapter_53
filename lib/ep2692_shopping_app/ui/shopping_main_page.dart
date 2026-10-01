@@ -38,6 +38,20 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
               backgroundColor: Colors.blueAccent,
               child: Icon(Icons.search),
             ),
+            Column(
+              mainAxisAlignment: .center,
+              children: [
+                HugeIcon(icon: HugeIcons.strokeRoundedFavourite),
+                Text("Saved"),
+              ],
+            ),
+            Column(
+              mainAxisAlignment: .center,
+              children: [
+                HugeIcon(icon: HugeIcons.strokeRoundedDiscoverCircle),
+                Text("Discover"),
+              ],
+            ),
           ],
         ),
       ),
