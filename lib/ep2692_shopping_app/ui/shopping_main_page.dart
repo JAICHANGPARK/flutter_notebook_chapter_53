@@ -16,21 +16,23 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
         Placeholder(),
         Placeholder(),
       ])),
-      bottomNavigationBar: BottomAppBar()
-        
-
-        BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: HugeIcon(icon: HugeIcons.strokeRoundedHome01),
-            label: "Today",
-          ),
-          BottomNavigationBarItem(
-            icon: HugeIcon(icon: HugeIcons.strokeRoundedDiscoverCircle),
-            label: "Discover",
-          ),
-        ],
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          children: [
+            BottomNavigationBarItem(
+              icon: HugeIcon(icon: HugeIcons.strokeRoundedHome01),
+              label: "Today",
+            ),
+            BottomNavigationBarItem(
+              icon: HugeIcon(icon: HugeIcons.strokeRoundedDiscoverCircle),
+              label: "Discover",
+            ),
+          ],
+        ),
       ),
+
+
+
     );
   }
 }
