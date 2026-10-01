@@ -19,14 +19,21 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
       bottomNavigationBar: BottomAppBar(
         child: Row(
           children: [
-            BottomNavigationBarItem(
-              icon: HugeIcon(icon: HugeIcons.strokeRoundedHome01),
-              label: "Today",
+            Column(
+              children: [
+                HugeIcon(icon: HugeIcons.strokeRoundedHome01),
+                Text("Today"),
+              ],
+
             ),
-            BottomNavigationBarItem(
-              icon: HugeIcon(icon: HugeIcons.strokeRoundedDiscoverCircle),
-              label: "Discover",
+            Column(
+              children: [
+                HugeIcon(icon: HugeIcons.strokeRoundedDiscoverCircle),
+                Text("Discover"),
+              ],
+
             ),
+          
           ],
         ),
       ),
