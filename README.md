@@ -6,7 +6,7 @@
 - Appwave for Confidency
 - https://dribbble.com/shots/27758830-Scout-AI-Shopping-App-Goal-Based-Setup-and-Bundle
 
-<img src="https://cdn.dribbble.com/userupload/49092736/file/77b9627682e4d52db397a6cc29c2df3f.png?resize=1905x1355&vertical=center" alt=""/>
+<img src="https://cdn.dribbble.com/userupload/49125721/file/efc1f66bfc27927d564d2f087aee7def.png?resize=1600x1200&vertical=center" alt=""/>
 
 # EP2686-2691
 
