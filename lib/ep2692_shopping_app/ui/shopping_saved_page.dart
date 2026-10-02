@@ -32,6 +32,45 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
             CircleAvatar(radius: 20),
           ],
         ),
+        Container(
+          height: 42,
+          child: Placeholder(),
+        ),
+        Expanded(child: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: .start,
+            children: [
+              SizedBox(
+                height: 62,
+                child: Placeholder(),
+              ),
+              Divider(),
+              SizedBox(
+                height: 62,
+                child: Placeholder(),
+              ),
+              Divider(),
+              SizedBox(
+                height: 62,
+                child: Placeholder(),
+              ),
+              Divider(),
+              Row(
+                children: [
+                  Text("Your lists"),
+                  TextButton(onPressed: (){}, child: Text("See all")),
+                ],
+              ),
+              Row(
+                children: [
+                  Expanded(child: Placeholder()),
+                ],
+              )
+
+            ],
+          ),
+
+        ))
       ],
     );
   }
