@@ -14,9 +14,15 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: IndexedStack(children: [Placeholder(), Placeholder()]),
+        child: Column(
+          children: [
+            Expanded(child: IndexedStack(children: [Placeholder(), Placeholder()])),
+          ],
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
+        elevation: 10,
+        color: Colors.white,
         padding: .symmetric(horizontal: 16),
         child: Row(
           mainAxisAlignment: .spaceBetween,
