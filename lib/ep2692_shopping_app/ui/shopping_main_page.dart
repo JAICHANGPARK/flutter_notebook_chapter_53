@@ -1,6 +1,8 @@
 import 'package:hugeicons/hugeicons.dart';
 import 'package:material_ui/material_ui.dart';
 
+import 'shopping_saved_page.dart';
+
 class ShoppingMainPage extends StatefulWidget {
   const ShoppingMainPage({super.key});
 
@@ -16,7 +18,16 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
       body: SafeArea(
         child: Column(
           children: [
-            Expanded(child: IndexedStack(children: [Placeholder(), Placeholder()])),
+            Expanded(
+              child: IndexedStack(
+                children: [
+                  Placeholder(),
+                  Placeholder(),
+                  Placeholder(),
+                  ShoppingSavedPage(),
+                ],
+              ),
+            ),
           ],
         ),
       ),
