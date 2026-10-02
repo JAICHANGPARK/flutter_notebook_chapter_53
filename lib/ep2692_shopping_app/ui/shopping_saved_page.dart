@@ -15,8 +15,11 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
       children: [
         AppBar(
           title: Text("Saved"),
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.black,
+          elevation: 0,
           actions: [
-            HugeIcon(icon: [HugeIcons.strokeRoundedNotification02]),
+            HugeIcon(icon: HugeIcons.strokeRoundedNotification02),
             CircleAvatar(radius: 24),
           ],
         ),
