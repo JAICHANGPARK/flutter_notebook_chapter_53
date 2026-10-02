@@ -61,10 +61,22 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                   TextButton(onPressed: (){}, child: Text("See all")),
                 ],
               ),
-              Row(
-                children: [
-                  Expanded(child: Placeholder()),
-                ],
+              SizedBox(
+                height: 120,
+                child: Row(
+                  spacing: 24,
+                  children: [
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                  ],
+                ),
+              ),
+              Text(
+                "Recently views",
+              ),
+              SizedBox(
+                height: 200,
+                child: Placeholder(),
               )
 
             ],
