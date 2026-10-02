@@ -34,61 +34,67 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
           ],
         ),
         Expanded(
-          child: Column(
-            spacing: 24,
-            children: [
-              Container(
-                height: 42,
-                child: Placeholder(),
-              ),
-              Expanded(child: SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: .start,
-                  children: [
-                    SizedBox(
-                      height: 62,
-                      child: Placeholder(),
-                    ),
-                    Divider(),
-                    SizedBox(
-                      height: 62,
-                      child: Placeholder(),
-                    ),
-                    Divider(),
-                    SizedBox(
-                      height: 62,
-                      child: Placeholder(),
-                    ),
-                    Divider(),
-                    Row(
-                      children: [
-                        Text("Your lists"),
-                        TextButton(onPressed: (){}, child: Text("See all")),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 120,
-                      child: Row(
-                        spacing: 24,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: Column(
+              spacing: 24,
+              children: [
+                Container(
+                  height: 42,
+                  child: Placeholder(),
+                ),
+                Expanded(child: SingleChildScrollView(
+                  child: Column(
+                    spacing: 3,
+                    crossAxisAlignment: .start,
+                    children: [
+                      SizedBox(
+                        height: 62,
+                        child: Placeholder(),
+                      ),
+                      Divider(),
+                      SizedBox(
+                        height: 62,
+                        child: Placeholder(),
+                      ),
+                      Divider(),
+                      SizedBox(
+                        height: 62,
+                        child: Placeholder(),
+                      ),
+                      Divider(),
+                      Row(
                         children: [
-                          Expanded(child: Placeholder()),
-                          Expanded(child: Placeholder()),
+                          Text("Your lists"),
+                          TextButton(onPressed: (){}, child: Text("See all")),
                         ],
                       ),
-                    ),
-                    Text(
-                      "Recently views",
-                    ),
-                    SizedBox(
-                      height: 200,
-                      child: Placeholder(),
-                    )
-          
-                  ],
-                ),
-          
-              ))
-            ],
+                      SizedBox(
+                        height: 120,
+                        child: Row(
+                          spacing: 24,
+                          children: [
+                            Expanded(child: Placeholder()),
+                            Expanded(child: Placeholder()),
+                          ],
+                        ),
+                      ),
+                      Gap(12),
+                      Text(
+                        "Recently views",
+                      ),
+                      Gap(12),
+                      SizedBox(
+                        height: 200,
+                        child: Placeholder(),
+                      )
+
+                    ],
+                  ),
+
+                ))
+              ],
+            ),
           ),
         )
 
