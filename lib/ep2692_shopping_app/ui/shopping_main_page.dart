@@ -21,6 +21,7 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
           children: [
             Expanded(
               child: IndexedStack(
+                index: pageNum,
                 children: [
                   Placeholder(),
                   Placeholder(),
