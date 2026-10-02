@@ -1,7 +1,6 @@
 import 'package:hugeicons/hugeicons.dart';
 import 'package:material_ui/material_ui.dart';
 
-
 class ShoppingSavedPage extends StatefulWidget {
   const ShoppingSavedPage({super.key});
 
@@ -12,20 +11,15 @@ class ShoppingSavedPage extends StatefulWidget {
 class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return Column(
       children: [
-
         AppBar(
           title: Text("Saved"),
           actions: [
-            HugeIcon(icon: [
-              HugeIcons.strokeRoundedNotification02,
-            ],),
-            CircleAvatar(
-              radius: 24,
-            )
+            HugeIcon(icon: [HugeIcons.strokeRoundedNotification02]),
+            CircleAvatar(radius: 24),
           ],
-        )
+        ),
       ],
     );
   }
