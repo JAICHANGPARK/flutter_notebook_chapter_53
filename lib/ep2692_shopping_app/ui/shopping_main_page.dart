@@ -41,21 +41,35 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
         child: Row(
           mainAxisAlignment: .spaceBetween,
           children: [
-            Column(
-              mainAxisAlignment: .center,
-              spacing: 4,
-              children: [
-                HugeIcon(icon: HugeIcons.strokeRoundedHome01),
-                Text("Today"),
-              ],
+            GestureDetector(
+              onTap: (){
+                setState(() {
+                  pageNum= 0;
+                });
+              },
+              child: Column(
+                mainAxisAlignment: .center,
+                spacing: 4,
+                children: [
+                  HugeIcon(icon: HugeIcons.strokeRoundedHome01),
+                  Text("Today"),
+                ],
+              ),
             ),
-            Column(
-              mainAxisAlignment: .center,
-              spacing: 4,
-              children: [
-                HugeIcon(icon: HugeIcons.strokeRoundedDiscoverCircle),
-                Text("Discover"),
-              ],
+            GestureDetector(
+              onTap: (){
+                setState(() {
+                  pageNum= 1;
+                });
+              },
+              child: Column(
+                mainAxisAlignment: .center,
+                spacing: 4,
+                children: [
+                  HugeIcon(icon: HugeIcons.strokeRoundedDiscoverCircle),
+                  Text("Discover"),
+                ],
+              ),
             ),
             CircleAvatar(
               radius: 24,
