@@ -12,7 +12,7 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(37, 73, 223, 1),
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: IndexedStack(children: [Placeholder(), Placeholder()]),
       ),
@@ -38,7 +38,7 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
               ],
             ),
             CircleAvatar(
-              backgroundColor: Colors.blueAccent,
+              backgroundColor:Color.fromRGBO(37, 73, 223, 1),
               foregroundColor: Colors.white,
               child: Icon(Icons.search),
             ),
