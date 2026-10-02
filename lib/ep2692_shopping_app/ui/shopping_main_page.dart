@@ -12,6 +12,7 @@ class ShoppingMainPage extends StatefulWidget {
 
 class _ShoppingMainPageState extends State<ShoppingMainPage> {
   int pageNum = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,8 +26,9 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
                 children: [
                   Placeholder(),
                   Placeholder(),
-                  Placeholder(),
                   ShoppingSavedPage(),
+
+
                   Placeholder(),
                 ],
               ),
@@ -42,9 +44,9 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
           mainAxisAlignment: .spaceBetween,
           children: [
             GestureDetector(
-              onTap: (){
+              onTap: () {
                 setState(() {
-                  pageNum= 0;
+                  pageNum = 0;
                 });
               },
               child: Column(
@@ -57,9 +59,9 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
               ),
             ),
             GestureDetector(
-              onTap: (){
+              onTap: () {
                 setState(() {
-                  pageNum= 1;
+                  pageNum = 1;
                 });
               },
               child: Column(
@@ -77,21 +79,35 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
               foregroundColor: Colors.white,
               child: Icon(Icons.search),
             ),
-            Column(
-              mainAxisAlignment: .center,
-              spacing: 4,
-              children: [
-                HugeIcon(icon: HugeIcons.strokeRoundedFavourite),
-                Text("Saved"),
-              ],
+            GestureDetector(
+              onTap: (){
+                setState(() {
+                  pageNum= 2;
+                });
+              },
+              child: Column(
+                mainAxisAlignment: .center,
+                spacing: 4,
+                children: [
+                  HugeIcon(icon: HugeIcons.strokeRoundedFavourite),
+                  Text("Saved"),
+                ],
+              ),
             ),
-            Column(
-              mainAxisAlignment: .center,
-              spacing: 4,
-              children: [
-                HugeIcon(icon: HugeIcons.strokeRoundedBox),
-                Text("Orders"),
-              ],
+            GestureDetector(
+              onTap: (){
+                setState(() {
+                  pageNum= 3;
+                });
+              },
+              child: Column(
+                mainAxisAlignment: .center,
+                spacing: 4,
+                children: [
+                  HugeIcon(icon: HugeIcons.strokeRoundedBox),
+                  Text("Orders"),
+                ],
+              ),
             ),
           ],
         ),
