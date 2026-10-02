@@ -38,7 +38,7 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
               ],
             ),
             CircleAvatar(
-              backgroundColor:Color.fromRGBO(37, 73, 223, 1),
+              backgroundColor: Color.fromRGBO(37, 73, 223, 1),
               foregroundColor: Colors.white,
               child: Icon(Icons.search),
             ),
