@@ -196,7 +196,7 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                           child: Row(
                             spacing: 24,
                             children: [
-                              Expanded(child: Placeholder()),
+                              Expanded(child: Column(children: [])),
                               Expanded(child: Placeholder()),
                             ],
                           ),
@@ -204,8 +204,7 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                         Gap(12),
                         Text(
                           "Recently views",
-                          style: TextStyle(fontWeight: .bold,
-                          fontSize: 16,),
+                          style: TextStyle(fontWeight: .bold, fontSize: 16),
                         ),
                         Gap(12),
                         SizedBox(height: 200, child: Placeholder()),
