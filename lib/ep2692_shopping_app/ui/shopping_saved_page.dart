@@ -46,12 +46,18 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                       spacing: 3,
                       crossAxisAlignment: .start,
                       children: [
-                        SizedBox(height: 62, child: Row(children: [
-                          Container(
-                            decoration: BoxDecoration(),
-                          )
-
-                        ])),
+                        SizedBox(
+                          height: 54,
+                          child: Row(
+                            children: [
+                              Container(
+                                width: 54,
+                                height: 54,
+                                decoration: BoxDecoration(color: Colors.grey),
+                              ),
+                            ],
+                          ),
+                        ),
                         Divider(),
                         SizedBox(height: 62, child: Placeholder()),
                         Divider(),
