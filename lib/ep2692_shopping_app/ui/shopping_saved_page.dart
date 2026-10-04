@@ -58,6 +58,15 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                                   borderRadius: .circular(16),
                                 ),
                               ),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: .start,
+                                  children: [
+                                    Text("BrandNew Ultra Headphone"),
+                                    Text("Good time to buy, \$50% off"),
+                                  ],
+                                ),
+                              ),
                             ],
                           ),
                         ),
