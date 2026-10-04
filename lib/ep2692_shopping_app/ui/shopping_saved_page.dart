@@ -196,7 +196,24 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                           child: Row(
                             spacing: 24,
                             children: [
-                              Expanded(child: Column(children: [])),
+                              Expanded(
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 52,
+                                          width: 52,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey,
+                                            borderRadius: .circular(16),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
                               Expanded(child: Placeholder()),
                             ],
                           ),
