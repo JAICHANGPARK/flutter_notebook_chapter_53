@@ -192,7 +192,7 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                           ],
                         ),
                         SizedBox(
-                          height: 120,
+
                           child: Row(
                             spacing: 24,
                             children: [
@@ -230,13 +230,55 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                                       ],
                                     ),
                                     Gap(12),
-                                    Text("Travel setup"),
+                                    Text(
+                                      "Travel setup",
+                                      style: TextStyle(fontWeight: .bold),
+                                    ),
                                     Gap(2),
-                                    Text("3 items \$398 left"),
+                                    Text("3 items \$398 left",
+                                      style: TextStyle(fontSize: 13,),
+                                    ),
                                   ],
                                 ),
                               ),
-                              Expanded(child: Placeholder()),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: .start,
+                                  children: [
+                                    Row(
+                                      spacing: 4,
+                                      children: [
+                                        Container(
+                                          height: 52,
+                                          width: 52,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey[300],
+                                            borderRadius: .circular(16),
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 52,
+                                          width: 52,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey[300],
+                                            borderRadius: .circular(16),
+                                          ),
+                                        ),
+
+                                      ],
+                                    ),
+                                    Gap(12),
+                                    Text(
+                                      "Home office",
+                                      style: TextStyle(fontWeight: .bold),
+                                    ),
+                                    Gap(2),
+                                    Text("3 items \$398 left",
+                                      style: TextStyle(fontSize: 13,),
+                                    ),
+                                  ],
+                                ),
+                              ),
                             ],
                           ),
                         ),
