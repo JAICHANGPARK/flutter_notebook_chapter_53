@@ -67,13 +67,23 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                                   children: [
                                     Text(
                                       "BrandNew Ultra Headphone",
-                                      style: TextStyle(fontWeight: .bold,
-                                      fontSize: 16,),
+                                      style: TextStyle(
+                                        fontWeight: .bold,
+                                        fontSize: 16,
+                                      ),
                                     ),
-                                    Text("Good time to buy, \$50% off",style: TextStyle(
-                                      fontSize: 12,
-                                    )),
+                                    Text(
+                                      "Good time to buy, \$50% off",
+                                      style: TextStyle(fontSize: 12),
+                                    ),
                                   ],
+                                ),
+                              ),
+                              Text(
+                                "\$399.00",
+                                style: TextStyle(
+                                  fontWeight: .bold,
+                                  fontSize: 16,
                                 ),
                               ),
                             ],
