@@ -179,6 +179,7 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                         ),
                         Divider(),
                         Row(
+                          mainAxisAlignment: .spaceBetween,
                           children: [
                             Text(
                               "Your lists",
