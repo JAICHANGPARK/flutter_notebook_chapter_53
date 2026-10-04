@@ -49,6 +49,7 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                         SizedBox(
                           height: 54,
                           child: Row(
+                            spacing: 12,
                             children: [
                               Container(
                                 width: 54,
@@ -61,6 +62,7 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                               Expanded(
                                 child: Column(
                                   crossAxisAlignment: .start,
+                                  mainAxisAlignment: .center,
                                   children: [
                                     Text("BrandNew Ultra Headphone"),
                                     Text("Good time to buy, \$50% off"),
