@@ -177,7 +177,7 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                             ],
                           ),
                         ),
-                        Divider(),
+                        Gap(24),
                         Row(
                           mainAxisAlignment: .spaceBetween,
                           children: [
