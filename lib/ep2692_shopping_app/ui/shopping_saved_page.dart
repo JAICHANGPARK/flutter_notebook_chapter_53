@@ -192,7 +192,6 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                           ],
                         ),
                         SizedBox(
-
                           child: Row(
                             spacing: 24,
                             children: [
@@ -235,8 +234,9 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                                       style: TextStyle(fontWeight: .bold),
                                     ),
                                     Gap(2),
-                                    Text("3 items \$398 left",
-                                      style: TextStyle(fontSize: 13,),
+                                    Text(
+                                      "3 items \$398 left",
+                                      style: TextStyle(fontSize: 13),
                                     ),
                                   ],
                                 ),
@@ -264,7 +264,6 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                                             borderRadius: .circular(16),
                                           ),
                                         ),
-
                                       ],
                                     ),
                                     Gap(12),
@@ -273,8 +272,9 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                                       style: TextStyle(fontWeight: .bold),
                                     ),
                                     Gap(2),
-                                    Text("3 items \$398 left",
-                                      style: TextStyle(fontSize: 13,),
+                                    Text(
+                                      "5 of 7 done",
+                                      style: TextStyle(fontSize: 13),
                                     ),
                                   ],
                                 ),
