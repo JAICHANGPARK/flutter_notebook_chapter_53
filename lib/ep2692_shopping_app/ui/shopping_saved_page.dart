@@ -200,12 +200,29 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                                 child: Column(
                                   children: [
                                     Row(
+                                      spacing: 4,
                                       children: [
                                         Container(
                                           height: 52,
                                           width: 52,
                                           decoration: BoxDecoration(
-                                            color: Colors.grey,
+                                            color: Colors.grey[300],
+                                            borderRadius: .circular(16),
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 52,
+                                          width: 52,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey[300],
+                                            borderRadius: .circular(16),
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 52,
+                                          width: 52,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey[300],
                                             borderRadius: .circular(16),
                                           ),
                                         ),
