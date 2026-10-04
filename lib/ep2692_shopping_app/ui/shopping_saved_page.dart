@@ -198,6 +198,7 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                             children: [
                               Expanded(
                                 child: Column(
+                                  crossAxisAlignment: .start,
                                   children: [
                                     Row(
                                       spacing: 4,
@@ -228,8 +229,10 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                                         ),
                                       ],
                                     ),
+                                    Gap(12),
                                     Text("Travel setup"),
-                                    Text("3 items \$398 left")
+                                    Gap(2),
+                                    Text("3 items \$398 left"),
                                   ],
                                 ),
                               ),
