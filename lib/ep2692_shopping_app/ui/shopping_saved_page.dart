@@ -228,6 +228,8 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                                         ),
                                       ],
                                     ),
+                                    Text("Travel setup"),
+                                    Text("3 items \$398 left")
                                   ],
                                 ),
                               ),
