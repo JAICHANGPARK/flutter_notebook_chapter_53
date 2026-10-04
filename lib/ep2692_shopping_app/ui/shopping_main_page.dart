@@ -26,8 +26,6 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
                   Placeholder(),
                   Placeholder(),
                   ShoppingSavedPage(),
-
-
                   Placeholder(),
                 ],
               ),
