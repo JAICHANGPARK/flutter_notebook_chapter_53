@@ -180,7 +180,10 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                         Divider(),
                         Row(
                           children: [
-                            Text("Your lists"),
+                            Text(
+                              "Your lists",
+                              style: TextStyle(fontWeight: .bold, fontSize: 16),
+                            ),
                             TextButton(
                               onPressed: () {},
                               child: Text("See all"),
