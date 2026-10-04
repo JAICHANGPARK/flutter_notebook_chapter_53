@@ -202,7 +202,11 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                           ),
                         ),
                         Gap(12),
-                        Text("Recently views"),
+                        Text(
+                          "Recently views",
+                          style: TextStyle(fontWeight: .bold,
+                          fontSize: 16,),
+                        ),
                         Gap(12),
                         SizedBox(height: 200, child: Placeholder()),
                       ],
