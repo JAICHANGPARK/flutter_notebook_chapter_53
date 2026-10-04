@@ -63,9 +63,16 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                                 child: Column(
                                   crossAxisAlignment: .start,
                                   mainAxisAlignment: .center,
+                                  spacing: 2,
                                   children: [
-                                    Text("BrandNew Ultra Headphone"),
-                                    Text("Good time to buy, \$50% off"),
+                                    Text(
+                                      "BrandNew Ultra Headphone",
+                                      style: TextStyle(fontWeight: .bold,
+                                      fontSize: 16,),
+                                    ),
+                                    Text("Good time to buy, \$50% off",style: TextStyle(
+                                      fontSize: 12,
+                                    )),
                                   ],
                                 ),
                               ),
