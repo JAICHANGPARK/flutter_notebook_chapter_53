@@ -53,7 +53,8 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                               Container(
                                 width: 54,
                                 height: 54,
-                                decoration: BoxDecoration(color: Colors.grey),
+                                decoration: BoxDecoration(color: Colors.grey,
+                                borderRadius: .circular(12),),
                               ),
                             ],
                           ),
