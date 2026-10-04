@@ -12,7 +12,6 @@ class ShoppingMainPage extends StatefulWidget {
 
 class _ShoppingMainPageState extends State<ShoppingMainPage> {
   int pageNum = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
