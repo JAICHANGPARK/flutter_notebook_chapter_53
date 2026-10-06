@@ -354,6 +354,7 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                                     Expanded(
                                       child: Container(child: Placeholder()),
                                     ),
+                                    Gap(8),
                                     Text("Dream AX1"),
                                     Text("\$399.99"),
                                     Text("Viewed today"),
