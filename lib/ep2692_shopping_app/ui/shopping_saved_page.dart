@@ -44,6 +44,7 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                     color: Color.fromRGBO(246, 244, 240, 1),
                     borderRadius: .circular(12),
                   ),
+                  padding:.all(5),
                   child: Row(
                     children: [
                       Expanded(
