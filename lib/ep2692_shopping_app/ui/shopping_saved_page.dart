@@ -41,11 +41,17 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                 Container(height: 42, child: Row(children: [
                   Expanded(
                     child: Container(
-                      
+
                     ),
                   ),
-                  Expanded(),
-                  Expanded(),
+                  Expanded(
+                    child: Container(
+
+                    ),
+                  ),
+                  Expanded(  child: Container(
+
+                  ),),
                 ])),
                 Expanded(
                   child: SingleChildScrollView(
