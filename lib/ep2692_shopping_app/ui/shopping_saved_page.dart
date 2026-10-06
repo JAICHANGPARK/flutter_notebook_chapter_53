@@ -79,7 +79,10 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                           child: Center(
                             child: Text(
                               "Lists",
-                              style: TextStyle(fontWeight: .bold),
+                              style: TextStyle(
+                                fontWeight: .bold,
+                                color: Colors.grey,
+                              ),
                             ),
                           ),
                         ),
@@ -335,7 +338,15 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                           style: TextStyle(fontWeight: .bold, fontSize: 16),
                         ),
                         Gap(12),
-                        SizedBox(height: 200, child: Placeholder()),
+                        SizedBox(
+                          height: 200,
+                          child: ListView.builder(itemBuilder: (context, index) {
+                            return Container(
+                              width: 120,
+                              child: Placeholder()
+                            );
+                          }),
+                        ),
                       ],
                     ),
                   ),
