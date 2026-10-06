@@ -340,10 +340,12 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                         Gap(12),
                         SizedBox(
                           height: 200,
-                          child: ListView.builder(itemBuilder: (context, index) {
+                          child: ListView.builder(
+                              scrollDirection: .horizontal,
+                              itemBuilder: (context, index) {
                             return Container(
-                              width: 120,
-                              child: Placeholder()
+                              width: 140,
+                              child: Column(),
                             );
                           }),
                         ),
