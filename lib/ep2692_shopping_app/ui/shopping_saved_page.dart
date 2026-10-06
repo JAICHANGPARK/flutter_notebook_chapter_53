@@ -341,18 +341,22 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                         SizedBox(
                           height: 200,
                           child: ListView.builder(
+
                             scrollDirection: .horizontal,
                             itemBuilder: (context, index) {
                               return Container(
                                 width: 140,
+                                margin: .only(right: 12),
                                 child: Column(
+
+                                  crossAxisAlignment: .start,
                                   children: [
                                     Expanded(
                                       child: Container(child: Placeholder()),
                                     ),
                                     Text("Dream AX1"),
                                     Text("\$399.99"),
-                                    Text("Viewed today")
+                                    Text("Viewed today"),
                                   ],
                                 ),
                               );
