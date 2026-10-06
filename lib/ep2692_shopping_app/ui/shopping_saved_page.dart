@@ -44,7 +44,7 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                     color: Color.fromRGBO(246, 244, 240, 1),
                     borderRadius: .circular(12),
                   ),
-                  padding:.all(5),
+                  padding: .all(5),
                   child: Row(
                     children: [
                       Expanded(
@@ -52,6 +52,12 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: .circular(12),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Saved",
+                              style: TextStyle(fontWeight: .bold),
+                            ),
                           ),
                         ),
                       ),
