@@ -61,8 +61,29 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                           ),
                         ),
                       ),
-                      Expanded(child: Container()),
-                      Expanded(child: Container()),
+                      Expanded(
+                        child: Container(
+                          child: Center(
+                            child: Text(
+                              "Watching",
+                              style: TextStyle(
+                                fontWeight: .bold,
+                                color: Colors.grey,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          child: Center(
+                            child: Text(
+                              "Lists",
+                              style: TextStyle(fontWeight: .bold),
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
