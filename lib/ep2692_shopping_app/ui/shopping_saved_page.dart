@@ -40,7 +40,9 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
               children: [
                 Container(
                   height: 42,
-                  decoration: BoxDecoration(),
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(246, 244, 240, 1),
+                  ),
                   child: Row(
                     children: [
                       Expanded(child: Container()),
