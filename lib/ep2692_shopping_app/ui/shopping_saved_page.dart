@@ -38,7 +38,7 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
             child: Column(
               spacing: 24,
               children: [
-                Container(height: 42, child: Placeholder()),
+                Container(height: 42, child: Row(children: [])),
                 Expanded(
                   child: SingleChildScrollView(
                     child: Column(
