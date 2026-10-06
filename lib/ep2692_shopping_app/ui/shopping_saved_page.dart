@@ -26,7 +26,6 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
           foregroundColor: Colors.black,
           elevation: 0,
           actionsPadding: .only(right: 16),
-
           actions: [
             HugeIcon(icon: HugeIcons.strokeRoundedNotification02),
             Gap(12),
