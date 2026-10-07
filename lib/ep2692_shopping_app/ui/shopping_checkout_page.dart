@@ -18,7 +18,15 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
       ),
       body: SafeArea(
         child: Column(
-          children : [],
+          children : [
+            Row(
+              children : [
+                Icon(Icons.circle_outlined),
+                Text("Title bundle"),
+              ],
+            ),
+            Text("Finish your home office")
+          ],
         )
       )
 
