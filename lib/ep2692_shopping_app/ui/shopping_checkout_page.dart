@@ -25,7 +25,9 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                 Text("Title bundle"),
               ],
             ),
-            Text("Finish your home office")
+            Text("Finish your home office"),
+            Text("Two items left, Headphones are covered by your order."),
+
           ],
         )
       )
