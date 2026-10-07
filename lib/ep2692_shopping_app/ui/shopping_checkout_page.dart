@@ -13,7 +13,8 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
     return Scaffold(
         backgroundColor: Colors.white,
       appBar: AppBar(
-        
+          backgroundColor : Colors.white,
+          surfaceTintColor: Colors.white,
       ),
       body: SafeArea(
         child: Column(
