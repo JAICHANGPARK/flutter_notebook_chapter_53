@@ -9,5 +9,9 @@ class ShoppingCheckoutPage extends StatefulWidget {
 
 class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
   @override
-  Widget build(BuildContext context) {}
+  Widget build(BuildContext context) {
+    return Scaffold(
+      
+    );
+  }
 }
