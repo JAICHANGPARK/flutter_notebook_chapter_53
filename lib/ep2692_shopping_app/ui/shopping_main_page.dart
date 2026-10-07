@@ -13,6 +13,7 @@ class ShoppingMainPage extends StatefulWidget {
 
 class _ShoppingMainPageState extends State<ShoppingMainPage> {
   int pageNum = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,6 +24,7 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
             Expanded(
               child: IndexedStack(
                 index: pageNum,
+
                 children: [
                   Placeholder(),
                   Placeholder(),
@@ -78,9 +80,9 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
               child: Icon(Icons.search),
             ),
             GestureDetector(
-              onTap: (){
+              onTap: () {
                 setState(() {
-                  pageNum= 2;
+                  pageNum = 2;
                 });
               },
               child: Column(
@@ -93,9 +95,14 @@ class _ShoppingMainPageState extends State<ShoppingMainPage> {
               ),
             ),
             GestureDetector(
-              onTap: (){
+              onTap: () {
                 setState(() {
-                  pageNum= 3;
+                  pageNum = 3;
+                  Navigator.of(context).push(
+                    MaterialPageRoute<void>(
+                      builder: (BuildContext context) => const ShoppingCheckoutPage(),
+                    ),
+                  );
                 });
               },
               child: Column(
