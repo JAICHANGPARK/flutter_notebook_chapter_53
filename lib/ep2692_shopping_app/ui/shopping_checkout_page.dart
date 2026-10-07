@@ -18,6 +18,7 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
       ),
       body: SafeArea(
         child: Column(
+            crossAxisAlignment: .start,
           children : [
             Row(
               children : [
