@@ -12,6 +12,9 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.white,
+      appBar: AppBar(
+        
+      ),
       body: SafeArea(
         child: Column(
           children : [],
