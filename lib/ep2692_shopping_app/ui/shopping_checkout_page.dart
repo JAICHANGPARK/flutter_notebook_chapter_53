@@ -40,8 +40,6 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                       decoration: BoxDecoration(
                         color: Colors.grey[300],
                         borderRadius: .circular(16),
-
-
                       ),
                     ),
                     Expanded(
