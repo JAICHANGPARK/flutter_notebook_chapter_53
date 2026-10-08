@@ -1,6 +1,5 @@
 import 'package:hugeicons/hugeicons.dart';
 import 'package:material_ui/material_ui.dart';
-
 import 'shopping_checkout_page.dart';
 import 'shopping_saved_page.dart';
 
