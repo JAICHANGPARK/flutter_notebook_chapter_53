@@ -369,7 +369,8 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                                       style: TextStyle(
                                         fontWeight: .bold,
                                         fontSize: 12,
-                                      ),),
+                                      ),
+																		),
                                   ],
                                 ),
                               );
