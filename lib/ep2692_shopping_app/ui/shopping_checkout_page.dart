@@ -88,7 +88,7 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                         children: [
                           Text(
                             "BrandNew Ultra Headphone",
-                            style: TextStyle(fontWeight: .bold, fontSize: 16),
+                            style: TextStyle(fontWeight: .bold, fontSize: 15),
                           ),
                           Text(
                             "Good time to buy, \$50% off",
@@ -126,7 +126,7 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                         children: [
                           Text(
                             "BrandNew Ultra Headphone",
-                            style: TextStyle(fontWeight: .bold, fontSize: 16),
+                            style: TextStyle(fontWeight: .bold, fontSize: 15),
                           ),
                           Text(
                             "Good time to buy, \$50% off",
