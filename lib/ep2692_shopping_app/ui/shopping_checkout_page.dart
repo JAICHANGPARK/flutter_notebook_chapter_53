@@ -23,6 +23,7 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
           child: Column(
             crossAxisAlignment: .start,
             children: [
+              Gap(16),
               Row(
                 spacing: 12,
                 children: [Icon(Icons.circle_outlined), Text("Title bundle")],
@@ -33,7 +34,7 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                 style: TextStyle(fontSize: 24, fontWeight: .bold),
               ),
               Text("Two items left, Headphones are covered by your order."),
-              Gap(42),
+              Gap(32),
               SizedBox(
                 height: 54,
                 child: Row(
