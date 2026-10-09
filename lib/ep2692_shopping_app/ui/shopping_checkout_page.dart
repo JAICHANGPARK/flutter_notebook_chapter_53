@@ -147,7 +147,7 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                   ],
                 ),
               ),
-              Gap(32),
+              Gap(42),
               Row(
                 mainAxisAlignment: .spaceBetween,
                 children: [
