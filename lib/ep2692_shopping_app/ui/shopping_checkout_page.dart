@@ -185,9 +185,15 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                   Text("5 of 7"),
                 ],
               ),
+              Gap(16),
               SizedBox(height: 64, child: Placeholder()),
+              Gap(16),
               Container(
-                decoration: BoxDecoration(color: Colors.black),
+                decoration: BoxDecoration(
+                  color: Colors.black,
+                  borderRadius: .circular(12),
+                ),
+                padding: .symmetric(vertical: 16),
                 child: Center(
                   child: Text(
                     "Review bundle",
