@@ -27,13 +27,13 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                 spacing: 12,
                 children: [Icon(Icons.circle_outlined), Text("Title bundle")],
               ),
-              Gap(4),
+              Gap(12),
               Text(
                 "Finish your home office",
                 style: TextStyle(fontSize: 24, fontWeight: .bold),
               ),
               Text("Two items left, Headphones are covered by your order."),
-              Gap(24),
+              Gap(42),
               SizedBox(
                 height: 54,
                 child: Row(
