@@ -28,7 +28,10 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                 children: [Icon(Icons.circle_outlined), Text("Title bundle")],
               ),
               Gap(4),
-              Text("Finish your home office"),
+              Text(
+                "Finish your home office",
+                style: TextStyle(fontSize: 24, fontWeight: .bold),
+              ),
               Text("Two items left, Headphones are covered by your order."),
               Gap(24),
               SizedBox(
@@ -144,11 +147,8 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                   ],
                 ),
               ),
-              Gap(24),
-              Row(children: [
-                Text("Today"),
-                Text("\$819.98")
-              ]),
+              Gap(32),
+              Row(children: [Text("Today"), Text("\$819.98")]),
             ],
           ),
         ),
