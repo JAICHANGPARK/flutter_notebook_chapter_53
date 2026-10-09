@@ -159,8 +159,8 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
               Row(
                 mainAxisAlignment: .spaceBetween,
                 children: [
-                  Text("Today"),
-                  Text("\$819.98", style: TextStyle(fontWeight: .bold)),
+                  Text("With Scout's timing"),
+                  Text("\$708.00", style: TextStyle(fontWeight: .bold)),
                 ],
               ),
               Divider(),
