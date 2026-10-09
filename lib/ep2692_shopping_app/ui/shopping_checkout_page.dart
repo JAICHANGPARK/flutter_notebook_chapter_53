@@ -164,6 +164,14 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                 ],
               ),
               Divider(),
+              Row(
+                mainAxisAlignment: .spaceBetween,
+                children: [
+                  Text("You could save"),
+                  Text("\$111.98", style: TextStyle(fontWeight: .bold,
+                  color: Colors.green)),
+                ],
+              ),
             ],
           ),
         ),
