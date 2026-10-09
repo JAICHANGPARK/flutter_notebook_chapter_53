@@ -176,10 +176,18 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
               ),
               Gap(32),
               Row(
+                spacing: 7,
                 children: [
-                  Text("Already in your setup"),
-                  Text("5 of 7")
+                  Text(
+                    "Already in your setup",
+                    style: TextStyle(fontWeight: .bold, fontSize: 16),
+                  ),
+                  Text("5 of 7"),
                 ],
+              ),
+              SizedBox(
+                height: 32,
+                child: Placeholder(),
               )
             ],
           ),
