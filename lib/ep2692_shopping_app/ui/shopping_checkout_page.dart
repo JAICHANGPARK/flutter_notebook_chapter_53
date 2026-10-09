@@ -201,6 +201,8 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                   ),
                 ),
               ),
+              Gap(16),
+              Center(child: Text("Let Scout time it",))
             ],
           ),
         ),
