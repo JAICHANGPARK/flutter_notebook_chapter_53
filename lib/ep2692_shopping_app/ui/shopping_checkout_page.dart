@@ -150,7 +150,9 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
               Gap(32),
               Row(
                   mainAxisAlignment:.spaceBetween,
-                  children: [Text("Today"), Text("\$819.98")],),
+                  children: [Text("Today"), Text("\$819.98",style:TextStyle(
+                    fontWeight: .bold
+                  ))],),
               Divider(),
             ],
           ),
