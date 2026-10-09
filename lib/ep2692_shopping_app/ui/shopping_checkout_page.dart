@@ -185,10 +185,16 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                   Text("5 of 7"),
                 ],
               ),
-              SizedBox(
-                height: 32,
-                child: Placeholder(),
-              )
+              SizedBox(height: 64, child: Placeholder()),
+              Container(
+                decoration: BoxDecoration(color: Colors.black),
+                child: Center(
+                  child: Text(
+                    "Review bundle",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
