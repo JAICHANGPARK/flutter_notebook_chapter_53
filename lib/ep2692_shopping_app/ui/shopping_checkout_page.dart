@@ -155,7 +155,10 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                   Text("\$819.98", style: TextStyle(fontWeight: .bold)),
                 ],
               ),
-              Divider(),
+              Divider(
+                  height: 32,
+                color: Colors.grey[300],
+              ),
               Row(
                 mainAxisAlignment: .spaceBetween,
                 children: [
