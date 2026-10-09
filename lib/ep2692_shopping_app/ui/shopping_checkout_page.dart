@@ -24,8 +24,10 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
             crossAxisAlignment: .start,
             children: [
               Row(
+                spacing: 12,
                 children: [Icon(Icons.circle_outlined), Text("Title bundle")],
               ),
+              Gap(4),
               Text("Finish your home office"),
               Text("Two items left, Headphones are covered by your order."),
               Gap(24),
@@ -143,6 +145,10 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                 ),
               ),
               Gap(24),
+              Row(children: [
+                Text("Today"),
+                Text("\$819.98")
+              ]),
             ],
           ),
         ),
