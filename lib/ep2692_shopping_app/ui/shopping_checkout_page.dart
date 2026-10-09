@@ -174,6 +174,13 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
                   ),
                 ],
               ),
+              Gap(32),
+              Row(
+                children: [
+                  Text("Already in your setup"),
+                  Text("5 of 7")
+                ],
+              )
             ],
           ),
         ),
