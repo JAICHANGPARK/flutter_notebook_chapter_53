@@ -6,7 +6,7 @@
 - Md. Atikur Rahman
 - https://dribbble.com/shots/27796007-Supplements-E-commerce-Mobile-App
 
-<img src="https://cdn.dribbble.com/userupload/49125721/file/efc1f66bfc27927d564d2f087aee7def.png?resize=1600x1200&vertical=center" alt=""/>
+<img src="https://cdn.dribbble.com/userupload/49266159/file/9cc68c8ef2a4b52eef4a00032ee8395a.png?resize=1905x1429&vertical=center" alt=""/>
 
 
 # EP2692-2697
