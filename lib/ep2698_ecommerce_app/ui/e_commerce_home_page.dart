@@ -52,7 +52,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                               crossAxisAlignment: .center,
                               mainAxisAlignment: .center,
                               spacing: 2,
-                              spacing: 2,
+
                               children: [
                                 HugeIcon(
                                   icon: HugeIcons.strokeRoundedMenuCircle,
@@ -92,7 +92,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     top: 0,
                     left: 0,
                     right: 0,
-                    child: CircleAvatar(radius: 32),
+                    child: CircleAvatar(
+                      radius: 30,
+                      child: HugeIcon(
+                        icon: HugeIcons.strokeRoundedShoppingBasket01,
+                      ),
+                    ),
                   ),
                 ],
               ),
