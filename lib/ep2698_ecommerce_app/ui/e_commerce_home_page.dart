@@ -36,10 +36,50 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                       ),
                       child: Row(
                         children: [
-                          Column(
-                            children: [
-                              HugeIcon(icon: HugeIcons.strokeRoundedHome01),
-                            ],
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: .center,
+                              children: [
+                                HugeIcon(icon: HugeIcons.strokeRoundedHome01),
+                                Text("Home"),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: .center,
+                              children: [
+                                HugeIcon(icon: HugeIcons.strokeRoundedHome01),
+                                Text("Home"),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: .center,
+                              children: [
+                                HugeIcon(icon: HugeIcons.strokeRoundedHome01),
+                                Text("Home"),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: .center,
+                              children: [
+                                HugeIcon(icon: HugeIcons.strokeRoundedHome01),
+                                Text("Home"),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: .center,
+                              children: [
+                                HugeIcon(icon: HugeIcons.strokeRoundedHome01),
+                                Text("Home"),
+                              ],
+                            ),
                           ),
                         ],
                       ),
