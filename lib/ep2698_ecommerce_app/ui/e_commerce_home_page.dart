@@ -24,12 +24,22 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
               child: Stack(
                 children: [
                   Positioned(
+                    top: 8,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
                     child: Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: .circular(16),
                       ),
                     ),
+                  ),
+                  Positioned(
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    child: CircleAvatar(radius: 32),
                   ),
                 ],
               ),
