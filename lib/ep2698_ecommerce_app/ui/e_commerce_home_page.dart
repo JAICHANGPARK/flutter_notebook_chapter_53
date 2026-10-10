@@ -1,3 +1,4 @@
+import 'package:hugeicons/hugeicons.dart';
 import 'package:material_ui/material_ui.dart';
 
 class ECommerceHomePage extends StatefulWidget {
@@ -32,6 +33,15 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: .circular(16),
+                      ),
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              HugeIcon(icon: HugeIcons.strokeRoundedHome01),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
                   ),
