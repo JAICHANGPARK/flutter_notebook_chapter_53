@@ -360,17 +360,20 @@ class _ShoppingSavedPageState extends State<ShoppingSavedPage> {
                                         fontSize: 13,
                                       ),
                                     ),
-                                    Text("\$399.99",
+                                    Text(
+                                      "\$399.99",
                                       style: TextStyle(
                                         fontWeight: .bold,
                                         fontSize: 13,
-                                      ),),
-                                    Text("Viewed today",
+                                      ),
+                                    ),
+                                    Text(
+                                      "Viewed today",
                                       style: TextStyle(
                                         fontWeight: .bold,
                                         fontSize: 12,
                                       ),
-																		),
+                                    ),
                                   ],
                                 ),
                               );
