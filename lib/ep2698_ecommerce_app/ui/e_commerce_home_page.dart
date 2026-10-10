@@ -40,6 +40,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             child: Column(
                               crossAxisAlignment: .center,
                               mainAxisAlignment: .center,
+                              spacing: 2,
                               children: [
                                 HugeIcon(icon: HugeIcons.strokeRoundedHome01),
                                 Text("Home"),
@@ -50,6 +51,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             child: Column(
                               crossAxisAlignment: .center,
                               mainAxisAlignment: .center,
+                              spacing: 2,
                               children: [
                                 HugeIcon(
                                   icon: HugeIcons.strokeRoundedMenuCircle,
