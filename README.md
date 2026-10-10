@@ -1,5 +1,14 @@
 # flutter_notebook_chapter_53
 
+# EP2698
+
+- Scout AI Shopping App: Goal Based Setup and Bundle
+- Appwave for Confidency
+- https://dribbble.com/shots/27758830-Scout-AI-Shopping-App-Goal-Based-Setup-and-Bundle
+
+<img src="https://cdn.dribbble.com/userupload/49125721/file/efc1f66bfc27927d564d2f087aee7def.png?resize=1600x1200&vertical=center" alt=""/>
+
+
 # EP2692-2697
 
 - Scout AI Shopping App: Goal Based Setup and Bundle
