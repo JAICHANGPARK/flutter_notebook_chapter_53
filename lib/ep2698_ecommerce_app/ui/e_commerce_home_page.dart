@@ -39,6 +39,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                           Expanded(
                             child: Column(
                               crossAxisAlignment: .center,
+                              mainAxisAlignment: .center,
                               children: [
                                 HugeIcon(icon: HugeIcons.strokeRoundedHome01),
                                 Text("Home"),
