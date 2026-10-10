@@ -35,6 +35,7 @@ class _ShoppingCheckoutPage extends State<ShoppingCheckoutPage> {
               ),
               Text("Two items left, Headphones are covered by your order."),
               Gap(32),
+
               SizedBox(
                 height: 54,
                 child: Row(
