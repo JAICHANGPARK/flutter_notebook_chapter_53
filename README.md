@@ -2,7 +2,7 @@
 
 # EP2698
 
-- Scout AI Shopping App: Goal Based Setup and Bundle
+- Supplements E-commerce Mobile App
 - Appwave for Confidency
 - https://dribbble.com/shots/27758830-Scout-AI-Shopping-App-Goal-Based-Setup-and-Bundle
 
