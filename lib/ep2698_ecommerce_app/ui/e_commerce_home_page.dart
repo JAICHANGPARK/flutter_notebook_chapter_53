@@ -10,6 +10,9 @@ class ECommerceHomePage extends StatefulWidget {
 class _ECommerceHomePageState extends State<ECommerceHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(body: Stack(children: [
+          
+        ],
+      ));
   }
 }
