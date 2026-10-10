@@ -21,8 +21,18 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
             right: 8,
             child: Container(
               height: 90,
-              decoration: BoxDecoration(color: Colors.white),
-              child: Placeholder(),
+              child: Stack(
+                children: [
+                  Positioned(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: .circular(16),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ],
