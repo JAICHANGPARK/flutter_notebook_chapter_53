@@ -1,6 +1,6 @@
 # flutter_notebook_chapter_53
 
-# EP2692
+# EP2692-2697
 
 - Scout AI Shopping App: Goal Based Setup and Bundle
 - Appwave for Confidency
