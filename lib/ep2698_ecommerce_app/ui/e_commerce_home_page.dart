@@ -33,6 +33,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                       CircleAvatar(
                         backgroundColor: Colors.white,
                         foregroundColor: .fromRGBO(7, 53, 33, 1),
+                        child: Icon(Icons.notifications),
                       ),
                     ],
                   ),
