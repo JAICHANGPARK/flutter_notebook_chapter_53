@@ -16,10 +16,21 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
       body: Stack(
         children: [
           Positioned.fill(
-            child: SafeArea(bottom: false, child: Column(children: [
-              
-            ],
-          )),
+            child: SafeArea(
+              bottom: false,
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text("Olivia"),
+                      Spacer(),
+                      CircleAvatar(),
+                      CircleAvatar(),
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ),
           Positioned(
             bottom: 8,
