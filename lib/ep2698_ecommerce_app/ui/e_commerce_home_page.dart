@@ -15,7 +15,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
       backgroundColor: Color.fromRGBO(246, 244, 238, 1),
       body: Stack(
         children: [
-          Positioned.fill(child: SafeArea(bottom: false, child: Placeholder())),
+          Positioned.fill(
+            child: SafeArea(bottom: false, child: Column(children: [
+              
+            ],
+          )),
+          ),
           Positioned(
             bottom: 8,
             left: 8,
