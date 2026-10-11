@@ -25,8 +25,15 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     children: [
                       Text("Olivia"),
                       Spacer(),
-                      CircleAvatar(backgroundColor: Colors.white),
-                      CircleAvatar(),
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                        foregroundColor: .fromRGBO(7, 53, 33, 1),
+                        child: Icon(Icons.search),
+                      ),
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                        foregroundColor: .fromRGBO(7, 53, 33, 1),
+                      ),
                     ],
                   ),
                 ],
