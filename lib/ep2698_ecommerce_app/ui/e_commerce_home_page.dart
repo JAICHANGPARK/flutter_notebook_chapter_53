@@ -42,9 +42,14 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                       ),
                     ],
                   ),
-                  Column(children: []),
-                  Text("Hi Welcome Back!"),
-                  Text("Your Health, our Priority"),
+                  Column(
+                    crossAxisAlignment: .start,
+                    children: [
+                      Text("Hi Welcome Back!"),
+                      Text("Your Health, our Priority"),
+                    ],
+                  ),
+
                   SizedBox(height: 42, child: Placeholder()),
                   SizedBox(height: 200, child: Placeholder()),
                   Row(
