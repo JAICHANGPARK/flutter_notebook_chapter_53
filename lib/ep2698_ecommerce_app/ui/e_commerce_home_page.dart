@@ -19,6 +19,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
             child: SafeArea(
               bottom: false,
               child: Column(
+                crossAxisAlignment: .start,
                 children: [
                   Row(
                     spacing: 12,
@@ -37,6 +38,9 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                       ),
                     ],
                   ),
+                  Text("Hi Welcome Back!"),
+                  Text("Your Health, our Priority"),
+                  SizedBox(height: 42, child: Placeholder()),
                 ],
               ),
             ),
