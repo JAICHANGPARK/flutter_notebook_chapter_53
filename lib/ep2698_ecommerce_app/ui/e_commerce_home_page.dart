@@ -24,6 +24,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
               bottom: false,
               child: Column(
                 crossAxisAlignment: .start,
+                spacing: 16,
                 children: [
                   Row(
                     spacing: 12,
