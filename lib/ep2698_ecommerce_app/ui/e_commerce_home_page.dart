@@ -16,6 +16,10 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
       body: Stack(
         children: [
           Positioned.fill(
+            left: 16,
+            right: 16,
+            top: 16,
+            bottom: 16,
             child: SafeArea(
               bottom: false,
               child: Column(
@@ -38,6 +42,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                       ),
                     ],
                   ),
+                  Column(children: []),
                   Text("Hi Welcome Back!"),
                   Text("Your Health, our Priority"),
                   SizedBox(height: 42, child: Placeholder()),
