@@ -95,6 +95,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     child: CircleAvatar(
                       radius: 30,
                       backgroundColor: .fromRGBO(7, 53, 33, 1),
+                      foregroundColor: Colors.white,
                       child: HugeIcon(
                         icon: HugeIcons.strokeRoundedShoppingBasket01,
                       ),
