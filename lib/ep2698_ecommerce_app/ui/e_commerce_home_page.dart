@@ -21,10 +21,11 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
               child: Column(
                 children: [
                   Row(
+                    spacing: 12,
                     children: [
                       Text("Olivia"),
                       Spacer(),
-                      CircleAvatar(),
+                      CircleAvatar(backgroundColor: Colors.white),
                       CircleAvatar(),
                     ],
                   ),
