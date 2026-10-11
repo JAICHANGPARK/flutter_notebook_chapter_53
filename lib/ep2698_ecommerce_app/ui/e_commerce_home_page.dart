@@ -42,6 +42,13 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                   Text("Your Health, our Priority"),
                   SizedBox(height: 42, child: Placeholder()),
                   SizedBox(height: 200, child: Placeholder()),
+                  Row(
+                    children: [
+                      Text("Popular For Your"),
+                      Text("View All"),
+                      Icon(Icons.chevron_right),
+                    ],
+                  ),
                 ],
               ),
             ),
