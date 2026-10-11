@@ -45,9 +45,20 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                   Row(
                     children: [
                       Text("Popular For Your"),
+                      Spacer(),
                       Text("View All"),
                       Icon(Icons.chevron_right),
                     ],
+                  ),
+                  Expanded(
+                    child: GridView.builder(
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                      ),
+                      itemBuilder: (context, index) {
+                        return Placeholder();
+                      },
+                    ),
                   ),
                 ],
               ),
