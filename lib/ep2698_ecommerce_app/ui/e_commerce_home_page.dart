@@ -123,9 +123,18 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
                         childAspectRatio: .8,
+                        crossAxisSpacing: 16,
+                        mainAxisSpacing: 16,
                       ),
                       itemBuilder: (context, index) {
-                        return Placeholder();
+                        return Container(
+                          decoration: ShapeDecoration(
+                            shape: RoundedSuperellipseBorder(
+                              borderRadius: .circular(16),
+                              side: BorderSide(color: Colors.grey[100]!),
+                            ),
+                          ),
+                        );
                       },
                     ),
                   ),
