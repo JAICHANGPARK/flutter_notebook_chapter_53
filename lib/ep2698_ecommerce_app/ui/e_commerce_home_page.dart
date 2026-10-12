@@ -135,6 +135,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                             ),
                             color: Colors.white,
                           ),
+                          padding: .all(16),
                           child: Column(
                             crossAxisAlignment: .start,
                             children: [
