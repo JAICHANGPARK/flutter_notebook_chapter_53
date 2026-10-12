@@ -29,7 +29,14 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                   Row(
                     spacing: 12,
                     children: [
-                      Text("Olivia"),
+                      Text(
+                        "Olivia",
+                        style: TextStyle(
+                          fontWeight: .bold,
+                          fontSize: 42,
+                          color: .fromRGBO(7, 53, 33, 1),
+                        ),
+                      ),
                       Spacer(),
                       CircleAvatar(
                         backgroundColor: Colors.white,
@@ -46,7 +53,14 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                   Column(
                     crossAxisAlignment: .start,
                     children: [
-                      Text("Hi Welcome Back!"),
+                      Text(
+                        "Hi Welcome Back!",
+                        style: TextStyle(
+                          fontWeight: .bold,
+                          fontSize: 20,
+                          color: .fromRGBO(7, 53, 33, 1),
+                        ),
+                      ),
                       Text("Your Health, our Priority"),
                     ],
                   ),
