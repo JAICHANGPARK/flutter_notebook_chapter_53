@@ -67,10 +67,33 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                   ),
                   Gap(8),
                   SizedBox(
-                    height: 42,
-                    child: ListView.builder(
-                      scrollDirection: .horizontal,
-                      itemBuilder: (context, index) {},
+                    height: 32,
+                    child: Builder(
+                      builder: (context) {
+                        List<String> items = [
+                          "All",
+                          "Vitamins",
+                          "Minerals",
+                          "Omega",
+                          "Wellness",
+                        ];
+                        return ListView.builder(
+                          scrollDirection: .horizontal,
+                          itemCount: items.length,
+
+                          itemBuilder: (context, index) {
+                            return Container(
+                              decoration: ShapeDecoration(
+                                shape: StadiumBorder(),
+                                color: Colors.white,
+                              ),
+                              padding: .symmetric(horizontal: 16),
+                              margin: .only(right: 12),
+                              child: Center(child: Text("${items[index]}")),
+                            );
+                          },
+                        );
+                      },
                     ),
                   ),
                   SizedBox(height: 200, child: Placeholder()),
