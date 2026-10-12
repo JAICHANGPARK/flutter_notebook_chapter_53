@@ -133,11 +133,23 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                               borderRadius: .circular(16),
                               side: BorderSide(color: Colors.grey[200]!),
                             ),
+                            color: Colors.white,
                           ),
                           child: Column(
+                            crossAxisAlignment: .start,
                             children: [
                               Container(child: Text("Bestseller")),
-                              Row(children: []),
+                              Spacer(),
+                              Row(
+                                mainAxisAlignment: .spaceBetween,
+                                children: [
+                                  Text("\$15.99"),
+                                  CircleAvatar(
+                                    radius: 18,
+                                    child: Icon(Icons.shopping_bag_outlined),
+                                  ),
+                                ],
+                              ),
                             ],
                           ),
                         );
