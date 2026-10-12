@@ -65,7 +65,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                       Text("Your Health, our Priority"),
                     ],
                   ),
-                  Gap(8),
+
                   SizedBox(
                     height: 32,
                     child: Builder(
@@ -106,7 +106,13 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                   SizedBox(height: 200, child: Placeholder()),
                   Row(
                     children: [
-                      Text("Popular For Your"),
+                      Text(
+                        "Popular For Your",
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: .fromRGBO(7, 53, 33, 1),
+                        ),
+                      ),
                       Spacer(),
                       Text("View All"),
                       Icon(Icons.chevron_right),
@@ -116,6 +122,7 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                     child: GridView.builder(
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
+                        childAspectRatio: .8,
                       ),
                       itemBuilder: (context, index) {
                         return Placeholder();
