@@ -131,8 +131,12 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                           decoration: ShapeDecoration(
                             shape: RoundedSuperellipseBorder(
                               borderRadius: .circular(16),
-                              side: BorderSide(color: Colors.grey[100]!),
+                              side: BorderSide(color: Colors.grey[200]!),
                             ),
+                          ),
+                          child: Column(children: [
+                              
+                            ],
                           ),
                         );
                       },
