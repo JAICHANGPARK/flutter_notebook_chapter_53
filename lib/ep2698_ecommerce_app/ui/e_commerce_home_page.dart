@@ -134,8 +134,10 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                               side: BorderSide(color: Colors.grey[200]!),
                             ),
                           ),
-                          child: Column(children: [
-                              
+                          child: Column(
+                            children: [
+                              Container(child: Text("Bestseller")),
+                              Row(children: []),
                             ],
                           ),
                         );
