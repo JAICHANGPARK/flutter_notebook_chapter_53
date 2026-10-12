@@ -1,3 +1,4 @@
+import 'package:gap/gap.dart';
 import 'package:hugeicons/hugeicons.dart';
 import 'package:material_ui/material_ui.dart';
 
@@ -64,8 +65,14 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                       Text("Your Health, our Priority"),
                     ],
                   ),
-
-                  SizedBox(height: 42, child: Placeholder()),
+                  Gap(8),
+                  SizedBox(
+                    height: 42,
+                    child: ListView.builder(
+                      scrollDirection: .horizontal,
+                      itemBuilder: (context, index) {},
+                    ),
+                  ),
                   SizedBox(height: 200, child: Placeholder()),
                   Row(
                     children: [
