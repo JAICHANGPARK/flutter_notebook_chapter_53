@@ -84,12 +84,19 @@ class _ECommerceHomePageState extends State<ECommerceHomePage> {
                           itemBuilder: (context, index) {
                             return Container(
                               decoration: ShapeDecoration(
-                                shape: StadiumBorder(),
+                                shape: StadiumBorder(
+                                  side: BorderSide(color: Colors.grey[100]!),
+                                ),
                                 color: Colors.white,
                               ),
                               padding: .symmetric(horizontal: 16),
                               margin: .only(right: 12),
-                              child: Center(child: Text("${items[index]}")),
+                              child: Center(
+                                child: Text(
+                                  "${items[index]}",
+                                  style: TextStyle(fontWeight: .bold),
+                                ),
+                              ),
                             );
                           },
                         );
